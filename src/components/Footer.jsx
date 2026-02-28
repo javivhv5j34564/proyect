@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
-        <footer className="bg-slate-900 text-slate-300 py-12 mt-20">
-            <div className="max-w-6xl mx-auto px-6">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <footer className="bg-slate-900 text-slate-300 py-8 md:py-12 mt-12 md:mt-20">
+            <div className="max-w-6xl mx-auto px-4 md:px-6">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 mb-6 md:mb-8">
                     <div className="col-span-1 md:col-span-2">
-                        <h3 className="text-xl font-bold text-white mb-4">Directorio AI</h3>
+                        <h3 className="text-xl font-bold text-white mb-3 md:mb-4">Directorio AI</h3>
                         <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
                             Tu portal de confianza para descubrir las mejores herramientas de Inteligencia Artificial gratuitas y freemium. Analizamos y catalogamos el software más potente para impulsar tu productividad.
                         </p>
