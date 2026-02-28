@@ -119,26 +119,26 @@ export default function ToolPage() {
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-slate-200"
+                    className="bg-white rounded-3xl p-6 sm:p-8 md:p-12 shadow-sm border border-slate-200"
                 >
-                    <div className="flex flex-col md:flex-row gap-8 items-start mb-10">
-                        <div className="w-24 h-24 md:w-32 md:h-32 rounded-3xl border border-slate-100 shadow-sm overflow-hidden bg-slate-50 flex items-center justify-center flex-shrink-0 text-6xl md:text-7xl">
+                    <div className="flex flex-col md:flex-row gap-5 md:gap-8 items-start mb-6 md:mb-10">
+                        <div className="w-20 h-20 md:w-32 md:h-32 rounded-3xl border border-slate-100 shadow-sm overflow-hidden bg-slate-50 flex items-center justify-center flex-shrink-0 text-5xl md:text-7xl">
                             {tool.emoji || '🤖'}
                         </div>
 
-                        <div className="flex-grow">
-                            <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-4">{tool.name}</h1>
+                        <div className="flex-grow w-full">
+                            <h1 className="text-3xl md:text-5xl font-black text-slate-900 mb-3 md:mb-4">{tool.name}</h1>
 
-                            <div className="flex flex-wrap items-center gap-3 mb-6">
-                                <span className="flex text-sm font-bold px-4 py-1.5 rounded-full bg-slate-100 text-slate-600">
+                            <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-4 md:mb-6">
+                                <span className="flex text-xs md:text-sm font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full bg-slate-100 text-slate-600">
                                     {tool.sector}
                                 </span>
-                                <span className={`flex items-center gap-1.5 text-sm font-bold px-4 py-1.5 rounded-full ${tool.isFullyFree ? 'bg-green-50 text-green-700' : 'bg-amber-50 text-amber-700'}`}>
-                                    <Zap className="w-4 h-4" /> {tool.freeTierDetails}
+                                <span className={`flex items-center gap-1.5 text-xs md:text-sm font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full ${tool.isFullyFree ? 'bg-green-50 text-green-700' : 'bg-amber-50 text-amber-700'}`}>
+                                    <Zap className="w-3.5 h-3.5 md:w-4 md:h-4" /> {tool.freeTierDetails}
                                 </span>
                             </div>
 
-                            <div className="flex flex-col gap-2 mb-6">
+                            <div className="flex flex-col gap-1.5 md:gap-2 mb-4 md:mb-6">
                                 <div className="flex items-center gap-1">
                                     {[1, 2, 3, 4, 5].map((star) => {
                                         const isFilled = ratingData.userRating
@@ -148,7 +148,7 @@ export default function ToolPage() {
                                         return (
                                             <Star
                                                 key={star}
-                                                className={`w-7 h-7 cursor-pointer transition-all hover:scale-110 active:scale-95 ${isFilled
+                                                className={`w-6 h-6 md:w-7 md:h-7 cursor-pointer transition-all hover:scale-110 active:scale-95 ${isFilled
                                                     ? 'fill-amber-400 text-amber-400 drop-shadow-sm'
                                                     : 'fill-slate-100 text-slate-200 hover:text-amber-200'
                                                     }`}
@@ -158,9 +158,9 @@ export default function ToolPage() {
                                             />
                                         );
                                     })}
-                                    <span className="text-slate-800 font-bold text-lg ml-2">{ratingData.average}</span>
+                                    <span className="text-slate-800 font-bold text-base md:text-lg ml-1 md:ml-2">{ratingData.average}</span>
                                 </div>
-                                <span className="text-slate-500 text-sm font-medium">
+                                <span className="text-slate-500 text-xs md:text-sm font-medium">
                                     {ratingData.userRating > 0
                                         ? `Has votado ${ratingData.userRating} estrellas. (Click para quitar)`
                                         : `Basado en ${ratingData.count} opiniones. ¡Valórala tú también!`
@@ -169,19 +169,19 @@ export default function ToolPage() {
                             </div>
                         </div>
 
-                        <div className="w-full md:w-auto mt-4 md:mt-0">
-                            <a href={tool.url} target="_blank" rel="noopener noreferrer" className="w-full md:w-auto flex items-center justify-center gap-2 bg-slate-900 hover:bg-accent-600 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg hover:shadow-accent-500/25 active:scale-95 text-lg">
+                        <div className="w-full md:w-auto mt-4 md:mt-0 pb-4 md:pb-0">
+                            <a href={tool.url} target="_blank" rel="noopener noreferrer" className="w-full md:w-auto flex items-center justify-center gap-2 bg-slate-900 hover:bg-accent-600 text-white font-bold py-3 px-6 md:py-4 md:px-8 rounded-xl transition-all shadow-lg hover:shadow-accent-500/25 active:scale-95 text-base md:text-lg">
                                 Visitar Web <ExternalLink className="w-5 h-5" />
                             </a>
                         </div>
                     </div>
 
-                    <div className="prose prose-slate prose-lg max-w-none mb-12">
-                        <h2 className="text-2xl font-bold text-slate-900 border-b border-slate-100 pb-3 mb-6">¿Qué es y por qué usar {tool.name}?</h2>
-                        <p className="text-slate-700 font-medium text-xl leading-relaxed mb-6">
+                    <div className="prose prose-base md:prose-lg max-w-none mb-8 md:mb-12">
+                        <h2 className="text-xl md:text-2xl font-bold text-slate-900 border-b border-slate-100 pb-2 md:pb-3 mb-4 md:mb-6">¿Qué es y por qué usar {tool.name}?</h2>
+                        <p className="text-slate-700 font-medium text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
                             {tool.description}
                         </p>
-                        <div className="bg-slate-50 p-6 md:p-8 rounded-2xl border border-slate-100 text-slate-600 leading-relaxed">
+                        <div className="bg-slate-50 p-5 md:p-8 rounded-2xl border border-slate-100 text-slate-600 leading-relaxed">
                             {tool.longDescription}
                         </div>
                     </div>
