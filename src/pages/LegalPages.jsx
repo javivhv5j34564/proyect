@@ -11,7 +11,7 @@ const BackButton = () => (
     </div>
 );
 export const PrivacyPolicy = () => (
-    <div className="max-w-3xl mx-auto px-6 py-16 prose prose-slate">
+    <div className="max-w-3xl mx-auto px-4 md:px-6 py-10 md:py-16 prose prose-slate">
         <BackButton />
         <h1>Política de Privacidad</h1>
         <p>Última actualización: Febrero 2026</p>
@@ -25,7 +25,7 @@ export const PrivacyPolicy = () => (
 );
 
 export const CookiesPolicy = () => (
-    <div className="max-w-3xl mx-auto px-6 py-16 prose prose-slate">
+    <div className="max-w-3xl mx-auto px-4 md:px-6 py-10 md:py-16 prose prose-slate">
         <BackButton />
         <h1>Política de Cookies</h1>
         <h2>¿Qué son las cookies?</h2>
@@ -36,7 +36,7 @@ export const CookiesPolicy = () => (
 );
 
 export const LegalNotice = () => (
-    <div className="max-w-3xl mx-auto px-6 py-16 prose prose-slate">
+    <div className="max-w-3xl mx-auto px-4 md:px-6 py-10 md:py-16 prose prose-slate">
         <BackButton />
         <h1>Aviso Legal</h1>
         <p>El portal Directorio AI tiene como objetivo proporcionar información sobre herramientas de software de Inteligencia Artificial.</p>
@@ -47,12 +47,12 @@ export const LegalNotice = () => (
 
 export const Contact = () => {
     return (
-        <div className="max-w-2xl mx-auto px-6 py-16">
+        <div className="max-w-2xl mx-auto px-4 md:px-6 py-10 md:py-16">
             <BackButton />
             <h1 className="text-3xl font-bold mb-6">Contacto</h1>
             <p className="text-slate-600 mb-8">¿Tienes alguna duda, propuesta de colaboración, o quieres sugerir una nueva Inteligencia Artificial? Escríbenos y te responderemos pronto.</p>
 
-            <form action="https://formsubmit.co/f.javiergg06@gmail.com" method="POST" className="space-y-4 shadow-sm bg-white p-6 md:p-8 rounded-2xl border border-slate-200">
+            <form action="https://formsubmit.co/f.javiergg06@gmail.com" method="POST" className="space-y-4 shadow-sm bg-white p-5 md:p-8 rounded-2xl border border-slate-200">
                 <input type="hidden" name="_next" value={window.location.href} />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_subject" value="Nuevo mensaje de contacto - Directorio AI" />
