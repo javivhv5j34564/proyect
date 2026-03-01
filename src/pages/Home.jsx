@@ -186,12 +186,10 @@ export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
-  const [displayCount, setDisplayCount] = useState(24);
-  const [displayCategoryCount, setDisplayCategoryCount] = useState(3);
+  const [displayCount, setDisplayCount] = useState(15);
 
   useEffect(() => {
-    setDisplayCount(24);
-    setDisplayCategoryCount(3);
+    setDisplayCount(15);
   }, [searchTerm, selectedCategory, selectedPricing, showFavorites]);
 
   useEffect(() => {
@@ -286,13 +284,13 @@ export default function Home() {
       const nSector = tool.sector.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
       const keywords = {
-        'programacion': ['programar', 'codigo', 'codificar', 'web', 'desarrollo', 'app', 'python', 'javascript'],
-        'imagen y diseno': ['fotos', 'foto', 'imagenes', 'imagen', 'dibujar', 'diseno', 'arte', 'logo', 'logotipos', 'dibujos'],
-        'escritura y productividad': ['escribir', 'texto', 'redactar', 'resumir', 'ensayo', 'tarea', 'correos', 'email'],
-        'video y animacion': ['video', 'animacion', 'cortometraje', 'videos', 'editar', 'clips', 'pelicula'],
-        'audio y musica': ['musica', 'audio', 'cancion', 'canciones', 'voz', 'cantar', 'ritmo', 'melodia'],
-        'chatbots y asistentes': ['hablar', 'conversar', 'chat', 'preguntar', 'dudas', 'ayuda'],
-        'investigacion y datos': ['buscar', 'informacion', 'apuntes', 'pdf', 'excel', 'graficos', 'estudiar']
+        'programacion': ['programar', 'codigo', 'codificar', 'web', 'desarrollo', 'app', 'python', 'javascript', 'html', 'css', 'software', 'sql', 'java', 'c#', 'debugging', 'errores', 'documentacion', 'crear apps', 'crear webs', 'no-code', 'codigo abierto', 'open source', 'extension', 'navegador', 'auditoria de codigo', 'refactorizacion', 'scripts', 'scraping', 'mineria de datos', 'big data', 'machine learning', 'deep learning', 'redes neuronales', 'entrenamiento de modelos', 'datasets', 'prompts', 'ingenieria de prompts', 'prompt engineering', 'jailbreak', 'seguridad', 'privacidad', 'vpn', 'anonimato', 'etica', 'sesgos', 'transparencia', 'verificacion de hechos', 'fact-checking'],
+        'imagen y diseno': ['fotos', 'foto', 'imagenes', 'imagen', 'dibujar', 'diseno', 'arte', 'logo', 'logotipos', 'dibujos', 'presentacion', 'diapositivas', 'pintura', 'avatares', 'realismo', 'anime', '3d', 'ilustracion', 'retrato', 'arquitectura', 'branding', 'mockup', 'ui', 'ux', 'eliminar fondo', 'quitar objetos', 'retocar', 'restaurar', 'upscaling', 'alta resolucion', 'expandir', 'vectorizar', 'filtros', 'edicion', 'stock', 'isotipo', 'imagotipo', 'marca personal', 'banner', 'miniatura', 'thumbnail', 'flyer', 'cartel', 'poster', 'infografia', 'paleta de colores', 'tipografia', 'fuentes', 'dibujo tecnico', 'plano', 'renderizado', 'fotorrealismo', 'retrato profesional', 'headshot', 'linkedin', 'cv', 'curriculum vitae', 'portafolio', 'diseno de moda', 'patrones', 'texturas', 'pinceles', 'pinceladas', 'acuarela', 'oleo', 'cyberpunk', 'futurista', 'retro', 'vintage', 'minimalista', 'isometrico', 'boceto', 'sketch', 'colorizacion', 'colorear fotos', 'blanco y negro', 'eliminacion de ruido', 'desenfoque', 'bokeh', 'profundidad de campo', 'iluminacion', 'sombras', 'reflejos', 'perspectiva', 'simetria', 'surrealismo', 'fantasia', 'ciencia ficcion', 'terror', 'gotico', 'comic', 'manga', 'storyboard'],
+        'escritura y productividad': ['escribir', 'texto', 'redactar', 'resumir', 'ensayo', 'tarea', 'correos', 'email', 'presentacion', 'powerpoint', 'pdf', 'apuntes', 'redaccion', 'textos', 'blog', 'articulos', 'copy', 'copywriting', 'anuncios', 'ads', 'guiones', 'libretos', 'ensayos', 'tesis', 'cartas', 'resumenes', 'sintetizar', 'parafrasear', 'reescribir', 'humanizar', 'corregir', 'gramatica', 'ortografia', 'seo', 'palabras clave', 'descripciones', 'captions', 'twitter', 'linkedin', 'hilos', 'nombres', 'esloganes', 'slogans', 'chat con pdf', 'presentaciones', 'slides', 'pitch deck', 'organizar', 'calendario', 'notas', 'notion', 'resumenes de reuniones', 'flujo de trabajo', 'productividad', 'gestion de proyectos', 'pomodoro', 'habitos', 'recordatorios', 'correos frios', 'cold email', 'newsletters', 'automatizacion de ventas', 'crm', 'leads', 'prospeccion', 'copywriting persuasivo', 'storytelling', 'voz de marca', 'tono', 'personalidad', 'humor', 'satira', 'poesia', 'letras de canciones', 'rimas', 'metaforas', 'simbolismo', 'mitologia', 'leyendas', 'folklore', 'magia', 'esoterismo', 'tarot', 'astrologia', 'numerologia'],
+        'video y animacion': ['video', 'animacion', 'cortometraje', 'videos', 'editar', 'clips', 'pelicula', 'crear video', 'edicion de video', 'texto a video', 'avatares parlantes', 'rostros', 'deepfake', 'subtitulos', 'transcribir', 'recortes', 'shorts', 'reels', 'tiktok', 'efectos visuales', 'motion graphics', 'quitar fondo de video', 'clones digitales'],
+        'audio y musica': ['musica', 'audio', 'cancion', 'canciones', 'voz', 'cantar', 'ritmo', 'melodia', 'componer', 'voces', 'texto a voz', 'tts', 'clonar voz', 'locucion', 'narrador', 'podcast', 'transcripcion', 'audio a texto', 'limpiar audio', 'quitar ruido', 'separar instrumentos', 'voz a cancion', 'masterizacion'],
+        'chatbots y asistentes': ['hablar', 'conversar', 'chat', 'preguntar', 'dudas', 'ayuda', 'gpt', 'chatbot', 'asistente virtual', 'automatizacion', 'crear agentes', 'bots', 'moderacion', 'comunidad', 'foros', 'redes sociales'],
+        'investigacion y datos': ['buscar', 'informacion', 'apuntes', 'pdf', 'excel', 'graficos', 'estudiar', 'hojas de calculo', 'formulas', 'analisis de datos', 'visualizacion', 'bases de datos', 'analizar documentos', 'contratos', 'aprender', 'idiomas', 'ingles', 'traduccion', 'traductor', 'matematicas', 'algebra', 'fisica', 'quimica', 'resolver problemas', 'tareas', 'examenes', 'mapas mentales', 'cuestionarios', 'flashcards', 'tutoria', 'explicaciones', 'analisis de mercado', 'competencia', 'tendencias', 'trading', 'finanzas', 'inversion', 'cripto', 'blockchain', 'nfts', 'smart contracts', 'contratos inteligentes', 'noticias', 'actualidad', 'clima', 'horoscopo', 'viajes', 'itinerarios', 'vuelos', 'hoteles', 'guias turisticas', 'cocina', 'recetas', 'dieta', 'nutricion', 'fitness', 'yoga', 'meditacion', 'salud mental', 'terapia', 'mindfulness', 'sueno', 'biohacking', 'longevidad', 'genealogia', 'historia', 'filosofia', 'religion', 'espiritualidad', 'politica', 'sociologia', 'psicologia', 'derecho', 'leyes', 'jurisprudencia', 'medicina', 'diagnostico', 'anatomia', 'farmacologia', 'biologia', 'genetica', 'astronomia', 'espacio', 'nasa', 'fisica cuantica', 'energia', 'sostenibilidad', 'medio ambiente', 'cambio climatico', 'reciclaje', 'jardineria', 'agricultura', 'botanica', 'mascotas', 'perros', 'gatos', 'entrenamiento animal', 'veterinaria', 'bricolaje', 'diy', 'carpinteria', 'reparaciones', 'domotica', 'smart home', 'iot', 'hardware', 'gadgets', 'reviews', 'comparativas', 'precios', 'ofertas', 'cupones', 'compras', 'e-commerce', 'dropshipping', 'logistica', 'inventario', 'servicio al cliente', 'tickets', 'encuestas', 'feedback', 'testimonios', 'referidos', 'afiliados', 'monetizacion', 'patrocinios', 'influencers', 'streaming', 'twitch', 'gaming', 'videojuegos', 'mods', 'assets', 'texturas 4k', 'unreal engine', 'unity', 'godot', 'blender', 'maya', 'cinema 4d', 'after effects', 'premiere pro', 'photoshop', 'illustrator', 'figma', 'canva', 'zapier', 'make', 'ifttt', 'slack', 'discord', 'telegram', 'whatsapp', 'viralidad', 'algoritmos', 'analitica', 'metricas', 'kpis', 'conversion', 'landing page', 'embudos', 'funnel']
       };
 
       let matchesKeywords = false;
@@ -354,7 +352,7 @@ export default function Home() {
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-lg border-b border-slate-200/50 px-4 py-3 md:px-6 md:py-4 shadow-sm">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4 relative">
           <div className={`flex w-full md:w-auto items-center justify-between gap-2 ${isSearchFocused ? 'hidden md:flex' : 'flex'}`}>
-            <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('top')}>
+            <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('herramientas')}>
               <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-primary-500 via-accent-500 to-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-accent-500/20 flex-shrink-0">
                 <Sparkles className="w-4 h-4 md:w-5 md:h-5" />
               </div>
@@ -430,59 +428,85 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 py-6 md:py-10">
-        {/* Hero Section */}
-        <section className="relative flex flex-col justify-center text-center max-w-5xl mx-auto pt-10 pb-8 px-4 sm:pt-16 sm:pb-12 sm:px-8 min-h-[45vh] md:min-h-[60vh] rounded-3xl md:rounded-[2rem] overflow-hidden shadow-2xl mb-8 group">
-          <div className="absolute inset-0 z-0">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity duration-1000 mix-blend-multiply"
-            >
-              <source src="https://cdn.pixabay.com/video/2021/08/25/86270-593005898_large.mp4" type="video/mp4" />
-            </video>
-            <div className="absolute inset-0 bg-gradient-to-b from-slate-50/80 via-slate-50/95 to-slate-50 z-10"></div>
+      {/* Hero Section */}
+      <section className="relative flex flex-col justify-center text-center w-full pt-16 pb-12 px-4 sm:pt-24 sm:pb-20 sm:px-8 min-h-[45vh] md:min-h-[55vh] overflow-hidden shadow-sm mb-4 md:mb-8 group">
+        <div className="absolute inset-0 z-0">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity duration-1000 mix-blend-multiply"
+          >
+            <source src="https://cdn.pixabay.com/video/2021/08/25/86270-593005898_large.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-50/80 via-slate-50/95 to-slate-50 z-10"></div>
+        </div>
+
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} className="relative z-20">
+          <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-white/60 backdrop-blur-md border border-accent-200/50 text-accent-700 text-xs md:text-sm font-bold mb-6 md:mb-8 shadow-sm">
+            <Sparkles className="w-3 h-3 md:w-4 md:h-4" />
+            <span>Directorio gratuito actualizado 2026</span>
           </div>
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 mb-4 md:mb-6 tracking-tight md:tracking-tighter leading-[1.05]">
+            Descubre la <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-accent-500 to-indigo-600">IA ideal</span> <br className="hidden sm:block" /> para tu próximo proyecto
+          </h1>
+          <p className="text-base sm:text-lg md:text-2xl text-slate-600 font-medium mb-6 md:mb-8 leading-relaxed md:leading-relaxed max-w-3xl mx-auto px-2">
+            Explora nuestra colección curada de cientos de herramientas de Inteligencia Artificial gratis y freemium, organizadas por categoría para disparar tu productividad.
+          </p>
 
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} className="relative z-20">
-            <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-white/60 backdrop-blur-md border border-accent-200/50 text-accent-700 text-xs md:text-sm font-bold mb-6 md:mb-8 shadow-sm">
-              <Sparkles className="w-3 h-3 md:w-4 md:h-4" />
-              <span>Directorio gratuito actualizado 2026</span>
-            </div>
-            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 mb-4 md:mb-6 tracking-tight md:tracking-tighter leading-[1.05]">
-              Descubre la <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-accent-500 to-indigo-600">IA ideal</span> <br className="hidden sm:block" /> para tu próximo proyecto
-            </h1>
-            <p className="text-base sm:text-lg md:text-2xl text-slate-600 font-medium mb-8 md:mb-10 leading-relaxed md:leading-relaxed max-w-3xl mx-auto px-2">
-              Explora nuestra colección curada de cientos de herramientas de Inteligencia Artificial gratis y freemium, organizadas por categoría para disparar tu productividad.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4 mb-4 md:mt-8">
+          {/* Popular searches tags */}
+          <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 mb-8 md:mb-10 max-w-4xl mx-auto px-4 z-30 relative">
+            <span className="text-xs sm:text-sm font-bold text-slate-500 mr-1 sm:mr-2 flex items-center gap-1">
+              <Sparkles className="w-3.5 h-3.5 text-accent-400" /> Prueba buscar:
+            </span>
+            {[
+              { term: 'crear logos', icon: <Flame className="w-3 h-3 md:w-3.5 md:h-3.5" />, color: 'from-amber-100 to-orange-50 text-amber-700 border-amber-200 hover:border-amber-400 hover:shadow-amber-500/20' },
+              { term: 'python', icon: <Zap className="w-3 h-3 md:w-3.5 md:h-3.5" />, color: 'from-blue-100 to-indigo-50 text-blue-700 border-blue-200 hover:border-blue-400 hover:shadow-blue-500/20' },
+              { term: 'quitar fondo', icon: <Sparkles className="w-3 h-3 md:w-3.5 md:h-3.5" />, color: 'from-fuchsia-100 to-purple-50 text-fuchsia-700 border-fuchsia-200 hover:border-fuchsia-400 hover:shadow-fuchsia-500/20' },
+              { term: 'excel', icon: <TrendingUp className="w-3 h-3 md:w-3.5 md:h-3.5" />, color: 'from-emerald-100 to-green-50 text-emerald-700 border-emerald-200 hover:border-emerald-400 hover:shadow-emerald-500/20' },
+              { term: 'editar video', icon: <Lightbulb className="w-3 h-3 md:w-3.5 md:h-3.5" />, color: 'from-rose-100 to-red-50 text-rose-700 border-rose-200 hover:border-rose-400 hover:shadow-rose-500/20' }
+            ].map((item) => (
               <button
-                onClick={() => scrollToSection('blog-section')}
-                className="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 px-6 md:py-4 md:px-8 rounded-full transition-all shadow-lg hover:shadow-xl active:scale-95 text-sm md:text-base flex items-center justify-center gap-2"
+                key={item.term}
+                onClick={() => {
+                  setSearchTerm(item.term);
+                  scrollToSection('herramientas');
+                }}
+                className={`flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-[10px] sm:text-xs font-bold bg-gradient-to-br border transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 ${item.color}`}
               >
-                Ver Artículos y Guías <ArrowDown className="w-4 h-4 md:w-5 md:h-5" />
+                {item.icon}
+                {item.term}
               </button>
-              <button
-                onClick={() => scrollToSection('herramientas')}
-                className="w-full sm:w-auto bg-white/80 backdrop-blur border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-3.5 px-6 md:py-4 md:px-8 rounded-full transition-all shadow-sm hover:shadow-md hover:text-accent-600 active:scale-95 text-sm md:text-base flex items-center justify-center gap-2"
-              >
-                Explorar Directorio
-              </button>
-            </div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, y: [0, 10, 0] }}
-              transition={{ delay: 1, duration: 2, repeat: Infinity }}
-              className="hidden sm:flex justify-center mt-2 md:mt-4 text-accent-500/80 cursor-pointer w-fit mx-auto"
+            ))}
+          </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4 mb-4 md:mt-8">
+            <button
               onClick={() => scrollToSection('herramientas')}
+              className="w-full sm:w-auto bg-gradient-to-r from-primary-500 via-accent-500 to-indigo-600 hover:from-primary-600 hover:via-accent-600 hover:to-indigo-700 text-white font-black py-4 px-8 md:py-5 md:px-10 rounded-full transition-all shadow-lg shadow-accent-500/30 hover:shadow-accent-500/50 hover:scale-105 active:scale-95 text-base md:text-lg flex items-center justify-center gap-2 border-[3px] border-white/20"
             >
-              <ChevronDown className="w-10 h-10" />
-            </motion.div>
+              🪄 Ver IAs Ahora <ArrowDown className="w-5 h-5 md:w-6 md:h-6 hover:animate-bounce" />
+            </button>
+            <button
+              onClick={() => scrollToSection('blog-section')}
+              className="w-full sm:w-auto bg-white/80 backdrop-blur border border-slate-200 hover:border-slate-300 text-slate-700 font-bold py-3.5 px-6 md:py-4 md:px-8 rounded-full transition-all shadow-sm hover:shadow-md hover:bg-slate-50 hover:text-accent-600 active:scale-95 text-sm md:text-base flex items-center justify-center gap-2"
+            >
+              Ver Artículos y Guías <BookOpen className="w-4 h-4 md:w-5 md:h-5" />
+            </button>
+          </div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, y: [0, 10, 0] }}
+            transition={{ delay: 1, duration: 2, repeat: Infinity }}
+            className="hidden sm:flex justify-center mt-2 md:mt-4 text-accent-500/80 cursor-pointer w-fit mx-auto"
+            onClick={() => scrollToSection('herramientas')}
+          >
+            <ChevronDown className="w-10 h-10" />
           </motion.div>
-        </section>
+        </motion.div>
+      </section>
 
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 py-2 md:py-6">
         <AdSensePlaceholder type="horizontal" />
 
         {/* AI Facts & Advantages Section */}
@@ -682,11 +706,11 @@ export default function Home() {
                 {displayCount < filteredTools.length && (
                   <div className="flex justify-center mt-8 md:mt-10">
                     <button
-                      onClick={() => setDisplayCount(prev => prev + 24)}
+                      onClick={() => setDisplayCount(prev => prev + 15)}
                       className="bg-white border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-3 px-8 rounded-full shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center gap-2"
                     >
                       <SearchIcon className="w-4 h-4 text-accent-500" />
-                      Cargar {Math.min(24, filteredTools.length - displayCount)} más
+                      Cargar {Math.min(15, filteredTools.length - displayCount)} más
                     </button>
                   </div>
                 )}
@@ -760,144 +784,38 @@ export default function Home() {
                   </div>
                 </motion.div>
 
-                {/* Categorized Tools (Rest of Tools) */}
-                {categories.filter(c => c !== 'Todos').slice(0, displayCategoryCount).map((category, index) => {
-                  const categoryTools = otherTools.filter(t => t.sector === category);
-                  if (categoryTools.length === 0) return null;
-
-                  return (
-                    <div key={category}>
-                      {index === 2 && (
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }}
-                          whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-                          viewport={{ once: true, margin: "-100px" }}
-                          transition={{ duration: 0.8 }}
-                          className="w-full h-32 md:h-48 rounded-3xl overflow-hidden my-10 relative shadow-sm group"
-                        >
-                          <div className="absolute inset-0 bg-gradient-to-r from-fuchsia-900/60 via-purple-900/40 to-indigo-900/60 z-10 mix-blend-multiply border border-white/10 rounded-3xl transition-opacity group-hover:opacity-80"></div>
-                          <img
-                            src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=1200"
-                            alt="Data Matrix Cyber"
-                            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                          />
-                          <div className="absolute inset-0 flex items-center justify-center z-20">
-                            <p className="text-white/90 font-medium tracking-[0.2em] uppercase text-xs md:text-sm drop-shadow-md">Precisión y Eficiencia</p>
-                          </div>
-                        </motion.div>
-                      )}
-                      {index === 5 && (
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }}
-                          whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-                          viewport={{ once: true, margin: "-100px" }}
-                          transition={{ duration: 0.8 }}
-                          className="w-full h-32 md:h-48 rounded-3xl overflow-hidden my-10 relative shadow-sm group"
-                        >
-                          <div className="absolute inset-0 bg-gradient-to-r from-accent-900/60 via-indigo-900/40 to-primary-900/60 z-10 mix-blend-multiply border border-white/10 rounded-3xl transition-opacity group-hover:opacity-80"></div>
-                          <img
-                            src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=1200"
-                            alt="Creative Mind"
-                            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                          />
-                          <div className="absolute inset-0 flex items-center justify-center z-20">
-                            <p className="text-white/90 font-medium tracking-[0.2em] uppercase text-xs md:text-sm drop-shadow-md">Creatividad Ilimitada</p>
-                          </div>
-                        </motion.div>
-                      )}
-                      {index === 8 && (
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }}
-                          whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-                          viewport={{ once: true, margin: "-100px" }}
-                          transition={{ duration: 0.8 }}
-                          className="w-full h-32 md:h-48 rounded-3xl overflow-hidden my-10 relative shadow-sm group"
-                        >
-                          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/60 via-emerald-900/40 to-primary-900/60 z-10 mix-blend-multiply border border-white/10 rounded-3xl transition-opacity group-hover:opacity-80"></div>
-                          <img
-                            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-                            alt="Circuit Board"
-                            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                          />
-                          <div className="absolute inset-0 flex items-center justify-center z-20">
-                            <p className="text-white/90 font-medium tracking-[0.2em] uppercase text-xs md:text-sm drop-shadow-md">Conexión Global</p>
-                          </div>
-                        </motion.div>
-                      )}
-                      {index === 10 && (
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }}
-                          whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-                          viewport={{ once: true, margin: "-100px" }}
-                          transition={{ duration: 0.8 }}
-                          className="w-full h-32 md:h-48 rounded-3xl overflow-hidden my-10 relative shadow-sm group"
-                        >
-                          <div className="absolute inset-0 bg-gradient-to-r from-teal-900/60 via-blue-900/40 to-indigo-900/60 z-10 mix-blend-multiply border border-white/10 rounded-3xl transition-opacity group-hover:opacity-80"></div>
-                          <img
-                            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200"
-                            alt="Tech Space Networking"
-                            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                          />
-                          <div className="absolute inset-0 flex items-center justify-center z-20">
-                            <p className="text-white/90 font-medium tracking-[0.2em] uppercase text-xs md:text-sm drop-shadow-md">Potencia Sin Límites</p>
-                          </div>
-                        </motion.div>
-                      )}
-                      {index === 12 && (
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }}
-                          whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-                          viewport={{ once: true, margin: "-100px" }}
-                          transition={{ duration: 0.8 }}
-                          className="w-full h-32 md:h-48 rounded-3xl overflow-hidden my-10 relative shadow-sm group"
-                        >
-                          <div className="absolute inset-0 bg-gradient-to-r from-amber-900/60 via-orange-900/40 to-red-900/60 z-10 mix-blend-multiply border border-white/10 rounded-3xl transition-opacity group-hover:opacity-80"></div>
-                          <img
-                            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200"
-                            alt="Data Neon Abstract"
-                            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                          />
-                          <div className="absolute inset-0 flex items-center justify-center z-20">
-                            <p className="text-white/90 font-medium tracking-[0.2em] uppercase text-xs md:text-sm drop-shadow-md">Soluciones Prácticas</p>
-                          </div>
-                        </motion.div>
-                      )}
-                      <section className="pt-2 md:pt-4 mt-6 md:mt-8 first:mt-0">
-                        <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex items-center gap-2 mb-4 md:mb-6 border-b border-slate-200/60 pb-2 md:pb-3">
-                          <Sparkles className="w-4 h-4 md:w-5 md:h-5 text-accent-500" />
-                          <h2 className="text-xl md:text-2xl font-bold text-slate-800">{category}</h2>
-                        </motion.div>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                          {categoryTools.map((tool) => (
-                            <ToolCard
-                              key={tool.id}
-                              tool={tool}
-                              onClick={setSelectedTool}
-                              isBookmarked={bookmarks.includes(tool.id)}
-                              onBookmark={toggleBookmark}
-                              upvotes={upvotes[tool.id]}
-                              hasUpvoted={userUpvoted.includes(tool.id)}
-                              onUpvote={handleUpvote}
-                            />
-                          ))}
-                        </div>
-                      </section>
-                    </div>
-                  );
-                })}
-
-                {/* Load More Categories Button */}
-                {displayCategoryCount < categories.filter(c => c !== 'Todos').length && (
-                  <div className="flex justify-center pt-6 pb-6 border-t border-slate-100">
-                    <button
-                      onClick={() => setDisplayCategoryCount(prev => prev + 3)}
-                      className="bg-white border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-3 px-8 rounded-full shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center gap-2"
-                    >
-                      <Sparkles className="w-4 h-4 text-accent-500" />
-                      Cargar más categorías
-                    </button>
+                {/* All Other Tools Section */}
+                <section className="pt-2 md:pt-4 mt-6 md:mt-8">
+                  <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex items-center gap-2 mb-4 md:mb-6 border-b border-slate-200/60 pb-2 md:pb-3">
+                    <Sparkles className="w-4 h-4 md:w-5 md:h-5 text-accent-500" />
+                    <h2 className="text-xl md:text-2xl font-bold text-slate-800">Explorar Directorio</h2>
+                  </motion.div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                    {otherTools.slice(0, displayCount).map((tool) => (
+                      <ToolCard
+                        key={tool.id}
+                        tool={tool}
+                        onClick={setSelectedTool}
+                        isBookmarked={bookmarks.includes(tool.id)}
+                        onBookmark={toggleBookmark}
+                        upvotes={upvotes[tool.id]}
+                        hasUpvoted={userUpvoted.includes(tool.id)}
+                        onUpvote={handleUpvote}
+                      />
+                    ))}
                   </div>
-                )}
+                  {displayCount < otherTools.length && (
+                    <div className="flex justify-center mt-8 md:mt-10">
+                      <button
+                        onClick={() => setDisplayCount(prev => prev + 15)}
+                        className="bg-white border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-3 px-4 md:px-8 rounded-full shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center gap-2 w-full md:w-auto justify-center"
+                      >
+                        <SearchIcon className="w-4 h-4 text-accent-500" />
+                        Cargar {Math.min(15, otherTools.length - displayCount)} más
+                      </button>
+                    </div>
+                  )}
+                </section>
               </div>
             )}
           </div>
