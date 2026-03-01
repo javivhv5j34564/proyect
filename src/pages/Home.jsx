@@ -186,6 +186,13 @@ export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [displayCount, setDisplayCount] = useState(24);
+  const [displayCategoryCount, setDisplayCategoryCount] = useState(3);
+
+  useEffect(() => {
+    setDisplayCount(24);
+    setDisplayCategoryCount(3);
+  }, [searchTerm, selectedCategory, selectedPricing, showFavorites]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -372,18 +379,27 @@ export default function Home() {
 
           <AnimatePresence>
             {isMobileMenuOpen && (
-              <motion.nav
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: 'auto', opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                className="md:hidden flex flex-col w-full overflow-hidden absolute top-full left-0 bg-white/95 backdrop-blur-md shadow-xl rounded-b-2xl border-t border-slate-100"
-              >
-                <div className="flex flex-col p-4 gap-2">
-                  <button onClick={() => scrollToSection('herramientas')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Directorio de IAs</button>
-                  <button onClick={() => scrollToSection('blog-section')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Guías y Blog</button>
-                  <button onClick={() => scrollToSection('footer-contacto')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Contacto</button>
-                </div>
-              </motion.nav>
+              <>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="md:hidden absolute top-full left-0 w-full h-screen bg-slate-900/60 backdrop-blur-sm z-30"
+                />
+                <motion.nav
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: 'auto', opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  className="md:hidden flex flex-col w-full overflow-hidden absolute top-full left-0 bg-white/95 shadow-xl rounded-b-2xl border-t border-slate-100 z-40"
+                >
+                  <div className="flex flex-col p-4 gap-2">
+                    <button onClick={() => scrollToSection('herramientas')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Directorio de IAs</button>
+                    <button onClick={() => scrollToSection('blog-section')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Guías y Blog</button>
+                    <button onClick={() => scrollToSection('footer-contacto')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Contacto</button>
+                  </div>
+                </motion.nav>
+              </>
             )}
           </AnimatePresence>
 
@@ -627,21 +643,34 @@ export default function Home() {
         ) : (
           <div>
             {!showSections ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                <AnimatePresence>
-                  {filteredTools.map((tool) => (
-                    <ToolCard
-                      key={tool.id}
-                      tool={tool}
-                      onClick={setSelectedTool}
-                      isBookmarked={bookmarks.includes(tool.id)}
-                      onBookmark={toggleBookmark}
-                      upvotes={upvotes[tool.id]}
-                      hasUpvoted={userUpvoted.includes(tool.id)}
-                      onUpvote={handleUpvote}
-                    />
-                  ))}
-                </AnimatePresence>
+              <div className="flex flex-col">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                  <AnimatePresence>
+                    {filteredTools.slice(0, displayCount).map((tool) => (
+                      <ToolCard
+                        key={tool.id}
+                        tool={tool}
+                        onClick={setSelectedTool}
+                        isBookmarked={bookmarks.includes(tool.id)}
+                        onBookmark={toggleBookmark}
+                        upvotes={upvotes[tool.id]}
+                        hasUpvoted={userUpvoted.includes(tool.id)}
+                        onUpvote={handleUpvote}
+                      />
+                    ))}
+                  </AnimatePresence>
+                </div>
+                {displayCount < filteredTools.length && (
+                  <div className="flex justify-center mt-8 md:mt-10">
+                    <button
+                      onClick={() => setDisplayCount(prev => prev + 24)}
+                      className="bg-white border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-3 px-8 rounded-full shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center gap-2"
+                    >
+                      <SearchIcon className="w-4 h-4 text-accent-500" />
+                      Cargar {Math.min(24, filteredTools.length - displayCount)} más
+                    </button>
+                  </div>
+                )}
               </div>
             ) : (
               <div className="space-y-12">
@@ -713,7 +742,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* Categorized Tools (Rest of Tools) */}
-                {categories.filter(c => c !== 'Todos').map((category, index) => {
+                {categories.filter(c => c !== 'Todos').slice(0, displayCategoryCount).map((category, index) => {
                   const categoryTools = otherTools.filter(t => t.sector === category);
                   if (categoryTools.length === 0) return null;
 
@@ -837,6 +866,19 @@ export default function Home() {
                     </div>
                   );
                 })}
+
+                {/* Load More Categories Button */}
+                {displayCategoryCount < categories.filter(c => c !== 'Todos').length && (
+                  <div className="flex justify-center pt-6 pb-6 border-t border-slate-100">
+                    <button
+                      onClick={() => setDisplayCategoryCount(prev => prev + 3)}
+                      className="bg-white border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-3 px-8 rounded-full shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center gap-2"
+                    >
+                      <Sparkles className="w-4 h-4 text-accent-500" />
+                      Cargar más categorías
+                    </button>
+                  </div>
+                )}
               </div>
             )}
           </div>
