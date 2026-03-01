@@ -575,6 +575,25 @@ export default function Home() {
           </div>
         </section>
 
+        {/* SEO Text Section for AdSense (Combats Thin Content) */}
+        <section className="bg-white rounded-3xl p-6 md:p-10 shadow-sm border border-slate-200/60 mb-12">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 mb-4">¿Qué es Directorio AI y cómo te ayuda?</h2>
+            <div className="prose prose-slate md:prose-lg max-w-none text-slate-600 space-y-4">
+              <p>
+                En <strong>Directorio AI</strong>, nuestro objetivo es recopilar, analizar y clasificar las mejores herramientas de Inteligencia Artificial disponibles en la actualidad. Sabemos que el ecosistema técnico cambia a diario, y encontrar la IA gratuita o freemium perfecta para tu negocio, tus estudios o tu flujo creativo puede ser una tarea exhaustiva. Por eso hacemos el trabajo pesado por ti.
+              </p>
+              <p>
+                Cada herramienta listada en nuestro directorio pasa por un filtro de calidad donde evaluamos su utilidad real, si posee un <em>plan gratuito válido</em> y qué tipo de problemas resuelve. Desde <strong>generadores de texto (LLMs)</strong> que te ayudan a redactar correos en segundos, hasta avanzados <strong>generadores de imágenes o vídeo</strong> que pueden crear el prototipo visual de tu próxima gran idea sin necesidad de saber programar.
+              </p>
+              <h3 className="text-xl font-bold text-slate-800 mt-6 mb-3">Cómo aprovechar nuestras categorías</h3>
+              <p>
+                Utiliza los filtros a continuación para navegar por nuestro inventario. Si eres un creador de contenido, la sección de <strong>Deseño Visual</strong> o <strong>Vídeo</strong> será tu mejor aliada. Si buscas optimizar la gestión de tu empresa, explora <strong>Negocios y Productividad</strong> para encontrar CRMs potenciados por IA y agentes automatizados. Nuestro directorio se mantiene actualizado para que nunca te quedes atrás en esta revolución tecnológica.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Categories / Filters */}
         <motion.section
           id="herramientas"

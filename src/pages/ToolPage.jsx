@@ -4,6 +4,7 @@ import { tools } from '../data';
 import { useSEO } from '../hooks/useSEO';
 import { ArrowLeft, ExternalLink, Zap, Star, Share2, Twitter, Copy, Check, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { AdSensePlaceholder } from '../components/AdSensePlaceholder';
 
 export default function ToolPage() {
     const { id } = useParams();
@@ -85,7 +86,7 @@ export default function ToolPage() {
     };
 
     const handleCopyLink = () => {
-        navigator.clipboard.writeText(window.location.href);
+        navigator.clipboard.writeText(tool.url);
         setIsCopied(true);
         setTimeout(() => setIsCopied(false), 2000);
     };
@@ -181,8 +182,13 @@ export default function ToolPage() {
                         <p className="text-slate-700 font-medium text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
                             {tool.description}
                         </p>
-                        <div className="bg-slate-50 p-5 md:p-8 rounded-2xl border border-slate-100 text-slate-600 leading-relaxed">
-                            {tool.longDescription}
+                        <div className="my-8">
+                            <AdSensePlaceholder type="horizontal" />
+                        </div>
+                        <h3 className="text-lg md:text-xl font-bold text-slate-800 mb-3 md:mb-4">Casos de Uso y Detalles</h3>
+                        <div className="bg-slate-50 p-5 md:p-8 rounded-2xl border border-slate-100 text-slate-600 leading-relaxed space-y-4">
+                            <p>{tool.longDescription}</p>
+                            <p className="text-sm text-slate-500 italic mt-4 pt-4 border-t border-slate-200">Nota: Integrar este tipo de herramientas en tu flujo de trabajo diario puede ahorrar de 2 a 5 horas semanales, dependiendo del grado de automatización que apliques. Te sugerimos siempre revisar los términos del plan gratuito de {tool.name} antes de implementarlo a nivel empresarial.</p>
                         </div>
                     </div>
 

@@ -4,6 +4,8 @@ import Footer from './components/Footer';
 import { PrivacyPolicy, CookiesPolicy, LegalNotice, Contact } from './pages/LegalPages';
 import ToolPage from './pages/ToolPage';
 import { SubmitToolPage } from './pages/SubmitToolPage';
+import About from './pages/About';
+import { CookieBanner } from './components/CookieBanner';
 
 function App() {
   return (
@@ -15,10 +17,12 @@ function App() {
           <Route path="/cookies" element={<CookiesPolicy />} />
           <Route path="/aviso-legal" element={<LegalNotice />} />
           <Route path="/contacto" element={<Contact />} />
+          <Route path="/sobre-nosotros" element={<About />} />
           <Route path="/herramienta/:id" element={<ToolPage />} />
           <Route path="/enviar-ia" element={<SubmitToolPage />} />
         </Routes>
       </div>
+      <CookieBanner />
       <Footer />
     </div>
   );
