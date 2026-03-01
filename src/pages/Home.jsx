@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from 'react';
-import { Search, Sparkles, X, ExternalLink, ChevronRight, Zap, Flame, Clock, ChevronDown, TrendingUp, Lightbulb, Brain, Bookmark, ChevronUp, BookOpen, ArrowRight } from 'lucide-react';
+import { Search, Sparkles, X, ExternalLink, ChevronRight, Zap, Flame, Clock, ChevronDown, TrendingUp, Lightbulb, Brain, Bookmark, ChevronUp, BookOpen, ArrowRight, ArrowDown, ArrowUp, Menu } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { tools, categories } from '../data';
@@ -183,6 +183,37 @@ export default function Home() {
   const [selectedBlogPost, setSelectedBlogPost] = useState(null);
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [isLoadingSub, setIsLoadingSub] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToSection = (id) => {
+    setIsMobileMenuOpen(false);
+    if (id === 'top') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 80;
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
 
   useSEO({
     title: 'Directorio de Inteligencia Artificial (IA) | Inicio',
@@ -240,8 +271,41 @@ export default function Home() {
   // Filter & Sort Logic
   const filteredTools = useMemo(() => {
     return tools.filter(tool => {
-      const matchesSearch = tool.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        tool.description.toLowerCase().includes(searchTerm.toLowerCase());
+      const searchStr = searchTerm.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      const nName = tool.name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      const nDesc = tool.description.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      const nLong = (tool.longDescription || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      const nSector = tool.sector.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+      const keywords = {
+        'programacion': ['programar', 'codigo', 'codificar', 'web', 'desarrollo', 'app', 'python', 'javascript'],
+        'imagen y diseno': ['fotos', 'foto', 'imagenes', 'imagen', 'dibujar', 'diseno', 'arte', 'logo', 'logotipos', 'dibujos'],
+        'escritura y productividad': ['escribir', 'texto', 'redactar', 'resumir', 'ensayo', 'tarea', 'correos', 'email'],
+        'video y animacion': ['video', 'animacion', 'cortometraje', 'videos', 'editar', 'clips', 'pelicula'],
+        'audio y musica': ['musica', 'audio', 'cancion', 'canciones', 'voz', 'cantar', 'ritmo', 'melodia'],
+        'chatbots y asistentes': ['hablar', 'conversar', 'chat', 'preguntar', 'dudas', 'ayuda'],
+        'investigacion y datos': ['buscar', 'informacion', 'apuntes', 'pdf', 'excel', 'graficos', 'estudiar']
+      };
+
+      let matchesKeywords = false;
+      if (searchStr.length > 2) {
+        for (const [keySector, terms] of Object.entries(keywords)) {
+          if (terms.some(term => searchStr.includes(term))) {
+            if (nSector.includes(keySector)) {
+              matchesKeywords = true;
+              break;
+            }
+          }
+        }
+      }
+
+      const matchesSearch = searchStr === '' ||
+        nName.includes(searchStr) ||
+        nDesc.includes(searchStr) ||
+        nLong.includes(searchStr) ||
+        nSector.includes(searchStr) ||
+        matchesKeywords;
+
       const matchesCategory = selectedCategory === 'Todos' || tool.sector === selectedCategory;
       const matchesFavorites = showFavorites ? bookmarks.includes(tool.id) : true;
 
@@ -279,19 +343,50 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
       {/* Header */}
-      <header className="sticky top-0 z-30 glass border-b border-slate-200/50 px-4 py-3 md:px-6 md:py-4">
+      <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-lg border-b border-slate-200/50 px-4 py-3 md:px-6 md:py-4 shadow-sm">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-primary-500 via-accent-500 to-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-accent-500/20">
-              <Sparkles className="w-4 h-4 md:w-5 md:h-5" />
+          <div className="flex w-full md:w-auto items-center justify-between gap-2">
+            <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('top')}>
+              <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-primary-500 via-accent-500 to-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-accent-500/20">
+                <Sparkles className="w-4 h-4 md:w-5 md:h-5" />
+              </div>
+              <div>
+                <h1 className="text-lg md:text-xl font-bold tracking-tight">Directorio AI</h1>
+                <p className="text-[10px] md:text-xs text-slate-500 font-medium tracking-wide uppercase hidden sm:block">Las mejores herramientas</p>
+              </div>
             </div>
-            <div>
-              <h1 className="text-lg md:text-xl font-bold tracking-tight">Directorio AI</h1>
-              <p className="text-[10px] md:text-xs text-slate-500 font-medium tracking-wide uppercase">Las mejores herramientas</p>
-            </div>
+            <button
+              className="md:hidden p-2 text-slate-600 hover:bg-slate-100 rounded-lg transition-colors focus:outline-none"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
           </div>
 
-          <div className="relative w-full md:w-96 group">
+          <nav className="hidden md:flex items-center gap-6 font-semibold text-sm text-slate-600">
+            <button onClick={() => scrollToSection('herramientas')} className="hover:text-accent-600 transition-colors">Directorio</button>
+            <button onClick={() => scrollToSection('blog-section')} className="hover:text-accent-600 transition-colors">Guías y Blog</button>
+            <button onClick={() => scrollToSection('footer-contacto')} className="hover:text-accent-600 transition-colors">Contacto</button>
+          </nav>
+
+          <AnimatePresence>
+            {isMobileMenuOpen && (
+              <motion.nav
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: 'auto', opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                className="md:hidden flex flex-col w-full overflow-hidden"
+              >
+                <div className="flex flex-col gap-1 py-2 border-t border-slate-100 mt-2">
+                  <button onClick={() => scrollToSection('herramientas')} className="w-full text-left px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-lg transition-all">Directorio de IAs</button>
+                  <button onClick={() => scrollToSection('blog-section')} className="w-full text-left px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-lg transition-all">Guías y Blog</button>
+                  <button onClick={() => scrollToSection('footer-contacto')} className="w-full text-left px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-lg transition-all">Contacto</button>
+                </div>
+              </motion.nav>
+            )}
+          </AnimatePresence>
+
+          <div className="relative w-full md:w-auto md:min-w-[300px] lg:min-w-[400px] group">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 group-focus-within:text-accent-500 transition-colors" />
             <input
               type="text"
@@ -331,11 +426,26 @@ export default function Home() {
             <p className="text-base sm:text-lg md:text-2xl text-slate-600 font-medium mb-8 md:mb-10 leading-relaxed md:leading-relaxed max-w-3xl mx-auto px-2">
               Explora nuestra colección curada de cientos de herramientas de Inteligencia Artificial gratis y freemium, organizadas por categoría para disparar tu productividad.
             </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4 mb-4 md:mt-8">
+              <button
+                onClick={() => scrollToSection('blog-section')}
+                className="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 px-6 md:py-4 md:px-8 rounded-full transition-all shadow-lg hover:shadow-xl active:scale-95 text-sm md:text-base flex items-center justify-center gap-2"
+              >
+                Ver Artículos y Guías <ArrowDown className="w-4 h-4 md:w-5 md:h-5" />
+              </button>
+              <button
+                onClick={() => scrollToSection('herramientas')}
+                className="w-full sm:w-auto bg-white/80 backdrop-blur border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-3.5 px-6 md:py-4 md:px-8 rounded-full transition-all shadow-sm hover:shadow-md hover:text-accent-600 active:scale-95 text-sm md:text-base flex items-center justify-center gap-2"
+              >
+                Explorar Directorio
+              </button>
+            </div>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, y: [0, 10, 0] }}
               transition={{ delay: 1, duration: 2, repeat: Infinity }}
-              className="flex justify-center mt-2 md:mt-4 text-accent-500/80"
+              className="hidden sm:flex justify-center mt-2 md:mt-4 text-accent-500/80 cursor-pointer w-fit mx-auto"
+              onClick={() => scrollToSection('herramientas')}
             >
               <ChevronDown className="w-10 h-10" />
             </motion.div>
@@ -436,10 +546,11 @@ export default function Home() {
 
         {/* Categories / Filters */}
         <motion.section
+          id="herramientas"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-10 flex flex-col gap-4"
+          className="mb-10 flex flex-col gap-4 scroll-mt-24"
         >
           {/* Top Row: Precio y Favoritos */}
           <div className="flex flex-wrap items-center gap-2">
@@ -738,11 +849,12 @@ export default function Home() {
 
         {/* SEO Blog Cards Section */}
         <motion.section
+          id="blog-section"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.7 }}
-          className="mt-20 mb-10"
+          className="mt-20 mb-10 scroll-mt-24"
         >
           <div className="flex items-center gap-2 md:gap-3 mb-6 md:mb-8">
             <div className="bg-accent-100 p-2 md:p-2.5 rounded-xl">
@@ -855,6 +967,22 @@ export default function Home() {
           </div>
         </motion.section>
       </main>
+
+      {/* Floating Scroll To Top Button */}
+      <AnimatePresence>
+        {showScrollTop && (
+          <motion.button
+            initial={{ opacity: 0, scale: 0.5, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.5, y: 20 }}
+            onClick={() => scrollToSection('top')}
+            className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-40 p-3 md:p-4 bg-accent-500 hover:bg-accent-600 text-white rounded-full shadow-2xl hover:shadow-accent-500/30 transition-all active:scale-90 flex items-center justify-center group border border-accent-400"
+            title="Volver al principio"
+          >
+            <ArrowUp className="w-5 h-5 md:w-6 md:h-6 group-hover:-translate-y-1 transition-transform" />
+          </motion.button>
+        )}
+      </AnimatePresence>
 
       {/* Side Drawer Overlay & Panel */}
       <AnimatePresence>
