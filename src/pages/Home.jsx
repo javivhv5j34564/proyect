@@ -124,16 +124,11 @@ const ToolCard = ({ tool, onClick, customBgClass = "bg-white", borderClass = "bo
 
     <button
       onClick={(e) => onBookmark(e, tool.id)}
-      className="absolute top-4 right-4 md:top-5 md:right-5 z-20 p-1.5 md:p-2 rounded-full bg-slate-50/80 hover:bg-slate-100 backdrop-blur border border-slate-200 text-slate-400 hover:text-accent-500 transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100 shadow-sm"
+      className="absolute top-4 right-4 md:top-5 md:right-5 z-20 p-1.5 md:p-2 rounded-full bg-slate-50/80 hover:bg-slate-100 backdrop-blur border border-slate-200 text-slate-400 hover:text-accent-500 transition-all opacity-100 shadow-sm"
       title="Guardar en favoritos"
     >
       <Bookmark className={`w-3.5 h-3.5 md:w-4 md:h-4 ${isBookmarked ? 'fill-accent-500 text-accent-500' : ''}`} />
     </button>
-    {isBookmarked && (
-      <div className="absolute top-4 right-4 md:top-5 md:right-5 z-10 p-1.5 md:p-2 rounded-full text-accent-500 opacity-100 md:group-hover:opacity-0 transition-opacity">
-        <Bookmark className="w-3.5 h-3.5 md:w-4 md:h-4 fill-accent-500 text-accent-500" />
-      </div>
-    )}
 
     <div className="flex justify-between items-start mb-3 md:mb-4 relative z-10">
       <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center bg-white border border-slate-100 overflow-hidden group-hover:scale-105 transition-transform shadow-sm text-2xl md:text-3xl">
