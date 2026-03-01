@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from 'react';
-import { Search, Sparkles, X, ExternalLink, ChevronRight, Zap, Flame, Clock, ChevronDown, TrendingUp, Lightbulb, Brain, Bookmark, ChevronUp, BookOpen, ArrowRight, ArrowDown, ArrowUp, Menu } from 'lucide-react';
+import { Search, Sparkles, X, ExternalLink, ChevronRight, Zap, Flame, Clock, ChevronDown, TrendingUp, Lightbulb, Brain, Bookmark, ChevronUp, BookOpen, ArrowRight, ArrowDown, ArrowUp, Menu, Search as SearchIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { tools, categories } from '../data';
@@ -185,6 +185,7 @@ export default function Home() {
   const [isLoadingSub, setIsLoadingSub] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [isSearchFocused, setIsSearchFocused] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -344,10 +345,10 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
       {/* Header */}
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-lg border-b border-slate-200/50 px-4 py-3 md:px-6 md:py-4 shadow-sm">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
-          <div className="flex w-full md:w-auto items-center justify-between gap-2">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4 relative">
+          <div className={`flex w-full md:w-auto items-center justify-between gap-2 ${isSearchFocused ? 'hidden md:flex' : 'flex'}`}>
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('top')}>
-              <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-primary-500 via-accent-500 to-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-accent-500/20">
+              <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-primary-500 via-accent-500 to-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-accent-500/20 flex-shrink-0">
                 <Sparkles className="w-4 h-4 md:w-5 md:h-5" />
               </div>
               <div>
@@ -375,26 +376,40 @@ export default function Home() {
                 initial={{ height: 0, opacity: 0 }}
                 animate={{ height: 'auto', opacity: 1 }}
                 exit={{ height: 0, opacity: 0 }}
-                className="md:hidden flex flex-col w-full overflow-hidden"
+                className="md:hidden flex flex-col w-full overflow-hidden absolute top-full left-0 bg-white/95 backdrop-blur-md shadow-xl rounded-b-2xl border-t border-slate-100"
               >
-                <div className="flex flex-col gap-1 py-2 border-t border-slate-100 mt-2">
-                  <button onClick={() => scrollToSection('herramientas')} className="w-full text-left px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-lg transition-all">Directorio de IAs</button>
-                  <button onClick={() => scrollToSection('blog-section')} className="w-full text-left px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-lg transition-all">Guías y Blog</button>
-                  <button onClick={() => scrollToSection('footer-contacto')} className="w-full text-left px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-lg transition-all">Contacto</button>
+                <div className="flex flex-col p-4 gap-2">
+                  <button onClick={() => scrollToSection('herramientas')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Directorio de IAs</button>
+                  <button onClick={() => scrollToSection('blog-section')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Guías y Blog</button>
+                  <button onClick={() => scrollToSection('footer-contacto')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Contacto</button>
                 </div>
               </motion.nav>
             )}
           </AnimatePresence>
 
-          <div className="relative w-full md:w-auto md:min-w-[300px] lg:min-w-[400px] group">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 group-focus-within:text-accent-500 transition-colors" />
-            <input
-              type="text"
-              placeholder="Buscar por nombre, tarea o necesidad..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full bg-white border border-slate-200 rounded-full py-2.5 pl-10 pr-4 outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500 transition-all shadow-sm group-hover:shadow-md"
-            />
+          <div className="relative w-full md:w-auto md:min-w-[300px] lg:min-w-[400px] group flex items-center">
+            {isSearchFocused && (
+              <button
+                className="md:hidden mr-2 p-2 text-slate-500 hover:bg-slate-100 rounded-full"
+                onClick={() => setIsSearchFocused(false)}
+              >
+                <ArrowRight className="w-5 h-5 rotate-180" />
+              </button>
+            )}
+            <div className="relative w-full">
+              <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 group-focus-within:text-accent-500 transition-colors" />
+              <input
+                type="text"
+                placeholder="Buscar (ej: programar, hacer logos...)"
+                value={searchTerm}
+                onFocus={() => setIsSearchFocused(true)}
+                onBlur={() => {
+                  if (!searchTerm) setIsSearchFocused(false);
+                }}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full bg-white border border-slate-200 rounded-full py-2.5 pl-10 pr-4 outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500 transition-all shadow-sm group-hover:shadow-md text-sm md:text-base"
+              />
+            </div>
           </div>
         </div>
       </header>
@@ -584,12 +599,12 @@ export default function Home() {
           <div className="w-full h-px bg-slate-200/60 my-1"></div>
 
           {/* Bottom Row: Categorías */}
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="flex overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap items-center gap-2 scrollbar-hide no-scrollbar">
             {categories.map(cat => (
               <button
                 key={cat}
                 onClick={() => { setSelectedCategory(cat); setShowFavorites(false); }}
-                className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all ${selectedCategory === cat && !showFavorites
+                className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all whitespace-nowrap flex-shrink-0 ${selectedCategory === cat && !showFavorites
                   ? 'bg-accent-600 text-white shadow-md shadow-accent-500/20 scale-105'
                   : 'bg-white text-slate-600 border border-slate-200 hover:border-accent-200 hover:bg-accent-50 hover:text-accent-600'
                   }`}
