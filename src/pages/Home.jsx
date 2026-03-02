@@ -351,34 +351,11 @@ export default function Home({ searchTerm, setSearchTerm }) {
       const nLong = (tool.longDescription || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       const nSector = tool.sector.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
-      const keywords = {
-        'programacion': ['programar', 'codigo', 'codificar', 'web', 'desarrollo', 'app', 'python', 'javascript', 'html', 'css', 'software', 'sql', 'java', 'c#', 'debugging', 'errores', 'documentacion', 'crear apps', 'crear webs', 'no-code', 'codigo abierto', 'open source', 'extension', 'navegador', 'auditoria de codigo', 'refactorizacion', 'scripts', 'scraping', 'mineria de datos', 'big data', 'machine learning', 'deep learning', 'redes neuronales', 'entrenamiento de modelos', 'datasets', 'prompts', 'ingenieria de prompts', 'IA para programar en Python', 'generador de código Java con IA', 'asistente de programación para principiantes', 'IA para encontrar errores en el código', 'depurador de scripts con inteligencia artificial', 'IA para crear aplicaciones sin saber programar', 'generador de consultas SQL con IA', 'IA para documentar funciones de código', 'traductor de lenguajes de programación con IA'],
-        'imagen y diseno': ['fotos', 'foto', 'imagenes', 'imagen', 'dibujar', 'diseno', 'arte', 'logo', 'logotipos', 'dibujos', 'presentacion', 'diapositivas', 'pintura', 'avatares', 'realismo', 'anime', '3d', 'ilustracion', 'retrato', 'arquitectura', 'branding', 'mockup', 'ui', 'ux', 'eliminar fondo', 'quitar objetos', 'retocar', 'restaurar', 'upscaling', 'alta resolucion', 'expandir', 'vectorizar', 'filtros', 'edicion', 'stock', 'isotipo', 'imagotipo', 'marca personal', 'banner', 'miniatura', 'thumbnail', 'flyer', 'cartel', 'poster', 'infografia', 'paleta de colores', 'tipografia', 'fuentes', 'dibujo tecnico', 'plano', 'renderizado', 'IA para quitar fondos de imágenes online', 'generador de imágenes realistas con IA', 'mejor IA para crear logos gratis', 'IA para mejorar resolución de fotos pixeladas', 'herramienta de IA para restaurar fotos antiguas', 'IA para crear ilustraciones vectoriales', 'generador de arte digital con IA', 'IA para diseñar interfaces de usuario UI UX', 'IA para decorar interiores de casas', 'generador de tatuajes personalizados con IA'],
-        'escritura y productividad': ['escribir', 'texto', 'redactar', 'resumir', 'ensayo', 'tarea', 'correos', 'email', 'presentacion', 'powerpoint', 'pdf', 'apuntes', 'redaccion', 'textos', 'blog', 'articulos', 'copy', 'copywriting', 'anuncios', 'ads', 'guiones', 'libretos', 'ensayos', 'tesis', 'reescribir', 'humanizar', 'corregir', 'gramatica', 'ortografia', 'seo', 'palabras clave', 'descripciones', 'captions', 'esloganes', 'slogans', 'chat con pdf', 'presentaciones', 'slides', 'pitch deck', 'organizar', 'calendario', 'notion', 'productividad', 'generador de presentaciones de PowerPoint con IA', 'IA para crear contenido en redes sociales', 'generador de copies para Instagram con IA', 'herramienta de IA para SEO y palabras clave', 'IA para automatizar correos de ventas', 'generador de nombres de marca y dominios', 'IA para escribir libros y novelas', 'generador de poemas y textos creativos con IA'],
-        'video y animacion': ['video', 'animacion', 'cortometraje', 'videos', 'editar', 'clips', 'pelicula', 'crear video', 'edicion de video', 'texto a video', 'avatares parlantes', 'rostros', 'deepfake', 'subtitulos', 'transcribir', 'recortes', 'shorts', 'reels', 'tiktok', 'efectos visuales', 'motion graphics', 'quitar fondo de video', 'IA para animar fotos fijas', 'editor de vídeo automático con IA', 'IA para poner subtítulos a vídeos gratis', 'IA para escribir guiones de YouTube'],
-        'audio y musica': ['musica', 'audio', 'cancion', 'canciones', 'voz', 'cantar', 'ritmo', 'melodia', 'componer', 'voces', 'texto a voz', 'tts', 'clonar voz', 'locucion', 'narrador', 'podcast', 'transcripcion', 'audio a texto', 'limpiar audio', 'quitar ruido', 'generador de voces reales con IA', 'IA para clonar voz', 'IA para quitar ruido de fondo en audios', 'creador de música con inteligencia artificial', 'IA para componer canciones sin derechos'],
-        'chatbots y asistentes': ['hablar', 'conversar', 'chat', 'preguntar', 'dudas', 'ayuda', 'gpt', 'chatbot', 'asistente virtual', 'automatizacion', 'crear agentes', 'bots', 'alternativas a ChatGPT para empresas', 'chatbot de atención al cliente con IA'],
-        'investigacion y datos': ['buscar', 'informacion', 'apuntes', 'pdf', 'excel', 'graficos', 'estudiar', 'hojas de calculo', 'formulas', 'analisis de datos', 'visualizacion', 'bases de datos', 'analizar documentos', 'contratos', 'aprender', 'idiomas', 'traduccion', 'traductor', 'matematicas', 'resolver problemas', 'tareas', 'examenes', 'mapas mentales', 'cuestionarios', 'flashcards', 'itinerarios', 'vuelos', 'hoteles', 'guias turisticas', 'cocina', 'recetas', 'dieta', 'nutricion', 'fitness', 'medicina', 'diagnostico', 'bricolaje', 'domotica', 'smart home', 'compras', 'e-commerce', 'IA para planificar itinerarios de viaje personalizados', 'mejor planificador de rutas de viaje con IA', 'IA para encontrar vuelos y hoteles baratos', 'asistente virtual para nómadas digitales', 'IA para organizar maletas y viajes', 'IA para resumir PDFs largos', 'mejor IA para estudiar exámenes', 'generador de esquemas y mapas mentales con IA', 'IA para resolver problemas matemáticos complejos', 'herramienta de IA para escribir ensayos académicos', 'IA para citar bibliografía automáticamente', 'corrector de estilo y gramática con IA', 'IA para aprender idiomas con conversación real', 'detector de textos escritos por IA', 'IA para análisis de datos de mercado', 'IA para transcribir reuniones de Zoom', 'herramienta de IA para recursos humanos y selección', 'IA para abogados y análisis de contratos', 'IA para arquitectura y renderizado 3D', 'IA para crear dietas y rutinas de gimnasio', 'asistente de cocina con IA para recetas', 'IA para diagnóstico de averías de coche', 'buscador de IAs para productividad personal', 'IA para analizar sentimientos en textos', 'herramienta de IA para minería de datos', 'IA para crear dashboards financieros', 'asistente de compras online con IA', 'IA para encontrar ofertas de Amazon', 'generador de memes con inteligencia artificial']
-      };
-
-      let matchesKeywords = false;
-      if (searchStr.length > 2) {
-        for (const [keySector, terms] of Object.entries(keywords)) {
-          if (terms.some(term => searchStr.includes(term))) {
-            if (nSector.includes(keySector)) {
-              matchesKeywords = true;
-              break;
-            }
-          }
-        }
-      }
-
       const matchesSearch = searchStr === '' ||
         nName.includes(searchStr) ||
         nDesc.includes(searchStr) ||
         nLong.includes(searchStr) ||
-        nSector.includes(searchStr) ||
-        matchesKeywords;
+        nSector.includes(searchStr);
 
       const matchesCategory = selectedCategory === 'All' || tool.sector === selectedCategory;
       const matchesFavorites = showFavorites ? bookmarks.includes(tool.id) : true;
@@ -457,20 +434,18 @@ export default function Home({ searchTerm, setSearchTerm }) {
 
           <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 mb-8 md:mb-10 max-w-5xl mx-auto px-4 z-30 relative bg-white/40 backdrop-blur-sm p-4 rounded-3xl border border-white/40 shadow-xl shadow-slate-900/5">
             <span className="text-xs sm:text-sm font-bold text-slate-500 mr-1 sm:mr-2 flex items-center gap-1 w-full justify-center mb-2">
-              <Sparkles className="w-3.5 h-3.5 text-accent-400" /> Popular Searches:
+              <Sparkles className="w-3.5 h-3.5 text-accent-400" /> Related AI Tools:
             </span>
-            {[
-              'Best AI tools 2026', 'AI for Python coding', 'Background remover AI', 'Realistic image generator', 'Best free logo AI', 'AI photo enhancer', 'AI for exam study', 'AI PDF summarizer', 'AI diagram generator', 'AI math solver', 'AI language learning', 'Social media content AI', 'AI for SEO', 'Customer service chatbot', 'AI for architecture', 'AI meme generator', 'AI Amazon deals finder', 'ChatGPT alternatives'
-            ].map((term) => (
+            {tools.filter(t => ['midjourney_ai', 'github_8281', 'elevenlabs_2001', 'ideogram_2009', 'opusclip_2002', 'rytr_ai'].includes(t.id)).map((tool) => (
               <button
-                key={term}
+                key={tool.id}
                 onClick={() => {
-                  setSearchTerm(term);
+                  setSearchTerm(tool.name);
                   scrollToSection('directory-section');
                 }}
                 className={`flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-[9px] sm:text-xs font-bold transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 bg-white border border-slate-200 text-slate-700 hover:border-accent-300 hover:text-accent-600 hover:bg-accent-50/50`}
               >
-                {term}
+                {tool.emoji} {tool.name}
               </button>
             ))}
           </div>
