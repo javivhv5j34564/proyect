@@ -969,7 +969,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
         >
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-4xl font-black text-slate-900 mb-6 md:mb-10 text-center md:text-left leading-tight">
-              Directorio de <span className="text-accent-600">Inteligencia Artificial</span> Gratis en Español
+              Directorio de <span className="text-accent-600">Inteligencia Artificial</span> Gratis y Global
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">

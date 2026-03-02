@@ -1,5 +1,89 @@
 export const tools = [
     {
+        id: 'wolfram_alpha_ia',
+        name: 'WolframAlpha',
+        sector: 'Educación y Estudiantes',
+        logo: 'wolfram',
+        emoji: '🔬',
+        isFullyFree: false,
+        freeTierDetails: 'Freemium',
+        url: 'https://www.wolframalpha.com',
+        description: 'Motor de conocimiento computacional para matemáticas y ciencia.',
+        longDescription: 'Indispensable para estudiantes de STEM. Resuelve ecuaciones paso a paso, analiza datos estadísticos complejos y proporciona datos científicos precisos que otros LLMs suelen inventar. Es la fuente de "verdad" matemática por excelencia.'
+    },
+    {
+        id: 'quillbot_estudiante',
+        name: 'QuillBot',
+        sector: 'Educación y Estudiantes',
+        logo: 'quillbot',
+        emoji: '🖋️',
+        isFullyFree: false,
+        freeTierDetails: 'Freemium',
+        url: 'https://quillbot.com',
+        description: 'Herramienta de parafraseo y resumen para trabajos académicos.',
+        longDescription: 'Ayuda a los estudiantes a reescribir ensayos para mejorar la fluidez y el vocabulario. Incluye un verificador de plagio, un generador de citas (APA, MLA) y un resumidor de artículos largos para ahorrar horas de lectura.'
+    },
+    {
+        id: 'elicit_research',
+        name: 'Elicit',
+        sector: 'Educación y Estudiantes',
+        logo: 'elicit',
+        emoji: '🔎',
+        isFullyFree: false,
+        freeTierDetails: 'Freemium',
+        url: 'https://elicit.org',
+        description: 'Asistente de investigación que analiza artículos científicos.',
+        longDescription: 'Ideal para tesis y trabajos de investigación. Elicit busca en millones de artículos académicos, resume los hallazgos principales y extrae datos clave de forma estructurada, asegurando que tus fuentes sean siempre rigurosas.'
+    },
+    {
+        id: 'socratic_google',
+        name: 'Socratic by Google',
+        sector: 'Educación y Estudiantes',
+        logo: 'google',
+        emoji: '🎓',
+        isFullyFree: true,
+        freeTierDetails: 'Gratis total',
+        url: 'https://socratic.org',
+        description: 'App de ayuda con los deberes que explica conceptos visualmente.',
+        longDescription: 'Toma una foto a cualquier problema (de matemáticas, historia o química) y la IA de Google te ofrece explicaciones paso a paso, videos educativos y recursos visuales para que realmente entiendas el concepto detrás de la respuesta.'
+    },
+    {
+        id: 'canva_estudiantes',
+        name: 'Canva for Education',
+        sector: 'Educación y Estudiantes',
+        logo: 'canva',
+        emoji: '🎨',
+        isFullyFree: true,
+        freeTierDetails: 'Gratis para Estudiantes',
+        url: 'https://www.canva.com/education/',
+        description: 'Crea presentaciones y trabajos visuales con plantillas académicas.',
+        longDescription: 'La versión especial de Canva para el sector educativo ofrece miles de recursos premium gratis para que tus proyectos escolares tengan un acabado de diseño profesional sin esfuerzo.'
+    },
+    {
+        id: 'notion_ia_estudio',
+        name: 'Notion AI (Estudiantes)',
+        sector: 'Educación y Estudiantes',
+        logo: 'notion',
+        emoji: '📓',
+        isFullyFree: false,
+        freeTierDetails: 'Descuento Estudiantes',
+        url: 'https://www.notion.so/product/ai',
+        description: 'Organiza tus apuntes y genera resúmenes automáticos.',
+        longDescription: 'Notion AI te ayuda a estructurar tus notas de clase, crear cuestionarios de estudio a partir de tus propios apuntes y mejorar la redacción de tus tareas directamente desde tu espacio de trabajo.'
+    },
+    {
+        id: 'gradescope_ia',
+        name: 'Gradescope',
+        sector: 'Educación y Estudiantes',
+        logo: 'gradescope',
+        emoji: '📝',
+        isFullyFree: false,
+        freeTierDetails: 'Freemium',
+        url: 'https://www.gradescope.com',
+        description: 'Plataforma para corregir y recibir feedback detallado con IA.',
+        longDescription: 'Utilizada por universidades top, permite escanear exámenes escritos a mano y proporciona una corrección rápida y justa, ayudando a los estudiantes a entender exactamente dónde fallaron y cómo mejorar.'
+    },
+    {
         id: 'archistar_ai',
         name: 'Archistar',
         sector: 'Arquitectura y Diseño',
@@ -588,16 +672,16 @@ export const tools = [
         longDescription: 'Vercel v0 ha evolucionado de un simple generador de componentes a un arquitecto de aplicaciones. Ahora es capaz de generar flujos complejos en Next.js, integrar librerías de iconos y bibliotecas de componentes como Shadcn/UI de forma perfecta. Es el compañero ideal para diseñadores que quieren pasar del concepto al código en minutos.'
     },
     {
-        id: 'claude_opus_4_6',
-        name: 'Claude Opus 4.6',
+        id: 'claude_3_5_opus',
+        name: 'Claude 3 Opus',
         sector: 'Chatbots y Asistentes',
         logo: 'claude',
         emoji: '🧠',
         isFullyFree: false,
         freeTierDetails: 'De pago',
         url: 'https://claude.ai',
-        description: 'La versión más avanzada y capaz de Claude para tareas complejas.',
-        longDescription: 'Claude Opus 4.6 es la inteligencia artificial líder de Anthropic para realizar análisis complejos, tareas de razonamiento profundo y programación avanzada. Destaca no solo por sus características técnicas excepcionales, sino también por el valor a largo plazo que aporta. Permite automatizar lo monótono y redescubrir el potencial creativo en cada tarea. Integrar una herramienta de este calibre demuestra un enfoque proactivo hacia la innovación. Es una excelente adición a cualquier conjunto de herramientas digitales, aportando claridad y agilidad desde el primer momento.'
+        description: 'La versión más potente de Claude para tareas de alta complejidad.',
+        longDescription: 'Claude 3 Opus es el modelo más capaz de Anthropic, superando a muchos competidores en razonamiento, conocimiento y codificación. Es ideal para análisis de datos profundos y redacción creativa de alta calidad.'
     },
     {
         id: 'kat_coder_pro_v1',
@@ -612,16 +696,16 @@ export const tools = [
         longDescription: 'KAT-Coder-pro V1 es una herramienta innovadora para desarrolladores que acelera el ciclo de desarrollo generando, analizando y optimizando código avanzado. Esta plataforma está revolucionando cómo los profesionales abordan los desafíos diarios en su sector. Su interfaz intuitiva y sus potentes capacidades de procesamiento la convierten en una opción destacada. Al integrarla en tu flujo de trabajo, puedes esperar una reducción significativa en el tiempo dedicado a tareas repetitivas, permitiéndote enfocarte en la estrategia y la creatividad. Ideal tanto para principiantes como para expertos que buscan optimizar su productividad de manera escalable.'
     },
     {
-        id: 'gemini_3_flash',
-        name: 'Gemini 3 Flash',
+        id: 'gemini_1_5_flash',
+        name: 'Gemini 1.5 Flash',
         sector: 'Chatbots y Asistentes',
         logo: 'gemini',
         emoji: '⚡',
         isFullyFree: true,
         freeTierDetails: 'Gratis',
         url: 'https://gemini.google.com',
-        description: 'Modelo ultrarrápido de Google diseñado para respuestas inmediatas.',
-        longDescription: 'Gemini 3 Flash es la solución perfecta para tareas de inferencia de baja latencia y alta frecuencia, manteniendo una gran capacidad de razonamiento con tiempos de respuesta sorprendentes. Destaca no solo por sus características técnicas excepcionales, sino también por el valor a largo plazo que aporta. Permite automatizar lo monótono y redescubrir el potencial creativo en cada tarea. Integrar una herramienta de este calibre demuestra un enfoque proactivo hacia la innovación. Es una excelente adición a cualquier conjunto de herramientas digitales, aportando claridad y agilidad desde el primer momento.'
+        description: 'Modelo ultrarrápido de Google diseñado para velocidad y eficiencia.',
+        longDescription: 'Gemini 1.5 Flash es la solución perfecta para tareas que requieren una respuesta casi instantánea. Con una ventana de contexto masiva de hasta 1 millón de tokens, es capaz de procesar archivos de video y documentos extensos en segundos.'
     },
     {
         id: 'claude_sonnet_4_6',
@@ -696,16 +780,16 @@ export const tools = [
         longDescription: 'Claude 3.7 Sonnet combina asombrosas capacidades de codificación con redacción experta, marcando un potente hito evolutivo en la familia Claude. Con una adopción creciente por parte de empresas e individuos, esta herramienta resalta por su robustez y precisión. Ofrece soluciones dinámicas que se adaptan a diversos escenarios de uso. Ya sea que estés lanzando un nuevo proyecto o escalando uno existente, las funcionalidades avanzadas que provee te darán la ventaja competitiva necesaria. Es altamente recomendable revisar sus actualizaciones frecuentes, las cuales añaden continuamente valor y nuevas características clave.'
     },
     {
-        id: 'gpt_5_2',
-        name: 'GPT 5.2',
+        id: 'gpt_4o',
+        name: 'GPT-4o',
         sector: 'Chatbots y Asistentes',
         logo: 'chatgpt',
         emoji: '🚀',
         isFullyFree: false,
         freeTierDetails: 'Freemium',
         url: 'https://chatgpt.com',
-        description: 'El pionero indiscutible evoluciona hacia una inteligencia revolucionaria.',
-        longDescription: 'GPT 5.2 empuja los límites del entendimiento del lenguaje natural, razonamiento lógico y aplicaciones multimodales para brindar una experiencia de asistencia sin precedentes en la industria. Al aprovechar algoritmos de última generación, esta Inteligencia Artificial proporciona respuestas e interacciones rápidas y eficaces. Se enfoca en solucionar los obstáculos más comunes que enfrentan los usuarios modernos, brindando un entorno de trabajo limpio y centrado. La facilidad con la que se puede empezar a utilizar y los resultados inmediatos que genera justifican por completo su popularidad actual en el mercado digital.'
+        description: 'El modelo insignia de OpenAI para texto, visión y voz en tiempo real.',
+        longDescription: 'GPT-4o ("o" de omni) es el modelo más avanzado de OpenAI que permite razonamiento a través de audio, visión y texto en tiempo real. Es mucho más rápido que GPT-4 Turbo y ofrece capacidades multimodales integradas de forma nativa.'
     },
     {
         id: 'claude',
@@ -2658,6 +2742,7 @@ export const categories = [
     'Medicina y Salud',
     'Viajes y Turismo',
     'Videojuegos y Gaming',
+    'Educación y Estudiantes',
     'Cocina',
     'Horarios',
     'Moda'

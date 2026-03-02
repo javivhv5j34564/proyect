@@ -81,7 +81,7 @@ const About = () => {
                         <Globe className="w-6 h-6 text-indigo-600 flex-shrink-0" />
                         <div>
                             <h4 className="font-bold text-slate-900 mb-1">Alcance Global</h4>
-                            <p className="text-slate-500 text-sm">Buscamos soluciones en todos los idiomas y mercados, adaptándolas con explicaciones claras en español.</p>
+                            <p className="text-slate-500 text-sm">Buscamos soluciones en todos los idiomas y mercados, adaptándolas con explicaciones claras para todo el mundo.</p>
                         </div>
                     </div>
                     <div className="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm">
