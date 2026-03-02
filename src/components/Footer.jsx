@@ -19,7 +19,7 @@ export default function Footer() {
                             <li><Link to="/privacidad" className="hover:text-accent-400 transition-colors">Política de Privacidad</Link></li>
                             <li><Link to="/cookies" className="hover:text-accent-400 transition-colors">Política de Cookies</Link></li>
                             <li><Link to="/aviso-legal" className="hover:text-accent-400 transition-colors">Aviso Legal</Link></li>
-                            <li><a href="/sitemap.xml" className="hover:text-accent-400 transition-colors">Mapa del Sitio (XML)</a></li>
+
                         </ul>
                     </div>
 
