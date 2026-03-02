@@ -6,6 +6,7 @@ import ToolPage from './pages/ToolPage';
 import { SubmitToolPage } from './pages/SubmitToolPage';
 import About from './pages/About';
 import SuccessPage from './pages/Success';
+import BlogDetail from './pages/BlogDetail';
 import NotFound from './pages/NotFound';
 import { CookieBanner } from './components/CookieBanner';
 import Header from './components/Header';
@@ -20,14 +21,15 @@ function App() {
       <div className="flex-grow">
         <Routes>
           <Route path="/" element={<Home searchTerm={searchTerm} setSearchTerm={setSearchTerm} />} />
-          <Route path="/privacidad" element={<PrivacyPolicy />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/cookies" element={<CookiesPolicy />} />
-          <Route path="/aviso-legal" element={<LegalNotice />} />
-          <Route path="/contacto" element={<Contact />} />
-          <Route path="/sobre-nosotros" element={<About />} />
-          <Route path="/herramienta/:id" element={<ToolPage />} />
-          <Route path="/enviar-ia" element={<SubmitToolPage />} />
-          <Route path="/gracias" element={<SuccessPage />} />
+          <Route path="/legal-notice" element={<LegalNotice />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/tool/:id" element={<ToolPage />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="/submit-tool" element={<SubmitToolPage />} />
+          <Route path="/success" element={<SuccessPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

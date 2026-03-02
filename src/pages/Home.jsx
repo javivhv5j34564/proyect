@@ -2,7 +2,7 @@ import { useState, useMemo, useEffect } from 'react';
 import { Search, Sparkles, X, ExternalLink, ChevronRight, Zap, Flame, Clock, ChevronDown, TrendingUp, Lightbulb, Brain, Bookmark, ChevronUp, BookOpen, ArrowRight, ArrowDown, ArrowUp, Menu, Search as SearchIcon, Sun, Moon, Palette, Video, Code, PenTool, Music, Settings, Utensils, Calendar, ShoppingBag, Star, User, MessageSquare } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { tools, categories } from '../data';
+import { tools, categories, blogPosts } from '../data';
 import { AdSensePlaceholder } from '../components/AdSensePlaceholder';
 import { useSEO } from '../hooks/useSEO';
 
@@ -13,42 +13,42 @@ const aiFacts = [
   {
     id: 'fact-1',
     icon: <TrendingUp className="w-6 h-6 text-primary-500" />,
-    title: "Impulsa tu Productividad",
-    description: "Automatiza tareas repetitivas y enfócate en lo que realmente importa.",
-    fact: "Dato: El 64% de los profesionales reportan un aumento en su eficiencia diaria al usar IA."
+    title: "Boost Your Productivity",
+    description: "Automate repetitive tasks and focus on what really matters.",
+    fact: "Fact: 64% of professionals report an increase in daily efficiency when using AI."
   },
   {
     id: 'fact-2',
     icon: <Lightbulb className="w-6 h-6 text-amber-500" />,
-    title: "Desata tu Creatividad",
-    description: "Supera el síndrome de la hoja en blanco con generación ilimitada de ideas.",
-    fact: "Dato: La IA puede reducir el tiempo del proceso de ideación hasta en un 40%."
+    title: "Unleash Your Creativity",
+    description: "Overcome blank page syndrome with unlimited idea generation.",
+    fact: "Fact: AI can reduce ideation process time by up to 40%."
   },
   {
     id: 'fact-3',
     icon: <Brain className="w-6 h-6 text-indigo-500" />,
-    title: "Decisiones Inteligentes",
-    description: "Accede a respuestas complejas de forma estructurada y simple en segundos.",
-    fact: "Dato: Los asistentes de IA mejoran la retención y la toma de decisiones informada."
+    title: "Smart Decisions",
+    description: "Access complex answers in a structured and simple way in seconds.",
+    fact: "Fact: AI assistants improve retention and informed decision-making."
   }
 ];
 
 const faqs = [
   {
-    question: "¿Qué es Directorio AI?",
-    answer: "Somos una plataforma curada que recopila las mejores herramientas de Inteligencia Artificial del mercado, clasificándolas por categorías para que encuentres la solución ideal a tus necesidades de forma rápida y sencilla."
+    question: "What is AI Directory?",
+    answer: "We are a curated platform that collects the best Artificial Intelligence tools on the market, classifying them by categories so you can find the ideal solution for your needs quickly and easily."
   },
   {
-    question: "¿Todas las herramientas listadas son gratuitas?",
-    answer: "Nos enfocamos principalmente en herramientas con planes gratuitos (Free) o con modelos 'Freemium' (que ofrecen un uso gratuito limitado). Cada ficha técnica especifica el tipo de licencia para que no pierdas tiempo."
+    question: "Are all the tools listed free?",
+    answer: "We focus mainly on tools with free plans (Free) or with 'Freemium' models (offering limited free use). Each technical sheet specifies the license type so you don't waste time."
   },
   {
-    question: "¿Cómo puedo sugerir una nueva IA?",
-    answer: "¡Nos encanta descubrir nuevas herramientas! Puedes usar el enlace 'Sugerir una Herramienta' en el pie de página o contactarnos directamente a través del formulario de contacto."
+    question: "How can I suggest a new AI?",
+    answer: "We love discovering new tools! You can use the 'Suggest a Tool' link in the footer or contact us directly through the contact form."
   },
   {
-    question: "¿Con qué frecuencia se actualiza el directorio?",
-    answer: "Nuestro equipo analiza el ecosistema de la IA casi a diario. Añadimos herramientas nuevas y actualizamos la información de las existentes semanalmente para asegurar que siempre tengas lo más nuevo a tu alcance."
+    question: "How often is the directory updated?",
+    answer: "Our team analyzes the AI ecosystem almost daily. We add new tools and update information on existing ones weekly to ensure you always have the latest at your fingertips."
   }
 ];
 
@@ -87,93 +87,93 @@ const AccordionItem = ({ question, answer }) => {
 const blogPosts = [
   {
     id: 'blog-1',
-    title: 'Las 10 Mejores Inteligencias Artificiales Gratis en 2026',
-    category: 'Tendencias',
+    title: 'Top 10 Free Artificial Intelligences in 2026',
+    category: 'Trends',
     image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=600&q=80',
     readTime: '1 min',
-    excerpt: 'Descubre nuestra lista actualizada con las herramientas IA más potentes que puedes usar hoy mismo sin pagar ni un céntimo, desde edición hasta programación.',
-    content: 'La inteligencia artificial ha evolucionado drásticamente. Lo que antes era exclusivo para grandes corporaciones, hoy está disponible gratis en el navegador. Las mejores herramientas gratis hoy en día te permiten automatizar horas de trabajo: generadores de texto como Claude 3.5 Sonnet o generadores de imágenes como Leonardo AI.\n\nAprovechar estos planes "Freemium" puede escalar tu productividad sin gastar un céntimo. Explora nuestro directorio completo y encuentra la herramienta perfecta para ti y tu equipo. La clave ya no es trabajar más duro, sino delegar lo monótono a modelos de lenguaje mientras tú dedicas tu energía a la estrategia y diseño a nivel humano.'
+    excerpt: 'Discover our updated list of the most powerful AI tools you can use today without paying a cent, from editing to programming.',
+    content: 'Artificial intelligence has evolved drastically. What used to be exclusive to large corporations is now available for free in the browser. The best free tools today allow you to automate hours of work: text generators like Claude 3.5 Sonnet or image generators like Leonardo AI.\n\nTaking advantage of these "Freemium" plans can scale your productivity without spending a cent. Explore our full directory and find the perfect tool for you and your team. The key is no longer working harder, but delegating the monotonous to language models while you dedicate your energy to strategic and human-level design.'
   },
   {
     id: 'blog-2',
-    title: 'Generadores de Imágenes con IA Sin Registro: Guía Definitiva',
-    category: 'Diseño Visual',
+    title: 'AI Image Generators Without Registration: Ultimate Guide',
+    category: 'Visual Design',
     image: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=600&q=80',
     readTime: '1 min',
-    excerpt: 'Crea logos, avatares y arte hiperrealista en segundos. Te enseñamos qué plataformas no piden tarjeta de crédito ni crear cuenta.',
-    content: 'Si necesitas generar una imagen rápido para una presentación o un prototipo, no tienes tiempo para pasarelas de pago ni cuentas obligatorias. Herramientas open-source basadas en Stable Diffusion y webs como Craiyon o Fal.ai permiten generar arte increíble desde la primera pantalla.\n\nSolo debes escribir un "prompt" descriptivo, y en segundos obtendrás resultados en alta resolución perfectos para redes sociales y páginas web. Muchas de estas webs están financiadas mediante publicidad sutil, permitiéndote iterar una decena de veces totalmente gratis cada día. Es momento de sustituir las fotografías pagadas por resultados irrepetibles.'
+    excerpt: 'Create logos, avatars, and hyper-realistic art in seconds. We show you which platforms don\'t require a credit card or account creation.',
+    content: 'If you need to generate an image fast for a presentation or a prototype, you don\'t have time for payment gateways or mandatory accounts. Open-source tools based on Stable Diffusion and websites like Craiyon or Fal.ai allow you to generate incredible art from the first screen.\n\nYou just have to write a descriptive "prompt", and in seconds you\'ll get high-resolution results perfect for social networks and web pages. Many of these sites are funded by subtle advertising, allowing you to iterate a dozen times totally free each day. It\'s time to replace paid photography with unique results.'
   },
   {
     id: 'blog-3',
-    title: 'Mejores IAs para Redactar Textos y Ensayos que no Parecen Robots',
+    title: 'Best AIs for Writing Texts and Essays that don\'t Look Like Robots',
     category: 'Copywriting',
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80',
     readTime: '1 min',
-    excerpt: 'Aprende a humanizar el contenido de ChatGPT o Claude. Analizamos las IA de redacción que aprueban todos los detectores de plagio.',
-    content: 'El mayor problema del contenido generado por IA es ese tono genérico, aburrido y "robótico" caracterizado por usar palabras rebuscadas en cada párrafo. Descubre estrategias para humanizar tu texto pidiendo al modelo de IA que actúe bajo un rol específico, usando jerga local y frases más coloquiales cortas.\n\nHerramientas como Jasper o QuillBot están pensadas exactamente para dar fluidez y adaptar la voz de la marca a todos tus correos, posts de blogs o ensayos universitarios, y saltarse los detectores de plagio más estrictos (AI Checkers). Si buscas en nuestro directorio la categoría "Escritura y Productividad" encontrarás los líderes del mercado para dotar de alma sintética a tus escritos.'
+    excerpt: 'Learn to humanize Content from ChatGPT or Claude. We analyze writing AIs that pass all plagiarism detectors.',
+    content: 'The biggest problem with AI-generated content is that generic, boring, and "robotic" tone characterized by using complex words in every paragraph. Discover strategies to humanize your text by asking the AI model to act under a specific role, using local jargon and short colloquial phrases.\n\nTools like Jasper or QuillBot are designed exactly to provide flow and adapt the brand voice to all your emails, blog posts, or college essays, and skip the strictest plagiarism detectors (AI Checkers). If you search our directory under the "Writing & Productivity" category, you will find the market leaders to give a synthetic soul to your writings.'
   },
   {
     id: 'blog-4',
-    title: 'Cómo Crear Presentaciones en PowerPoint en Segundos con IA Gratis',
-    category: 'Productividad',
+    title: 'How to Create PowerPoint Presentations in Seconds with Free AI',
+    category: 'Productivity',
     image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80',
     readTime: '1 min',
-    excerpt: 'Dile adiós al lienzo en blanco. Genera diapositivas completas con diseño profesional y animaciones usando solo una frase.',
-    content: 'Tener una reunión en 30 minutos y no tener el PowerPoint hecho ya no es motivo de pánico. Aplicaciones modernas como Gamma App o Tome te permiten redactar el tema de tu presentación y en menos de un minuto analizan tus datos para generar más de diez diapositivas con tablas, esquemas, imágenes e información real estructurada.\n\nLuego solo tienes que exportar a PDF o archivo .ppt y lucirte en el trabajo ahorrando horas de insomnio. Atrás quedaron aquellos días en los que pasabas 40 minutos intentando alinear elementos y textos en un canvas infinito. Selecciona tu tema decorativo y deja que el asistente haga la magia aburrida.'
+    excerpt: 'Say goodbye to the blank canvas. Generate complete slides with professional design and animations using just one phrase.',
+    content: 'Having a meeting in 30 minutes and not having the PowerPoint done is no longer a reason for panic. Modern applications like Gamma App or Tome allow you to write the topic of your presentation and in less than a minute they analyze your data to generate more than ten slides with tables, diagrams, images, and structured real information.\n\nThen you just have to export to PDF or .ppt file and shine at work saving hours of sleeplessness. Gone are the days when you spent 40 minutes trying to align elements and texts on an infinite canvas. Select your decorative theme and let the assistant do the boring magic.'
   },
   {
     id: 'blog-5',
-    title: 'Mejores Prompts de ChatGPT para Programadores y Estudiantes',
-    category: 'Ingeniería de Prompts',
+    title: 'Best ChatGPT Prompts for Programmers and Students',
+    category: 'Prompt Engineering',
     image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80',
     readTime: '1 min',
-    excerpt: 'Optimiza tu código y resuelve bugs en segundos. Aprende a estructurar instrucciones para sacar el máximo rendimiento a GPT-4 y Claude.',
-    content: 'La diferencia entre un resultado mediocre y un código listo para producción radica en cómo te comunicas con la Inteligencia Artificial. La "Ingeniería de Prompts" se ha convertido en la habilidad más demandada del mercado tech.\n\nEn lugar de pedir "escribe un código en Python", prueba asignarle un rol de experto Senior, detallar los casos límite de tu función y pedirle que documente cada línea. Plataformas como ChatGPT o Gemini pueden refactorizar bases de datos enteras, explicar errores lógicos complejos o escribir tests unitarios si les proporcionas el contexto adecuado. Domina el arte de hablar con las máquinas.'
+    excerpt: 'Optimize your code and resolve bugs in seconds. Learn to structure instructions to get the most out of GPT-4 and Claude.',
+    content: 'The difference between a mediocre result and production-ready code lies in how you communicate with Artificial Intelligence. "Prompt Engineering" has become the most demanded skill in the tech market.\n\nInstead of asking "write a code in Python", try assigning it a Senior expert role, detailing the edge cases of your function, and asking it to document every line. Platforms like ChatGPT or Gemini can refactor entire databases, explain complex logical errors, or write unit tests if you provide the right context. Master the art of talking to machines.'
   },
   {
     id: 'blog-6',
-    title: '10 Alternativas Gratis a Midjourney para Generar Imágenes',
-    category: 'Diseño e Ilustración',
+    title: '10 Free Alternatives to Midjourney for Generating Images',
+    category: 'Design & Illustration',
     image: 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=600&q=80',
     readTime: '1 min',
-    excerpt: 'No pagues suscripciones mensuales. Descubre los mejores generadores de arte por inteligencia artificial de código abierto o con planes freemium.',
-    content: 'Aunque Midjourney lideró la revolución del arte generativo, sus planes de pago ya no son la única opción para obtener imágenes fotorrealistas. Modelos como Stable Diffusion 3 (SD3) han democratizado el diseño visual a niveles asombrosos.\n\nHoy puedes acceder a webs gratuitas que te permiten aplicar estilos, controlar la pose de personajes, y generar texturas hiperrealistas sin requerir herramientas complejas. Si eres creador de contenido o emprendedor, explorar las alternativas en nuestra categoría de Generación Visual reducirá tus costos de diseño enormemente.'
+    excerpt: 'Don\'t pay monthly subscriptions. Discover the best open-source or freemium AI art generators.',
+    content: 'Although Midjourney led the generative art revolution, its paid plans are no longer the only option for getting photorealistic images. Models like Stable Diffusion 3 (SD3) have democratized visual design to amazing levels.\n\nToday you can access free websites that allow you to apply styles, control character poses, and generate hyper-realistic textures without requiring complex tools. If you are a content creator or entrepreneur, exploring the alternatives in our Visual Generation category will reduce your design costs enormously.'
   },
   {
     id: 'blog-7',
-    title: 'Automatiza tu Emprendimiento con Herramientas de Inteligencia Artificial',
-    category: 'Negocios y Productividad',
+    title: 'Automate your Business with Artificial Intelligence Tools',
+    category: 'Business & Productivity',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80',
     readTime: '1 min',
-    excerpt: 'Casos de uso reales para Pymes: automatiza la atención al cliente, integra agentes de IA en tus ventas y clasifica datos masivos sin programar.',
-    content: 'Implementar la IA en una pequeña empresa o startup ya no requiere un equipo de ingenieros. Existen soluciones "No-Code" e integraciones como Make o Zapier que conectan modelos de lenguaje directamente al corazón de tus finanzas y marketing.\n\nDesde chatbots entrenados con el PDF de tu catálogo que atienden clientes 24/7, hasta sistemas que redactan propuestas de venta automáticamente tras cada reunión. El Retorno de Inversión de estas herramientas es inmediato al delegar microtareas. Descubre las mejores opciones B2B en el directorio y multiplica la eficiencia de tu equipo laboral.'
+    excerpt: 'Real use cases for SMEs: automate customer service, integrate AI agents into your sales, and classify massive data without coding.',
+    content: 'Implementing AI in a small business or startup no longer requires a team of engineers. There are "No-Code" solutions and integrations like Make or Zapier that connect language models directly to the heart of your finance and marketing.\n\nFrom chatbots trained with your catalog PDF that serve customers 24/7, to systems that automatically draft sales proposals after each meeting. The Return on Investment of these tools is immediate by delegating microtasks. Discover the best B2B options in the directory and multiply your team\'s efficiency.'
   },
   {
     id: 'blog-8',
-    title: 'Guía Definitiva de SEO e IA: Posiciona tu Sitio Web en Google',
-    category: 'Marketing Digital',
+    title: 'Definitive Guide to SEO and AI: Position your Website in Google',
+    category: 'Digital Marketing',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80',
     readTime: '1 min',
-    excerpt: 'Aprende a ejecutar estrategias sólidas de posicionamiento web: meta-etiquetas, clusters de contenido y análisis de la competencia usando herramientas free.',
-    content: 'El SEO o posicionamiento en buscadores es un juego de datos. Herramientas basadas en inteligencia artificial son ahora capaces de auditar la arquitectura de una web entera en minutos, identificando oportunidades de mejora y redactando las optimizaciones necesarias (On-Page SEO).\n\nSin embargo, la clave frente a cambios de algoritmos masivos es no generar "Spam". Usa la mente analítica del bot para encontrar palabras clave transaccionales (Keywords LSI) y para armar los títulos clave (H1, H2), aportando tu experiencia humana real para generar confianza (E-E-A-T). Apaláncate en las herramientas de "Marketing" de nuestra plataforma.'
+    excerpt: 'Learn to execute solid web positioning strategies: meta-tags, content clusters, and competitor analysis using free tools.',
+    content: 'SEO or search engine optimization is a data game. Artificial intelligence tools are now capable of auditing an entire web architecture in minutes, identifying improvement opportunities and drafting the necessary optimizations (On-Page SEO).\n\nHowever, the key in the face of massive algorithm changes is not to generate "Spam". Use the analytical mind of the bot to find transactional keywords (LSI Keywords) and to build key titles (H1, H2), providing your real human experience to build trust (E-E-A-T). Leverage the "Marketing" tools on our platform.'
   }
 ];
 
 const categoryIcons = {
-  'Todos': <Sparkles className="w-4 h-4" />,
-  'Chatbots y Asistentes': <Brain className="w-4 h-4" />,
-  'Imagen y Diseño': <Palette className="w-4 h-4" />,
-  'Video y Animación': <Video className="w-4 h-4" />,
-  'Programación': <Code className="w-4 h-4" />,
-  'Escritura y Productividad': <PenTool className="w-4 h-4" />,
-  'Investigación y Datos': <Search className="w-4 h-4" />,
-  'Audio y Música': <Music className="w-4 h-4" />,
-  'Automatización': <Zap className="w-4 h-4" />,
-  'Marketing y Ventas': <TrendingUp className="w-4 h-4" />,
-  'Utilidades': <Settings className="w-4 h-4" />,
-  'Cocina': <Utensils className="w-4 h-4" />,
-  'Horarios': <Calendar className="w-4 h-4" />,
-  'Moda': <ShoppingBag className="w-4 h-4" />,
+  'All': <Sparkles className="w-4 h-4" />,
+  'Chatbots & Assistants': <Brain className="w-4 h-4" />,
+  'Image & Design': <Palette className="w-4 h-4" />,
+  'Video & Animation': <Video className="w-4 h-4" />,
+  'Programming': <Code className="w-4 h-4" />,
+  'Writing & Productivity': <PenTool className="w-4 h-4" />,
+  'Research & Data': <Search className="w-4 h-4" />,
+  'Audio & Music': <Music className="w-4 h-4" />,
+  'Automation': <Zap className="w-4 h-4" />,
+  'Marketing & Sales': <TrendingUp className="w-4 h-4" />,
+  'Utilities': <Settings className="w-4 h-4" />,
+  'Cooking': <Utensils className="w-4 h-4" />,
+  'Schedules': <Calendar className="w-4 h-4" />,
+  'Fashion': <ShoppingBag className="w-4 h-4" />,
 };
 
 // Tool card extracted for reuse
@@ -193,7 +193,7 @@ const ToolCard = ({ tool, onClick, customBgClass = "bg-white", borderClass = "bo
     <button
       onClick={(e) => onBookmark(e, tool.id)}
       className="absolute top-4 right-4 md:top-5 md:right-5 z-20 p-1.5 md:p-2 rounded-full bg-white/80 hover:bg-white backdrop-blur border border-slate-200 text-slate-400 hover:text-accent-500 transition-all opacity-100 shadow-sm"
-      title="Guardar en favoritos"
+      title="Save to favorites"
     >
       <Bookmark className={`w-3.5 h-3.5 md:w-4 md:h-4 ${isBookmarked ? 'fill-accent-500 text-accent-500' : ''}`} />
     </button>
@@ -208,7 +208,7 @@ const ToolCard = ({ tool, onClick, customBgClass = "bg-white", borderClass = "bo
       <span className="inline-flex text-[9px] md:text-[10px] font-bold px-2 py-0.5 md:px-2.5 rounded-full bg-slate-100 text-slate-600 uppercase tracking-wider mb-1 md:mb-2 border border-slate-200/50">
         {tool.sector}
       </span>
-      <Link to={`/herramienta/${tool.id}`} onClick={(e) => e.stopPropagation()} className="block">
+      <Link to={`/tool/${tool.id}`} onClick={(e) => e.stopPropagation()} className="block">
         <h3 className="text-lg md:text-xl font-bold group-hover:text-accent-600 transition-colors text-slate-900 leading-tight pr-8 hover:underline decoration-accent-500/50 underline-offset-4">{tool.name}</h3>
       </Link>
     </div>
@@ -221,7 +221,7 @@ const ToolCard = ({ tool, onClick, customBgClass = "bg-white", borderClass = "bo
       <button
         onClick={(e) => onUpvote(e, tool.id)}
         className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all z-20 shadow-sm ${hasUpvoted ? 'bg-accent-500 border-accent-500 text-white hover:bg-accent-600' : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50'}`}
-        title="Votar herramienta"
+        title="Vote for this tool"
       >
         <ChevronUp className={`w-3 h-3 md:w-4 md:h-4 ${hasUpvoted ? 'text-white' : 'text-slate-400'}`} />
         {upvotes || 0}
@@ -243,8 +243,8 @@ const ToolCard = ({ tool, onClick, customBgClass = "bg-white", borderClass = "bo
 );
 
 export default function Home({ searchTerm, setSearchTerm }) {
-  const [selectedCategory, setSelectedCategory] = useState('Todos');
-  const [selectedPricing, setSelectedPricing] = useState('Todos');
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedPricing, setSelectedPricing] = useState('All');
   const [showFavorites, setShowFavorites] = useState(false);
   const [selectedTool, setSelectedTool] = useState(null);
   const [selectedBlogPost, setSelectedBlogPost] = useState(null);
@@ -290,8 +290,8 @@ export default function Home({ searchTerm, setSearchTerm }) {
   };
 
   useSEO({
-    title: 'Directorio de Inteligencia Artificial (IA) | Inicio',
-    description: 'Explora nuestra colección curada de cientos de herramientas de Inteligencia Artificial gratis y freemium, organizadas por categoría para disparar tu productividad.'
+    title: 'Artificial Intelligence (AI) Directory | Home',
+    description: 'Explore our curated collection of hundreds of free and freemium Artificial Intelligence tools, organized by category to skyrocket your productivity.'
   });
 
   // Persistence State
@@ -380,7 +380,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
         nSector.includes(searchStr) ||
         matchesKeywords;
 
-      const matchesCategory = selectedCategory === 'Todos' || tool.sector === selectedCategory;
+      const matchesCategory = selectedCategory === 'All' || tool.sector === selectedCategory;
       const matchesFavorites = showFavorites ? bookmarks.includes(tool.id) : true;
 
       let matchesPricing = true;
@@ -400,7 +400,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
     });
   }, [searchTerm, selectedCategory, selectedPricing, showFavorites, bookmarks, upvotes]);
 
-  const showSections = searchTerm === '' && selectedCategory === 'Todos' && selectedPricing === 'Todos' && !showFavorites;
+  const showSections = searchTerm === '' && selectedCategory === 'All' && selectedPricing === 'All' && !showFavorites;
 
   // Sorting explicit sections by upvotes too
   // Sorting explicit sections: Top3 and Recent keep their fixed id order/upvotes, 
@@ -446,27 +446,27 @@ export default function Home({ searchTerm, setSearchTerm }) {
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} className="relative z-20">
           <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-accent-50/80 backdrop-blur-md border border-accent-200/50 text-accent-700 text-xs md:text-sm font-black mb-6 md:mb-8 shadow-sm tracking-wide uppercase">
             <Sparkles className="w-3 h-3 md:w-4 md:h-4" />
-            <span>Directorio de herramientas AI • 100% Actualizado</span>
+            <span>AI Tools Directory • 100% Updated</span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 mb-4 md:mb-6 tracking-tight md:tracking-tighter leading-[1.05]">
-            Encuentra la <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-accent-500 to-indigo-600">Herramienta AI</span> <br className="hidden sm:block" /> que necesitas hoy
+            Find the <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-accent-500 to-indigo-600">AI Tool</span> <br className="hidden sm:block" /> You Need Today
           </h1>
           <p className="text-base sm:text-lg md:text-2xl text-slate-600 font-medium mb-6 md:mb-8 leading-relaxed md:leading-relaxed max-w-3xl mx-auto px-2">
-            El mayor directorio curado de Inteligencia Artificial. Filtra entre cientos de herramientas <span className="text-accent-600 font-bold">gratuitas</span> para programar, diseñar, escribir y automatizar tu trabajo.
+            The largest curated AI directory. Filter through hundreds of <span className="text-accent-600 font-bold">free</span> tools to code, design, write, and automate your workflow.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 mb-8 md:mb-10 max-w-5xl mx-auto px-4 z-30 relative bg-white/40 backdrop-blur-sm p-4 rounded-3xl border border-white/40 shadow-xl shadow-slate-900/5">
             <span className="text-xs sm:text-sm font-bold text-slate-500 mr-1 sm:mr-2 flex items-center gap-1 w-full justify-center mb-2">
-              <Sparkles className="w-3.5 h-3.5 text-accent-400" /> Consultas populares:
+              <Sparkles className="w-3.5 h-3.5 text-accent-400" /> Popular Searches:
             </span>
             {[
-              'Mejores herramientas de inteligencia artificial 2026', 'IA para programar en Python', 'IA para quitar fondos', 'generador de imágenes realistas', 'mejor IA para crear logos gratis', 'IA para mejorar resolución de fotos', 'IA para estudiar exámenes', 'IA para resumir PDFs', 'generador de esquemas con IA', 'IA para resolver problemas matemáticos', 'IA para aprender idiomas', 'IA para crear contenido en redes sociales', 'IA para SEO', 'chatbot de atención al cliente', 'IA para arquitectura', 'generador de memes con IA', 'IA para encontrar ofertas de Amazon', 'alternativas a ChatGPT'
+              'Best AI tools 2026', 'AI for Python coding', 'Background remover AI', 'Realistic image generator', 'Best free logo AI', 'AI photo enhancer', 'AI for exam study', 'AI PDF summarizer', 'AI diagram generator', 'AI math solver', 'AI language learning', 'Social media content AI', 'AI for SEO', 'Customer service chatbot', 'AI for architecture', 'AI meme generator', 'AI Amazon deals finder', 'ChatGPT alternatives'
             ].map((term) => (
               <button
                 key={term}
                 onClick={() => {
                   setSearchTerm(term);
-                  scrollToSection('herramientas');
+                  scrollToSection('directory-section');
                 }}
                 className={`flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-[9px] sm:text-xs font-bold transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 bg-white border border-slate-200 text-slate-700 hover:border-accent-300 hover:text-accent-600 hover:bg-accent-50/50`}
               >
@@ -476,16 +476,16 @@ export default function Home({ searchTerm, setSearchTerm }) {
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4 mb-4 md:mt-8">
             <button
-              onClick={() => scrollToSection('herramientas')}
+              onClick={() => scrollToSection('directory-section')}
               className="w-full sm:w-auto bg-gradient-to-r from-primary-500 via-accent-500 to-indigo-600 hover:from-primary-600 hover:via-accent-600 hover:to-indigo-700 text-white font-black py-4 px-8 md:py-5 md:px-10 rounded-full transition-all shadow-lg shadow-accent-500/30 hover:shadow-accent-500/50 hover:scale-105 active:scale-95 text-base md:text-lg flex items-center justify-center gap-2 border-[3px] border-white/20"
             >
-              🪄 Ver IAs Ahora <ArrowDown className="w-5 h-5 md:w-6 md:h-6 hover:animate-bounce" />
+              🪄 Explore AI Now <ArrowDown className="w-5 h-5 md:w-6 md:h-6 hover:animate-bounce" />
             </button>
             <button
               onClick={() => scrollToSection('blog-section')}
               className="w-full sm:w-auto bg-white/80 backdrop-blur border border-slate-200 hover:border-slate-300 text-slate-700 font-bold py-3.5 px-6 md:py-4 md:px-8 rounded-full transition-all shadow-sm hover:shadow-md hover:bg-slate-50 hover:text-accent-600 active:scale-95 text-sm md:text-base flex items-center justify-center gap-2"
             >
-              Ver Artículos y Guías <BookOpen className="w-4 h-4 md:w-5 md:h-5" />
+              Articles & Guides <BookOpen className="w-4 h-4 md:w-5 md:h-5" />
             </button>
           </div>
         </motion.div>
@@ -498,22 +498,22 @@ export default function Home({ searchTerm, setSearchTerm }) {
             <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
               <div className="w-12 h-12 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center font-black text-xl flex-shrink-0">1</div>
               <div>
-                <h3 className="font-bold text-slate-900 mb-1">Explora Categorías</h3>
-                <p className="text-sm text-slate-500">Navega entre programación, diseño, video y más. Todo organizado para ti.</p>
+                <h3 className="font-bold text-slate-900 mb-1">Explore Categories</h3>
+                <p className="text-sm text-slate-500">Navigate through programming, design, video, and more.</p>
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-center md:items-start gap-4 border-y md:border-y-0 md:border-x border-slate-100 py-6 md:py-0 md:px-8">
               <div className="w-12 h-12 rounded-full bg-accent-100 text-accent-600 flex items-center justify-center font-black text-xl flex-shrink-0">2</div>
               <div>
-                <h3 className="font-bold text-slate-900 mb-1">Encuentra Herramientas Gratis</h3>
-                <p className="text-sm text-slate-500">Priorizamos las opciones gratuitas para que no gastes nada probando.</p>
+                <h3 className="font-bold text-slate-900 mb-1">Find Free Tools</h3>
+                <p className="text-sm text-slate-500">We prioritize free options so you don't spend a dime testing.</p>
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
               <div className="w-12 h-12 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-black text-xl flex-shrink-0">3</div>
               <div>
-                <h3 className="font-bold text-slate-900 mb-1">Potencia tu Trabajo</h3>
-                <p className="text-sm text-slate-500">Ahorra horas de tareas repetitivas usando la IA adecuada para cada caso.</p>
+                <h3 className="font-bold text-slate-900 mb-1">Boost Your Workflow</h3>
+                <p className="text-sm text-slate-500">Save hours of repetitive tasks using the right AI for each case.</p>
               </div>
             </div>
           </div>
@@ -526,9 +526,9 @@ export default function Home({ searchTerm, setSearchTerm }) {
         <section className="mb-12 mt-10 md:mb-16 md:mt-12">
           <div className="text-center mb-8 md:mb-10">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-800 tracking-tight mb-2 md:mb-3">
-              ¿Por qué usar Inteligencia Artificial hoy?
+              Why use Artificial Intelligence today?
             </h2>
-            <p className="text-slate-500 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4">Ventajas clave y datos sorprendentes que transformarán tu forma de trabajar</p>
+            <p className="text-slate-500 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4">Key advantages and surprising facts that will transform how you work</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
             {aiFacts.map((item, i) => (
@@ -615,78 +615,69 @@ export default function Home({ searchTerm, setSearchTerm }) {
         {/* SEO Text Section for AdSense (Combats Thin Content) */}
         <section className="bg-white rounded-3xl p-6 md:p-10 shadow-sm border border-slate-200/60 mb-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 mb-4">¿Qué es Directorio AI y cómo te ayuda?</h2>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 mb-4">What's the AI Directory and how does it help you?</h2>
             <div className="prose prose-slate md:prose-lg max-w-none text-slate-600 space-y-4">
               <p>
-                En <strong>Directorio AI</strong>, nuestro objetivo es recopilar, analizar y clasificar las mejores herramientas de Inteligencia Artificial disponibles en la actualidad. Sabemos que el ecosistema técnico cambia a diario, y encontrar la IA gratuita o freemium perfecta para tu negocio, tus estudios o tu flujo creativo puede ser una tarea exhaustiva. Por eso hacemos el trabajo pesado por ti.
+                At <strong>AI Directory</strong>, our goal is to collect, analyze, and classify the best Artificial Intelligence tools available today. We know that the technical ecosystem changes daily, and finding the perfect free or freemium IA for your business, studies, or creative workflow can be an exhausting task. That's why we do the heavy lifting for you.
               </p>
               <p>
-                Cada herramienta listada en nuestro directorio pasa por un filtro de calidad donde evaluamos su utilidad real, si posee un <em>plan gratuito válido</em> y qué tipo de problemas resuelve. Desde <strong>generadores de texto (LLMs)</strong> que te ayudan a redactar correos en segundos, hasta avanzados <strong>generadores de imágenes o vídeo</strong> que pueden crear el prototipo visual de tu próxima gran idea sin necesidad de saber programar.
+                Each tool listed in our directory passes through a quality filter where we evaluate its real usefulness, whether it has a <em>valid free plan</em>, and what kind of problems it solves. From <strong>text generators (LLMs)</strong> that help you write emails in seconds, to advanced <strong>image or video generators</strong> that can create the visual prototype of your next big idea without needing to know how to code.
               </p>
-              <h3 className="text-xl font-bold text-slate-800 mt-6 mb-3">Cómo aprovechar nuestras categorías</h3>
+              <h3 className="text-xl font-bold text-slate-800 mt-6 mb-3">How to leverage our categories</h3>
               <p>
-                Utiliza los filtros a continuación para navegar por nuestro inventario. Si eres un creador de contenido, la sección de <strong>Deseño Visual</strong> o <strong>Vídeo</strong> será tu mejor aliada. Si buscas optimizar la gestión de tu empresa, explora <strong>Negocios y Productividad</strong> para encontrar CRMs potenciados por IA y agentes automatizados. Nuestro directorio se mantiene actualizado para que nunca te quedes atrás en esta revolución tecnológica.
+                Use the filters below to browse our inventory. If you're a content creator, the <strong>Visual Design</strong> or <strong>Video</strong> section will be your best ally. If you're looking to optimize your business management, explore <strong>Business & Productivity</strong> to find AI-powered CRMs and automated agents. Our directory is kept up-to-date so you never fall behind in this technological revolution.
               </p>
             </div>
           </div>
         </section>
 
         {/* Categories / Filters */}
-        <motion.section
-          id="herramientas"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-10 flex flex-col gap-4 scroll-mt-24"
-        >
-          {/* Top Row: Precio y Favoritos */}
-          <div className="flex flex-wrap items-center gap-2">
-            <button
-              onClick={() => setShowFavorites(!showFavorites)}
-              className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold flex items-center gap-1.5 transition-all shadow-sm ${showFavorites
-                ? 'bg-amber-100 text-amber-700 border-amber-200 border ring-2 ring-amber-300/50'
-                : 'bg-white text-slate-600 border border-slate-200 hover:border-amber-200 hover:bg-amber-50 hover:text-amber-600'
-                }`}
-            >
-              <Bookmark className={`w-4 h-4 ${showFavorites ? 'fill-amber-500 text-amber-500' : ''}`} />
-              Favoritos
-            </button>
-            <div className="w-px h-6 bg-slate-200 mx-1 hidden sm:block"></div>
+        <section id="directory-section" className="mt-12 md:mt-20 scroll-mt-24">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 md:mb-12">
+            <div className="text-left">
+              <h2 className="text-2xl md:text-4xl font-black text-slate-900 mb-3 tracking-tight">AI Tools Directory</h2>
+              <p className="text-slate-500 font-medium">Found <span className="text-accent-600 font-bold">{filteredToolsCount}</span> professional tools for you</p>
+            </div>
 
-            <span className="text-sm font-bold text-slate-500 ml-1 mr-1 flex items-center gap-1"><Zap className="w-4 h-4 text-amber-400" /> Precio:</span>
-            {['Todos', 'Gratis', 'Freemium'].map(price => (
+            <div className="flex flex-wrap items-center gap-3">
+              <div className="flex bg-white p-1 rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+                {['All', 'Free', 'Freemium'].map(price => (
+                  <button
+                    key={price}
+                    onClick={() => setSelectedPricing(price)}
+                    className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${selectedPricing === price ? 'bg-slate-900 text-white shadow-md' : 'text-slate-500 hover:text-slate-900 hover:bg-slate-50'}`}
+                  >
+                    {price === 'All' ? 'All Plans' : price}
+                  </button>
+                ))}
+              </div>
+
               <button
-                key={price}
-                onClick={() => { setSelectedPricing(price); setShowFavorites(false); }}
-                className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold transition-all ${selectedPricing === price && !showFavorites
-                  ? 'bg-slate-800 text-white shadow-md scale-105'
-                  : 'bg-white text-slate-600 border border-slate-200 hover:border-slate-300 hover:bg-slate-50'
-                  }`}
+                onClick={() => setShowFavorites(!showFavorites)}
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl border font-bold text-xs transition-all shadow-sm ${showFavorites ? 'bg-accent-500 border-accent-500 text-white shadow-accent-500/20' : 'bg-white border-slate-200 text-slate-600 hover:border-accent-300 hover:text-accent-600'}`}
               >
-                {price}
+                <Bookmark className={`w-3.5 h-3.5 ${showFavorites ? 'fill-white' : ''}`} />
+                My Favorites
               </button>
-            ))}
+            </div>
           </div>
 
-          <div className="w-full h-px bg-slate-200/60 my-1"></div>
-
-          {/* Bottom Row: Categorías */}
-          <div className="flex overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap items-center gap-2 scrollbar-hide no-scrollbar">
+          <div className="flex gap-2 overflow-x-auto no-scrollbar pb-6 md:pb-8 -mx-4 px-4 md:mx-0 md:px-0">
             {categories.map(cat => (
               <button
                 key={cat}
-                onClick={() => { setSelectedCategory(cat); setShowFavorites(false); }}
-                className={`px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-all whitespace-nowrap flex-shrink-0 flex items-center gap-2 ${selectedCategory === cat && !showFavorites
-                  ? 'bg-accent-600 text-white shadow-lg shadow-accent-500/30 scale-105'
-                  : 'bg-white text-slate-600 border border-slate-200 hover:border-accent-200 hover:bg-accent-50 hover:text-accent-600 shadow-sm'
-                  }`}
+                onClick={() => {
+                  setSelectedCategory(cat);
+                  setDisplayCount(15);
+                }}
+                className={`flex items-center gap-2 px-5 py-3 rounded-2xl whitespace-nowrap font-bold text-sm transition-all border-2 ${selectedCategory === cat ? 'bg-slate-900 border-slate-900 text-white shadow-xl shadow-slate-900/10 -translate-y-1' : 'bg-white border-slate-100 text-slate-500 hover:border-accent-200 hover:text-accent-600'}`}
               >
-                {categoryIcons[cat]}
+                {categoryIcons[cat] || <Brain className="w-4 h-4" />}
                 {cat}
               </button>
             ))}
           </div>
-        </motion.section>
+        </section>
 
         {/* Dynamic Grids */}
         {filteredTools.length === 0 ? (
@@ -694,8 +685,8 @@ export default function Home({ searchTerm, setSearchTerm }) {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-slate-100 mb-4">
               <Search className="w-8 h-8 text-slate-400" />
             </div>
-            <h3 className="text-lg font-bold text-slate-700">No encontramos herramientas</h3>
-            <p className="text-slate-500">Prueba ajustando tu búsqueda o categoría.</p>
+            <h3 className="text-lg font-bold text-slate-700">No tools found</h3>
+            <p className="text-slate-500">Try adjusting your search or category.</p>
           </div>
         ) : (
           <div>
@@ -724,7 +715,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                       className="bg-white border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-3 px-8 rounded-full shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center gap-2"
                     >
                       <SearchIcon className="w-4 h-4 text-accent-500" />
-                      Cargar {Math.min(15, filteredTools.length - displayCount)} más
+                      Load {Math.min(15, filteredTools.length - displayCount)} more
                     </button>
                   </div>
                 )}
@@ -735,7 +726,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                 <section>
                   <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex items-center gap-2 mb-4 md:mb-6">
                     <Flame className="w-5 h-5 md:w-6 md:h-6 text-amber-500" />
-                    <h2 className="text-xl md:text-2xl font-bold text-slate-800">Top 3 Más Usadas</h2>
+                    <h2 className="text-xl md:text-2xl font-bold text-slate-800">Top 3 Most Used</h2>
                   </motion.div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                     {top3Tools.map((tool) => (
@@ -759,7 +750,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                 <section>
                   <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex items-center gap-2 mb-4 md:mb-6">
                     <Clock className="w-5 h-5 md:w-6 md:h-6 text-accent-500" />
-                    <h2 className="text-xl md:text-2xl font-bold text-slate-800">Añadidas Recientemente</h2>
+                    <h2 className="text-xl md:text-2xl font-bold text-slate-800">Recently Added</h2>
                   </motion.div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                     {recentTools.map((tool) => (
@@ -794,7 +785,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 flex items-center justify-center z-20">
-                    <p className="text-white/90 font-medium tracking-[0.2em] uppercase text-xs md:text-sm drop-shadow-md">Evolución Digital</p>
+                    <p className="text-white/90 font-medium tracking-[0.2em] uppercase text-xs md:text-sm drop-shadow-md">Digital Evolution</p>
                   </div>
                 </motion.div>
 
@@ -802,7 +793,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                 <section className="pt-2 md:pt-4 mt-6 md:mt-8">
                   <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex items-center gap-2 mb-4 md:mb-6 border-b border-slate-200/60 pb-2 md:pb-3">
                     <Sparkles className="w-4 h-4 md:w-5 md:h-5 text-accent-500" />
-                    <h2 className="text-xl md:text-2xl font-bold text-slate-800">Explorar Directorio</h2>
+                    <h2 className="text-xl md:text-2xl font-bold text-slate-800">Explore Directory</h2>
                   </motion.div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                     {otherTools.slice(0, displayCount).map((tool) => (
@@ -825,7 +816,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                         className="bg-white border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-3 px-4 md:px-8 rounded-full shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center gap-2 w-full md:w-auto justify-center"
                       >
                         <SearchIcon className="w-4 h-4 text-accent-500" />
-                        Cargar {Math.min(15, otherTools.length - displayCount)} más
+                        Load {Math.min(15, otherTools.length - displayCount)} more
                       </button>
                     </div>
                   )}
@@ -850,8 +841,8 @@ export default function Home({ searchTerm, setSearchTerm }) {
             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
           />
           <div className="absolute bottom-6 left-6 md:bottom-8 md:left-10 z-20">
-            <p className="text-white font-bold text-xl md:text-3xl drop-shadow-lg">Universo de Posibilidades.</p>
-            <p className="text-white/80 text-sm md:text-base mt-1">Abre tu mente a la revolución de herramientas.</p>
+            <p className="text-white font-bold text-xl md:text-3xl drop-shadow-lg">Universe of Possibilities.</p>
+            <p className="text-white/80 text-sm md:text-base mt-1">Open your mind to the tool revolution.</p>
           </div>
         </motion.div>
 
@@ -869,16 +860,16 @@ export default function Home({ searchTerm, setSearchTerm }) {
               <BookOpen className="w-5 h-5 md:w-6 md:h-6 text-accent-600" />
             </div>
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">Guías y Recursos TOP</h2>
-              <p className="text-slate-500 text-xs md:text-sm mt-1">Descubre artículos y tutoriales para exprimir al máximo la inteligencia artificial.</p>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">Top Guides & Resources</h2>
+              <p className="text-slate-500 text-xs md:text-sm mt-1">Discover articles and tutorials to get the most out of artificial intelligence.</p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {blogPosts.map((post) => (
-              <div
+              <Link
                 key={post.id}
-                onClick={() => setSelectedBlogPost(post)}
+                to={`/blog/${post.id}`}
                 className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-accent-500/10 hover:border-accent-200 transition-all group flex flex-col h-full cursor-pointer"
               >
                 <div className="h-40 overflow-hidden relative">
@@ -890,11 +881,11 @@ export default function Home({ searchTerm, setSearchTerm }) {
                   <h3 className="text-base font-bold text-slate-900 mb-2 leading-tight group-hover:text-accent-600 transition-colors">{post.title}</h3>
                   <p className="text-slate-500 text-xs mb-4 flex-grow line-clamp-3 leading-relaxed">{post.excerpt}</p>
                   <div className="mt-auto flex items-center justify-between border-t border-slate-100 pt-3">
-                    <span className="text-[11px] font-semibold text-slate-400">Lectura de {post.readTime}</span>
+                    <span className="text-[11px] font-semibold text-slate-400">{post.readTime} read</span>
                     <ArrowRight className="w-4 h-4 text-accent-500 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </motion.section>
@@ -912,13 +903,13 @@ export default function Home({ searchTerm, setSearchTerm }) {
             <div className="absolute bottom-0 left-0 -ml-16 -mb-16 w-64 h-64 bg-primary-500 rounded-full blur-[100px] opacity-20"></div>
 
             <div className="relative z-10 max-w-2xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-3 md:mb-4">No te quedes atrás en la era de la IA</h2>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-3 md:mb-4">Don't fall behind in the AI era</h2>
               <p className="text-slate-300 mb-6 md:mb-8 text-base md:text-lg">
-                Únete a más de 10,000 profesionales. Recibe cada semana un resumen con 3 nuevas herramientas de inteligencia artificial que te ahorrarán horas de trabajo.
+                Join over 10,000 professionals. Receive a weekly recap with 3 new artificial intelligence tools that will save you hours of work.
               </p>
               {isSubscribed ? (
                 <div className="bg-green-500/20 border border-green-500/50 rounded-xl p-4 text-green-50 font-medium animate-in fade-in slide-in-from-bottom-2">
-                  🎉 ¡Gracias por suscribirte! Revisa tu bandeja de entrada pronto.
+                  🎉 Thanks for subscribing! Check your inbox soon.
                 </div>
               ) : (
                 <form action="https://formsubmit.co/f.javiergg06@gmail.com" method="POST" className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto relative z-20">
@@ -928,16 +919,16 @@ export default function Home({ searchTerm, setSearchTerm }) {
                   <input
                     type="email"
                     name="email"
-                    placeholder="Tu mejor correo electrónico..."
+                    placeholder="Your best email..."
                     className="flex-grow px-5 py-3.5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all font-medium"
                     required
                   />
                   <button type="submit" className="px-6 py-3.5 bg-accent-500 hover:bg-accent-400 text-white font-bold rounded-xl transition-colors shadow-lg shadow-accent-500/30 whitespace-nowrap active:scale-95 flex items-center justify-center">
-                    Suscribirme
+                    Subscribe
                   </button>
                 </form>
               )}
-              <p className="text-xs text-slate-400 mt-4">Cero spam. Te puedes dar de baja cuando quieras.</p>
+              <p className="text-xs text-slate-400 mt-4">Zero spam. You can unsubscribe anytime.</p>
             </div>
           </div>
         </motion.section>
@@ -945,8 +936,8 @@ export default function Home({ searchTerm, setSearchTerm }) {
         {/* FAQ Section - Excellent for AdSense Weight but compact */}
         <section className="mt-16 md:mt-24 max-w-4xl mx-auto px-4 sm:px-0">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-3">Preguntas Frecuentes</h2>
-            <p className="text-slate-500 text-sm md:text-base">Todo lo que necesitas saber sobre nuestro directorio.</p>
+            <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-3">Frequently Asked Questions</h2>
+            <p className="text-slate-500 text-sm md:text-base">Everything you need to know about our directory.</p>
           </div>
           <div className="bg-white rounded-3xl p-2 md:p-6 shadow-sm border border-slate-200/60">
             {faqs.map((faq, index) => (
@@ -965,17 +956,17 @@ export default function Home({ searchTerm, setSearchTerm }) {
         >
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-4xl font-black text-slate-900 mb-6 md:mb-10 text-center md:text-left leading-tight">
-              Directorio de <span className="text-accent-600">Inteligencia Artificial</span> Gratis y Global
+              Global and Free <span className="text-accent-600">Artificial Intelligence</span> Directory
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
               <div className="space-y-4 md:space-y-6">
                 <p className="text-slate-600 text-sm md:text-lg leading-relaxed">
-                  Bienvenido al directorio más completo y rigurosamente curado de <strong>herramientas de Inteligencia Artificial gratis</strong> y freemium del mercado. En un ecosistema donde diariamente nacen cientos de nuevos modelos, encontrar los que verdaderamente suman valor puede ser una tarea titánica.
+                  Welcome to the most comprehensive and rigorously curated directory of <strong>free and freemium Artificial Intelligence tools</strong> on the market. In an ecosystem where hundreds of new models are born daily, finding the ones that truly add value can be a titanic task.
                 </p>
-                <h3 className="text-lg md:text-xl font-bold text-slate-800">¿Cómo elegir la mejor IA para ti?</h3>
+                <h3 className="text-lg md:text-xl font-bold text-slate-800">How to choose the best AI for you?</h3>
                 <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-                  Nuestra plataforma está categorizada por sectores neurálgicos: desde <strong>Escritura y Código</strong>, hasta nichos como <strong>Moda, Cocina y Gestión</strong>. Cada herramienta pasa por un exigente filtro de calidad humano donde evaluamos utilidad real y generosidad de sus planes gratuitos.
+                  Our platform is categorized by key sectors: from <strong>Writing & Coding</strong>, to niches like <strong>Fashion, Cooking, and Management</strong>. Each tool passes through a demanding human quality filter where we evaluate real utility and the generosity of its free plans.
                 </p>
               </div>
 
@@ -986,8 +977,8 @@ export default function Home({ searchTerm, setSearchTerm }) {
                       <Zap className="w-3.5 h-3.5 text-primary-600" />
                     </div>
                     <div>
-                      <strong className="text-slate-900 block text-sm md:text-base">Productividad y Estudio</strong>
-                      <p className="text-slate-500 text-xs md:text-sm">Maximiza tu eficiencia con potentes Asistentes Inteligentes y chatbots como ChatGPT, Gemini o Perplexity.</p>
+                      <strong className="text-slate-900 block text-sm md:text-base">Productivity & Study</strong>
+                      <p className="text-slate-500 text-xs md:text-sm">Maximize your efficiency with powerful Smart Assistants and chatbots like ChatGPT, Gemini, or Perplexity.</p>
                     </div>
                   </li>
                   <li className="flex gap-3">
@@ -995,13 +986,13 @@ export default function Home({ searchTerm, setSearchTerm }) {
                       <Palette className="w-3.5 h-3.5 text-accent-600" />
                     </div>
                     <div>
-                      <strong className="text-slate-900 block text-sm md:text-base">Generación Multimedia</strong>
-                      <p className="text-slate-500 text-xs md:text-sm">Accede a Generadores de Imágenes (Flux, Leonardo) y Video (Runway) para diseños profesionales en segundos.</p>
+                      <strong className="text-slate-900 block text-sm md:text-base">Multimedia Generation</strong>
+                      <p className="text-slate-500 text-xs md:text-sm">Access Image Generators (Flux, Leonardo) and Video Generators (Runway) for professional designs in seconds.</p>
                     </div>
                   </li>
                 </ul>
                 <p className="text-slate-500 text-xs md:text-sm italic border-l-2 border-accent-500 pl-4 py-1">
-                  Añade nuestro directorio a tus favoritos. Constantemente analizamos las últimas extensiones y apps móviles basadas en IA que están revolucionando el mundo digital.
+                  Add our directory to your favorites. We constantly analyze the latest extensions and mobile apps based on AI that are revolutionizing the digital world.
                 </p>
               </div>
             </div>
@@ -1014,8 +1005,8 @@ export default function Home({ searchTerm, setSearchTerm }) {
           <div className="max-w-4xl mx-auto px-4 sm:px-0">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-10">
               <div className="text-center md:text-left">
-                <h2 className="text-2xl md:text-4xl font-black text-slate-900 mb-2">Evaluación de la Comunidad</h2>
-                <p className="text-slate-500">¿Te ha sido útil el directorio? Déjanos tu opinión.</p>
+                <h2 className="text-2xl md:text-4xl font-black text-slate-900 mb-2">Community Evaluation</h2>
+                <p className="text-slate-500">Has the directory been useful to you? Leave us your feedback.</p>
               </div>
             </div>
 
@@ -1028,22 +1019,22 @@ export default function Home({ searchTerm, setSearchTerm }) {
               <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-6">
                   <MessageSquare className="w-6 h-6 text-accent-400" />
-                  <h3 className="text-xl font-bold">Cuéntanos tu experiencia</h3>
+                  <h3 className="text-xl font-bold">Tell us about your experience</h3>
                 </div>
-                <form action="https://formsubmit.co/f.javiergg06@gmail.com" method="POST" className="space-y-4">
-                  <input type="hidden" name="_next" value={`${window.location.origin}/gracias`} />
-                  <input type="hidden" name="_subject" value="Nueva Reseña de la Comunidad - Directorio AI" />
+                <form action="https://formsubmit.co/f.javiergg06@gmail.com" method="POST" className="space-y-4 md:space-y-6">
+                  <input type="hidden" name="_next" value={window.location.origin + "/success"} />
+                  <input type="hidden" name="_subject" value="New Community Review - AI Directory" />
                   <input type="hidden" name="_captcha" value="false" />
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <input
                       type="text"
                       name="name"
-                      placeholder="Tu nombre"
+                      placeholder="Your name"
                       required
                       className="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all"
                     />
                     <div className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 min-w-[140px]">
-                      <span className="text-sm text-slate-400 font-medium whitespace-nowrap">Tu nota:</span>
+                      <span className="text-sm text-slate-400 font-medium whitespace-nowrap">Your rating:</span>
                       <div className="flex gap-1">
                         {[1, 2, 3, 4, 5].map((s) => (
                           <button
@@ -1069,7 +1060,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                   <textarea
                     name="message"
                     rows="3"
-                    placeholder="Escribe aquí tu comentario o sugerencia..."
+                    placeholder="Write your comment or suggestion here..."
                     required
                     className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all resize-none"
                   ></textarea>
@@ -1077,9 +1068,9 @@ export default function Home({ searchTerm, setSearchTerm }) {
                     type="submit"
                     className="w-full bg-accent-500 hover:bg-accent-400 text-white font-bold py-4 rounded-xl shadow-lg shadow-accent-500/20 transition-all active:scale-[0.98]"
                   >
-                    Enviar evaluación
+                    Submit evaluation
                   </button>
-                  <p className="text-[10px] text-center text-slate-500 mt-2 italic">Valoramos cada sugerencia para mejorar el directorio a diario.</p>
+                  <p className="text-[10px] text-center text-slate-500 mt-2 italic">We value every suggestion to improve the directory daily.</p>
                 </form>
               </div>
             </div>

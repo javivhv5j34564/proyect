@@ -6,13 +6,13 @@ const BackButton = () => (
     <div className="mb-4">
         {/* Breadcrumbs */}
         <nav className="flex items-center gap-2 text-xs md:text-sm text-slate-400 mb-6 overflow-x-auto no-scrollbar whitespace-nowrap px-1">
-            <Link to="/" className="hover:text-accent-600 transition-colors flex items-center gap-1">Inicio</Link>
+            <Link to="/" className="hover:text-accent-600 transition-colors flex items-center gap-1">Home</Link>
             <ChevronRight className="w-3 h-3 flex-shrink-0" />
-            <span className="text-slate-600 font-bold">Sobre Nosotros</span>
+            <span className="text-slate-600 font-bold">About Us</span>
         </nav>
         <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-accent-600 transition-colors bg-white border border-slate-200 hover:border-accent-200 px-4 py-2 rounded-full shadow-sm hover:shadow-md">
             <ArrowLeft className="w-4 h-4" />
-            Volver al inicio
+            Back to home
         </Link>
     </div>
 );
@@ -23,8 +23,8 @@ const About = () => {
             <BackButton />
 
             <header className="mb-12">
-                <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">Sobre Directorio AI</h1>
-                <p className="text-xl text-slate-600 leading-relaxed">Tu puente hacia las mejores herramientas de Inteligencia Artificial.</p>
+                <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">About AI Directory</h1>
+                <p className="text-xl text-slate-600 leading-relaxed">Your bridge to the best Artificial Intelligence tools.</p>
             </header>
 
             <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -32,78 +32,78 @@ const About = () => {
                     <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-4">
                         <Target className="w-6 h-6" />
                     </div>
-                    <h3 className="font-bold text-lg mb-2 text-slate-900">Nuestra Misión</h3>
-                    <p className="text-slate-600 text-sm leading-relaxed">Democratizar el acceso a la IA, ayudando a profesionales y empresas a encontrar la herramienta perfecta para sus necesidades.</p>
+                    <h3 className="font-bold text-lg mb-2 text-slate-900">Our Mission</h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">Democratize access to AI, helping professionals and businesses find the perfect tool for their needs.</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
                     <div className="w-12 h-12 bg-green-50 text-green-600 rounded-xl flex items-center justify-center mb-4">
                         <ShieldCheck className="w-6 h-6" />
                     </div>
-                    <h3 className="font-bold text-lg mb-2 text-slate-900">Curación Experta</h3>
-                    <p className="text-slate-600 text-sm leading-relaxed">Cada herramienta en nuestro directorio es revisada para asegurar que aporta valor real y cumple con los estándares de calidad.</p>
+                    <h3 className="font-bold text-lg mb-2 text-slate-900">Expert Curation</h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">Each tool in our directory is reviewed to ensure it provides real value and meets quality standards.</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
                     <div className="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center mb-4">
                         <Zap className="w-6 h-6" />
                     </div>
-                    <h3 className="font-bold text-lg mb-2 text-slate-900">Actualización</h3>
-                    <p className="text-slate-600 text-sm leading-relaxed">El mundo de la IA se mueve rápido. Nosotros también. Actualizamos nuestra base de datos semanalmente.</p>
+                    <h3 className="font-bold text-lg mb-2 text-slate-900">Always Updated</h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">The AI world moves fast. So do we. We update our database weekly.</p>
                 </div>
             </div>
 
             <article className="prose prose-slate prose-lg max-w-none">
-                <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">¿Por qué Directorio AI?</h2>
+                <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">Why AI Directory?</h2>
                 <p>
-                    Directorio AI nació de la necesidad de organizar el caótico pero emocionante paisaje de la Inteligencia Artificial. Con cientos de nuevas aplicaciones lanzándose cada mes, los usuarios se sienten abrumados por la cantidad de opciones y la dificultad de encontrar herramientas que sean realmente útiles y accesibles.
+                    AI Directory was born from the need to organize the chaotic but exciting landscape of Artificial Intelligence. With hundreds of new applications launching every month, users feel overwhelmed by the number of options and the difficulty of finding tools that are truly useful and accessible.
                 </p>
                 <p>
-                    Nuestra plataforma no es solo un listado estático; es una <strong>herramienta de descubrimiento dinámico</strong> diseñada para ahorrarte tiempo y ayudarte a navegar la revolución tecnológica actual con criterio y eficiencia.
+                    Our platform is not just a static list; it is a <strong>dynamic discovery tool</strong> designed to save you time and help you navigate today's technological revolution with judgment and efficiency.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12 not-prose">
                     <div className="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm">
                         <Users className="w-6 h-6 text-primary-600 flex-shrink-0" />
                         <div>
-                            <h4 className="font-bold text-slate-900 mb-1">Comunidad Primero</h4>
-                            <p className="text-slate-500 text-sm">Escuchamos activamente las sugerencias de nuestros usuarios para listar las herramientas que realmente demandan.</p>
+                            <h4 className="font-bold text-slate-900 mb-1">Community First</h4>
+                            <p className="text-slate-500 text-sm">We actively listen to our users' suggestions to list the tools they actually demand.</p>
                         </div>
                     </div>
                     <div className="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm">
                         <Award className="w-6 h-6 text-accent-600 flex-shrink-0" />
                         <div>
-                            <h4 className="font-bold text-slate-900 mb-1">Calidad Certificada</h4>
-                            <p className="text-slate-500 text-sm">No listamos por listar. Cada IA es probada para asegurar que su "Free Tier" es funcional y no una simple demo.</p>
+                            <h4 className="font-bold text-slate-900 mb-1">Certified Quality</h4>
+                            <p className="text-slate-500 text-sm">We don't just list for the sake of listing. Each AI is tested to ensure its "Free Tier" is functional.</p>
                         </div>
                     </div>
                     <div className="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm">
                         <Globe className="w-6 h-6 text-indigo-600 flex-shrink-0" />
                         <div>
-                            <h4 className="font-bold text-slate-900 mb-1">Alcance Global</h4>
-                            <p className="text-slate-500 text-sm">Buscamos soluciones en todos los idiomas y mercados, adaptándolas con explicaciones claras para todo el mundo.</p>
+                            <h4 className="font-bold text-slate-900 mb-1">Global Reach</h4>
+                            <p className="text-slate-500 text-sm">We look for solutions in all languages and markets, adapting them with clear explanations.</p>
                         </div>
                     </div>
                     <div className="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm">
                         <Target className="w-6 h-6 text-emerald-600 flex-shrink-0" />
                         <div>
-                            <h4 className="font-bold text-slate-900 mb-1">Foco en Productividad</h4>
-                            <p className="text-slate-500 text-sm">Priorizamos aquellas herramientas que automatizan tareas tediosas y liberan tiempo creativo.</p>
+                            <h4 className="font-bold text-slate-900 mb-1">Focus on Productivity</h4>
+                            <p className="text-slate-500 text-sm">We prioritize tools that automate tedious tasks and free up creative time.</p>
                         </div>
                     </div>
                 </div>
 
-                <h2>¿Quiénes somos?</h2>
+                <h2>Who are we?</h2>
                 <p>
-                    Somos un equipo de entusiastas de la tecnología y expertos en productividad digital. Creemos firmemente que la Inteligencia Artificial es el copiloto definitivo para el ser humano moderno, y nuestra meta es ser la brújula que te guíe hacia el éxito en esta era sintética.
+                    We are a team of technology enthusiasts and digital productivity experts. We firmly believe that Artificial Intelligence is the ultimate co-pilot for the modern human, and our goal is to be the compass that guides you to success in this synthetic era.
                 </p>
             </article>
 
             <div className="mt-16 p-8 bg-slate-900 rounded-3xl text-center text-white">
-                <h2 className="text-2xl font-bold mb-4">¿Quieres colaborar con nosotros?</h2>
-                <p className="text-slate-300 mb-8 max-w-lg mx-auto">Si tienes una herramienta de IA o quieres sugerir una mejora, estamos encantados de escucharte.</p>
-                <Link to="/contacto" className="inline-block bg-white text-slate-900 font-bold px-8 py-3 rounded-xl hover:bg-slate-100 transition-colors">
-                    Contactar ahora
+                <h2 className="text-2xl font-bold mb-4">Want to collaborate with us?</h2>
+                <p className="text-slate-300 mb-8 max-w-lg mx-auto">If you have an AI tool or want to suggest an improvement, we'd love to hear from you.</p>
+                <Link to="/contact" className="inline-block bg-white text-slate-900 font-bold px-8 py-3 rounded-xl hover:bg-slate-100 transition-colors">
+                    Contact now
                 </Link>
             </div>
         </div>

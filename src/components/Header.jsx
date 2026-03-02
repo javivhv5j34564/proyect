@@ -46,8 +46,8 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                             <Sparkles className="w-4 h-4 md:w-5 md:h-5" />
                         </div>
                         <div>
-                            <h1 className="text-lg md:text-xl font-bold tracking-tight text-slate-900">Directorio AI</h1>
-                            <p className="text-[10px] md:text-xs text-slate-500 font-medium tracking-wide uppercase hidden sm:block">Las mejores herramientas</p>
+                            <h1 className="text-lg md:text-xl font-bold tracking-tight text-slate-900">AI Directory</h1>
+                            <p className="text-[10px] md:text-xs text-slate-500 font-medium tracking-wide uppercase hidden sm:block">The Best Professional Tools</p>
                         </div>
                     </Link>
                     <button
@@ -59,9 +59,9 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                 </div>
 
                 <nav className="hidden md:flex items-center gap-6 font-semibold text-sm text-slate-600">
-                    <button onClick={() => scrollToSection('herramientas')} className="hover:text-accent-600 transition-colors">Directorio</button>
-                    <button onClick={() => scrollToSection('blog-section')} className="hover:text-accent-600 transition-colors">Guías y Blog</button>
-                    <button onClick={() => scrollToSection('footer-contacto')} className="hover:text-accent-600 transition-colors">Contacto</button>
+                    <button onClick={() => scrollToSection('directory-section')} className="hover:text-accent-600 transition-colors">Directory</button>
+                    <button onClick={() => scrollToSection('blog-section')} className="hover:text-accent-600 transition-colors">Guides & Blog</button>
+                    <button onClick={() => scrollToSection('footer-contacto')} className="hover:text-accent-600 transition-colors">Contact</button>
                 </nav>
 
                 <AnimatePresence>
@@ -81,9 +81,9 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                                 className="md:hidden flex flex-col w-full overflow-hidden absolute top-full left-0 bg-white/95 shadow-xl rounded-b-2xl border-t border-slate-100 z-40"
                             >
                                 <div className="flex flex-col p-4 gap-2">
-                                    <button onClick={() => scrollToSection('herramientas')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Directorio de IAs</button>
-                                    <button onClick={() => scrollToSection('blog-section')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Guías y Blog</button>
-                                    <button onClick={() => scrollToSection('footer-contacto')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Contacto</button>
+                                    <button onClick={() => scrollToSection('directory-section')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">AI Directory</button>
+                                    <button onClick={() => scrollToSection('blog-section')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Guides & Blog</button>
+                                    <button onClick={() => scrollToSection('footer-contacto')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Contact</button>
                                 </div>
                             </motion.nav>
                         </>
@@ -96,7 +96,7 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                             <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 group-focus-within:text-accent-500 transition-colors" />
                             <input
                                 type="text"
-                                placeholder="Buscar (ej: programar, hacer logos...)"
+                                placeholder="Search (e.g. coding, logos...)"
                                 value={searchTerm}
                                 onFocus={() => setIsSearchFocused(true)}
                                 onBlur={() => {

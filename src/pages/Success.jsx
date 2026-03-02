@@ -22,24 +22,41 @@ export default function SuccessPage() {
                     </div>
                 </div>
 
-                <h1 className="text-2xl md:text-3xl font-black text-slate-900 mb-4">¡Mensaje Enviado!</h1>
-                <p className="text-slate-600 mb-8 leading-relaxed">
-                    Gracias por tu evaluación. Tu opinión nos ayuda a mejorar el directorio cada día para toda la comunidad.
-                </p>
+                <motion.h1
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3 }}
+                    className="text-4xl font-black text-slate-900 mb-4"
+                >
+                    Message Sent!
+                </motion.h1>
 
-                <div className="space-y-3">
+                <motion.p
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 }}
+                    className="text-lg text-slate-600 mb-10"
+                >
+                    Thank you for your feedback. We'll get back to you soon.
+                </motion.p>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 }}
+                >
                     <Link
                         to="/"
-                        className="flex items-center justify-center gap-2 w-full bg-slate-900 hover:bg-accent-600 text-white font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-accent-500/20 active:scale-[0.98]"
+                        className="inline-flex items-center gap-2 bg-slate-900 text-white font-bold px-8 py-4 rounded-2xl hover:bg-accent-600 transition-all shadow-xl shadow-slate-900/10 active:scale-95"
                     >
                         <ArrowLeft className="w-5 h-5" />
-                        Volver a la web
+                        Back to Home
                     </Link>
+                </motion.div>
 
-                    <div className="pt-4 flex items-center justify-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-widest">
-                        <Sparkles className="w-3 h-3 text-accent-500" />
-                        Directorio AI Global
-                    </div>
+                <div className="pt-4 flex items-center justify-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-widest">
+                    <Sparkles className="w-3 h-3 text-accent-500" />
+                    AI Global Directory
                 </div>
             </motion.div>
         </div>

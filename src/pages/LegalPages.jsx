@@ -6,43 +6,43 @@ const BackButton = () => (
     <div className="mb-8">
         <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-accent-600 transition-colors bg-white border border-slate-200 hover:border-accent-200 px-4 py-2 rounded-full shadow-sm hover:shadow-md">
             <ArrowLeft className="w-4 h-4" />
-            Volver al inicio
+            Back to Home
         </Link>
     </div>
 );
 export const PrivacyPolicy = () => (
     <div className="max-w-3xl mx-auto px-4 md:px-6 py-10 md:py-16 prose prose-slate">
         <BackButton />
-        <h1>🛡️ Política de Privacidad</h1>
-        <p><em>Última actualización: Marzo 2026</em></p>
+        <h1>🛡️ Privacy Policy</h1>
+        <p><em>Last updated: March 2026</em></p>
 
-        <h2>1. 📝 Información que recopilamos</h2>
-        <p>En Directorio AI, respetamos su privacidad y nos comprometemos a protegerla. Solo recopilamos datos que usted nos proporciona voluntariamente a través del formulario de contacto y mediante el uso de cookies analíticas y publicitarias 🍪.</p>
+        <h2>1. 📝 Information We Collect</h2>
+        <p>At AI Directory, we respect your privacy and are committed to protecting it. We only collect data that you voluntarily provide to us through the contact form and through the use of analytical and advertising cookies 🍪.</p>
 
-        <h2>2. 🎯 Uso de la información</h2>
-        <p>Utilizamos sus datos para mejorar el rendimiento del sitio web, analizar el tráfico (Google Analytics 📈) y mostrar publicidad relevante proporcionada por terceros como Google AdSense.</p>
+        <h2>2. 🎯 Use of Information</h2>
+        <p>We use your data to improve website performance, analyze traffic (Google Analytics 📈), and show relevant advertising provided by third parties such as Google AdSense.</p>
 
-        <h2>3. 👁️ Publicidad de Google AdSense y Cookies</h2>
-        <p>Utilizamos Google AdSense para publicar anuncios cuando visita nuestro sitio web. Los proveedores de terceros, incluido Google, utilizan cookies para mostrar anuncios relevantes basándose en las visitas anteriores de un usuario a nuestro sitio web o a otros sitios web en Internet.</p>
-        <p><strong>Uso de cookies publicitarias:</strong> El uso de cookies de publicidad permite a Google y a sus socios mostrar anuncios a nuestros usuarios basados en sus visitas a nuestros sitios y/o a otros sitios de Internet.</p>
-        <p>Los usuarios pueden inhabilitar la publicidad personalizada. Para ello, deberán acceder a Preferencias de anuncios de Google o visitar <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer" className="text-accent-600 hover:underline">www.aboutads.info</a> para inhabilitar el uso de cookies para publicidad personalizada por parte de proveedores externos.</p>
+        <h2>3. 👁️ Google AdSense Advertising and Cookies</h2>
+        <p>We use Google AdSense to serve ads when you visit our website. Third-party vendors, including Google, use cookies to serve relevant ads based on a user's prior visits to our website or other websites on the Internet.</p>
+        <p><strong>Use of advertising cookies:</strong> The use of advertising cookies allows Google and its partners to serve ads to our users based on their visits to our sites and/or other sites on the Internet.</p>
+        <p>Users can opt out of personalized advertising. To do so, they must access Google Ad Settings or visit <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer" className="text-accent-600 hover:underline">www.aboutads.info</a> to opt out of the use of cookies for personalized advertising by third-party providers.</p>
 
-        <h2>4. 🤝 Enlaces de Afiliados</h2>
-        <p>Algunas de las herramientas listadas incluyen enlaces de afiliados. Esto significa que si hace clic y realiza una compra, podemos recibir una pequeña comisión sin coste adicional para usted ✨. Esto nos ayuda a mantener el directorio actualizado de forma gratuita ❤️.</p>
+        <h2>4. 🤝 Affiliate Links</h2>
+        <p>Some of the tools listed include affiliate links. This means that if you click and make a purchase, we may receive a small commission at no additional cost to you ✨. This helps us keep the directory updated for free ❤️.</p>
     </div>
 );
 
 export const CookiesPolicy = () => (
     <div className="max-w-3xl mx-auto px-4 md:px-6 py-10 md:py-16 prose prose-slate">
         <BackButton />
-        <h1>🍪 Política de Cookies</h1>
-        <h2>🤔 ¿Qué son las cookies?</h2>
-        <p>Las cookies son pequeños archivos de texto que los sitios web que visita colocan en su ordenador 💻 para asegurar el correcto funcionamiento del sitio, así como para proporcionar información a los propietarios del sitio.</p>
-        <h2>📋 Tipos de Cookies que utilizamos</h2>
+        <h1>🍪 Cookies Policy</h1>
+        <h2>🤔 What are cookies?</h2>
+        <p>Cookies are small text files that the websites you visit place on your computer 💻 to ensure the correct functioning of the site, as well as to provide information to the site owners.</p>
+        <h2>📋 Types of Cookies We Use</h2>
         <ul>
-            <li><strong>🛠️ Cookies esenciales:</strong> Necesarias para el funcionamiento básico de la web.</li>
-            <li><strong>📊 Cookies de análisis:</strong> (Google Analytics) Nos permiten comprender cómo los usuarios interactúan con la web para mejorar la experiencia.</li>
-            <li><strong>📢 Cookies publicitarias:</strong> (Google AdSense) Utilizadas por los proveedores externos, incluido Google, para mostrar anuncios relevantes. Los usuarios pueden optar por no recibir publicidad personalizada visitando <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer" className="text-accent-600 hover:underline">Preferencias de anuncios</a> o <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer" className="text-accent-600 hover:underline">www.aboutads.info</a>.</li>
+            <li><strong>🛠️ Essential Cookies:</strong> Necessary for the basic operation of the web.</li>
+            <li><strong>📊 Analysis Cookies:</strong> (Google Analytics) They allow us to understand how users interact with the web to improve the experience.</li>
+            <li><strong>📢 Advertising Cookies:</strong> (Google AdSense) Used by third-party providers, including Google, to show relevant ads. Users can opt out of personalized advertising by visiting <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer" className="text-accent-600 hover:underline">Ad Settings</a> or <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer" className="text-accent-600 hover:underline">www.aboutads.info</a>.</li>
         </ul>
     </div>
 );
@@ -50,10 +50,10 @@ export const CookiesPolicy = () => (
 export const LegalNotice = () => (
     <div className="max-w-3xl mx-auto px-4 md:px-6 py-10 md:py-16 prose prose-slate">
         <BackButton />
-        <h1>⚖️ Aviso Legal</h1>
-        <p>El portal Directorio AI tiene como objetivo proporcionar información sobre herramientas de software de Inteligencia Artificial 🤖.</p>
-        <h2>⚠️ Descargo de responsabilidad</h2>
-        <p>La información contenida en este sitio web es solo para fines de información general. No nos hacemos responsables de los cambios en los precios de suscripción o términos de uso de las herramientas de terceros referenciadas. Algunas de las herramientas pueden incluir enlaces de afiliados por los cuales recibimos una pequeña comisión sin coste extra para usted 💸.</p>
+        <h1>⚖️ Legal Notice</h1>
+        <p>The AI Directory portal aims to provide information about Artificial Intelligence software tools 🤖.</p>
+        <h2>⚠️ Disclaimer</h2>
+        <p>The information contained on this website is for general information purposes only. We are not responsible for changes in subscription prices or terms of use of referenced third-party tools. Some of the tools may include affiliate links for which we receive a small commission at no extra cost to you 💸.</p>
     </div>
 );
 
@@ -61,28 +61,28 @@ export const Contact = () => {
     return (
         <div className="max-w-2xl mx-auto px-4 md:px-6 py-10 md:py-16">
             <BackButton />
-            <h1 className="text-3xl font-bold mb-6">📬 Contacto</h1>
-            <p className="text-slate-600 mb-8">¿Tienes alguna duda 🤔, propuesta de colaboración 🤝, o quieres sugerir una nueva Inteligencia Artificial 💡? Escríbenos y te responderemos pronto ⚡.</p>
+            <h1 className="text-3xl font-bold mb-6">📬 Contact</h1>
+            <p className="text-slate-600 mb-8">Do you have any questions 🤔, collaboration proposals 🤝, or want to suggest a new Artificial Intelligence 💡? Write to us and we will respond soon ⚡.</p>
 
             <form action="https://formsubmit.co/f.javiergg06@gmail.com" method="POST" className="space-y-4 shadow-sm bg-white p-5 md:p-8 rounded-2xl border border-slate-200">
-                <input type="hidden" name="_next" value={`${window.location.origin}/gracias`} />
+                <input type="hidden" name="_next" value={`${window.location.origin}/success`} />
                 <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_subject" value="Nuevo mensaje de contacto - Directorio AI" />
+                <input type="hidden" name="_subject" value="New contact message - AI Directory" />
 
                 <div>
-                    <label className="block text-sm font-bold text-slate-700 mb-1.5">👤 Nombre o Empresa</label>
-                    <input type="text" name="name" required className="w-full border border-slate-200 rounded-xl p-3.5 focus:ring-2 focus:ring-accent-500 outline-none transition-shadow hover:border-accent-200 bg-slate-50 focus:bg-white" placeholder="Ej. Ana García" />
+                    <label className="block text-sm font-bold text-slate-700 mb-1.5">👤 Name or Company</label>
+                    <input type="text" name="name" required className="w-full border border-slate-200 rounded-xl p-3.5 focus:ring-2 focus:ring-accent-500 outline-none transition-shadow hover:border-accent-200 bg-slate-50 focus:bg-white" placeholder="Ex. Jane Doe" />
                 </div>
                 <div>
-                    <label className="block text-sm font-bold text-slate-700 mb-1.5">📧 Email de contacto</label>
-                    <input type="email" name="email" required className="w-full border border-slate-200 rounded-xl p-3.5 focus:ring-2 focus:ring-accent-500 outline-none transition-shadow hover:border-accent-200 bg-slate-50 focus:bg-white" placeholder="correo@ejemplo.com" />
+                    <label className="block text-sm font-bold text-slate-700 mb-1.5">📧 Contact Email</label>
+                    <input type="email" name="email" required className="w-full border border-slate-200 rounded-xl p-3.5 focus:ring-2 focus:ring-accent-500 outline-none transition-shadow hover:border-accent-200 bg-slate-50 focus:bg-white" placeholder="email@example.com" />
                 </div>
                 <div>
-                    <label className="block text-sm font-bold text-slate-700 mb-1.5">💬 ¿En qué podemos ayudarte?</label>
-                    <textarea name="message" required className="w-full border border-slate-200 rounded-xl p-3.5 focus:ring-2 focus:ring-accent-500 outline-none h-36 transition-shadow hover:border-accent-200 bg-slate-50 focus:bg-white resize-y" placeholder="Escribe tu mensaje o propuesta aquí..."></textarea>
+                    <label className="block text-sm font-bold text-slate-700 mb-1.5">💬 How can we help you?</label>
+                    <textarea name="message" required className="w-full border border-slate-200 rounded-xl p-3.5 focus:ring-2 focus:ring-accent-500 outline-none h-36 transition-shadow hover:border-accent-200 bg-slate-50 focus:bg-white resize-y" placeholder="Write your message or proposal here..."></textarea>
                 </div>
                 <button type="submit" className="w-full bg-slate-900 text-white font-bold py-4 px-6 rounded-xl hover:bg-accent-600 transition-colors shadow-lg shadow-slate-900/10 active:scale-[0.98]">
-                    🚀 Enviar Mensaje
+                    🚀 Send Message
                 </button>
             </form>
         </div>

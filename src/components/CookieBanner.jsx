@@ -41,7 +41,7 @@ export const CookieBanner = () => {
                                 <Shield className="w-5 h-5" />
                             </div>
                             <p className="text-sm text-slate-600">
-                                🍪 Utilizamos cookies analíticas y publicitarias propias y de terceros (Google AdSense) para ofrecerle una experiencia personalizada. <Link to="/cookies" className="text-accent-600 hover:underline font-medium">Leer Política de Cookies 📜</Link>.
+                                🍪 We use own and third-party analytical and advertising cookies (Google AdSense) to offer you a personalized experience. <Link to="/cookies" className="text-accent-600 hover:underline font-medium">Read Cookies Policy 📜</Link>.
                             </p>
                         </div>
                         <div className="flex items-center gap-2 w-full md:w-auto flex-shrink-0">
@@ -49,13 +49,13 @@ export const CookieBanner = () => {
                                 onClick={handleDecline}
                                 className="flex-1 md:flex-none px-4 py-2 text-sm font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200 rounded-xl md:rounded-full transition-colors"
                             >
-                                ❌ Rechazar
+                                ❌ Decline
                             </button>
                             <button
                                 onClick={handleAccept}
                                 className="flex-1 md:flex-none px-6 py-2 text-sm font-bold text-white bg-slate-900 hover:bg-slate-800 rounded-xl md:rounded-full shadow-md transition-colors whitespace-nowrap"
                             >
-                                ✅ Aceptar Todas
+                                ✅ Accept All
                             </button>
                         </div>
                     </div>

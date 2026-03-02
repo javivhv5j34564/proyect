@@ -29,8 +29,8 @@ export default function ToolPage() {
     } : null;
 
     useSEO({
-        title: tool ? `${tool.name} - Prueba esta IA | Directorio AI` : 'Herramienta no encontrada',
-        description: tool ? tool.description : 'Esta herramienta de Inteligencia Artificial no existe o ha sido eliminada del directorio.',
+        title: tool ? `${tool.name} - Try this AI | AI Directory` : 'Tool Not Found',
+        description: tool ? tool.description : 'This Artificial Intelligence tool does not exist or has been removed from the directory.',
         schema: schemaData
     });
 
@@ -92,7 +92,7 @@ export default function ToolPage() {
     };
 
     const shareOnTwitter = () => {
-        const text = `¡Acabo de descubrir ${tool.name} en Directorio AI! Te ayuda en: ${tool.sector}. Échale un vistazo 👇`;
+        const text = `I just discovered ${tool.name} on AI Global Directory! It helps with: ${tool.sector}. Check it out 👇`;
         const url = window.location.href;
         window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, '_blank');
     };
@@ -100,10 +100,10 @@ export default function ToolPage() {
     if (!tool) {
         return (
             <div className="min-h-screen flex flex-col items-center justify-center p-6 text-center">
-                <h1 className="text-3xl font-bold mb-4">Herramienta no encontrada</h1>
-                <p className="text-slate-600 mb-8">Esta página no existe o la IA ha sido eliminada del directorio.</p>
+                <h1 className="text-3xl font-bold mb-4">Tool not found</h1>
+                <p className="text-slate-600 mb-8">This page does not exist or the AI has been removed from the directory.</p>
                 <Link to="/" className="bg-slate-900 text-white px-6 py-3 rounded-xl font-bold hover:bg-accent-600 transition-colors">
-                    Volver al Inicio
+                    Back to Home
                 </Link>
             </div>
         );
@@ -114,7 +114,7 @@ export default function ToolPage() {
             <div className="max-w-4xl mx-auto px-6">
                 {/* Breadcrumbs */}
                 <nav className="flex items-center gap-2 text-xs md:text-sm text-slate-400 mb-6 overflow-x-auto no-scrollbar whitespace-nowrap px-1">
-                    <Link to="/" className="hover:text-accent-600 transition-colors flex items-center gap-1">Inicio</Link>
+                    <Link to="/" className="hover:text-accent-600 transition-colors flex items-center gap-1">Home</Link>
                     <ChevronRight className="w-3 h-3 flex-shrink-0" />
                     <button onClick={() => { /* Esto requeriría pasar estado o usar URL params en Home */ window.location.href = "/?category=" + tool.sector; }} className="hover:text-accent-600 transition-colors">{tool.sector}</button>
                     <ChevronRight className="w-3 h-3 flex-shrink-0" />
@@ -123,7 +123,7 @@ export default function ToolPage() {
 
                 <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-accent-600 transition-colors bg-white border border-slate-200 hover:border-accent-200 px-4 py-2 rounded-full shadow-sm hover:shadow-md mb-8">
                     <ArrowLeft className="w-4 h-4" />
-                    Volver al Directorio
+                    Back to Directory
                 </Link>
 
                 <motion.div
@@ -172,8 +172,8 @@ export default function ToolPage() {
                                 </div>
                                 <span className="text-slate-500 text-xs md:text-sm font-medium">
                                     {ratingData.userRating > 0
-                                        ? `Has votado ${ratingData.userRating} estrellas. (Click para quitar)`
-                                        : `Basado en ${ratingData.count} opiniones. ¡Valórala tú también!`
+                                        ? `You voted ${ratingData.userRating} stars. (Click to remove)`
+                                        : `Based on ${ratingData.count} reviews. Rate it too!`
                                     }
                                 </span>
                             </div>
@@ -181,36 +181,36 @@ export default function ToolPage() {
 
                         <div className="w-full md:w-auto mt-4 md:mt-0 pb-4 md:pb-0">
                             <a href={tool.url} target="_blank" rel="noopener noreferrer" className="w-full md:w-auto flex items-center justify-center gap-2 bg-slate-900 hover:bg-accent-600 text-white font-bold py-3 px-6 md:py-4 md:px-8 rounded-xl transition-all shadow-lg hover:shadow-accent-500/25 active:scale-95 text-base md:text-lg">
-                                Visitar Web <ExternalLink className="w-5 h-5" />
+                                Visit Website <ExternalLink className="w-5 h-5" />
                             </a>
                         </div>
                     </div>
 
                     <div className="prose prose-base md:prose-lg max-w-none mb-8 md:mb-12">
-                        <h2 className="text-xl md:text-2xl font-bold text-slate-900 border-b border-slate-100 pb-2 md:pb-3 mb-4 md:mb-6">¿Qué es y por qué usar {tool.name}?</h2>
+                        <h2 className="text-xl md:text-2xl font-bold text-slate-900 border-b border-slate-100 pb-2 md:pb-3 mb-4 md:mb-6">What is {tool.name} and why use it?</h2>
                         <p className="text-slate-700 font-medium text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
                             {tool.description}
                         </p>
                         <div className="my-8">
                             <AdSensePlaceholder type="horizontal" />
                         </div>
-                        <h3 className="text-lg md:text-xl font-bold text-slate-800 mb-3 md:mb-4">Casos de Uso y Detalles</h3>
+                        <h3 className="text-lg md:text-xl font-bold text-slate-800 mb-3 md:mb-4">Use Cases and Details</h3>
                         <div className="bg-slate-50 p-5 md:p-8 rounded-2xl border border-slate-100 text-slate-600 leading-relaxed space-y-4">
                             <p>{tool.longDescription}</p>
-                            <p className="text-sm text-slate-500 italic mt-4 pt-4 border-t border-slate-200">Nota: Integrar este tipo de herramientas en tu flujo de trabajo diario puede ahorrar de 2 a 5 horas semanales, dependiendo del grado de automatización que apliques. Te sugerimos siempre revisar los términos del plan gratuito de {tool.name} antes de implementarlo a nivel empresarial.</p>
+                            <p className="text-sm text-slate-500 italic mt-4 pt-4 border-t border-slate-200">Note: Integrating these types of tools into your daily workflow can save from 2 to 5 hours per week, depending on the level of automation you apply. We suggest you always review the terms of the free plan of {tool.name} before implementing it at a corporate level.</p>
                         </div>
                     </div>
 
                     <div className="flex flex-col sm:flex-row items-center gap-4 pt-8 border-t border-slate-100">
-                        <span className="text-slate-500 font-semibold flex flex-row items-center gap-2"><Share2 className="w-5 h-5" /> Compartir herramienta:</span>
+                        <span className="text-slate-500 font-semibold flex flex-row items-center gap-2"><Share2 className="w-5 h-5" /> Share tool:</span>
                         <div className="flex gap-3 w-full sm:w-auto">
                             <button onClick={handleCopyLink} className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 font-bold transition-all hover:border-slate-300">
                                 {isCopied ? <Check className="w-4 h-4 text-green-500" /> : <Copy className="w-4 h-4" />}
-                                {isCopied ? '¡Enlace copiado!' : 'Copiar enlace'}
+                                {isCopied ? 'Link copied!' : 'Copy link'}
                             </button>
                             <button onClick={shareOnTwitter} className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-[#1DA1F2]/10 hover:bg-[#1DA1F2]/20 text-[#1DA1F2] font-bold transition-all">
                                 <Twitter className="w-4 h-4 fill-current" />
-                                Postear en X
+                                Post on X
                             </button>
                         </div>
                     </div>
@@ -225,11 +225,11 @@ export default function ToolPage() {
                         className="mt-16"
                     >
                         <h3 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
-                            <Sparkles className="w-5 h-5 text-accent-500" /> Alternativas a {tool.name}
+                            <Sparkles className="w-5 h-5 text-accent-500" /> Alternatives to {tool.name}
                         </h3>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             {relatedTools.map(relatedTool => (
-                                <Link to={`/herramienta/${relatedTool.id}`} key={relatedTool.id} className="block group">
+                                <Link to={`/tool/${relatedTool.id}`} key={relatedTool.id} className="block group">
                                     <div className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-accent-300 shadow-sm hover:shadow-xl hover:shadow-accent-500/10 transition-all h-full flex flex-col pt-1">
                                         <div className="flex justify-between items-start mb-4">
                                             <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-slate-50 border border-slate-100 text-2xl group-hover:scale-105 transition-transform">
