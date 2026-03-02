@@ -65,7 +65,7 @@ export const Contact = () => {
             <p className="text-slate-600 mb-8">¿Tienes alguna duda 🤔, propuesta de colaboración 🤝, o quieres sugerir una nueva Inteligencia Artificial 💡? Escríbenos y te responderemos pronto ⚡.</p>
 
             <form action="https://formsubmit.co/f.javiergg06@gmail.com" method="POST" className="space-y-4 shadow-sm bg-white p-5 md:p-8 rounded-2xl border border-slate-200">
-                <input type="hidden" name="_next" value={window.location.href} />
+                <input type="hidden" name="_next" value={`${window.location.origin}/gracias`} />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_subject" value="Nuevo mensaje de contacto - Directorio AI" />
 

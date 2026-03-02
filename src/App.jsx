@@ -5,6 +5,7 @@ import { PrivacyPolicy, CookiesPolicy, LegalNotice, Contact } from './pages/Lega
 import ToolPage from './pages/ToolPage';
 import { SubmitToolPage } from './pages/SubmitToolPage';
 import About from './pages/About';
+import SuccessPage from './pages/Success';
 import NotFound from './pages/NotFound';
 import { CookieBanner } from './components/CookieBanner';
 import Header from './components/Header';
@@ -26,6 +27,7 @@ function App() {
           <Route path="/sobre-nosotros" element={<About />} />
           <Route path="/herramienta/:id" element={<ToolPage />} />
           <Route path="/enviar-ia" element={<SubmitToolPage />} />
+          <Route path="/gracias" element={<SuccessPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

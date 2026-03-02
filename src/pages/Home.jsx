@@ -1036,6 +1036,9 @@ export default function Home({ searchTerm, setSearchTerm }) {
                   <h3 className="text-xl font-bold">Cuéntanos tu experiencia</h3>
                 </div>
                 <form action="https://formsubmit.co/f.javiergg06@gmail.com" method="POST" className="space-y-4">
+                  <input type="hidden" name="_next" value={`${window.location.origin}/gracias`} />
+                  <input type="hidden" name="_subject" value="Nueva Reseña de la Comunidad - Directorio AI" />
+                  <input type="hidden" name="_captcha" value="false" />
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <input
                       type="text"
