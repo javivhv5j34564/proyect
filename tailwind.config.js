@@ -72,7 +72,7 @@ export default {
                 }
             },
             animation: {
-                marquee: 'marquee 200s linear infinite',
+                marquee: 'marquee 450s linear infinite',
                 'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                 'float': 'float 3s ease-in-out infinite',
             }
