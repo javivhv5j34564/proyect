@@ -6,8 +6,8 @@ import { tools, categories } from '../data';
 import { AdSensePlaceholder } from '../components/AdSensePlaceholder';
 import { useSEO } from '../hooks/useSEO';
 
-const top3Ids = ['o3_mini', 'deepseek_v3', 'grok_3'];
-const recentIds = ['pika_2', 'bolt', 'elevenlabs_v3'];
+const top3Ids = ['cursor_ai', 'deepseek_v3', 'notebook_lm'];
+const recentIds = ['suno_v4', 'kling_ai', 'ideogram_2'];
 
 const aiFacts = [
   {
