@@ -252,6 +252,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
   const [isLoadingSub, setIsLoadingSub] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [displayCount, setDisplayCount] = useState(15);
+  const [formRating, setFormRating] = useState(5);
 
   useEffect(() => {
     setDisplayCount(15);
@@ -1021,15 +1022,6 @@ export default function Home({ searchTerm, setSearchTerm }) {
                 <h2 className="text-2xl md:text-4xl font-black text-slate-900 mb-2">Evaluación de la Comunidad</h2>
                 <p className="text-slate-500">¿Te ha sido útil el directorio? Déjanos tu opinión.</p>
               </div>
-              <div className="flex items-center gap-3 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
-                <div className="flex">
-                  {[1, 2, 3, 4, 5].map((s) => (
-                    <Star key={s} className="w-5 h-5 fill-amber-400 text-amber-400" />
-                  ))}
-                </div>
-                <span className="text-xl font-bold text-slate-900">4.9/5</span>
-                <span className="text-sm text-slate-400 font-medium">(+2,400 reseñas)</span>
-              </div>
             </div>
 
             {/* Reviews removed as per request - Keeping only the form */}
@@ -1052,13 +1044,21 @@ export default function Home({ searchTerm, setSearchTerm }) {
                       required
                       className="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all"
                     />
-                    <div className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3">
-                      <span className="text-sm text-slate-400 font-medium">Tu nota:</span>
+                    <div className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 min-w-[140px]">
+                      <span className="text-sm text-slate-400 font-medium whitespace-nowrap">Tu nota:</span>
                       <div className="flex gap-1">
                         {[1, 2, 3, 4, 5].map((s) => (
-                          <Star key={s} className="w-5 h-5 text-slate-600 hover:text-amber-400 cursor-pointer transition-colors" />
+                          <button
+                            key={s}
+                            type="button"
+                            onClick={() => setFormRating(s)}
+                            className="focus:outline-none transition-transform active:scale-90"
+                          >
+                            <Star className={`w-5 h-5 transition-all ${s <= formRating ? 'fill-amber-400 text-amber-400' : 'text-slate-600'}`} />
+                          </button>
                         ))}
                       </div>
+                      <input type="hidden" name="rating" value={formRating} />
                     </div>
                   </div>
                   <textarea
