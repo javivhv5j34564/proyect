@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from 'react';
-import { Search, Sparkles, X, ExternalLink, ChevronRight, Zap, Flame, Clock, ChevronDown, TrendingUp, Lightbulb, Brain, Bookmark, ChevronUp, BookOpen, ArrowRight, ArrowDown, ArrowUp, Menu, Search as SearchIcon, Sun, Moon, Palette, Video, Code, PenTool, Music, Settings, Utensils, Calendar, ShoppingBag } from 'lucide-react';
+import { Search, Sparkles, X, ExternalLink, ChevronRight, Zap, Flame, Clock, ChevronDown, TrendingUp, Lightbulb, Brain, Bookmark, ChevronUp, BookOpen, ArrowRight, ArrowDown, ArrowUp, Menu, Search as SearchIcon, Sun, Moon, Palette, Video, Code, PenTool, Music, Settings, Utensils, Calendar, ShoppingBag, Star, User, MessageSquare } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { tools, categories } from '../data';
@@ -1016,6 +1016,105 @@ export default function Home({ searchTerm, setSearchTerm }) {
             </div>
           </div>
         </motion.section>
+
+        {/* Comments & Evaluation Section */}
+        <section id="comentarios" className="mt-16 md:mt-24 mb-12">
+          <div className="max-w-4xl mx-auto px-4 sm:px-0">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-10">
+              <div className="text-center md:text-left">
+                <h2 className="text-2xl md:text-4xl font-black text-slate-900 mb-2">Evaluación de la Comunidad</h2>
+                <p className="text-slate-500">¿Te ha sido útil el directorio? Déjanos tu opinión.</p>
+              </div>
+              <div className="flex items-center gap-3 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+                <div className="flex">
+                  {[1, 2, 3, 4, 5].map((s) => (
+                    <Star key={s} className="w-5 h-5 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+                <span className="text-xl font-bold text-slate-900">4.9/5</span>
+                <span className="text-sm text-slate-400 font-medium">(+2,400 reseñas)</span>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              {[
+                { name: "Carlos Ruiz", date: "Hace 2 días", comment: "Increíble la cantidad de herramientas gratis que no conocía. Bolt.new me ha salvado un proyecto esta semana.", rating: 5 },
+                { name: "Elena Gómez", date: "Hace 5 días", comment: "El filtro de 'Gratuitas primero' es justo lo que necesitaba. Muy buena experiencia de usuario en móvil.", rating: 5 },
+                { name: "Marc Thompson", date: "Hace 1 semana", comment: "Excelente selección. He guardado el directorio en favoritos porque lo uso a diario para mi agencia de marketing.", rating: 4 },
+                { name: "Sara P.", date: "Hace 10 días", comment: "Muy limpio y rápido. Se nota que las herramientas están curadas a mano y no es spam.", rating: 5 }
+              ].map((review, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                  className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500">
+                      <User className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-slate-900 text-sm">{review.name}</h4>
+                      <p className="text-[10px] text-slate-400 font-medium">{review.date}</p>
+                    </div>
+                    <div className="ml-auto flex">
+                      {[...Array(review.rating)].map((_, i) => (
+                        <Star key={i} className="w-3 h-3 fill-amber-400 text-amber-400" />
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-slate-600 text-sm italic leading-relaxed">"{review.comment}"</p>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Leave a Comment Form */}
+            <div className="bg-slate-900 rounded-3xl p-6 md:p-10 text-white relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-accent-500/10 rounded-full blur-3xl"></div>
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-6">
+                  <MessageSquare className="w-6 h-6 text-accent-400" />
+                  <h3 className="text-xl font-bold">Cuéntanos tu experiencia</h3>
+                </div>
+                <form action="https://formsubmit.co/f.javiergg06@gmail.com" method="POST" className="space-y-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Tu nombre"
+                      required
+                      className="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all"
+                    />
+                    <div className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+                      <span className="text-sm text-slate-400 font-medium">Tu nota:</span>
+                      <div className="flex gap-1">
+                        {[1, 2, 3, 4, 5].map((s) => (
+                          <Star key={s} className="w-5 h-5 text-slate-600 hover:text-amber-400 cursor-pointer transition-colors" />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <textarea
+                    name="message"
+                    rows="3"
+                    placeholder="Escribe aquí tu comentario o sugerencia..."
+                    required
+                    className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all resize-none"
+                  ></textarea>
+                  <button
+                    type="submit"
+                    className="w-full bg-accent-500 hover:bg-accent-400 text-white font-bold py-4 rounded-xl shadow-lg shadow-accent-500/20 transition-all active:scale-[0.98]"
+                  >
+                    Enviar evaluación
+                  </button>
+                  <p className="text-[10px] text-center text-slate-500 mt-2 italic">Valoramos cada sugerencia para mejorar el directorio a diario.</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* Floating Scroll To Top Button */}
