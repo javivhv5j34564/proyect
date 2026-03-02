@@ -253,6 +253,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [displayCount, setDisplayCount] = useState(15);
   const [formRating, setFormRating] = useState(5);
+  const [hoverRating, setHoverRating] = useState(0);
 
   useEffect(() => {
     setDisplayCount(15);
@@ -1055,9 +1056,16 @@ export default function Home({ searchTerm, setSearchTerm }) {
                             key={s}
                             type="button"
                             onClick={() => setFormRating(s)}
-                            className="focus:outline-none transition-transform active:scale-90"
+                            onMouseEnter={() => setHoverRating(s)}
+                            onMouseLeave={() => setHoverRating(0)}
+                            className="focus:outline-none transition-transform active:scale-95 px-0.5"
                           >
-                            <Star className={`w-5 h-5 transition-all ${s <= formRating ? 'fill-amber-400 text-amber-400' : 'text-slate-600'}`} />
+                            <Star
+                              className={`w-6 h-6 transition-all ${s <= (hoverRating || formRating)
+                                  ? 'fill-amber-400 text-amber-400 scale-110'
+                                  : 'text-slate-600'
+                                }`}
+                            />
                           </button>
                         ))}
                       </div>
