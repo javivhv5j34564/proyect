@@ -1032,39 +1032,8 @@ export default function Home({ searchTerm, setSearchTerm }) {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              {[
-                { name: "Carlos Ruiz", date: "Hace 2 días", comment: "Increíble la cantidad de herramientas gratis que no conocía. Bolt.new me ha salvado un proyecto esta semana.", rating: 5 },
-                { name: "Elena Gómez", date: "Hace 5 días", comment: "El filtro de 'Gratuitas primero' es justo lo que necesitaba. Muy buena experiencia de usuario en móvil.", rating: 5 },
-                { name: "Marc Thompson", date: "Hace 1 semana", comment: "Excelente selección. He guardado el directorio en favoritos porque lo uso a diario para mi agencia de marketing.", rating: 4 },
-                { name: "Sara P.", date: "Hace 10 días", comment: "Muy limpio y rápido. Se nota que las herramientas están curadas a mano y no es spam.", rating: 5 }
-              ].map((review, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all"
-                >
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500">
-                      <User className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-slate-900 text-sm">{review.name}</h4>
-                      <p className="text-[10px] text-slate-400 font-medium">{review.date}</p>
-                    </div>
-                    <div className="ml-auto flex">
-                      {[...Array(review.rating)].map((_, i) => (
-                        <Star key={i} className="w-3 h-3 fill-amber-400 text-amber-400" />
-                      ))}
-                    </div>
-                  </div>
-                  <p className="text-slate-600 text-sm italic leading-relaxed">"{review.comment}"</p>
-                </motion.div>
-              ))}
-            </div>
+            {/* Reviews removed as per request - Keeping only the form */}
+
 
             {/* Leave a Comment Form */}
             <div className="bg-slate-900 rounded-3xl p-6 md:p-10 text-white relative overflow-hidden">
