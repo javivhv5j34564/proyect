@@ -525,7 +525,6 @@ export default function Home({ searchTerm, setSearchTerm }) {
       </section>
 
       <main className="max-w-6xl mx-auto px-4 sm:px-6 py-2 md:py-6">
-        <AdSensePlaceholder type="horizontal" />
 
         {/* AI Facts & Advantages Section */}
         <section className="mb-12 mt-10 md:mb-16 md:mt-12">
@@ -1011,9 +1010,6 @@ export default function Home({ searchTerm, setSearchTerm }) {
               </div>
             </div>
 
-            <div className="mt-8 md:mt-12 bg-slate-50 rounded-2xl p-4 md:p-6 border border-slate-100">
-              <AdSensePlaceholder type="horizontal" />
-            </div>
           </div>
         </motion.section>
 
