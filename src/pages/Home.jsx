@@ -266,8 +266,6 @@ export default function Home({ searchTerm, setSearchTerm }) {
   }, []);
 
   const scrollToSection = (id) => {
-    setIsMobileMenuOpen(false);
-
     setTimeout(() => {
       if (id === 'top') {
         window.scrollTo({ top: 0, behavior: 'smooth' });
