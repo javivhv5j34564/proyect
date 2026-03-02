@@ -6,8 +6,8 @@ import { tools, categories } from '../data';
 import { AdSensePlaceholder } from '../components/AdSensePlaceholder';
 import { useSEO } from '../hooks/useSEO';
 
-const top3Ids = ['chatgpt', 'gemini', 'copilot'];
-const recentIds = ['claude', 'runway', 'kling'];
+const top3Ids = ['o3_mini', 'deepseek_v3', 'grok_3'];
+const recentIds = ['pika_2', 'bolt', 'elevenlabs_v3'];
 
 const aiFacts = [
   {
@@ -392,7 +392,10 @@ export default function Home({ searchTerm, setSearchTerm }) {
 
       return matchesSearch && matchesCategory && matchesFavorites && matchesPricing;
     }).sort((a, b) => {
-      // Sort by upvotes to emulate Product Hunt style
+      // Primary: Free first
+      if (a.isFullyFree && !b.isFullyFree) return -1;
+      if (!a.isFullyFree && b.isFullyFree) return 1;
+      // Secondary: Upvotes
       return (upvotes[b.id] || 0) - (upvotes[a.id] || 0);
     });
   }, [searchTerm, selectedCategory, selectedPricing, showFavorites, bookmarks, upvotes]);
@@ -400,9 +403,15 @@ export default function Home({ searchTerm, setSearchTerm }) {
   const showSections = searchTerm === '' && selectedCategory === 'Todos' && selectedPricing === 'Todos' && !showFavorites;
 
   // Sorting explicit sections by upvotes too
+  // Sorting explicit sections: Top3 and Recent keep their fixed id order/upvotes, 
+  // but OtherTools (the main directory) will respect the "Free First" rule.
   const top3Tools = tools.filter(t => top3Ids.includes(t.id)).sort((a, b) => (upvotes[b.id] || 0) - (upvotes[a.id] || 0));
   const recentTools = tools.filter(t => recentIds.includes(t.id)).sort((a, b) => (upvotes[b.id] || 0) - (upvotes[a.id] || 0));
-  const otherTools = tools.filter(t => !top3Ids.includes(t.id) && !recentIds.includes(t.id)).sort((a, b) => (upvotes[b.id] || 0) - (upvotes[a.id] || 0));
+  const otherTools = tools.filter(t => !top3Ids.includes(t.id) && !recentIds.includes(t.id)).sort((a, b) => {
+    if (a.isFullyFree && !b.isFullyFree) return -1;
+    if (!a.isFullyFree && b.isFullyFree) return 1;
+    return (upvotes[b.id] || 0) - (upvotes[a.id] || 0);
+  });
 
   // Lock body scroll when drawer is open
   useEffect(() => {
@@ -435,15 +444,15 @@ export default function Home({ searchTerm, setSearchTerm }) {
         </div>
 
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} className="relative z-20">
-          <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-white/60 backdrop-blur-md border border-accent-200/50 text-accent-700 text-xs md:text-sm font-bold mb-6 md:mb-8 shadow-sm">
+          <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-accent-50/80 backdrop-blur-md border border-accent-200/50 text-accent-700 text-xs md:text-sm font-black mb-6 md:mb-8 shadow-sm tracking-wide uppercase">
             <Sparkles className="w-3 h-3 md:w-4 md:h-4" />
-            <span>Directorio gratuito actualizado 2026</span>
+            <span>Directorio de herramientas AI • 100% Actualizado</span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 mb-4 md:mb-6 tracking-tight md:tracking-tighter leading-[1.05]">
-            Descubre la <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-accent-500 to-indigo-600">IA ideal</span> <br className="hidden sm:block" /> para tu próximo proyecto
+            Encuentra la <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-accent-500 to-indigo-600">Herramienta AI</span> <br className="hidden sm:block" /> que necesitas hoy
           </h1>
           <p className="text-base sm:text-lg md:text-2xl text-slate-600 font-medium mb-6 md:mb-8 leading-relaxed md:leading-relaxed max-w-3xl mx-auto px-2">
-            Explora nuestra colección curada de cientos de herramientas de Inteligencia Artificial gratis y freemium, organizadas por categoría para disparar tu productividad.
+            El mayor directorio curado de Inteligencia Artificial. Filtra entre cientos de herramientas <span className="text-accent-600 font-bold">gratuitas</span> para programar, diseñar, escribir y automatizar tu trabajo.
           </p>
 
           {/* Popular searches tags */}
@@ -485,16 +494,36 @@ export default function Home({ searchTerm, setSearchTerm }) {
               Ver Artículos y Guías <BookOpen className="w-4 h-4 md:w-5 md:h-5" />
             </button>
           </div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: [0, 10, 0] }}
-            transition={{ delay: 1, duration: 2, repeat: Infinity }}
-            className="hidden sm:flex justify-center mt-2 md:mt-4 text-accent-500/80 cursor-pointer w-fit mx-auto"
-            onClick={() => scrollToSection('herramientas')}
-          >
-            <ChevronDown className="w-10 h-10" />
-          </motion.div>
         </motion.div>
+      </section>
+
+      {/* Quick Value Prop / How it Works */}
+      <section className="bg-white border-y border-slate-100 py-8 md:py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
+              <div className="w-12 h-12 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center font-black text-xl flex-shrink-0">1</div>
+              <div>
+                <h3 className="font-bold text-slate-900 mb-1">Explora Categorías</h3>
+                <p className="text-sm text-slate-500">Navega entre programación, diseño, video y más. Todo organizado para ti.</p>
+              </div>
+            </div>
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-4 border-y md:border-y-0 md:border-x border-slate-100 py-6 md:py-0 md:px-8">
+              <div className="w-12 h-12 rounded-full bg-accent-100 text-accent-600 flex items-center justify-center font-black text-xl flex-shrink-0">2</div>
+              <div>
+                <h3 className="font-bold text-slate-900 mb-1">Encuentra Herramientas Gratis</h3>
+                <p className="text-sm text-slate-500">Priorizamos las opciones gratuitas para que no gastes nada probando.</p>
+              </div>
+            </div>
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
+              <div className="w-12 h-12 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-black text-xl flex-shrink-0">3</div>
+              <div>
+                <h3 className="font-bold text-slate-900 mb-1">Potencia tu Trabajo</h3>
+                <p className="text-sm text-slate-500">Ahorra horas de tareas repetitivas usando la IA adecuada para cada caso.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <main className="max-w-6xl mx-auto px-4 sm:px-6 py-2 md:py-6">
