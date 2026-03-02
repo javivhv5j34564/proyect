@@ -432,23 +432,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
             The largest curated AI directory. Filter through hundreds of <span className="text-accent-600 font-bold">free</span> tools to code, design, write, and automate your workflow.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 mb-8 md:mb-10 max-w-5xl mx-auto px-4 z-30 relative bg-white/40 backdrop-blur-sm p-4 rounded-3xl border border-white/40 shadow-xl shadow-slate-900/5">
-            <span className="text-xs sm:text-sm font-bold text-slate-500 mr-1 sm:mr-2 flex items-center gap-1 w-full justify-center mb-2">
-              <Sparkles className="w-3.5 h-3.5 text-accent-400" /> Related AI Tools:
-            </span>
-            {tools.filter(t => ['midjourney_ai', 'github_8281', 'elevenlabs_2001', 'ideogram_2009', 'opusclip_2002', 'rytr_ai'].includes(t.id)).map((tool) => (
-              <button
-                key={tool.id}
-                onClick={() => {
-                  setSearchTerm(tool.name);
-                  scrollToSection('directory-section');
-                }}
-                className={`flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-[9px] sm:text-xs font-bold transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 bg-white border border-slate-200 text-slate-700 hover:border-accent-300 hover:text-accent-600 hover:bg-accent-50/50`}
-              >
-                {tool.emoji} {tool.name}
-              </button>
-            ))}
-          </div>
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4 mb-4 md:mt-8">
             <button
               onClick={() => scrollToSection('directory-section')}
