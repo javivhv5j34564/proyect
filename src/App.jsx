@@ -5,14 +5,20 @@ import { PrivacyPolicy, CookiesPolicy, LegalNotice, Contact } from './pages/Lega
 import ToolPage from './pages/ToolPage';
 import { SubmitToolPage } from './pages/SubmitToolPage';
 import About from './pages/About';
+import NotFound from './pages/NotFound';
 import { CookieBanner } from './components/CookieBanner';
+import Header from './components/Header';
+import { useState } from 'react';
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState('');
+
   return (
     <div className="flex flex-col min-h-screen">
+      <Header searchTerm={searchTerm} onSearchChange={setSearchTerm} />
       <div className="flex-grow">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home searchTerm={searchTerm} setSearchTerm={setSearchTerm} />} />
           <Route path="/privacidad" element={<PrivacyPolicy />} />
           <Route path="/cookies" element={<CookiesPolicy />} />
           <Route path="/aviso-legal" element={<LegalNotice />} />
@@ -20,6 +26,7 @@ function App() {
           <Route path="/sobre-nosotros" element={<About />} />
           <Route path="/herramienta/:id" element={<ToolPage />} />
           <Route path="/enviar-ia" element={<SubmitToolPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <CookieBanner />

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { tools } from '../data';
 import { useSEO } from '../hooks/useSEO';
-import { ArrowLeft, ExternalLink, Zap, Star, Share2, Twitter, Copy, Check, Sparkles } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Zap, Star, Share2, Twitter, Copy, Check, Sparkles, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { AdSensePlaceholder } from '../components/AdSensePlaceholder';
 
@@ -112,6 +112,15 @@ export default function ToolPage() {
     return (
         <div className="min-h-[80vh] bg-slate-50 py-12">
             <div className="max-w-4xl mx-auto px-6">
+                {/* Breadcrumbs */}
+                <nav className="flex items-center gap-2 text-xs md:text-sm text-slate-400 mb-6 overflow-x-auto no-scrollbar whitespace-nowrap px-1">
+                    <Link to="/" className="hover:text-accent-600 transition-colors flex items-center gap-1">Inicio</Link>
+                    <ChevronRight className="w-3 h-3 flex-shrink-0" />
+                    <button onClick={() => { /* Esto requeriría pasar estado o usar URL params en Home */ window.location.href = "/?category=" + tool.sector; }} className="hover:text-accent-600 transition-colors">{tool.sector}</button>
+                    <ChevronRight className="w-3 h-3 flex-shrink-0" />
+                    <span className="text-slate-600 font-bold truncate">{tool.name}</span>
+                </nav>
+
                 <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-accent-600 transition-colors bg-white border border-slate-200 hover:border-accent-200 px-4 py-2 rounded-full shadow-sm hover:shadow-md mb-8">
                     <ArrowLeft className="w-4 h-4" />
                     Volver al Directorio

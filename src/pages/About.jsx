@@ -1,9 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Target, ShieldCheck, Zap } from 'lucide-react';
+import { ArrowLeft, Target, ShieldCheck, Zap, ChevronRight, Users, Award, Globe } from 'lucide-react';
 
 const BackButton = () => (
-    <div className="mb-8">
+    <div className="mb-4">
+        {/* Breadcrumbs */}
+        <nav className="flex items-center gap-2 text-xs md:text-sm text-slate-400 mb-6 overflow-x-auto no-scrollbar whitespace-nowrap px-1">
+            <Link to="/" className="hover:text-accent-600 transition-colors flex items-center gap-1">Inicio</Link>
+            <ChevronRight className="w-3 h-3 flex-shrink-0" />
+            <span className="text-slate-600 font-bold">Sobre Nosotros</span>
+        </nav>
         <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-accent-600 transition-colors bg-white border border-slate-200 hover:border-accent-200 px-4 py-2 rounded-full shadow-sm hover:shadow-md">
             <ArrowLeft className="w-4 h-4" />
             Volver al inicio
@@ -48,17 +54,48 @@ const About = () => {
             </div>
 
             <article className="prose prose-slate prose-lg max-w-none">
-                <h2>¿Por qué Directorio AI?</h2>
+                <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">¿Por qué Directorio AI?</h2>
                 <p>
-                    Directorio AI nació de la necesidad de organizar el caótico pero emocionante paisaje de la Inteligencia Artificial. Con cientos de nuevas aplicaciones lanzándose cada mes, los usuarios se sienten abrumados.
+                    Directorio AI nació de la necesidad de organizar el caótico pero emocionante paisaje de la Inteligencia Artificial. Con cientos de nuevas aplicaciones lanzándose cada mes, los usuarios se sienten abrumados por la cantidad de opciones y la dificultad de encontrar herramientas que sean realmente útiles y accesibles.
                 </p>
                 <p>
-                    Nuestra plataforma no es solo un listado; es una herramienta de descubrimiento diseñada para ahorrarte tiempo y ayudarte a ser más productivo en la era digital.
+                    Nuestra plataforma no es solo un listado estático; es una <strong>herramienta de descubrimiento dinámico</strong> diseñada para ahorrarte tiempo y ayudarte a navegar la revolución tecnológica actual con criterio y eficiencia.
                 </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12 not-prose">
+                    <div className="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm">
+                        <Users className="w-6 h-6 text-primary-600 flex-shrink-0" />
+                        <div>
+                            <h4 className="font-bold text-slate-900 mb-1">Comunidad Primero</h4>
+                            <p className="text-slate-500 text-sm">Escuchamos activamente las sugerencias de nuestros usuarios para listar las herramientas que realmente demandan.</p>
+                        </div>
+                    </div>
+                    <div className="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm">
+                        <Award className="w-6 h-6 text-accent-600 flex-shrink-0" />
+                        <div>
+                            <h4 className="font-bold text-slate-900 mb-1">Calidad Certificada</h4>
+                            <p className="text-slate-500 text-sm">No listamos por listar. Cada IA es probada para asegurar que su "Free Tier" es funcional y no una simple demo.</p>
+                        </div>
+                    </div>
+                    <div className="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm">
+                        <Globe className="w-6 h-6 text-indigo-600 flex-shrink-0" />
+                        <div>
+                            <h4 className="font-bold text-slate-900 mb-1">Alcance Global</h4>
+                            <p className="text-slate-500 text-sm">Buscamos soluciones en todos los idiomas y mercados, adaptándolas con explicaciones claras en español.</p>
+                        </div>
+                    </div>
+                    <div className="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm">
+                        <Target className="w-6 h-6 text-emerald-600 flex-shrink-0" />
+                        <div>
+                            <h4 className="font-bold text-slate-900 mb-1">Foco en Productividad</h4>
+                            <p className="text-slate-500 text-sm">Priorizamos aquellas herramientas que automatizan tareas tediosas y liberan tiempo creativo.</p>
+                        </div>
+                    </div>
+                </div>
 
                 <h2>¿Quiénes somos?</h2>
                 <p>
-                    Somos un equipo de entusiastas de la tecnología apasionados por la productividad. Creemos que la IA no viene a reemplazarnos, sino a potenciarnos.
+                    Somos un equipo de entusiastas de la tecnología y expertos en productividad digital. Creemos firmemente que la Inteligencia Artificial es el copiloto definitivo para el ser humano moderno, y nuestra meta es ser la brújula que te guíe hacia el éxito en esta era sintética.
                 </p>
             </article>
 

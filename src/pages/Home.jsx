@@ -55,12 +55,12 @@ const faqs = [
 const AccordionItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="border-b border-slate-200 dark:border-dark-800 last:border-none">
+    <div className="border-b border-slate-200 last:border-none">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full py-4 md:py-5 flex items-center justify-between text-left group transition-all"
       >
-        <span className="text-sm md:text-base font-bold text-slate-800 dark:text-dark-100 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors pr-8">
+        <span className="text-sm md:text-base font-bold text-slate-800 group-hover:text-accent-600 transition-colors pr-8">
           {question}
         </span>
         <ChevronDown className={`w-5 h-5 text-slate-400 group-hover:text-accent-500 transition-transform duration-300 ${isOpen ? 'rotate-180 text-accent-500' : ''}`} />
@@ -74,7 +74,7 @@ const AccordionItem = ({ question, answer }) => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <p className="pb-5 text-sm md:text-base text-slate-500 dark:text-dark-400 leading-relaxed">
+            <p className="pb-5 text-sm md:text-base text-slate-500 leading-relaxed">
               {answer}
             </p>
           </motion.div>
@@ -186,55 +186,55 @@ const ToolCard = ({ tool, onClick, customBgClass = "bg-white", borderClass = "bo
     exit={{ opacity: 0, scale: 0.9 }}
     transition={{ duration: 0.5, ease: "easeOut" }}
     onClick={() => onClick(tool)}
-    className={`group ${customBgClass} dark:bg-dark-900/40 rounded-2xl p-4 md:p-6 border ${borderClass} dark:border-dark-800 hover:border-accent-300 dark:hover:border-accent-500/50 shadow-sm hover:shadow-xl hover:shadow-accent-500/10 transition-all cursor-pointer flex flex-col h-full relative overflow-hidden`}
+    className={`group ${customBgClass} rounded-2xl p-4 md:p-6 border ${borderClass} hover:border-accent-300 shadow-sm hover:shadow-xl hover:shadow-accent-500/10 transition-all cursor-pointer flex flex-col h-full relative overflow-hidden`}
   >
     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-400 via-accent-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
     <button
       onClick={(e) => onBookmark(e, tool.id)}
-      className="absolute top-4 right-4 md:top-5 md:right-5 z-20 p-1.5 md:p-2 rounded-full bg-white/80 dark:bg-dark-800/80 hover:bg-white dark:hover:bg-dark-700 backdrop-blur border border-slate-200 dark:border-dark-700 text-slate-400 hover:text-accent-500 transition-all opacity-100 shadow-sm"
+      className="absolute top-4 right-4 md:top-5 md:right-5 z-20 p-1.5 md:p-2 rounded-full bg-white/80 hover:bg-white backdrop-blur border border-slate-200 text-slate-400 hover:text-accent-500 transition-all opacity-100 shadow-sm"
       title="Guardar en favoritos"
     >
       <Bookmark className={`w-3.5 h-3.5 md:w-4 md:h-4 ${isBookmarked ? 'fill-accent-500 text-accent-500' : ''}`} />
     </button>
 
     <div className="flex justify-between items-start mb-3 md:mb-4 relative z-10">
-      <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center bg-white dark:bg-dark-800 border border-slate-100 dark:border-dark-700 overflow-hidden group-hover:scale-105 transition-transform shadow-sm text-2xl md:text-3xl">
+      <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center bg-white border border-slate-100 overflow-hidden group-hover:scale-105 transition-transform shadow-sm text-2xl md:text-3xl">
         {tool.emoji || '🤖'}
       </div>
     </div>
 
     <div className="mb-2 relative z-10">
-      <span className="inline-flex text-[9px] md:text-[10px] font-bold px-2 py-0.5 md:px-2.5 rounded-full bg-slate-100 dark:bg-dark-800 text-slate-600 dark:text-dark-300 uppercase tracking-wider mb-1 md:mb-2 border border-slate-200/50 dark:border-dark-700">
+      <span className="inline-flex text-[9px] md:text-[10px] font-bold px-2 py-0.5 md:px-2.5 rounded-full bg-slate-100 text-slate-600 uppercase tracking-wider mb-1 md:mb-2 border border-slate-200/50">
         {tool.sector}
       </span>
       <Link to={`/herramienta/${tool.id}`} onClick={(e) => e.stopPropagation()} className="block">
-        <h3 className="text-lg md:text-xl font-bold group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors text-slate-900 dark:text-dark-50 leading-tight pr-8 hover:underline decoration-accent-500/50 underline-offset-4">{tool.name}</h3>
+        <h3 className="text-lg md:text-xl font-bold group-hover:text-accent-600 transition-colors text-slate-900 leading-tight pr-8 hover:underline decoration-accent-500/50 underline-offset-4">{tool.name}</h3>
       </Link>
     </div>
 
-    <p className="text-slate-600 dark:text-dark-400 text-xs md:text-sm leading-relaxed mb-4 md:mb-5 flex-grow line-clamp-3 relative z-10">
+    <p className="text-slate-600 text-xs md:text-sm leading-relaxed mb-4 md:mb-5 flex-grow line-clamp-3 relative z-10">
       {tool.description}
     </p>
 
-    <div className="mt-auto pt-3 md:pt-4 border-t border-slate-200/50 dark:border-dark-800 flex items-center justify-between relative z-10">
+    <div className="mt-auto pt-3 md:pt-4 border-t border-slate-200/50 flex items-center justify-between relative z-10">
       <button
         onClick={(e) => onUpvote(e, tool.id)}
-        className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all z-20 shadow-sm ${hasUpvoted ? 'bg-accent-500 border-accent-500 text-white hover:bg-accent-600' : 'bg-white dark:bg-dark-800 border-slate-200 dark:border-dark-700 text-slate-600 dark:text-dark-300 hover:border-slate-300 dark:hover:border-dark-600 hover:bg-slate-50 dark:hover:bg-dark-700'}`}
+        className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all z-20 shadow-sm ${hasUpvoted ? 'bg-accent-500 border-accent-500 text-white hover:bg-accent-600' : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50'}`}
         title="Votar herramienta"
       >
-        <ChevronUp className={`w-3 h-3 md:w-4 md:h-4 ${hasUpvoted ? 'text-white' : 'text-slate-400 dark:text-dark-500'}`} />
+        <ChevronUp className={`w-3 h-3 md:w-4 md:h-4 ${hasUpvoted ? 'text-white' : 'text-slate-400'}`} />
         {upvotes || 0}
       </button>
 
       <div className="flex items-center gap-2 md:gap-3">
         <div className="flex items-center gap-1 md:gap-1.5 min-w-0">
           <Zap className={`w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 ${tool.isFullyFree ? 'text-green-500' : 'text-amber-500'}`} />
-          <span className={`text-[10px] sm:text-xs font-semibold truncate ${tool.isFullyFree ? 'text-green-600 dark:text-green-400' : 'text-amber-600 dark:text-amber-400'}`} style={{ maxWidth: '90px' }}>
+          <span className={`text-[10px] sm:text-xs font-semibold truncate ${tool.isFullyFree ? 'text-green-600' : 'text-amber-600'}`} style={{ maxWidth: '90px' }}>
             {tool.freeTierDetails}
           </span>
         </div>
-        <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-slate-50 dark:bg-dark-800 border border-slate-100 dark:border-dark-700 flex items-center justify-center text-slate-400 dark:text-dark-500 group-hover:bg-accent-50 dark:group-hover:bg-accent-950/30 group-hover:text-accent-600 dark:group-hover:text-accent-400 group-hover:border-accent-200 dark:group-hover:border-accent-800 transition-colors shadow-sm flex-shrink-0">
+        <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-accent-50 group-hover:text-accent-600 group-hover:border-accent-200 transition-colors shadow-sm flex-shrink-0">
           <ChevronRight className="w-3 h-3 md:w-4 md:h-4" />
         </div>
       </div>
@@ -242,8 +242,7 @@ const ToolCard = ({ tool, onClick, customBgClass = "bg-white", borderClass = "bo
   </motion.div>
 );
 
-export default function Home() {
-  const [searchTerm, setSearchTerm] = useState('');
+export default function Home({ searchTerm, setSearchTerm }) {
   const [selectedCategory, setSelectedCategory] = useState('Todos');
   const [selectedPricing, setSelectedPricing] = useState('Todos');
   const [showFavorites, setShowFavorites] = useState(false);
@@ -251,27 +250,8 @@ export default function Home() {
   const [selectedBlogPost, setSelectedBlogPost] = useState(null);
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [isLoadingSub, setIsLoadingSub] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
-  const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [displayCount, setDisplayCount] = useState(15);
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('theme');
-      return saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
-    }
-    return false;
-  });
-
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
-  }, [isDarkMode]);
 
   useEffect(() => {
     setDisplayCount(15);
@@ -437,97 +417,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
       {/* Header */}
-      <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-lg border-b border-slate-200/50 px-4 py-3 md:px-6 md:py-4 shadow-sm">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4 relative">
-          <div className={`flex w-full md:w-auto items-center justify-between gap-2 ${isSearchFocused ? 'hidden md:flex' : 'flex'}`}>
-            <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('herramientas')}>
-              <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-primary-500 via-accent-500 to-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-accent-500/20 flex-shrink-0">
-                <Sparkles className="w-4 h-4 md:w-5 md:h-5" />
-              </div>
-              <div>
-                <h1 className="text-lg md:text-xl font-bold tracking-tight">Directorio AI</h1>
-                <p className="text-[10px] md:text-xs text-slate-500 font-medium tracking-wide uppercase hidden sm:block">Las mejores herramientas</p>
-              </div>
-            </div>
-            <button
-              className="md:hidden p-2 text-slate-600 dark:text-dark-300 hover:bg-slate-100 dark:hover:bg-dark-800 rounded-lg transition-colors focus:outline-none flex items-center gap-2"
-            >
-              <button
-                onClick={(e) => { e.stopPropagation(); setIsDarkMode(!isDarkMode); }}
-                className="p-1.5 rounded-lg bg-slate-100 dark:bg-dark-800 border border-slate-200 dark:border-dark-700"
-              >
-                {isDarkMode ? <Sun className="w-4 h-4 text-amber-500" /> : <Moon className="w-4 h-4 text-blue-500" />}
-              </button>
-              {isMobileMenuOpen ? <X className="w-6 h-6" onClick={() => setIsMobileMenuOpen(false)} /> : <Menu className="w-6 h-6" onClick={() => setIsMobileMenuOpen(true)} />}
-            </button>
-          </div>
 
-          <nav className="hidden md:flex items-center gap-6 font-semibold text-sm text-slate-600 dark:text-dark-300">
-            <button onClick={() => scrollToSection('herramientas')} className="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">Directorio</button>
-            <button onClick={() => scrollToSection('blog-section')} className="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">Guías y Blog</button>
-            <button onClick={() => scrollToSection('footer-contacto')} className="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">Contacto</button>
-            <div className="w-px h-6 bg-slate-200 dark:bg-dark-700 mx-2"></div>
-            <button
-              onClick={() => setIsDarkMode(!isDarkMode)}
-              className="p-2 rounded-xl bg-slate-100 dark:bg-dark-800 text-slate-600 dark:text-dark-300 hover:text-accent-600 dark:hover:text-accent-400 transition-all border border-slate-200 dark:border-dark-700 shadow-sm"
-              title={isDarkMode ? 'Activar modo claro' : 'Activar modo oscuro'}
-            >
-              {isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-            </button>
-          </nav>
-
-          <AnimatePresence>
-            {isMobileMenuOpen && (
-              <>
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="md:hidden absolute top-full left-0 w-full h-screen bg-slate-900/60 dark:bg-dark-950/80 backdrop-blur-sm z-30"
-                />
-                <motion.nav
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: 'auto', opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  className="md:hidden flex flex-col w-full overflow-hidden absolute top-full left-0 bg-white/95 dark:bg-dark-900/95 shadow-xl rounded-b-2xl border-t border-slate-100 dark:border-dark-800 z-40"
-                >
-                  <div className="flex flex-col p-4 gap-2">
-                    <button onClick={() => scrollToSection('herramientas')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-dark-200 bg-slate-50 dark:bg-dark-800 active:bg-slate-100 rounded-xl transition-all border border-slate-100 dark:border-dark-700">Directorio de IAs</button>
-                    <button onClick={() => scrollToSection('blog-section')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-dark-200 bg-slate-50 dark:bg-dark-800 active:bg-slate-100 rounded-xl transition-all border border-slate-100 dark:border-dark-700">Guías y Blog</button>
-                    <button onClick={() => scrollToSection('footer-contacto')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-dark-200 bg-slate-50 dark:bg-dark-800 active:bg-slate-100 rounded-xl transition-all border border-slate-100 dark:border-dark-700">Contacto</button>
-                  </div>
-                </motion.nav>
-              </>
-            )}
-          </AnimatePresence>
-
-          <div className="relative w-full md:w-auto md:min-w-[300px] lg:min-w-[400px] group flex items-center">
-            {isSearchFocused && (
-              <button
-                className="md:hidden mr-2 p-2 text-slate-500 hover:bg-slate-100 rounded-full"
-                onClick={() => setIsSearchFocused(false)}
-              >
-                <ArrowRight className="w-5 h-5 rotate-180" />
-              </button>
-            )}
-            <div className="relative w-full">
-              <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 group-focus-within:text-accent-500 transition-colors" />
-              <input
-                type="text"
-                placeholder="Buscar (ej: programar, hacer logos...)"
-                value={searchTerm}
-                onFocus={() => setIsSearchFocused(true)}
-                onBlur={() => {
-                  if (!searchTerm) setIsSearchFocused(false);
-                }}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full bg-white dark:bg-dark-900 border border-slate-200 dark:border-dark-800 rounded-full py-2.5 pl-10 pr-4 outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500 transition-all shadow-sm group-hover:shadow-md text-sm md:text-base text-slate-900 dark:text-dark-50"
-              />
-            </div>
-          </div>
-        </div>
-      </header>
 
       {/* Hero Section */}
       <section className="relative flex flex-col justify-center text-center w-full pt-16 pb-12 px-4 sm:pt-24 sm:pb-20 sm:px-8 min-h-[45vh] md:min-h-[55vh] overflow-hidden mb-4 md:mb-8 group">
@@ -537,22 +427,22 @@ export default function Home() {
             loop
             muted
             playsInline
-            className="w-full h-full object-cover opacity-30 dark:opacity-20 group-hover:opacity-40 transition-opacity duration-1000 mix-blend-multiply dark:mix-blend-overlay"
+            className="w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity duration-1000 mix-blend-multiply"
           >
             <source src="https://cdn.pixabay.com/video/2021/08/25/86270-593005898_large.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-50/80 via-slate-50/95 to-slate-50 dark:from-dark-950/80 dark:via-dark-950/95 dark:to-dark-950 z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-50/80 via-slate-50/95 to-slate-50 z-10"></div>
         </div>
 
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} className="relative z-20">
-          <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-white/60 dark:bg-dark-900/60 backdrop-blur-md border border-accent-200/50 dark:border-accent-500/30 text-accent-700 dark:text-accent-400 text-xs md:text-sm font-bold mb-6 md:mb-8 shadow-sm">
+          <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-white/60 backdrop-blur-md border border-accent-200/50 text-accent-700 text-xs md:text-sm font-bold mb-6 md:mb-8 shadow-sm">
             <Sparkles className="w-3 h-3 md:w-4 md:h-4" />
             <span>Directorio gratuito actualizado 2026</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 dark:text-dark-50 mb-4 md:mb-6 tracking-tight md:tracking-tighter leading-[1.05]">
-            Descubre la <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-accent-500 to-indigo-600 dark:from-primary-400 dark:via-accent-400 dark:to-indigo-400">IA ideal</span> <br className="hidden sm:block" /> para tu próximo proyecto
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 mb-4 md:mb-6 tracking-tight md:tracking-tighter leading-[1.05]">
+            Descubre la <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-accent-500 to-indigo-600">IA ideal</span> <br className="hidden sm:block" /> para tu próximo proyecto
           </h1>
-          <p className="text-base sm:text-lg md:text-2xl text-slate-600 dark:text-dark-300 font-medium mb-6 md:mb-8 leading-relaxed md:leading-relaxed max-w-3xl mx-auto px-2">
+          <p className="text-base sm:text-lg md:text-2xl text-slate-600 font-medium mb-6 md:mb-8 leading-relaxed md:leading-relaxed max-w-3xl mx-auto px-2">
             Explora nuestra colección curada de cientos de herramientas de Inteligencia Artificial gratis y freemium, organizadas por categoría para disparar tu productividad.
           </p>
 
@@ -562,11 +452,11 @@ export default function Home() {
               <Sparkles className="w-3.5 h-3.5 text-accent-400" /> Prueba buscar:
             </span>
             {[
-              { term: 'crear logos', icon: <Flame className="w-3 h-3 md:w-3.5 md:h-3.5" />, color: 'from-amber-100 to-orange-50 dark:from-amber-900/40 dark:to-orange-900/20 text-amber-700 dark:text-amber-400 border-amber-200 dark:border-amber-800/50 hover:border-amber-400 hover:shadow-amber-500/20' },
-              { term: 'python', icon: <Zap className="w-3 h-3 md:w-3.5 md:h-3.5" />, color: 'from-blue-100 to-indigo-50 dark:from-blue-900/40 dark:to-indigo-900/20 text-blue-700 dark:text-blue-400 border-blue-200 dark:border-blue-800/50 hover:border-blue-400 hover:shadow-blue-500/20' },
-              { term: 'quitar fondo', icon: <Sparkles className="w-3 h-3 md:w-3.5 md:h-3.5" />, color: 'from-fuchsia-100 to-purple-50 dark:from-fuchsia-900/40 dark:to-purple-900/20 text-fuchsia-700 dark:text-fuchsia-400 border-fuchsia-200 dark:border-fuchsia-800/50 hover:border-fuchsia-400 hover:shadow-fuchsia-500/20' },
-              { term: 'excel', icon: <TrendingUp className="w-3 h-3 md:w-3.5 md:h-3.5" />, color: 'from-emerald-100 to-green-50 dark:from-emerald-900/40 dark:to-green-900/20 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800/50 hover:border-emerald-400 hover:shadow-emerald-500/20' },
-              { term: 'editar video', icon: <Lightbulb className="w-3 h-3 md:w-3.5 md:h-3.5" />, color: 'from-rose-100 to-red-50 dark:from-rose-900/40 dark:to-red-900/20 text-rose-700 dark:text-rose-400 border-rose-200 dark:border-rose-800/50 hover:border-rose-400 hover:shadow-rose-500/20' }
+              { term: 'crear logos', icon: <Flame className="w-3 h-3 md:w-3.5 md:h-3.5" />, color: 'from-amber-100 to-orange-50 text-amber-700 border-amber-200 hover:border-amber-400 hover:shadow-amber-500/20' },
+              { term: 'python', icon: <Zap className="w-3 h-3 md:w-3.5 md:h-3.5" />, color: 'from-blue-100 to-indigo-50 text-blue-700 border-blue-200 hover:border-blue-400 hover:shadow-blue-500/20' },
+              { term: 'quitar fondo', icon: <Sparkles className="w-3 h-3 md:w-3.5 md:h-3.5" />, color: 'from-fuchsia-100 to-purple-50 text-fuchsia-700 border-fuchsia-200 hover:border-fuchsia-400 hover:shadow-fuchsia-500/20' },
+              { term: 'excel', icon: <TrendingUp className="w-3 h-3 md:w-3.5 md:h-3.5" />, color: 'from-emerald-100 to-green-50 text-emerald-700 border-emerald-200 hover:border-emerald-400 hover:shadow-emerald-500/20' },
+              { term: 'editar video', icon: <Lightbulb className="w-3 h-3 md:w-3.5 md:h-3.5" />, color: 'from-rose-100 to-red-50 text-rose-700 border-rose-200 hover:border-rose-400 hover:shadow-rose-500/20' }
             ].map((item) => (
               <button
                 key={item.term}
@@ -613,10 +503,10 @@ export default function Home() {
         {/* AI Facts & Advantages Section */}
         <section className="mb-12 mt-10 md:mb-16 md:mt-12">
           <div className="text-center mb-8 md:mb-10">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-dark-50 tracking-tight mb-2 md:mb-3">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-800 tracking-tight mb-2 md:mb-3">
               ¿Por qué usar Inteligencia Artificial hoy?
             </h2>
-            <p className="text-slate-500 dark:text-dark-400 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4">Ventajas clave y datos sorprendentes que transformarán tu forma de trabajar</p>
+            <p className="text-slate-500 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4">Ventajas clave y datos sorprendentes que transformarán tu forma de trabajar</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
             {aiFacts.map((item, i) => (
@@ -627,28 +517,28 @@ export default function Home() {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 whileHover={{ y: -5 }}
-                className="bg-white dark:bg-dark-900 rounded-2xl p-6 border border-slate-200/60 dark:border-dark-800 shadow-sm hover:shadow-xl hover:shadow-accent-500/10 transition-all group relative overflow-hidden flex flex-col h-full"
+                className="bg-white rounded-2xl p-6 border border-slate-200/60 shadow-sm hover:shadow-xl hover:shadow-accent-500/10 transition-all group relative overflow-hidden flex flex-col h-full"
               >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-dark-800 dark:to-dark-950 rounded-bl-full -z-0 opacity-50 dark:opacity-20 group-hover:scale-110 transition-transform duration-500"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-slate-50 to-slate-100 rounded-bl-full -z-0 opacity-50 group-hover:scale-110 transition-transform duration-500"></div>
 
-                <div className="w-10 h-10 md:w-14 md:h-14 rounded-2xl bg-white dark:bg-dark-800 border border-slate-100 dark:border-dark-700 shadow-sm flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 relative z-10">
+                <div className="w-10 h-10 md:w-14 md:h-14 rounded-2xl bg-white border border-slate-100 shadow-sm flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 relative z-10">
                   {item.icon}
                 </div>
 
-                <h3 className="text-lg md:text-xl font-bold text-slate-900 dark:text-dark-50 mb-2 md:mb-3 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors relative z-10">
+                <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2 md:mb-3 group-hover:text-accent-600 transition-colors relative z-10">
                   {item.title}
                 </h3>
 
-                <p className="text-slate-600 dark:text-dark-400 text-xs md:text-sm mb-4 md:mb-6 leading-relaxed flex-grow relative z-10">
+                <p className="text-slate-600 text-xs md:text-sm mb-4 md:mb-6 leading-relaxed flex-grow relative z-10">
                   {item.description}
                 </p>
 
-                <div className="pt-4 md:pt-5 border-t border-slate-100 dark:border-dark-800 relative z-10 mt-auto">
+                <div className="pt-4 md:pt-5 border-t border-slate-100 relative z-10 mt-auto">
                   <div className="flex items-start gap-2.5">
-                    <div className="bg-accent-50 dark:bg-accent-950/30 p-1.5 rounded-full flex-shrink-0 mt-0.5">
-                      <Sparkles className="w-3.5 h-3.5 text-accent-500 dark:text-accent-400" />
+                    <div className="bg-accent-50 p-1.5 rounded-full flex-shrink-0 mt-0.5">
+                      <Sparkles className="w-3.5 h-3.5 text-accent-500" />
                     </div>
-                    <p className="text-xs md:text-sm font-medium text-slate-700 dark:text-dark-300 leading-relaxed italic">
+                    <p className="text-xs md:text-sm font-medium text-slate-700 leading-relaxed italic">
                       {item.fact}
                     </p>
                   </div>
@@ -701,17 +591,17 @@ export default function Home() {
         </section>
 
         {/* SEO Text Section for AdSense (Combats Thin Content) */}
-        <section className="bg-white dark:bg-dark-900 rounded-3xl p-6 md:p-10 shadow-sm border border-slate-200/60 dark:border-dark-800 mb-12">
+        <section className="bg-white rounded-3xl p-6 md:p-10 shadow-sm border border-slate-200/60 mb-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-dark-50 mb-4">¿Qué es Directorio AI y cómo te ayuda?</h2>
-            <div className="prose prose-slate dark:prose-invert md:prose-lg max-w-none text-slate-600 dark:text-dark-300 space-y-4">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 mb-4">¿Qué es Directorio AI y cómo te ayuda?</h2>
+            <div className="prose prose-slate md:prose-lg max-w-none text-slate-600 space-y-4">
               <p>
                 En <strong>Directorio AI</strong>, nuestro objetivo es recopilar, analizar y clasificar las mejores herramientas de Inteligencia Artificial disponibles en la actualidad. Sabemos que el ecosistema técnico cambia a diario, y encontrar la IA gratuita o freemium perfecta para tu negocio, tus estudios o tu flujo creativo puede ser una tarea exhaustiva. Por eso hacemos el trabajo pesado por ti.
               </p>
               <p>
                 Cada herramienta listada en nuestro directorio pasa por un filtro de calidad donde evaluamos su utilidad real, si posee un <em>plan gratuito válido</em> y qué tipo de problemas resuelve. Desde <strong>generadores de texto (LLMs)</strong> que te ayudan a redactar correos en segundos, hasta avanzados <strong>generadores de imágenes o vídeo</strong> que pueden crear el prototipo visual de tu próxima gran idea sin necesidad de saber programar.
               </p>
-              <h3 className="text-xl font-bold text-slate-800 dark:text-dark-100 mt-6 mb-3">Cómo aprovechar nuestras categorías</h3>
+              <h3 className="text-xl font-bold text-slate-800 mt-6 mb-3">Cómo aprovechar nuestras categorías</h3>
               <p>
                 Utiliza los filtros a continuación para navegar por nuestro inventario. Si eres un creador de contenido, la sección de <strong>Deseño Visual</strong> o <strong>Vídeo</strong> será tu mejor aliada. Si buscas optimizar la gestión de tu empresa, explora <strong>Negocios y Productividad</strong> para encontrar CRMs potenciados por IA y agentes automatizados. Nuestro directorio se mantiene actualizado para que nunca te quedes atrás en esta revolución tecnológica.
               </p>
@@ -766,7 +656,7 @@ export default function Home() {
                 onClick={() => { setSelectedCategory(cat); setShowFavorites(false); }}
                 className={`px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-all whitespace-nowrap flex-shrink-0 flex items-center gap-2 ${selectedCategory === cat && !showFavorites
                   ? 'bg-accent-600 text-white shadow-lg shadow-accent-500/30 scale-105'
-                  : 'bg-white dark:bg-dark-900 text-slate-600 dark:text-dark-300 border border-slate-200 dark:border-dark-800 hover:border-accent-200 dark:hover:border-accent-800 hover:bg-accent-50 dark:hover:bg-dark-800 hover:text-accent-600 dark:hover:text-accent-400 shadow-sm'
+                  : 'bg-white text-slate-600 border border-slate-200 hover:border-accent-200 hover:bg-accent-50 hover:text-accent-600 shadow-sm'
                   }`}
               >
                 {categoryIcons[cat]}
@@ -855,8 +745,8 @@ export default function Home() {
                         key={tool.id}
                         tool={tool}
                         onClick={setSelectedTool}
-                        customBgClass="bg-gradient-to-br from-fuchsia-50 to-purple-50/50 dark:from-fuchsia-950/20 dark:to-purple-950/20"
-                        borderClass="border-fuchsia-200/60 dark:border-fuchsia-800/30"
+                        customBgClass="bg-gradient-to-br from-fuchsia-50 to-purple-50/50"
+                        borderClass="border-fuchsia-200/60"
                         isBookmarked={bookmarks.includes(tool.id)}
                         onBookmark={toggleBookmark}
                         upvotes={upvotes[tool.id]}
@@ -910,7 +800,7 @@ export default function Home() {
                     <div className="flex justify-center mt-8 md:mt-10">
                       <button
                         onClick={() => setDisplayCount(prev => prev + 15)}
-                        className="bg-white dark:bg-dark-900 border border-slate-200 dark:border-dark-800 hover:border-accent-300 dark:hover:border-accent-500/50 text-slate-700 dark:text-dark-300 font-bold py-3 px-4 md:px-8 rounded-full shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center gap-2 w-full md:w-auto justify-center"
+                        className="bg-white border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-3 px-4 md:px-8 rounded-full shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center gap-2 w-full md:w-auto justify-center"
                       >
                         <SearchIcon className="w-4 h-4 text-accent-500" />
                         Cargar {Math.min(15, otherTools.length - displayCount)} más
@@ -953,12 +843,12 @@ export default function Home() {
           className="mt-20 mb-10 scroll-mt-24"
         >
           <div className="flex items-center gap-2 md:gap-3 mb-6 md:mb-8">
-            <div className="bg-accent-100 dark:bg-accent-950/40 p-2 md:p-2.5 rounded-xl">
-              <BookOpen className="w-5 h-5 md:w-6 md:h-6 text-accent-600 dark:text-accent-400" />
+            <div className="bg-accent-100 p-2 md:p-2.5 rounded-xl">
+              <BookOpen className="w-5 h-5 md:w-6 md:h-6 text-accent-600" />
             </div>
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-dark-50 tracking-tight">Guías y Recursos TOP</h2>
-              <p className="text-slate-500 dark:text-dark-400 text-xs md:text-sm mt-1">Descubre artículos y tutoriales para exprimir al máximo la inteligencia artificial.</p>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">Guías y Recursos TOP</h2>
+              <p className="text-slate-500 text-xs md:text-sm mt-1">Descubre artículos y tutoriales para exprimir al máximo la inteligencia artificial.</p>
             </div>
           </div>
 
@@ -967,18 +857,18 @@ export default function Home() {
               <div
                 key={post.id}
                 onClick={() => setSelectedBlogPost(post)}
-                className="bg-white dark:bg-dark-900 rounded-2xl border border-slate-200 dark:border-dark-800 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-accent-500/10 hover:border-accent-200 dark:hover:border-accent-500/50 transition-all group flex flex-col h-full cursor-pointer"
+                className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-accent-500/10 hover:border-accent-200 transition-all group flex flex-col h-full cursor-pointer"
               >
                 <div className="h-40 overflow-hidden relative">
-                  <div className="absolute inset-0 bg-slate-900/10 dark:bg-dark-950/30 group-hover:bg-transparent transition-colors z-10"></div>
+                  <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors z-10"></div>
                   <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <span className="absolute top-3 left-3 bg-white/90 dark:bg-dark-800/90 backdrop-blur text-slate-800 dark:text-dark-100 text-[10px] font-bold px-2 py-1 rounded-md z-20 uppercase tracking-wider shadow-sm">{post.category}</span>
+                  <span className="absolute top-3 left-3 bg-white/90 backdrop-blur text-slate-800 text-[10px] font-bold px-2 py-1 rounded-md z-20 uppercase tracking-wider shadow-sm">{post.category}</span>
                 </div>
                 <div className="p-5 flex flex-col flex-grow">
-                  <h3 className="text-base font-bold text-slate-900 dark:text-dark-50 mb-2 leading-tight group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">{post.title}</h3>
-                  <p className="text-slate-500 dark:text-dark-400 text-xs mb-4 flex-grow line-clamp-3 leading-relaxed">{post.excerpt}</p>
-                  <div className="mt-auto flex items-center justify-between border-t border-slate-100 dark:border-dark-800 pt-3">
-                    <span className="text-[11px] font-semibold text-slate-400 dark:text-dark-500">Lectura de {post.readTime}</span>
+                  <h3 className="text-base font-bold text-slate-900 mb-2 leading-tight group-hover:text-accent-600 transition-colors">{post.title}</h3>
+                  <p className="text-slate-500 text-xs mb-4 flex-grow line-clamp-3 leading-relaxed">{post.excerpt}</p>
+                  <div className="mt-auto flex items-center justify-between border-t border-slate-100 pt-3">
+                    <span className="text-[11px] font-semibold text-slate-400">Lectura de {post.readTime}</span>
                     <ArrowRight className="w-4 h-4 text-accent-500 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
@@ -1033,10 +923,10 @@ export default function Home() {
         {/* FAQ Section - Excellent for AdSense Weight but compact */}
         <section className="mt-16 md:mt-24 max-w-4xl mx-auto px-4 sm:px-0">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-dark-50 mb-3">Preguntas Frecuentes</h2>
-            <p className="text-slate-500 dark:text-dark-400 text-sm md:text-base">Todo lo que necesitas saber sobre nuestro directorio.</p>
+            <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-3">Preguntas Frecuentes</h2>
+            <p className="text-slate-500 text-sm md:text-base">Todo lo que necesitas saber sobre nuestro directorio.</p>
           </div>
-          <div className="bg-white dark:bg-dark-900 rounded-3xl p-2 md:p-6 shadow-sm border border-slate-200/60 dark:border-dark-800">
+          <div className="bg-white rounded-3xl p-2 md:p-6 shadow-sm border border-slate-200/60">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} {...faq} />
             ))}
@@ -1049,20 +939,20 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.7 }}
-          className="mt-16 pt-8 md:mt-24 md:pt-12 border-t border-slate-200 dark:border-dark-800"
+          className="mt-16 pt-8 md:mt-24 md:pt-12 border-t border-slate-200"
         >
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-4xl font-black text-slate-900 dark:text-dark-50 mb-6 md:mb-10 text-center md:text-left leading-tight">
-              Directorio de <span className="text-accent-600 dark:text-accent-400">Inteligencia Artificial</span> Gratis en Español
+            <h2 className="text-2xl md:text-4xl font-black text-slate-900 mb-6 md:mb-10 text-center md:text-left leading-tight">
+              Directorio de <span className="text-accent-600">Inteligencia Artificial</span> Gratis en Español
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
               <div className="space-y-4 md:space-y-6">
-                <p className="text-slate-600 dark:text-dark-300 text-sm md:text-lg leading-relaxed">
+                <p className="text-slate-600 text-sm md:text-lg leading-relaxed">
                   Bienvenido al directorio más completo y rigurosamente curado de <strong>herramientas de Inteligencia Artificial gratis</strong> y freemium del mercado. En un ecosistema donde diariamente nacen cientos de nuevos modelos, encontrar los que verdaderamente suman valor puede ser una tarea titánica.
                 </p>
-                <h3 className="text-lg md:text-xl font-bold text-slate-800 dark:text-dark-100">¿Cómo elegir la mejor IA para ti?</h3>
-                <p className="text-slate-600 dark:text-dark-300 text-sm md:text-base leading-relaxed">
+                <h3 className="text-lg md:text-xl font-bold text-slate-800">¿Cómo elegir la mejor IA para ti?</h3>
+                <p className="text-slate-600 text-sm md:text-base leading-relaxed">
                   Nuestra plataforma está categorizada por sectores neurálgicos: desde <strong>Escritura y Código</strong>, hasta nichos como <strong>Moda, Cocina y Gestión</strong>. Cada herramienta pasa por un exigente filtro de calidad humano donde evaluamos utilidad real y generosidad de sus planes gratuitos.
                 </p>
               </div>
@@ -1070,31 +960,31 @@ export default function Home() {
               <div className="space-y-4 md:space-y-6">
                 <ul className="space-y-4">
                   <li className="flex gap-3">
-                    <div className="w-6 h-6 rounded-full bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center flex-shrink-0 mt-1">
-                      <Zap className="w-3.5 h-3.5 text-primary-600 dark:text-primary-400" />
+                    <div className="w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0 mt-1">
+                      <Zap className="w-3.5 h-3.5 text-primary-600" />
                     </div>
                     <div>
-                      <strong className="text-slate-900 dark:text-dark-100 block text-sm md:text-base">Productividad y Estudio</strong>
-                      <p className="text-slate-500 dark:text-dark-400 text-xs md:text-sm">Maximiza tu eficiencia con potentes Asistentes Inteligentes y chatbots como ChatGPT, Gemini o Perplexity.</p>
+                      <strong className="text-slate-900 block text-sm md:text-base">Productividad y Estudio</strong>
+                      <p className="text-slate-500 text-xs md:text-sm">Maximiza tu eficiencia con potentes Asistentes Inteligentes y chatbots como ChatGPT, Gemini o Perplexity.</p>
                     </div>
                   </li>
                   <li className="flex gap-3">
-                    <div className="w-6 h-6 rounded-full bg-accent-100 dark:bg-accent-900/30 flex items-center justify-center flex-shrink-0 mt-1">
-                      <Palette className="w-3.5 h-3.5 text-accent-600 dark:text-accent-400" />
+                    <div className="w-6 h-6 rounded-full bg-accent-100 flex items-center justify-center flex-shrink-0 mt-1">
+                      <Palette className="w-3.5 h-3.5 text-accent-600" />
                     </div>
                     <div>
-                      <strong className="text-slate-900 dark:text-dark-100 block text-sm md:text-base">Generación Multimedia</strong>
-                      <p className="text-slate-500 dark:text-dark-400 text-xs md:text-sm">Accede a Generadores de Imágenes (Flux, Leonardo) y Video (Runway) para diseños profesionales en segundos.</p>
+                      <strong className="text-slate-900 block text-sm md:text-base">Generación Multimedia</strong>
+                      <p className="text-slate-500 text-xs md:text-sm">Accede a Generadores de Imágenes (Flux, Leonardo) y Video (Runway) para diseños profesionales en segundos.</p>
                     </div>
                   </li>
                 </ul>
-                <p className="text-slate-500 dark:text-dark-400 text-xs md:text-sm italic border-l-2 border-accent-500 pl-4 py-1">
+                <p className="text-slate-500 text-xs md:text-sm italic border-l-2 border-accent-500 pl-4 py-1">
                   Añade nuestro directorio a tus favoritos. Constantemente analizamos las últimas extensiones y apps móviles basadas en IA que están revolucionando el mundo digital.
                 </p>
               </div>
             </div>
 
-            <div className="mt-8 md:mt-12 bg-slate-50 dark:bg-dark-900/50 rounded-2xl p-4 md:p-6 border border-slate-100 dark:border-dark-800">
+            <div className="mt-8 md:mt-12 bg-slate-50 rounded-2xl p-4 md:p-6 border border-slate-100">
               <AdSensePlaceholder type="horizontal" />
             </div>
           </div>
@@ -1127,7 +1017,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setSelectedTool(null)}
-              className="fixed inset-0 bg-slate-900/40 dark:bg-dark-950/60 backdrop-blur-sm z-40 transition-opacity"
+              className="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-40 transition-opacity"
             />
 
             {/* Drawer */}
@@ -1136,72 +1026,72 @@ export default function Home() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed inset-y-0 right-0 w-full md:w-[480px] bg-white dark:bg-dark-900 shadow-2xl z-50 overflow-y-auto border-l border-slate-200 dark:border-dark-800"
+              className="fixed inset-y-0 right-0 w-full md:w-[480px] bg-white shadow-2xl z-50 overflow-y-auto border-l border-slate-200"
             >
               <div className="relative min-h-full flex flex-col">
                 {/* Drawer Header */}
-                <div className="sticky top-0 bg-white/80 dark:bg-dark-900/80 backdrop-blur-md border-b border-slate-100 dark:border-dark-800 px-6 py-4 flex items-center justify-between z-10">
-                  <span className="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-dark-500">Detalles de la herramienta</span>
+                <div className="sticky top-0 bg-white/80 backdrop-blur-md border-b border-slate-100 px-6 py-4 flex items-center justify-between z-10">
+                  <span className="text-xs font-bold uppercase tracking-wider text-slate-400">Detalles de la herramienta</span>
                   <button
                     onClick={() => setSelectedTool(null)}
-                    className="p-2 -mr-2 rounded-full hover:bg-slate-100 dark:hover:bg-dark-800 text-slate-500 dark:text-dark-400 transition-colors"
+                    className="p-2 -mr-2 rounded-full hover:bg-slate-100 text-slate-500 transition-colors"
                   >
                     <X className="w-5 h-5" />
                   </button>
                 </div>
 
                 {/* Drawer Content */}
-                <div className="p-5 md:p-8 flex-grow text-slate-900 dark:text-dark-50">
+                <div className="p-5 md:p-8 flex-grow text-slate-900">
                   <div className="flex items-start gap-4 md:gap-5 mb-6 md:mb-8">
-                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl border border-slate-100 dark:border-dark-700 shadow-sm overflow-hidden bg-slate-50 dark:bg-dark-800 flex items-center justify-center flex-shrink-0 text-4xl md:text-5xl">
+                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl border border-slate-100 shadow-sm overflow-hidden bg-slate-50 flex items-center justify-center flex-shrink-0 text-4xl md:text-5xl">
                       {selectedTool.emoji || '🤖'}
                     </div>
                     <div className="flex-grow">
-                      <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-dark-50 mb-2">{selectedTool.name}</h2>
+                      <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-2">{selectedTool.name}</h2>
                       <div className="flex flex-wrap items-center gap-2 mb-3">
-                        <span className="flex text-[10px] md:text-xs font-bold px-2.5 py-1 md:px-3 md:py-1 rounded-full bg-slate-100 dark:bg-dark-800 text-slate-600 dark:text-dark-300">
+                        <span className="flex text-[10px] md:text-xs font-bold px-2.5 py-1 md:px-3 md:py-1 rounded-full bg-slate-100 text-slate-600">
                           {selectedTool.sector}
                         </span>
-                        <span className={`flex items-center gap-1 text-[10px] md:text-xs font-bold px-2.5 py-1 md:px-3 md:py-1 rounded-full ${selectedTool.isFullyFree ? 'bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400' : 'bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400'}`}>
+                        <span className={`flex items-center gap-1 text-[10px] md:text-xs font-bold px-2.5 py-1 md:px-3 md:py-1 rounded-full ${selectedTool.isFullyFree ? 'bg-green-50 text-green-700' : 'bg-amber-50 text-amber-700'}`}>
                           <Zap className="w-3 h-3" /> {selectedTool.freeTierDetails}
                         </span>
                       </div>
                       <div className="flex items-center gap-2 mb-2">
                         <button
                           onClick={(e) => handleUpvote(e, selectedTool.id)}
-                          className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all z-20 shadow-sm ${userUpvoted.includes(selectedTool.id) ? 'bg-accent-500 border-accent-500 text-white hover:bg-accent-600' : 'bg-white dark:bg-dark-800 border-slate-200 dark:border-dark-700 text-slate-600 dark:text-dark-300 hover:border-slate-300 dark:hover:border-dark-600 hover:bg-slate-50 dark:hover:bg-dark-700'}`}
+                          className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all z-20 shadow-sm ${userUpvoted.includes(selectedTool.id) ? 'bg-accent-500 border-accent-500 text-white hover:bg-accent-600' : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50'}`}
                         >
-                          <ChevronUp className={`w-3.5 h-3.5 md:w-4 md:h-4 ${userUpvoted.includes(selectedTool.id) ? 'text-white' : 'text-slate-400 dark:text-dark-500'}`} />
+                          <ChevronUp className={`w-3.5 h-3.5 md:w-4 md:h-4 ${userUpvoted.includes(selectedTool.id) ? 'text-white' : 'text-slate-400'}`} />
                           {upvotes[selectedTool.id] || 0} Votos
                         </button>
                         <button
                           onClick={(e) => toggleBookmark(e, selectedTool.id)}
-                          className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all shadow-sm ${bookmarks.includes(selectedTool.id) ? 'bg-amber-50 dark:bg-amber-900/20 border-amber-200 dark:border-amber-800 text-amber-700 dark:text-amber-400 hover:bg-amber-100 dark:hover:bg-amber-900/40' : 'bg-white dark:bg-dark-800 border-slate-200 dark:border-dark-700 text-slate-600 dark:text-dark-300 hover:border-slate-300 dark:hover:border-dark-600 hover:bg-slate-50 dark:hover:bg-dark-700'}`}
+                          className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all shadow-sm ${bookmarks.includes(selectedTool.id) ? 'bg-amber-50 border-amber-200 text-amber-700 hover:bg-amber-100' : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50'}`}
                         >
-                          <Bookmark className={`w-3.5 h-3.5 md:w-4 md:h-4 ${bookmarks.includes(selectedTool.id) ? 'fill-amber-500 text-amber-500' : 'text-slate-400 dark:text-dark-500'}`} />
+                          <Bookmark className={`w-3.5 h-3.5 md:w-4 md:h-4 ${bookmarks.includes(selectedTool.id) ? 'fill-amber-500 text-amber-500' : 'text-slate-400'}`} />
                           Favorito
                         </button>
                       </div>
                     </div>
                   </div>
 
-                  <div className="prose prose-slate dark:prose-invert prose-p:leading-relaxed max-w-none">
-                    <h3 className="text-lg font-bold text-slate-900 dark:text-dark-50 border-b border-slate-100 dark:border-dark-800 pb-2 mb-4">¿Por qué usarla?</h3>
-                    <p className="text-slate-600 dark:text-dark-300 text-[15px] mb-4">
+                  <div className="prose prose-slate prose-p:leading-relaxed max-w-none">
+                    <h3 className="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2 mb-4">¿Por qué usarla?</h3>
+                    <p className="text-slate-600 text-[15px] mb-4">
                       {selectedTool.description}
                     </p>
-                    <p className="text-slate-600 dark:text-dark-300 text-[15px]">
+                    <p className="text-slate-600 text-[15px]">
                       {selectedTool.longDescription}
                     </p>
                   </div>
                 </div>
 
                 {/* Drawer Footer with CTA */}
-                <div className="sticky bottom-0 bg-white dark:bg-dark-900 border-t border-slate-100 dark:border-dark-800 p-4 md:p-6 z-10 space-y-2 md:space-y-3">
-                  <a href={selectedTool.url} target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center gap-2 bg-slate-900 dark:bg-accent-600 dark:hover:bg-accent-500 hover:bg-accent-600 text-white font-bold py-3 px-4 md:py-3.5 md:px-6 rounded-xl transition-all shadow-lg hover:shadow-accent-500/25 active:scale-[0.98] text-sm md:text-base">
+                <div className="sticky bottom-0 bg-white border-t border-slate-100 p-4 md:p-6 z-10 space-y-2 md:space-y-3">
+                  <a href={selectedTool.url} target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center gap-2 bg-slate-900 hover:bg-accent-600 text-white font-bold py-3 px-4 md:py-3.5 md:px-6 rounded-xl transition-all shadow-lg hover:shadow-accent-500/25 active:scale-[0.98] text-sm md:text-base">
                     Probar {selectedTool.name} Gratis <ExternalLink className="w-4 h-4" />
                   </a>
-                  <Link to={`/herramienta/${selectedTool.id}`} className="w-full flex items-center justify-center gap-2 bg-slate-50 dark:bg-dark-800 border border-slate-200 dark:border-dark-700 hover:border-accent-300 dark:hover:border-accent-500 text-slate-700 dark:text-dark-300 font-bold py-2.5 px-4 md:py-3 md:px-6 rounded-xl transition-all shadow-sm hover:shadow-md hover:text-accent-600 dark:hover:text-accent-400 text-sm md:text-base">
+                  <Link to={`/herramienta/${selectedTool.id}`} className="w-full flex items-center justify-center gap-2 bg-slate-50 border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-2.5 px-4 md:py-3 md:px-6 rounded-xl transition-all shadow-sm hover:shadow-md hover:text-accent-600 text-sm md:text-base">
                     Ver página de reseña completa
                   </Link>
                 </div>
@@ -1220,14 +1110,14 @@ export default function Home() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setSelectedBlogPost(null)}
-              className="absolute inset-0 bg-slate-900/60 dark:bg-dark-950/80 backdrop-blur-sm transition-opacity"
+              className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity"
             />
 
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative w-full max-w-3xl bg-white dark:bg-dark-900 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] border dark:border-dark-800"
+              className="relative w-full max-w-3xl bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] border"
             >
               <div className="relative h-48 sm:h-64 flex-shrink-0">
                 <img src={selectedBlogPost.image} alt={selectedBlogPost.title} className="w-full h-full object-cover" />
@@ -1245,17 +1135,17 @@ export default function Home() {
               </div>
 
               <div className="p-6 sm:p-8 overflow-y-auto">
-                <div className="flex items-center gap-4 text-sm text-slate-500 dark:text-dark-400 font-medium mb-6 pb-6 border-b border-slate-100 dark:border-dark-800">
+                <div className="flex items-center gap-4 text-sm text-slate-500 font-medium mb-6 pb-6 border-b border-slate-100">
                   <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> {selectedBlogPost.readTime}</span>
-                  <span className="w-1 h-1 rounded-full bg-slate-300 dark:bg-dark-700"></span>
-                  <span className="flex items-center gap-1.5 text-accent-600 dark:text-accent-400"><Sparkles className="w-4 h-4" /> Editorial</span>
+                  <span className="w-1 h-1 rounded-full bg-slate-300"></span>
+                  <span className="flex items-center gap-1.5 text-accent-600"><Sparkles className="w-4 h-4" /> Editorial</span>
                 </div>
 
-                <div className="prose prose-slate dark:prose-invert prose-lg max-w-none prose-headings:text-slate-900 dark:prose-headings:text-dark-50 prose-a:text-accent-600 hover:prose-a:text-accent-500">
-                  <p className="lead text-xl text-slate-700 dark:text-dark-200 font-medium mb-6">
+                <div className="prose prose-slate prose-lg max-w-none prose-headings:text-slate-900 prose-a:text-accent-600 hover:prose-a:text-accent-500">
+                  <p className="lead text-xl text-slate-700 font-medium mb-6">
                     {selectedBlogPost.excerpt}
                   </p>
-                  <p className="whitespace-pre-line text-slate-600 dark:text-dark-300 leading-relaxed">
+                  <p className="whitespace-pre-line text-slate-600 leading-relaxed">
                     {selectedBlogPost.content}
                   </p>
                 </div>

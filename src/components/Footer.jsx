@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
-        <footer id="footer-contacto" className="bg-slate-900 dark:bg-dark-950 text-slate-300 py-8 md:py-12 mt-12 md:mt-20 border-t border-slate-800 dark:border-dark-800 relative overflow-hidden scroll-mt-24">
+        <footer id="footer-contacto" className="bg-slate-900 text-slate-300 py-8 md:py-12 mt-12 md:mt-20 border-t border-slate-800 relative overflow-hidden scroll-mt-24">
             <div className="absolute inset-0 bg-gradient-to-b from-white/[0.02] to-transparent pointer-events-none"></div>
             <div className="max-w-6xl mx-auto px-4 md:px-6 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 mb-6 md:mb-8">
@@ -19,6 +19,7 @@ export default function Footer() {
                             <li><Link to="/privacidad" className="hover:text-accent-400 transition-colors">Política de Privacidad</Link></li>
                             <li><Link to="/cookies" className="hover:text-accent-400 transition-colors">Política de Cookies</Link></li>
                             <li><Link to="/aviso-legal" className="hover:text-accent-400 transition-colors">Aviso Legal</Link></li>
+                            <li><a href="/sitemap.xml" className="hover:text-accent-400 transition-colors">Mapa del Sitio (XML)</a></li>
                         </ul>
                     </div>
 
@@ -31,7 +32,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-slate-800 dark:border-dark-800 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500">
+                <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500">
                     <p>© {new Date().getFullYear()} Directorio AI. Todos los derechos reservados.</p>
                     <div className="flex items-center gap-4 mt-2 md:mt-0">
                         <p>Hecho con ❤️ para la comunidad IA</p>

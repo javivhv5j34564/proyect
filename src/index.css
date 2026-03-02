@@ -14,10 +14,6 @@
     @apply bg-white text-dark-900 antialiased font-sans selection:bg-primary-500/30 selection:text-primary-900;
   }
 
-  .dark body {
-    @apply bg-dark-950 text-dark-50 selection:bg-accent-500/30 selection:text-accent-100;
-  }
-
   h1,
   h2,
   h3,
@@ -31,16 +27,8 @@
     @apply bg-white/70 backdrop-blur-xl border border-white/40 shadow-premium transition-all duration-300;
   }
 
-  .dark .glass {
-    @apply bg-dark-900/70 backdrop-blur-xl border border-dark-800/50 shadow-2xl;
-  }
-
   .glass-card {
     @apply bg-white/60 backdrop-blur-lg border border-white/20 hover:bg-white/80 transition-all duration-300;
-  }
-
-  .dark .glass-card {
-    @apply bg-dark-900/40 backdrop-blur-lg border border-dark-800/30 hover:bg-dark-900/60 transition-all duration-300;
   }
 
   .btn-primary {
@@ -55,10 +43,6 @@
 @layer utilities {
   .text-gradient {
     @apply text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-accent-500 to-indigo-600;
-  }
-
-  .dark .text-gradient {
-    @apply from-primary-400 via-accent-400 to-indigo-400;
   }
 
   .no-scrollbar::-webkit-scrollbar {
@@ -82,10 +66,6 @@
 
 ::-webkit-scrollbar-thumb {
   @apply bg-dark-200 rounded-full border-4 border-transparent bg-clip-content;
-}
-
-.dark ::-webkit-scrollbar-thumb {
-  @apply bg-dark-700/50;
 }
 
 ::-webkit-scrollbar-thumb:hover {
