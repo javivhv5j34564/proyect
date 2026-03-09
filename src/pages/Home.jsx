@@ -522,7 +522,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 md:mb-12">
             <div className="text-left">
               <h2 className="text-2xl md:text-4xl font-black text-slate-900 mb-3 tracking-tight">AI Tools Directory</h2>
-              <p className="text-slate-500 font-medium">Found <span className="text-accent-600 font-bold">{filteredToolsCount}</span> professional tools for you</p>
+              <p className="font-medium">Found <span className="text-accent-600 font-bold">{typeof filteredTools !== 'undefined' ? filteredTools.length : 0}</span> professional tools for you</p>
             </div>
 
             <div className="flex flex-wrap items-center gap-3">
