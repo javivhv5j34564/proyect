@@ -850,9 +850,9 @@ export default function Home({ searchTerm, setSearchTerm }) {
                 <p className="text-slate-600 text-sm md:text-lg leading-relaxed">
                   Welcome to the most comprehensive and rigorously curated directory of <strong>free and freemium Artificial Intelligence tools</strong> on the market. In an ecosystem where hundreds of new models are born daily, finding the ones that truly add value can be a titanic task.
                 </p>
-                <h3 className="text-lg md:text-xl font-bold text-slate-800">How to choose the best AI for you?</h3>
+                <h3 className="text-lg md:text-xl font-bold text-slate-800">How to choose the stylish AI for you?</h3>
                 <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-                  Our platform is categorized by key sectors: from <strong>Writing & Coding</strong>, to niches like <strong>Fashion, Cooking, and Management</strong>. Each tool passes through a demanding human quality filter where we evaluate real utility and the generosity of its free plans.
+                  Our platform is distributed by crucial sectors from <strong>Writing & Rendering</strong>, to niches like <strong>Fashion, cuisine, and Management</strong>. Each tool passes through a demanding human quality filter where we evaluate real utility and the generosity of its free plans.
                 </p>
               </div>
 
