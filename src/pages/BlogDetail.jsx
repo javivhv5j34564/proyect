@@ -71,12 +71,7 @@ export default function BlogDetail() {
                     <div className="p-8 md:p-12">
                         {/* Meta info */}
                         <div className="flex flex-wrap items-center gap-6 mb-10 pb-8 border-b border-slate-100 text-sm font-bold text-slate-500">
-                            <div className="flex items-center gap-2">
-                                <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center">
-                                    <Clock className="w-4 h-4 text-slate-400" />
-                                </div>
-                                <span>{post.readTime} read</span>
-                            </div>
+
                             <div className="flex items-center gap-2">
                                 <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center">
                                     <Calendar className="w-4 h-4 text-slate-400" />

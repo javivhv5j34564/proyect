@@ -766,8 +766,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                 <div className="p-5 flex flex-col flex-grow">
                   <h3 className="text-base font-bold text-slate-900 mb-2 leading-tight group-hover:text-accent-600 transition-colors">{post.title}</h3>
                   <p className="text-slate-500 text-xs mb-4 flex-grow line-clamp-3 leading-relaxed">{post.excerpt}</p>
-                  <div className="mt-auto flex items-center justify-between border-t border-slate-100 pt-3">
-                    <span className="text-[11px] font-semibold text-slate-400">{post.readTime} read</span>
+                  <div className="mt-auto flex items-center justify-end border-t border-slate-100 pt-3">
                     <ArrowRight className="w-4 h-4 text-accent-500 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
