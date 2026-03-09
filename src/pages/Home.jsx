@@ -501,17 +501,17 @@ export default function Home({ searchTerm, setSearchTerm }) {
         {/* SEO Text Section for AdSense (Combats Thin Content) */}
         <section className="bg-white rounded-3xl p-6 md:p-10 shadow-sm border border-slate-200/60 mb-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 mb-4">What's the AI Directory and how does it help you?</h2>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 mb-4">¿Qué es Directorio AI y cómo te ayuda?</h2>
             <div className="prose prose-slate md:prose-lg max-w-none text-slate-600 space-y-4">
               <p>
-                At <strong>AI Directory</strong>, our goal is to collect, analyze, and classify the best Artificial Intelligence tools available today. We know that the technical ecosystem changes daily, and finding the perfect free or freemium IA for your business, studies, or creative workflow can be an exhausting task. That's why we do the heavy lifting for you.
+                En <strong>Directorio AI</strong>, nuestro objetivo es recopilar, analizar y clasificar las mejores herramientas de Inteligencia Artificial disponibles en la actualidad. Sabemos que el ecosistema técnico cambia a diario, y encontrar la IA gratuita o freemium perfecta para tu negocio, tus estudios o tu flujo creativo puede ser una tarea exhaustiva.
               </p>
               <p>
-                Each tool listed in our directory passes through a quality filter where we evaluate its real usefulness, whether it has a <em>valid free plan</em>, and what kind of problems it solves. From <strong>text generators (LLMs)</strong> that help you write emails in seconds, to advanced <strong>image or video generators</strong> that can create the visual prototype of your next big idea without needing to know how to code.
+                Cada herramienta listada en nuestro directorio pasa por un filtro de calidad donde evaluamos su utilidad real, si posee un <em>plan gratuito válido</em> y qué tipo de problemas resuelve. Desde <strong>generadores de texto (LLMs)</strong> que te ayudan a redactar correos en segundos, hasta avanzados <strong>generadores de imágenes o vídeo</strong> que pueden crear el prototipo visual de tu próxima gran idea sin necesidad de saber programar.
               </p>
-              <h3 className="text-xl font-bold text-slate-800 mt-6 mb-3">How to leverage our categories</h3>
+              <h3 className="text-xl font-bold text-slate-800 mt-6 mb-3">Cómo aprovechar nuestras categorías</h3>
               <p>
-                Use the filters below to browse our inventory. If you're a content creator, the <strong>Visual Design</strong> or <strong>Video</strong> section will be your best ally. If you're looking to optimize your business management, explore <strong>Business & Productivity</strong> to find AI-powered CRMs and automated agents. Our directory is kept up-to-date so you never fall behind in this technological revolution.
+                Utiliza los filtros a continuación para navegar por nuestro inventario. Si eres un creador de contenido, la sección de <strong>Deseño Visual</strong> o <strong>Vídeo</strong> será tu mejor aliada. Si buscas optimizar la gestión de tu empresa, explora <strong>Negocios y Productividad</strong> para encontrar CRMs potenciados por IA y agentes automatizados. Nuestro directorio se mantiene actualizado para que nunca te quedes atrás en esta revolución tecnológica.
               </p>
             </div>
           </div>

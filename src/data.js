@@ -2787,12 +2787,12 @@ export const blogPosts = [
     },
     {
         id: 'blog-5',
-        title: 'Best ChatGPT Prompts for Programmers and Students',
-        category: 'Prompt Engineering',
+        title: 'Mejores Prompts de ChatGPT para Programadores y Estudiantes',
+        category: 'Ingeniería de Prompts',
         image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80',
         readTime: '1 min',
-        excerpt: 'Optimize your code and resolve bugs in seconds. Learn to structure instructions to get the most out of GPT-4 and Claude.',
-        content: 'The difference between a mediocre result and production-ready code lies in how you communicate with Artificial Intelligence. "Prompt Engineering" has become the most demanded skill in the tech market.\n\nInstead of asking "write a code in Python", try assigning it a Senior expert role, detailing the edge cases of your function, and asking it to document every line. Platforms like ChatGPT or Gemini can refactor entire databases, explain complex logical errors, or write unit tests if you provide the right context. Master the art of talking to machines.'
+        excerpt: 'Optimiza tu código y resuelve bugs en segundos. Aprende a estructurar instrucciones para sacar el máximo rendimiento a GPT-4 y Claude.',
+        content: 'La diferencia entre un resultado mediocre y un código listo para producción radica en cómo te comunicas con la Inteligencia Artificial. La "Ingeniería de Prompts" se ha convertido en la habilidad más demandada del mercado tech.\n\nEn lugar de pedir "escribe un código en Python", prueba asignarle un rol de experto Senior, detallar los casos límite de tu función y pedirle que documente cada línea. Plataformas como ChatGPT o Gemini pueden refactorizar bases de datos enteras, explicar errores lógicos complejos o escribir tests unitarios si les proporcionas el contexto adecuado. Aprende a comunicarte con las herramientas '
     },
     {
         id: 'blog-6',
@@ -2814,12 +2814,12 @@ export const blogPosts = [
     },
     {
         id: 'blog-8',
-        title: 'Definitive Guide to SEO and AI: Position your Website in Google',
-        category: 'Digital Marketing',
+        title: 'Guía Definitiva de SEO e IA: Posiciona tu Sitio Web en Google',
+        category: 'Marketing Digital',
         image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80',
         readTime: '1 min',
-        excerpt: 'Learn to execute solid web positioning strategies: meta-tags, content clusters, and competitor analysis using free tools.',
-        content: 'SEO or search engine optimization is a data game. Artificial intelligence tools are now capable of auditing an entire web architecture in minutes, identifying improvement opportunities and drafting the necessary optimizations (On-Page SEO).\n\nHowever, the key in the face of massive algorithm changes is not to generate "Spam". Use the analytical mind of the bot to find transactional keywords (LSI Keywords) and to build key titles (H1, H2), providing your real human experience to build trust (E-E-A-T). Leverage the "Marketing" tools on our platform.'
+        excerpt: 'Aprende a realizar estrategias sólidas de pronunciamiento web meta etiquetas, clusters de tema y comparación de la enfrentamiento usando herramientas free.',
+        content: 'El SEO o posición en buscadores es un mecanismo de datos. Herramientas basadas en inteligencia ficticio modo en capaces de auditar la edificación de garra web entera en minutos, identificando oportunidades de mejora y redactando las optimizaciones necesarias On Page SEO.\n\nExento retención, la clavicémbalo frente a cambios de algoritmos masivos es no generar Spam. Usa la mente analítica del bot para acertar palabras esencia transaccionales Keywords LSI y para blindar los títulos clavicémbalo H1, H2, aportando tu experiencia humana magnífico para generar vigor E E A T. Apaláncate en las herramientas de Marketing de nuestra causa.'
     },
     {
         id: 'blog-9',
