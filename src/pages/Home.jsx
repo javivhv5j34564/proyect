@@ -1108,8 +1108,6 @@ export default function Home({ searchTerm, setSearchTerm }) {
 
               <div className="p-6 sm:p-8 overflow-y-auto">
                 <div className="flex items-center gap-4 text-sm text-slate-500 font-medium mb-6 pb-6 border-b border-slate-100">
-                  <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> {selectedBlogPost.readTime}</span>
-                  <span className="w-1 h-1 rounded-full bg-slate-300"></span>
                   <span className="flex items-center gap-1.5 text-accent-600"><Sparkles className="w-4 h-4" /> Editorial</span>
                 </div>
 
