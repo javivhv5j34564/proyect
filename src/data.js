@@ -2828,7 +2828,7 @@ export const blogPosts = [
         image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=600&q=80',
         readTime: '2 min',
         excerpt: 'Edit horizontal videos into vertical clips, add automatic subtitles, and remove silence with AI-powered editors.',
-        content: 'Video content is king, but editing can take days. New AI video tools like Munch, OpusClip, and CapCut are changing the game for creators. These tools can automatically detect highlights in a long podcast and crop them into vertical clips for TikTok or Reels, complete with engaging captions.\n\nYou can also use AI to remove background noise, generate b-roll footage from text, and even swap backgrounds without a green screen. By using the "Video & Animation" tools in our directory, influencers are cutting their production time by 70%, allowing them to post daily without burnout.'
+        content: 'Video content is king, but editing can take days. New AI video tools like Munch, OpusClip, and CapCut are changing the game for creators. These tools can automatically detect highlights in a long podcast and crop them into vertical clips for TikTok or Reels, complete with engaging captions.\n\nYou can also use AI to remove background noise, generate b-roll footage from text, and even swap backgrounds without a green screen.'
     },
     {
         id: 'blog-10',
