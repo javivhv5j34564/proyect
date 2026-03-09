@@ -2861,10 +2861,10 @@ export const blogPosts = [
         id: 'blog-13',
         title: 'AI for Architecture and Interior Design: Create 3D Renders in Minutes',
         category: 'Architecture & Design',
-        image: 'https://images.unsplash.com/photo-1503387762-592be5a52680?auto=format&fit=crop&w=600&q=80',
+        image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80',
         readTime: '1 min',
-        excerpt: 'Transform simple sketches into photorealistic 3D visualizations. The best tools for architects and decorators.',
-        content: 'Architects and interior designers are using AI to visualize ideas faster than ever. Tools like Veras or Midjourney (with specific parameters) allow you to turn a pencil sketch into a professional photorealistic render of a living room or a building facade.\n\nThis technology doesn\'t replace CAD software but acts as a "mood board" on steroids. It helps clients visualize the potential of a space before diving into expensive technical drawings. Check out our "Architecture & Design" category to see the software that is redefining the construction industry.'
+        excerpt: 'Transfigure simple sketches into photorealistic 3D visualizations. The stylish tools for engineers and decorators.',
+        content: 'Engineers and interior contrivers are using AI to fantasize ideas briskly than ever. Tools like Veras or Midjourney( with specific parameters) allow you to turn a pencil sketch into a professional photorealistic render of a living room or a structure facade.\n\nThis technology does not replace CAD software but acts as a" mood board" on steroids. It helps guests fantasize the eventuality of a space before diving into precious specialized delineations. Check out our" Architecture & Design" order to see the software that\'s reconsidering the construction industry.order in our directory to make a" Full- mound AI" skillset that makes them necessary.'
     },
     {
         id: 'blog-14',
