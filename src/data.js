@@ -2787,39 +2787,39 @@ export const blogPosts = [
     },
     {
         id: 'blog-5',
-        title: 'Mejores Prompts de ChatGPT para Programadores y Estudiantes',
-        category: 'Ingeniería de Prompts',
+        title: 'Best ChatGPT Prompts for Programmers and Students',
+        category: 'Prompt Engineering',
         image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80',
         readTime: '1 min',
-        excerpt: 'Optimiza tu código y resuelve bugs en segundos. Aprende a estructurar instrucciones para sacar el máximo rendimiento a GPT-4 y Claude.',
-        content: 'La diferencia entre un resultado mediocre y un código listo para producción radica en cómo te comunicas con la Inteligencia Artificial. La "Ingeniería de Prompts" se ha convertido en la habilidad más demandada del mercado tech.\n\nEn lugar de pedir "escribe un código en Python", prueba asignarle un rol de experto Senior, detallar los casos límite de tu función y pedirle que documente cada línea. Plataformas como ChatGPT o Gemini pueden refactorizar bases de datos enteras, explicar errores lógicos complejos o escribir tests unitarios si les proporcionas el contexto adecuado. Aprende a comunicarte con las herramientas '
+        excerpt: 'Optimize your code and resolve bugs in seconds. Learn to structure instructions to get the most out of GPT-4 and Claude.',
+        content: 'The difference between a mediocre result and production-ready code lies in how you communicate with Artificial Intelligence. "Prompt Engineering" has become the most in-demand skill in the tech market.\n\nInstead of asking "write a code in Python", try assigning it a Senior expert role, detailing edge cases of your function, and asking it to document every line. Platforms like ChatGPT or Gemini can refactor entire databases, explain complex logical errors, or write unit tests if you provide the appropriate context. Learn to communicate with the tools '
     },
     {
         id: 'blog-6',
-        title: '10 Free Alternatives to Midjourney for Generating Images',
-        category: 'Design & Illustration',
+        title: '10 Alternativas Gratis a Midjourney para Generar Imágenes',
+        category: 'Diseño e Ilustración',
         image: 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=600&q=80',
         readTime: '1 min',
-        excerpt: 'Don\'t pay monthly subscriptions. Discover the best open-source or freemium AI art generators.',
-        content: 'Although Midjourney led the generative art revolution, its paid plans are no longer the only option for getting photorealistic images. Models like Stable Diffusion 3 (SD3) have democratized visual design to amazing levels.\n\nToday you can access free websites that allow you to apply styles, control character poses, and generate hyper-realistic textures without requiring complex tools. If you are a content creator or entrepreneur, exploring the alternatives in our Visual Generation category will reduce your design costs enormously.'
+        excerpt: 'No pagues suscripciones mensuales. Descubre los mejores generadores de arte de IA de código abierto o freemium.',
+        content: 'Aunque Midjourney lideró la revolución del arte generativo, sus planes de pago ya no son la única opción para obtener imágenes fotorrealistas. Modelos como Stable Diffusion 3 (SD3) han democratizado el diseño visual a niveles asombrosos.\n\nHoy en día puedes acceder a sitios web gratuitos que te permiten aplicar estilos, controlar poses de personajes y generar texturas hiperrealistas sin requerir herramientas complejas. Si eres un creador de contenido o emprendedor, explorar las alternativas en nuestra categoría de Generación Visual reducirá enormemente tus costos de diseño.'
     },
     {
         id: 'blog-7',
-        title: 'Automate your Business with Artificial Intelligence Tools',
-        category: 'Business & Productivity',
+        title: 'Automatiza tu Negocio con Herramientas de Inteligencia Artificial',
+        category: 'Negocios y Productividad',
         image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80',
         readTime: '1 min',
-        excerpt: 'Real use cases for SMEs: automate customer service, integrate AI agents into your sales, and classify massive data without coding.',
-        content: 'Implementing AI in a small business or startup no longer requires a team of engineers. There are "No-Code" solutions and integrations like Make or Zapier that connect language models directly to the heart of your finance and marketing.\n\nFrom chatbots trained with your catalog PDF that serve customers 24/7, to systems that automatically draft sales proposals after each meeting. The Return on Investment of these tools is immediate by delegating microtasks. Discover the best B2B options in the directory and multiply your team\'s efficiency.'
+        excerpt: 'Casos de uso reales para PYMES: automatiza el servicio al cliente, integra agentes de IA en tus ventas y clasifica datos masivos sin programar.',
+        content: 'Implementar IA en una pequeña empresa o startup ya no requiere un equipo de ingenieros. Existen soluciones "No-Code" e integraciones como Make o Zapier que conectan modelos de lenguaje directamente al corazón de tus finanzas y marketing.\n\nDesde chatbots entrenados con tu catálogo en PDF que atienden a clientes 24/7, hasta sistemas que redactan automáticamente propuestas de ventas después de cada reunión. El Retorno de Inversión de estas herramientas es inmediato al delegar microtareas. Descubre las mejores opciones B2B en el directorio y multiplica la eficiencia de tu equipo.'
     },
     {
         id: 'blog-8',
-        title: 'Guía Definitiva de SEO e IA: Posiciona tu Sitio Web en Google',
-        category: 'Marketing Digital',
+        title: 'Definitive Guide to SEO and AI: Rank Your Website on Google',
+        category: 'Digital Marketing',
         image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80',
         readTime: '1 min',
-        excerpt: 'Aprende a realizar estrategias sólidas de pronunciamiento web meta etiquetas, clusters de tema y comparación de la enfrentamiento usando herramientas free.',
-        content: 'El SEO o posición en buscadores es un mecanismo de datos. Herramientas basadas en inteligencia ficticio modo en capaces de auditar la edificación de garra web entera en minutos, identificando oportunidades de mejora y redactando las optimizaciones necesarias On Page SEO.\n\nExento retención, la clavicémbalo frente a cambios de algoritmos masivos es no generar Spam. Usa la mente analítica del bot para acertar palabras esencia transaccionales Keywords LSI y para blindar los títulos clavicémbalo H1, H2, aportando tu experiencia humana magnífico para generar vigor E E A T. Apaláncate en las herramientas de Marketing de nuestra causa.'
+        excerpt: 'Learn to build solid web positioning strategies, meta tags, topic clusters, and competitor comparison using free tools.',
+        content: 'SEO or search engine positioning is a data-driven mechanism. Artificial intelligence-based tools are capable of auditing an entire website structure in minutes, identifying opportunities for improvement, and drafting the necessary On-Page SEO optimizations.\n\nHowever, the key against massive algorithm changes is avoiding Spam. Use the bot\'s analytical mind to find transactional core LSI keywords and to optimize key H1 and H2 titles, bringing your magnificent human experience to generate E-E-A-T authority. Leverage the Marketing tools in our directory.'
     },
     {
         id: 'blog-9',
