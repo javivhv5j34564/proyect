@@ -277,12 +277,14 @@ export default function Home({ searchTerm, setSearchTerm }) {
       const nDesc = tool.description.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       const nLong = (tool.longDescription || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       const nSector = tool.sector.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      const nKeywords = (tool.keywords || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
       const matchesSearch = searchStr === '' ||
         nName.includes(searchStr) ||
         nDesc.includes(searchStr) ||
         nLong.includes(searchStr) ||
-        nSector.includes(searchStr);
+        nSector.includes(searchStr) ||
+        nKeywords.includes(searchStr);
 
       const matchesCategory = selectedCategory === 'All' || tool.sector === selectedCategory;
       const matchesFavorites = showFavorites ? bookmarks.includes(tool.id) : true;
@@ -1063,7 +1065,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                   <a href={selectedTool.url} target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center gap-2 bg-slate-900 hover:bg-accent-600 text-white font-bold py-3 px-4 md:py-3.5 md:px-6 rounded-xl transition-all shadow-lg hover:shadow-accent-500/25 active:scale-[0.98] text-sm md:text-base">
                     Probar {selectedTool.name} Gratis <ExternalLink className="w-4 h-4" />
                   </a>
-                  <Link to={`/herramienta/${selectedTool.id}`} className="w-full flex items-center justify-center gap-2 bg-slate-50 border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-2.5 px-4 md:py-3 md:px-6 rounded-xl transition-all shadow-sm hover:shadow-md hover:text-accent-600 text-sm md:text-base">
+                  <Link to={`/tool/${selectedTool.id}`} className="w-full flex items-center justify-center gap-2 bg-slate-50 border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-2.5 px-4 md:py-3 md:px-6 rounded-xl transition-all shadow-sm hover:shadow-md hover:text-accent-600 text-sm md:text-base">
                     Ver página de reseña completa
                   </Link>
                 </div>
