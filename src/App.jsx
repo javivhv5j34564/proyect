@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Footer from './components/Footer';
-import { PrivacyPolicy, CookiesPolicy, LegalNotice, Contact } from './pages/LegalPages';
+import { PrivacyPolicy, CookiesPolicy, TermsAndConditions, Contact } from './pages/LegalPages';
 import ToolPage from './pages/ToolPage';
 import { SubmitToolPage } from './pages/SubmitToolPage';
 import About from './pages/About';
@@ -23,7 +23,7 @@ function App() {
           <Route path="/" element={<Home searchTerm={searchTerm} setSearchTerm={setSearchTerm} />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/cookies" element={<CookiesPolicy />} />
-          <Route path="/legal-notice" element={<LegalNotice />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/tool/:id" element={<ToolPage />} />

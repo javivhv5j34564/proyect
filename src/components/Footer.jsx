@@ -18,7 +18,7 @@ export default function Footer() {
                         <ul className="space-y-2 text-sm">
                             <li><Link to="/privacy" className="hover:text-accent-400 transition-colors">Privacy Policy</Link></li>
                             <li><Link to="/cookies" className="hover:text-accent-400 transition-colors">Cookies Policy</Link></li>
-                            <li><Link to="/legal-notice" className="hover:text-accent-400 transition-colors">Legal Notice</Link></li>
+                            <li><Link to="/terms-and-conditions" className="hover:text-accent-400 transition-colors">Terms & Conditions</Link></li>
 
                         </ul>
                     </div>
@@ -26,6 +26,7 @@ export default function Footer() {
                     <div>
                         <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Community</h4>
                         <ul className="space-y-2 text-sm">
+                            <li><Link to="/about" className="hover:text-accent-400 transition-colors">About Us</Link></li>
                             <li><Link to="/contact" className="hover:text-accent-400 transition-colors">Contact</Link></li>
                             <li><Link to="/submit-tool" className="hover:text-accent-400 transition-colors font-bold text-accent-500 hover:text-accent-400">➕ Suggest a Tool</Link></li>
                         </ul>
