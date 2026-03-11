@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { Search, Sparkles, X, ExternalLink, ChevronRight, Zap, Flame, Clock, ChevronDown, TrendingUp, Lightbulb, Brain, Bookmark, ChevronUp, BookOpen, ArrowRight, ArrowDown, ArrowUp, Menu, Search as SearchIcon, Sun, Moon, Palette, Video, Code, PenTool, Music, Settings, Utensils, Calendar, ShoppingBag, Star, User, MessageSquare } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -181,6 +181,33 @@ export default function Home({ searchTerm, setSearchTerm }) {
   const [displayCount, setDisplayCount] = useState(15);
   const [formRating, setFormRating] = useState(5);
   const [hoverRating, setHoverRating] = useState(0);
+
+  const categoryContainerRef = useRef(null);
+  const [isDraggingCategory, setIsDraggingCategory] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (e) => {
+    setIsDraggingCategory(true);
+    setStartX(e.pageX - categoryContainerRef.current.offsetLeft);
+    setScrollLeft(categoryContainerRef.current.scrollLeft);
+  };
+  
+  const handleMouseLeave = () => {
+    setIsDraggingCategory(false);
+  };
+  
+  const handleMouseUp = () => {
+    setIsDraggingCategory(false);
+  };
+  
+  const handleMouseMove = (e) => {
+    if (!isDraggingCategory) return;
+    e.preventDefault();
+    const x = e.pageX - categoryContainerRef.current.offsetLeft;
+    const walk = (x - startX) * 2;
+    categoryContainerRef.current.scrollLeft = scrollLeft - walk;
+  };
 
   useEffect(() => {
     setDisplayCount(15);
@@ -550,20 +577,30 @@ export default function Home({ searchTerm, setSearchTerm }) {
             </div>
           </div>
 
-          <div className="flex gap-2 overflow-x-auto no-scrollbar pb-6 md:pb-8 -mx-4 px-4 md:mx-0 md:px-0">
-            {categories.map(cat => (
-              <button
-                key={cat}
-                onClick={() => {
-                  setSelectedCategory(cat);
-                  setDisplayCount(15);
-                }}
-                className={`flex items-center gap-2 px-5 py-3 rounded-2xl whitespace-nowrap font-bold text-sm transition-all border-2 ${selectedCategory === cat ? 'bg-slate-900 border-slate-900 text-white shadow-xl shadow-slate-900/10 -translate-y-1' : 'bg-white border-slate-100 text-slate-500 hover:border-accent-200 hover:text-accent-600'}`}
-              >
-                {categoryIcons[cat] || <Brain className="w-4 h-4" />}
-                {cat}
-              </button>
-            ))}
+          <div className="relative">
+            <div className="absolute right-0 top-0 bottom-8 w-12 bg-gradient-to-l from-slate-50 to-transparent pointer-events-none z-10"></div>
+            <div 
+              ref={categoryContainerRef}
+              onMouseDown={handleMouseDown}
+              onMouseLeave={handleMouseLeave}
+              onMouseUp={handleMouseUp}
+              onMouseMove={handleMouseMove}
+              className={`flex gap-2 overflow-x-auto no-scrollbar pb-6 md:pb-8 -mx-4 px-4 md:mx-0 md:px-0 ${isDraggingCategory ? 'cursor-grabbing select-none' : 'cursor-grab'}`}
+            >
+              {categories.map(cat => (
+                <button
+                  key={cat}
+                  onClick={() => {
+                    setSelectedCategory(cat);
+                    setDisplayCount(15);
+                  }}
+                  className={`flex items-center gap-2 px-5 py-3 rounded-2xl whitespace-nowrap font-bold text-sm transition-all border-2 flex-shrink-0 ${selectedCategory === cat ? 'bg-slate-900 border-slate-900 text-white shadow-xl shadow-slate-900/10 -translate-y-1' : 'bg-white border-slate-100 text-slate-500 hover:border-accent-200 hover:text-accent-600'} ${isDraggingCategory ? 'pointer-events-none' : ''}`}
+                >
+                  {categoryIcons[cat] || <Brain className="w-4 h-4" />}
+                  {cat}
+                </button>
+              ))}
+            </div>
           </div>
         </section>
 
