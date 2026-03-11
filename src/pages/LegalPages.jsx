@@ -35,17 +35,26 @@ export const PrivacyPolicy = () => (
 export const CookiesPolicy = () => (
     <div className="max-w-3xl mx-auto px-4 md:px-6 py-10 md:py-16 prose prose-slate">
         <BackButton />
-        <h1>🍪 Cookies Policy</h1>
-        <p><em>Last updated: March 2026</em></p>
+        <h1>🍪 Digital Footprint: Our Cookie Policy</h1>
+        <p><em>Current as of: March 2026</em></p>
         
-        <h2>🤔 What are cookies?</h2>
-        <p>Cookies are small text files that the websites you visit place on your computer or mobile device 💻 to ensure the correct functioning of the site, as well as to provide information to the site owners.</p>
+        <h2>🤔 Understanding Cookies</h2>
+        <p>Think of cookies as small digital bookmarks. When you browse AI Directory, these tiny text files are stored on your device 💻 to help our website remember your preferences, ensure everything loads correctly, and help us understand how to serve you better.</p>
         
-        <h2>📋 Types of Cookies We Use</h2>
+        <h2>📋 The Ingredients: What We Use</h2>
+        <p>We categorize our cookies based on their specific role in your browsing experience:</p>
         <ul>
-            <li><strong>🛠️ Essential Cookies:</strong> Necessary for the basic operation of our website.</li>
-            <li><strong>📊 Analysis Cookies:</strong> (Google Analytics) They allow us to understand how users interact with the web to improve the overall experience.</li>
-            <li><strong>📢 Advertising Cookies:</strong> (Google AdSense) Used by third-party providers, including Google, to show relevant ads. Users can opt out of personalized advertising by visiting <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer" className="text-accent-600 hover:underline">Google Ad Settings</a> or <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer" className="text-accent-600 hover:underline">www.aboutads.info</a>.</li>
+            <li><strong>🛠️ Structural Essentials:</strong> These are the "bones" of our site. Without them, basic navigation and secure access wouldn't function. They are active by default to ensure the site works as intended.</li>
+            <li><strong>📊 Insight & Performance:</strong> We use tools like Google Analytics to see the "big picture." These cookies tell us which AI tools are trending and how users move through our site, allowing us to refine the interface and content for everyone.</li>
+            <li><strong>📢 Tailored Experiences:</strong> Through Google AdSense and other third-party partners, we display advertisements. These cookies help ensure the ads you see are relevant to your interests rather than random noise.</li>
+        </ul>
+
+        <h2>🕹️ You Are in Control</h2>
+        <p>We believe in your right to digital privacy. You have the power to manage how you are tracked:</p>
+        <ul>
+            <li><strong>Personalized Ads:</strong> You can opt-out of interest-based advertising at any time by visiting <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer" className="text-accent-600 hover:underline">Google Ad Settings</a> or <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer" className="text-accent-600 hover:underline">AboutAds.info</a>.</li>
+            <li><strong>Browser Settings:</strong> Most browsers allow you to block or delete cookies entirely via their "Privacy" or "Security" menus.</li>
+            <li><strong>Consequences:</strong> Please note that disabling all cookies may cause some parts of our directory to behave unexpectedly or lose your saved preferences.</li>
         </ul>
     </div>
 );
