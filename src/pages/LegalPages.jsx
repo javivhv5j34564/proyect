@@ -53,22 +53,36 @@ export const CookiesPolicy = () => (
 export const TermsAndConditions = () => (
     <div className="max-w-3xl mx-auto px-4 md:px-6 py-10 md:py-16 prose prose-slate">
         <BackButton />
-        <h1>⚖️ Terms and Conditions</h1>
-        <p><em>Last updated: March 2026</em></p>
+        <h1>📜 Terms of Engagement</h1>
+        <p><em>Refined: March 2026</em></p>
         
-        <p>Welcome to AI Directory. By accessing this website, we assume you accept these terms and conditions. Do not continue to use AI Directory if you do not agree to all of the terms and conditions stated on this page.</p>
+        <p>Welcome to AI Directory. By accessing and navigating our platform, you acknowledge that you have read and agreed to the following terms. If you do not consent to these guidelines, we kindly ask that you discontinue your use of our services.</p>
 
-        <h2>1. Services Provided</h2>
-        <p>The AI Directory portal aims to provide information about Artificial Intelligence software tools 🤖. The content is for informational purposes only.</p>
+        <h2>1. Our Mission 🤖</h2>
+        <p>AI Directory serves as a curated intelligence hub designed to showcase and categorize Artificial Intelligence software. All content provided is for educational and informational purposes only, aimed at helping you discover the right tools for your specific needs.</p>
 
-        <h2>2. ⚠️ Disclaimer</h2>
-        <p>The information contained on this website is for general information purposes only. We are not responsible for changes in subscription prices, features, or terms of use of the referenced third-party tools.</p>
+        <h2>2. Information Integrity Disclaimer ⚠️</h2>
+        <p>While we strive for accuracy, the AI landscape shifts rapidly. Please note:</p>
+        <ul>
+            <li><strong>Third-Party Changes:</strong> We are not responsible for sudden updates in pricing, feature sets, or service agreements of the external tools listed.</li>
+            <li><strong>Independent Verification:</strong> Users are encouraged to verify critical details directly with the software provider before making any financial or operational commitments.</li>
+        </ul>
 
-        <h2>3. Affiliate Disclosure 💸</h2>
-        <p>Some of the tools and services listed may include affiliate links. This means that if you click on the link and make a purchase, we may receive a small commission at no extra cost to you. This helps support the maintenance of our free directory.</p>
+        <h2>3. Ethical Affiliate Disclosure 💸</h2>
+        <p>To keep this directory free and accessible to the global community, we utilize affiliate partnerships.</p>
+        <ul>
+            <li><strong>How it works:</strong> If you choose to purchase a tool through a link on our site, we may earn a small commission.</li>
+            <li><strong>Your cost:</strong> This does not result in any additional charges to you.</li>
+            <li><strong>Our Integrity:</strong> These commissions help fund our research and maintenance without compromising our editorial standards.</li>
+        </ul>
         
-        <h2>4. User Responsibilities</h2>
-        <p>You agree to use our website only for lawful purposes and in a way that does not infringe the rights of, restrict or inhibit anyone else's use and enjoyment of the website.</p>
+        <h2>4. User Conduct & Responsibility</h2>
+        <p>By using this site, you agree to act with integrity and respect. You specifically commit to:</p>
+        <ul>
+            <li><strong>Lawful Use:</strong> Engaging with the site only for legal purposes.</li>
+            <li><strong>Non-Interruption:</strong> Avoiding any actions that disrupt, damage, or limit the experience of other users or the functionality of the platform.</li>
+            <li><strong>Respectful Access:</strong> Not attempting to scrape or exploit our database in a way that violates our digital rights.</li>
+        </ul>
     </div>
 );
 
