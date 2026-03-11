@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
-import { Search, Sparkles, X, ExternalLink, ChevronRight, Zap, Flame, Clock, ChevronDown, TrendingUp, Lightbulb, Brain, Bookmark, ChevronUp, BookOpen, ArrowRight, ArrowDown, ArrowUp, Menu, Search as SearchIcon, Sun, Moon, Palette, Video, Code, PenTool, Music, Settings, Utensils, Calendar, ShoppingBag, Star, User, MessageSquare } from 'lucide-react';
+import { Search, Sparkles, X, ExternalLink, ChevronRight, Zap, Flame, Clock, ChevronDown, TrendingUp, Lightbulb, Brain, Bookmark, ChevronUp, BookOpen, ArrowRight, ArrowDown, ArrowUp, Menu, Search as SearchIcon, Sun, Moon, Palette, Video, Code, PenTool, Music, Settings, Utensils, Calendar, ShoppingBag, Star, User, MessageSquare, MoveHorizontal } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { tools, categories, blogPosts } from '../data';
@@ -610,6 +610,11 @@ export default function Home({ searchTerm, setSearchTerm }) {
                   {cat}
                 </button>
               ))}
+            </div>
+            
+            <div className="mt-1 flex items-center justify-center gap-1.5 text-slate-400 opacity-80 animate-pulse pointer-events-none pb-2">
+              <MoveHorizontal className="w-3 h-3" />
+              <span className="text-[10px] uppercase font-bold tracking-wider">Desliza para ver más</span>
             </div>
           </div>
         </section>
