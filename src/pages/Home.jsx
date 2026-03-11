@@ -186,9 +186,11 @@ export default function Home({ searchTerm, setSearchTerm }) {
   const [isDraggingCategory, setIsDraggingCategory] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
+  const [hasDragged, setHasDragged] = useState(false);
 
   const handleMouseDown = (e) => {
     setIsDraggingCategory(true);
+    setHasDragged(false);
     setStartX(e.pageX - categoryContainerRef.current.offsetLeft);
     setScrollLeft(categoryContainerRef.current.scrollLeft);
   };
@@ -206,6 +208,9 @@ export default function Home({ searchTerm, setSearchTerm }) {
     e.preventDefault();
     const x = e.pageX - categoryContainerRef.current.offsetLeft;
     const walk = (x - startX) * 2;
+    if (Math.abs(walk) > 5) {
+      setHasDragged(true);
+    }
     categoryContainerRef.current.scrollLeft = scrollLeft - walk;
   };
 
@@ -590,11 +595,16 @@ export default function Home({ searchTerm, setSearchTerm }) {
               {categories.map(cat => (
                 <button
                   key={cat}
-                  onClick={() => {
+                  onClick={(e) => {
+                    if (hasDragged) {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      return;
+                    }
                     setSelectedCategory(cat);
                     setDisplayCount(15);
                   }}
-                  className={`flex items-center gap-2 px-5 py-3 rounded-2xl whitespace-nowrap font-bold text-sm transition-all border-2 flex-shrink-0 ${selectedCategory === cat ? 'bg-slate-900 border-slate-900 text-white shadow-xl shadow-slate-900/10 -translate-y-1' : 'bg-white border-slate-100 text-slate-500 hover:border-accent-200 hover:text-accent-600'} ${isDraggingCategory ? 'pointer-events-none' : ''}`}
+                  className={`flex items-center gap-2 px-5 py-3 rounded-2xl whitespace-nowrap font-bold text-sm transition-all border-2 flex-shrink-0 ${selectedCategory === cat ? 'bg-slate-900 border-slate-900 text-white shadow-xl shadow-slate-900/10 -translate-y-1' : 'bg-white border-slate-100 text-slate-500 hover:border-accent-200 hover:text-accent-600'}`}
                 >
                   {categoryIcons[cat] || <Brain className="w-4 h-4" />}
                   {cat}
