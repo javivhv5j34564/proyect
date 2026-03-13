@@ -500,7 +500,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary-900/60 via-accent-900/40 to-indigo-900/60 z-10 mix-blend-multiply border border-white/10 rounded-3xl transition-opacity group-hover:opacity-80"></div>
           <img
-            src="https://picsum.photos/seed/1677442136019-21780ecad995/1200/400"
+            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80"
             alt="AI Brain technology"
             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
           />
@@ -720,7 +720,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-accent-900/60 via-indigo-900/40 to-primary-900/60 z-10 mix-blend-multiply border border-white/10 rounded-3xl transition-opacity group-hover:opacity-80"></div>
                   <img
-                    src="https://picsum.photos/seed/1535223289827-42f1e9919769/1200/400"
+                    src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1200&q=80"
                     alt="Digital Evolution"
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
@@ -776,7 +776,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
         >
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent z-10 transition-opacity group-hover:opacity-80 border border-white/10 rounded-3xl"></div>
           <img
-            src="https://picsum.photos/seed/1635070041078-e363dbe005cb/1200/400"
+            src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&q=80"
             alt="AI abstract technology"
             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
           />
