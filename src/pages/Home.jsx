@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 import { tools, categories, blogPosts } from '../data';
 import { AdSensePlaceholder } from '../components/AdSensePlaceholder';
 import { useSEO } from '../hooks/useSEO';
-
+import { db } from '../firebase';
+import { collection, doc, onSnapshot, setDoc, updateDoc, increment } from 'firebase/firestore';
 const top3Ids = ['midjourney_ai', 'heygen_video', 'jasper_copy'];
 const recentIds = ['runway_gen3', 'leonardo_ai', 'descript_audio'];
 
@@ -259,13 +260,18 @@ export default function Home({ searchTerm, setSearchTerm }) {
     return saved ? JSON.parse(saved) : [];
   });
 
-  const [upvotes, setUpvotes] = useState(() => {
-    const saved = localStorage.getItem('ai_upvotes');
-    if (saved) return JSON.parse(saved);
-    const initial = {};
-    tools.forEach(t => { initial[t.id] = 0; });
-    return initial;
-  });
+  const [upvotes, setUpvotes] = useState({});
+
+  useEffect(() => {
+    const unsubscribe = onSnapshot(collection(db, 'upvotes'), (snapshot) => {
+      const data = {};
+      snapshot.forEach(doc => {
+        data[doc.id] = doc.data().count || 0;
+      });
+      setUpvotes(data);
+    });
+    return () => unsubscribe();
+  }, []);
 
   const [userUpvoted, setUserUpvoted] = useState(() => {
     const saved = localStorage.getItem('ai_user_upvotes');
@@ -273,7 +279,6 @@ export default function Home({ searchTerm, setSearchTerm }) {
   });
 
   useEffect(() => { localStorage.setItem('ai_bookmarks', JSON.stringify(bookmarks)); }, [bookmarks]);
-  useEffect(() => { localStorage.setItem('ai_upvotes', JSON.stringify(upvotes)); }, [upvotes]);
   useEffect(() => { localStorage.setItem('ai_user_upvotes', JSON.stringify(userUpvoted)); }, [userUpvoted]);
 
   const toggleBookmark = (e, id) => {
@@ -281,14 +286,36 @@ export default function Home({ searchTerm, setSearchTerm }) {
     setBookmarks(prev => prev.includes(id) ? prev.filter(b => b !== id) : [...prev, id]);
   };
 
-  const handleUpvote = (e, id) => {
+  const handleUpvote = async (e, id) => {
     e.stopPropagation();
+    const toolRef = doc(db, 'upvotes', id);
+
     if (userUpvoted.includes(id)) {
+      // Local optimistic update
       setUserUpvoted(prev => prev.filter(u => u !== id));
       setUpvotes(prev => ({ ...prev, [id]: Math.max(0, (prev[id] || 1) - 1) }));
+      
+      // Firestore update
+      try {
+        await updateDoc(toolRef, { count: increment(-1) });
+      } catch (error) {
+        if (error.code === 'not-found') {
+          // Does not exist yet, safely ignore
+        }
+      }
     } else {
+      // Local optimistic update
       setUserUpvoted(prev => [...prev, id]);
       setUpvotes(prev => ({ ...prev, [id]: (prev[id] || 0) + 1 }));
+      
+      // Firestore update
+      try {
+        await updateDoc(toolRef, { count: increment(1) });
+      } catch (error) {
+        if (error.code === 'not-found') {
+          await setDoc(toolRef, { count: 1 });
+        }
+      }
     }
   };
 
