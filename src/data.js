@@ -2950,6 +2950,110 @@ export const tools = [
         longDescription: 'Tell your assistant (Xena - in Slack or Mails) "Hey, meet with client so-and-so on Tuesday or Wednesday." The AI will send emails to the client as if it were you looking for availability, politely negotiating for exact hours in all time zones of the world, closing the invitation directly in the agendas of both individuals.',
         keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, organize, calendar, notes, notion, meeting summaries, workflow, productivity, project management, pomodoro, habits, reminders'
     },
+    {
+        id: 'chatgpt_openai',
+        name: 'ChatGPT',
+        sector: 'Chatbots & Assistants',
+        logo: 'openai',
+        emoji: '💬',
+        isFullyFree: false,
+        freeTierDetails: 'Freemium',
+        url: 'https://chat.openai.com/',
+        description: 'The most famous conversational AI in the world, created by OpenAI, capable of solving incredibly complex logic, coding, and writing tasks.',
+        longDescription: 'ChatGPT is the AI that started the generative revolution. In its free version (GPT-3.5 or limited GPT-4o), it functions as a super assistant capable of summarizing pdfs, translating languages naturally, formatting emails, and brainstorming. The premium version includes data analysis, image generation (DALL-E 3), and code execution.',
+        keywords: 'ai, chatgpt, openai, chatbot, assistant, text, generation, writing, coding, math, programming, brainstorming, free, freemium, best, top'
+    },
+    {
+        id: 'claude_anthropic',
+        name: 'Claude',
+        sector: 'Chatbots & Assistants',
+        logo: 'anthropic',
+        emoji: '🧠',
+        isFullyFree: false,
+        freeTierDetails: 'Freemium',
+        url: 'https://claude.ai/',
+        description: 'OpenAI\'s biggest rival, designed by Anthropic to be harmless, extremely articulate, and superior in massive document analysis.',
+        longDescription: 'Claude 3 (Opus, Sonnet, Haiku) excels at nuance and safety limits. The Sonnet version is widely considered the best AI for writing non-robotic, "human-like" text, and has a massive context window capable of reading whole books or huge codebases in seconds without losing the thread.',
+        keywords: 'ai, claude, anthropic, chatbot, text generation, essay writer, coding, large context window, document processing, pdf reader'
+    },
+    {
+        id: 'perplexity_ai',
+        name: 'Perplexity',
+        sector: 'Search & Research',
+        logo: 'perplexity',
+        emoji: '🔎',
+        isFullyFree: false,
+        freeTierDetails: 'Freemium',
+        url: 'https://www.perplexity.ai/',
+        description: 'The definitive AI search engine. It searches the internet in real-time and provides referenced answers instead of a list of blue links.',
+        longDescription: 'Forget Googling. Perplexity reads top web results for your specific query and synthesizes the data with academic footnotes. Incredible for real-time research, fact-checking news, and avoiding AI hallucinations, as every single claim is backed by a clickable source link.',
+        keywords: 'ai, search engine, research, facts, perplexity, internet, live search, references, academic, citations, alternative to google'
+    },
+    {
+        id: 'gemini_google',
+        name: 'Google Gemini',
+        sector: 'Chatbots & Assistants',
+        logo: 'google',
+        emoji: '✨',
+        isFullyFree: false,
+        freeTierDetails: 'Freemium',
+        url: 'https://gemini.google.com/',
+        description: 'Google\'s multimodally native AI, natively integrated into the Google ecosystem (Docs, Drive, Gmail).',
+        longDescription: 'Gemini (formerly Bard) has a massive advantage: infinite integration with Google services. It can summarize your emails from Gmail, read your Google Drive documents, or analyze your current location via Maps. Extremely fast and totally multimodal (understands images, video, and audio inherently).',
+        keywords: 'ai, google, gemini, bard, assistant, chatbot, drive, docs, gmail integration, video analysis'
+    },
+    {
+        id: 'cursor_ai',
+        name: 'Cursor',
+        sector: 'Programming',
+        logo: 'cursor',
+        emoji: '⌨️',
+        isFullyFree: false,
+        freeTierDetails: 'Freemium',
+        url: 'https://www.cursor.com/',
+        description: 'The AI code editor built by developers for developers. A VS Code fork that writes software practically for you.',
+        longDescription: 'Cursor completely redefines coding. Unlike GitHub Copilot, it natively understands your entire codebase simultaneously and allows you to "chat mode" with your folders. Ask "Implement a login page following my current design system" and it will write perfectly integrated code across multiple files.',
+        keywords: 'ai, code, cursor, programming, developer tools, vs code, copilot alternative, javascript, python, web development'
+    },
+    {
+        id: 'suno_ai',
+        name: 'Suno AI',
+        sector: 'Audio & Music',
+        logo: 'suno',
+        emoji: '🎵',
+        isFullyFree: false,
+        freeTierDetails: 'Freemium',
+        url: 'https://suno.com/',
+        description: 'The ChatGPT of music. Type a prompt and get radio-quality, full-length songs with vocals and instruments in seconds.',
+        longDescription: 'Suno AI changed the music industry forever. You can input lyrics (or let it write them) and choose a genre like "synthwave" or "operatic metal". It will instantly generate a full 2-minute stunningly realistic track. Perfect for creators needing royalty-free background music or instant jingles.',
+        keywords: 'ai, music, generator, songs, audio, vocals, instruments, beat maker, suno, royalty free, creators'
+    },
+    {
+        id: 'luma_dream_machine',
+        name: 'Luma Dream Machine',
+        sector: 'Video & Animation',
+        logo: 'luma',
+        emoji: '🎥',
+        isFullyFree: false,
+        freeTierDetails: 'Freemium',
+        url: 'https://lumalabs.ai/dream-machine',
+        description: 'Extremely fast, highly realistic text-to-video AI generation available to the public.',
+        longDescription: 'While OpenAI Sora remains closed, Luma released Dream Machine to the public. It generates breathtaking 5-second video clips from images or text prompts with incredible physical physics and cinematic quality. The easiest way to start making AI short films today.',
+        keywords: 'ai, video, generation, luma, dream machine, cinematic, text to video, sora alternative, movies, clips'
+    },
+    {
+        id: 'v0_dev_vercel',
+        name: 'v0 by Vercel',
+        sector: 'Programming',
+        logo: 'vercel',
+        emoji: '⚡',
+        isFullyFree: false,
+        freeTierDetails: 'Freemium',
+        url: 'https://v0.dev/',
+        description: 'Generate complete, beautiful, and functional UI components just by describing them in plain English.',
+        longDescription: 'Built by Vercel (the creators of Next.js), v0 allows you to say "I need a pricing table with 3 tiers and a neon aesthetic" and it instantly codes a stunning, fully-responsive React/Tailwind component right in your browser, ready to copy-paste into your app.',
+        keywords: 'ai, ui, frontend, react, tailwind css, components, vercel, web design, app development, generation'
+    }
 ];
 
 export const categories = [
