@@ -403,7 +403,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
             playsInline
             className="w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity duration-1000 mix-blend-multiply"
           >
-            <source src="https://cdn.pixabay.com/video/2021/08/25/86270-593005898_large.mp4" type="video/mp4" />
+            <source src="https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-b from-slate-50/80 via-slate-50/95 to-slate-50 z-10"></div>
         </div>
@@ -532,7 +532,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
           />
           <div className="absolute inset-0 flex items-center justify-center z-20">
-            <p className="text-white/90 font-medium tracking-[0.2em] uppercase text-xs md:text-sm drop-shadow-md">El futuro está aquí</p>
+            <p className="text-white/90 font-medium tracking-[0.2em] uppercase text-xs md:text-sm drop-shadow-md">The future is here</p>
           </div>
         </motion.div>
 
@@ -641,7 +641,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
             
             <div className="mt-1 flex items-center justify-center gap-1.5 text-slate-400 opacity-80 animate-pulse pointer-events-none pb-2">
               <MoveHorizontal className="w-3 h-3" />
-              <span className="text-[10px] uppercase font-bold tracking-wider">Desliza para ver más</span>
+              <span className="text-[10px] uppercase font-bold tracking-wider">Swipe to see more</span>
             </div>
           </div>
         </section>
@@ -1053,7 +1053,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
             exit={{ opacity: 0, scale: 0.5, y: 20 }}
             onClick={() => scrollToSection('top')}
             className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-40 p-3 md:p-4 bg-accent-500 hover:bg-accent-600 text-white rounded-full shadow-2xl hover:shadow-accent-500/30 transition-all active:scale-90 flex items-center justify-center group border border-accent-400"
-            title="Volver al principio"
+            title="Back to top"
           >
             <ArrowUp className="w-5 h-5 md:w-6 md:h-6 group-hover:-translate-y-1 transition-transform" />
           </motion.button>
@@ -1084,7 +1084,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
               <div className="relative min-h-full flex flex-col">
                 {/* Drawer Header */}
                 <div className="sticky top-0 bg-white/80 backdrop-blur-md border-b border-slate-100 px-6 py-4 flex items-center justify-between z-10">
-                  <span className="text-xs font-bold uppercase tracking-wider text-slate-400">Detalles de la herramienta</span>
+                  <span className="text-xs font-bold uppercase tracking-wider text-slate-400">Tool details</span>
                   <button
                     onClick={() => setSelectedTool(null)}
                     className="p-2 -mr-2 rounded-full hover:bg-slate-100 text-slate-500 transition-colors"
@@ -1115,21 +1115,21 @@ export default function Home({ searchTerm, setSearchTerm }) {
                           className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all z-20 shadow-sm ${userUpvoted.includes(selectedTool.id) ? 'bg-accent-500 border-accent-500 text-white hover:bg-accent-600' : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50'}`}
                         >
                           <ChevronUp className={`w-3.5 h-3.5 md:w-4 md:h-4 ${userUpvoted.includes(selectedTool.id) ? 'text-white' : 'text-slate-400'}`} />
-                          {upvotes[selectedTool.id] || 0} Votos
+                          {upvotes[selectedTool.id] || 0} Votes
                         </button>
                         <button
                           onClick={(e) => toggleBookmark(e, selectedTool.id)}
                           className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all shadow-sm ${bookmarks.includes(selectedTool.id) ? 'bg-amber-50 border-amber-200 text-amber-700 hover:bg-amber-100' : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50'}`}
                         >
                           <Bookmark className={`w-3.5 h-3.5 md:w-4 md:h-4 ${bookmarks.includes(selectedTool.id) ? 'fill-amber-500 text-amber-500' : 'text-slate-400'}`} />
-                          Favorito
+                          Favorite
                         </button>
                       </div>
                     </div>
                   </div>
 
                   <div className="prose prose-slate prose-p:leading-relaxed max-w-none">
-                    <h3 className="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2 mb-4">¿Por qué usarla?</h3>
+                    <h3 className="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2 mb-4">Why use it?</h3>
                     <p className="text-slate-600 text-[15px] mb-4">
                       {selectedTool.description}
                     </p>
@@ -1142,10 +1142,10 @@ export default function Home({ searchTerm, setSearchTerm }) {
                 {/* Drawer Footer with CTA */}
                 <div className="sticky bottom-0 bg-white border-t border-slate-100 p-4 md:p-6 z-10 space-y-2 md:space-y-3">
                   <a href={selectedTool.url} target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center gap-2 bg-slate-900 hover:bg-accent-600 text-white font-bold py-3 px-4 md:py-3.5 md:px-6 rounded-xl transition-all shadow-lg hover:shadow-accent-500/25 active:scale-[0.98] text-sm md:text-base">
-                    Probar {selectedTool.name} Gratis <ExternalLink className="w-4 h-4" />
+                    Try {selectedTool.name} Free <ExternalLink className="w-4 h-4" />
                   </a>
                   <Link to={`/tool/${selectedTool.id}`} className="w-full flex items-center justify-center gap-2 bg-slate-50 border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-2.5 px-4 md:py-3 md:px-6 rounded-xl transition-all shadow-sm hover:shadow-md hover:text-accent-600 text-sm md:text-base">
-                    Ver página de reseña completa
+                    View full review page
                   </Link>
                 </div>
               </div>
