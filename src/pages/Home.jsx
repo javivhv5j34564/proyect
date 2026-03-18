@@ -7,6 +7,7 @@ import { AdSensePlaceholder } from '../components/AdSensePlaceholder';
 import { useSEO } from '../hooks/useSEO';
 import { db } from '../firebase';
 import { collection, doc, onSnapshot, setDoc, updateDoc, increment } from 'firebase/firestore';
+import { Newsletter } from '../components/Newsletter';
 const top3Ids = ['midjourney_ai', 'heygen_video', 'jasper_copy'];
 const recentIds = ['runway_gen3', 'leonardo_ai', 'descript_audio'];
 
@@ -174,6 +175,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedPricing, setSelectedPricing] = useState('All');
   const [showFavorites, setShowFavorites] = useState(false);
+  const [sortBy, setSortBy] = useState('popular');
   const [selectedTool, setSelectedTool] = useState(null);
   const [selectedBlogPost, setSelectedBlogPost] = useState(null);
   const [isSubscribed, setIsSubscribed] = useState(false);
@@ -357,13 +359,18 @@ export default function Home({ searchTerm, setSearchTerm }) {
 
       return matchesSearch && matchesCategory && matchesFavorites && matchesPricing;
     }).sort((a, b) => {
-      // Primary: Free first
-      if (a.isFullyFree && !b.isFullyFree) return -1;
-      if (!a.isFullyFree && b.isFullyFree) return 1;
-      // Secondary: Upvotes
-      return (upvotes[b.id] || 0) - (upvotes[a.id] || 0);
+      if (sortBy === 'newest') return b.id.localeCompare(a.id);
+      if (sortBy === 'name') return a.name.localeCompare(b.name);
+      
+      const aUpvotes = upvotes[a.id] || 0;
+      const bUpvotes = upvotes[b.id] || 0;
+      if (bUpvotes === aUpvotes) {
+          if (a.isFullyFree && !b.isFullyFree) return -1;
+          if (!a.isFullyFree && b.isFullyFree) return 1;
+      }
+      return bUpvotes - aUpvotes;
     });
-  }, [searchTerm, selectedCategory, selectedPricing, showFavorites, bookmarks, upvotes]);
+  }, [searchTerm, selectedCategory, selectedPricing, showFavorites, bookmarks, upvotes, sortBy]);
 
   const showSections = searchTerm === '' && selectedCategory === 'All' && selectedPricing === 'All' && !showFavorites;
 
@@ -598,6 +605,16 @@ export default function Home({ searchTerm, setSearchTerm }) {
                   </button>
                 ))}
               </div>
+
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                className="bg-white border border-slate-200 text-slate-700 text-sm font-bold rounded-xl px-4 py-2 outline-none focus:ring-2 focus:ring-accent-500 cursor-pointer shadow-sm hover:border-slate-300 transition-colors"
+              >
+                <option value="popular">🔥 Most Popular</option>
+                <option value="newest">✨ Newest</option>
+                <option value="name">A-Z Name</option>
+              </select>
 
               <button
                 onClick={() => setShowFavorites(!showFavorites)}
@@ -857,47 +874,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
         </motion.section>
 
         {/* Newsletter / Suscripción (Detalle Final de Valor) */}
-        <motion.section
-          initial={{ opacity: 0, scale: 0.95, y: 30 }}
-          whileInView={{ opacity: 1, scale: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mt-20"
-        >
-          <div className="bg-gradient-to-br from-slate-900 to-indigo-950 rounded-3xl p-6 sm:p-8 md:p-12 text-center relative overflow-hidden shadow-2xl">
-            <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-accent-500 rounded-full blur-[100px] opacity-20"></div>
-            <div className="absolute bottom-0 left-0 -ml-16 -mb-16 w-64 h-64 bg-primary-500 rounded-full blur-[100px] opacity-20"></div>
-
-            <div className="relative z-10 max-w-2xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-3 md:mb-4">Don't fall behind in the AI era</h2>
-              <p className="text-slate-300 mb-6 md:mb-8 text-base md:text-lg">
-                Join over 10,000 professionals. Receive a weekly recap with 3 new artificial intelligence tools that will save you hours of work.
-              </p>
-              {isSubscribed ? (
-                <div className="bg-green-500/20 border border-green-500/50 rounded-xl p-4 text-green-50 font-medium animate-in fade-in slide-in-from-bottom-2">
-                  🎉 Thanks for subscribing! Check your inbox soon.
-                </div>
-              ) : (
-                <form action="https://formsubmit.co/f.javiergg06@gmail.com" method="POST" className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto relative z-20">
-                  <input type="hidden" name="_next" value={window.location.href} />
-                  <input type="hidden" name="_captcha" value="false" />
-                  <input type="hidden" name="_subject" value="Nueva suscripción a la newsletter" />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Your best email..."
-                    className="flex-grow px-5 py-3.5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all font-medium"
-                    required
-                  />
-                  <button type="submit" className="px-6 py-3.5 bg-accent-500 hover:bg-accent-400 text-white font-bold rounded-xl transition-colors shadow-lg shadow-accent-500/30 whitespace-nowrap active:scale-95 flex items-center justify-center">
-                    Subscribe
-                  </button>
-                </form>
-              )}
-              <p className="text-xs text-slate-400 mt-4">Zero spam. You can unsubscribe anytime.</p>
-            </div>
-          </div>
-        </motion.section>
+        <Newsletter />
 
         {/* FAQ Section - Excellent for AdSense Weight but compact */}
         <section className="mt-16 md:mt-24 max-w-4xl mx-auto px-4 sm:px-0">

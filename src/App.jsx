@@ -10,6 +10,8 @@ import BlogDetail from './pages/BlogDetail';
 import NotFound from './pages/NotFound';
 import { CookieBanner } from './components/CookieBanner';
 import Header from './components/Header';
+import CategoryPage from './pages/CategoryPage';
+import Blog from './pages/Blog';
 import { useState } from 'react';
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/tool/:id" element={<ToolPage />} />
+          <Route path="/category/:categoryId" element={<CategoryPage />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/submit-tool" element={<SubmitToolPage />} />
           <Route path="/success" element={<SuccessPage />} />

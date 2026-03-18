@@ -55,6 +55,25 @@ export default function ToolPage() {
     });
     const [hoveredStar, setHoveredStar] = useState(0);
 
+    // Comments State
+    const [comments, setComments] = useState(() => {
+        const saved = localStorage.getItem(`comments_${id}`);
+        return saved ? JSON.parse(saved) : [
+            { id: 1, author: 'Auto-Moderator', date: 'Just now', text: 'Welcome to the reviews section! Be the first to share your experience using this AI.' }
+        ];
+    });
+
+    const handleAddComment = (e) => {
+        e.preventDefault();
+        const text = e.target.comment.value;
+        if (!text.trim()) return;
+        const newComment = { id: Date.now(), text, date: new Date().toLocaleDateString(), author: 'Anonymous User' };
+        const updated = [newComment, ...comments];
+        setComments(updated);
+        localStorage.setItem(`comments_${id}`, JSON.stringify(updated));
+        e.target.reset();
+    };
+
     useEffect(() => {
         if (id) {
             localStorage.setItem(`ai_rating_${id}`, JSON.stringify(ratingData));
@@ -140,9 +159,9 @@ export default function ToolPage() {
                             <h1 className="text-3xl md:text-5xl font-black text-slate-900 mb-3 md:mb-4">{tool.name}</h1>
 
                             <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-4 md:mb-6">
-                                <span className="flex text-xs md:text-sm font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full bg-slate-100 text-slate-600">
+                                <Link to={`/category/${tool.sector.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`} className="flex text-xs md:text-sm font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors">
                                     {tool.sector}
-                                </span>
+                                </Link>
                                 <span className={`flex items-center gap-1.5 text-xs md:text-sm font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full ${tool.isFullyFree ? 'bg-green-50 text-green-700' : 'bg-amber-50 text-amber-700'}`}>
                                     <Zap className="w-3.5 h-3.5 md:w-4 md:h-4" /> {tool.freeTierDetails}
                                 </span>
@@ -213,6 +232,56 @@ export default function ToolPage() {
                                 Post on X
                             </button>
                         </div>
+                    </div>
+                </motion.div>
+
+                {/* Comments Section */}
+                <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="mt-12"
+                >
+                    <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                        User Reviews
+                    </h3>
+                    <div className="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm mb-8">
+                        <form onSubmit={handleAddComment} className="flex flex-col gap-4">
+                            <textarea 
+                                name="comment" 
+                                className="w-full p-4 rounded-xl border border-slate-200 focus:border-accent-500 focus:ring-2 focus:ring-accent-200 outline-none resize-none transition-all" 
+                                rows="3" 
+                                placeholder="What do you think about this tool? Share your experience..."
+                            ></textarea>
+                            <button type="submit" className="self-end bg-slate-900 hover:bg-accent-600 text-white font-bold py-2.5 px-6 rounded-xl transition-colors">
+                                Post Review
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div className="space-y-4">
+                        <AnimatePresence>
+                            {comments.map((c, idx) => (
+                                <motion.div 
+                                    key={c.id} 
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: idx * 0.05 }}
+                                    className="bg-white rounded-xl p-5 border border-slate-200 shadow-sm"
+                                >
+                                    <div className="flex justify-between items-center mb-3">
+                                        <div className="flex items-center gap-2">
+                                            <div className="w-8 h-8 rounded-full bg-accent-100 flex items-center justify-center text-accent-600 font-bold text-sm">
+                                                {c.author.charAt(0)}
+                                            </div>
+                                            <span className="font-bold text-slate-800">{c.author}</span>
+                                        </div>
+                                        <span className="text-xs font-semibold text-slate-400">{c.date}</span>
+                                    </div>
+                                    <p className="text-slate-600 pl-10 leading-relaxed text-sm md:text-base">{c.text}</p>
+                                </motion.div>
+                            ))}
+                        </AnimatePresence>
                     </div>
                 </motion.div>
 

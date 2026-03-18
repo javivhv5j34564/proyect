@@ -60,7 +60,7 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
 
                 <nav className="hidden md:flex items-center gap-6 font-semibold text-sm text-slate-600">
                     <button onClick={() => scrollToSection('directory-section')} className="hover:text-accent-600 transition-colors">Directory</button>
-                    <button onClick={() => scrollToSection('blog-section')} className="hover:text-accent-600 transition-colors">Guides & Blog</button>
+                    <Link to="/blog" className="hover:text-accent-600 transition-colors">Guides & Blog</Link>
                     <button onClick={() => scrollToSection('footer-contacto')} className="hover:text-accent-600 transition-colors">Contact</button>
                 </nav>
 
@@ -82,7 +82,7 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                             >
                                 <div className="flex flex-col p-4 gap-2">
                                     <button onClick={() => scrollToSection('directory-section')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">AI Directory</button>
-                                    <button onClick={() => scrollToSection('blog-section')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Guides & Blog</button>
+                                    <Link to="/blog" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Guides & Blog</Link>
                                     <button onClick={() => scrollToSection('footer-contacto')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 bg-slate-50 active:bg-slate-100 rounded-xl transition-all border border-slate-100">Contact</button>
                                 </div>
                             </motion.nav>
