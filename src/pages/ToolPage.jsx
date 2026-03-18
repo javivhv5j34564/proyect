@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { tools } from '../data';
 import { useSEO } from '../hooks/useSEO';
-import { ArrowLeft, ExternalLink, Zap, Star, Share2, Twitter, Copy, Check, Sparkles, ChevronRight } from 'lucide-react';
+import { Star, ExternalLink, ChevronRight, Share2, Check, Copy, Twitter, Zap, ArrowLeft, Heart, MessageSquare } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { AdSensePlaceholder } from '../components/AdSensePlaceholder';
+import { db } from '../firebase';
+import { ShareButtons } from '../components/ShareButtons';
 
 export default function ToolPage() {
     const { id } = useParams();
@@ -222,15 +224,8 @@ export default function ToolPage() {
 
                     <div className="flex flex-col sm:flex-row items-center gap-4 pt-8 border-t border-slate-100">
                         <span className="text-slate-500 font-semibold flex flex-row items-center gap-2"><Share2 className="w-5 h-5" /> Share tool:</span>
-                        <div className="flex gap-3 w-full sm:w-auto">
-                            <button onClick={handleCopyLink} className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 font-bold transition-all hover:border-slate-300">
-                                {isCopied ? <Check className="w-4 h-4 text-green-500" /> : <Copy className="w-4 h-4" />}
-                                {isCopied ? 'Link copied!' : 'Copy link'}
-                            </button>
-                            <button onClick={shareOnTwitter} className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-[#1DA1F2]/10 hover:bg-[#1DA1F2]/20 text-[#1DA1F2] font-bold transition-all">
-                                <Twitter className="w-4 h-4 fill-current" />
-                                Post on X
-                            </button>
+                        <div className="w-full sm:w-auto">
+                            <ShareButtons title={tool.name} text={tool.description} />
                         </div>
                     </div>
                 </motion.div>

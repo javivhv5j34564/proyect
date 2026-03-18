@@ -4,6 +4,7 @@ import { ArrowLeft, Clock, Calendar, Bookmark, Share2, Sparkles, ChevronRight } 
 import { blogPosts } from '../data';
 import { useSEO } from '../hooks/useSEO';
 import { useEffect } from 'react';
+import { ShareButtons } from '../components/ShareButtons';
 
 export default function BlogDetail() {
     const { id } = useParams();
@@ -79,12 +80,7 @@ export default function BlogDetail() {
                                 <span>March 2026</span>
                             </div>
                             <div className="ml-auto flex items-center gap-3">
-                                <button className="p-2.5 rounded-xl bg-slate-50 text-slate-400 hover:text-accent-600 hover:bg-accent-50 transition-all">
-                                    <Bookmark className="w-5 h-5" />
-                                </button>
-                                <button className="p-2.5 rounded-xl bg-slate-50 text-slate-400 hover:text-accent-600 hover:bg-accent-50 transition-all">
-                                    <Share2 className="w-5 h-5" />
-                                </button>
+                                <ShareButtons title={post.title} text={post.excerpt} />
                             </div>
                         </div>
 
