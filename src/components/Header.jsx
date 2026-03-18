@@ -90,24 +90,20 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                     )}
                 </AnimatePresence>
 
-                {isHome && (
-                    <div className="relative w-full md:w-auto md:min-w-[300px] lg:min-w-[400px] group flex items-center">
-                        <div className="relative w-full">
-                            <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 group-focus-within:text-accent-500 transition-colors" />
-                            <input
-                                type="text"
-                                placeholder="Search (e.g. coding, logos...)"
-                                value={searchTerm}
-                                onFocus={() => setIsSearchFocused(true)}
-                                onBlur={() => {
-                                    if (!searchTerm) setIsSearchFocused(false);
-                                }}
-                                onChange={(e) => onSearchChange(e.target.value)}
-                                className="w-full bg-white border border-slate-200 rounded-full py-2.5 pl-10 pr-4 outline-none focus:ring-2 focus:ring-accent-500/20 focus:border-accent-500 transition-all shadow-sm group-hover:shadow-md text-sm md:text-base text-slate-900"
-                            />
+                <div className="relative w-full md:w-auto md:min-w-[300px] lg:min-w-[400px] group flex items-center">
+                    <button 
+                        onClick={() => window.dispatchEvent(new Event('open-command-palette'))}
+                        className="w-full bg-slate-50 border border-slate-200 hover:border-accent-300 hover:shadow-sm rounded-full py-2.5 pl-4 pr-3 flex items-center justify-between transition-all group-focus-within:border-accent-500"
+                    >
+                        <div className="flex items-center gap-2.5">
+                            <SearchIcon className="w-4 h-4 text-slate-400 group-hover:text-accent-500 transition-colors" />
+                            <span className="text-sm text-slate-500">Search AI tools...</span>
                         </div>
-                    </div>
-                )}
+                        <kbd className="hidden md:inline-flex items-center gap-1 font-sans text-[10px] bg-white border border-slate-200 px-1.5 py-0.5 rounded text-slate-400 font-bold shadow-sm">
+                            <span className="text-[12px] leading-none">⌘</span> K
+                        </kbd>
+                    </button>
+                </div>
             </div>
         </header>
     );

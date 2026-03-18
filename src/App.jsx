@@ -12,6 +12,7 @@ import { CookieBanner } from './components/CookieBanner';
 import Header from './components/Header';
 import CategoryPage from './pages/CategoryPage';
 import Blog from './pages/Blog';
+import CommandPalette from './components/CommandPalette';
 import { useState } from 'react';
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
+      <CommandPalette />
       <CookieBanner />
       <Footer />
     </div>
