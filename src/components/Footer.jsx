@@ -33,7 +33,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500">
+                <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 dark:text-slate-400">
                     <p>© {new Date().getFullYear()} AI Directory. All rights reserved.</p>
                     <div className="flex items-center gap-4 mt-2 md:mt-0">
                         <p>Made with ❤️ for the AI Community</p>

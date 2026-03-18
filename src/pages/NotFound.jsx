@@ -4,7 +4,7 @@ import { ArrowLeft, Home, Sparkles, Ghost } from 'lucide-react';
 
 export default function NotFound() {
     return (
-        <div className="min-h-[80vh] flex items-center justify-center px-4 py-20 bg-slate-50">
+        <div className="min-h-[80vh] flex items-center justify-center px-4 py-20 bg-slate-50 dark:bg-slate-950">
             <div className="max-w-xl w-full text-center">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -17,8 +17,8 @@ export default function NotFound() {
                     <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-8xl md:text-9xl font-black text-slate-100 -z-0 opacity-50">404</span>
                 </motion.div>
 
-                <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">Oops! Page not found</h1>
-                <p className="text-slate-600 text-lg mb-10 leading-relaxed">
+                <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white mb-4 tracking-tight">Oops! Page not found</h1>
+                <p className="text-slate-600 dark:text-slate-400 text-lg mb-10 leading-relaxed">
                     It seems the artificial intelligence has taken the day off or the page you are looking for has been moved to another dimension. 🤖🌌
                 </p>
 
@@ -32,7 +32,7 @@ export default function NotFound() {
                     </Link>
                     <button
                         onClick={() => window.history.back()}
-                        className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-slate-300 text-slate-700 font-bold py-4 px-8 rounded-xl transition-all hover:bg-slate-50 active:scale-95"
+                        className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/80 hover:border-slate-300 text-slate-700 dark:text-slate-300 font-bold py-4 px-8 rounded-xl transition-all hover:bg-slate-50 dark:bg-slate-950 active:scale-95"
                     >
                         <ArrowLeft className="w-5 h-5" />
                         Go Back

@@ -12,14 +12,14 @@ export default function Blog() {
     });
 
     return (
-        <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6">
+        <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-12 px-4 sm:px-6">
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16">
                     <div className="inline-flex items-center justify-center p-3 rounded-full bg-accent-100 text-accent-600 mb-6">
                         <BookOpen className="w-8 h-8" />
                     </div>
-                    <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">Articles & Guides</h1>
-                    <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                    <h1 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-6">Articles & Guides</h1>
+                    <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
                         Deep dives, tutorials, and latest news from the Artificial Intelligence world. Learn how to automate your daily tasks.
                     </p>
                 </div>
@@ -31,7 +31,7 @@ export default function Blog() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1 }}
-                            className="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-accent-500/10 transition-all group flex flex-col"
+                            className="bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-700/80 shadow-sm dark:shadow-none hover:shadow-xl hover:shadow-accent-500/10 transition-all group flex flex-col"
                         >
                             <Link to={`/blog/${post.id}`} className="block relative aspect-video overflow-hidden">
                                 <img 
@@ -40,7 +40,7 @@ export default function Blog() {
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
                                 <div className="absolute top-4 left-4">
-                                    <span className="bg-white/90 backdrop-blur text-slate-800 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wide">
+                                    <span className="bg-white dark:bg-slate-900/90 backdrop-blur text-slate-800 dark:text-slate-100 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wide">
                                         {post.category}
                                     </span>
                                 </div>
@@ -51,11 +51,11 @@ export default function Blog() {
                                     <span>{post.readTime} read</span>
                                 </div>
                                 <Link to={`/blog/${post.id}`} className="block group-hover:text-accent-600 transition-colors mb-4">
-                                    <h2 className="text-xl font-bold text-slate-900 leading-tight">
+                                    <h2 className="text-xl font-bold text-slate-900 dark:text-white leading-tight">
                                         {post.title}
                                     </h2>
                                 </Link>
-                                <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
                                     {post.excerpt}
                                 </p>
                                 <Link to={`/blog/${post.id}`} className="mt-auto inline-flex items-center gap-1.5 text-accent-600 font-bold hover:text-accent-700 transition-colors text-sm">

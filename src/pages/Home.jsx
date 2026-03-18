@@ -57,12 +57,12 @@ const faqs = [
 const AccordionItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="border-b border-slate-200 last:border-none">
+    <div className="border-b border-slate-200 dark:border-slate-700/80 last:border-none">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full py-4 md:py-5 flex items-center justify-between text-left group transition-all"
       >
-        <span className="text-sm md:text-base font-bold text-slate-800 group-hover:text-accent-600 transition-colors pr-8">
+        <span className="text-sm md:text-base font-bold text-slate-800 dark:text-slate-100 group-hover:text-accent-600 transition-colors pr-8">
           {question}
         </span>
         <ChevronDown className={`w-5 h-5 text-slate-400 group-hover:text-accent-500 transition-transform duration-300 ${isOpen ? 'rotate-180 text-accent-500' : ''}`} />
@@ -76,7 +76,7 @@ const AccordionItem = ({ question, answer }) => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <p className="pb-5 text-sm md:text-base text-slate-500 leading-relaxed">
+            <p className="pb-5 text-sm md:text-base text-slate-500 dark:text-slate-400 leading-relaxed">
               {answer}
             </p>
           </motion.div>
@@ -106,7 +106,7 @@ const categoryIcons = {
 };
 
 // Tool card extracted for reuse
-const ToolCard = ({ tool, onClick, customBgClass = "bg-white", borderClass = "border-slate-200", isBookmarked, onBookmark, upvotes, hasUpvoted, onUpvote }) => (
+const ToolCard = ({ tool, onClick, customBgClass = "bg-white dark:bg-slate-900", borderClass = "border-slate-200 dark:border-slate-700/80", isBookmarked, onBookmark, upvotes, hasUpvoted, onUpvote }) => (
   <motion.div
     layout
     initial={{ opacity: 0, y: 30 }}
@@ -115,41 +115,41 @@ const ToolCard = ({ tool, onClick, customBgClass = "bg-white", borderClass = "bo
     exit={{ opacity: 0, scale: 0.9 }}
     transition={{ duration: 0.5, ease: "easeOut" }}
     onClick={() => onClick(tool)}
-    className={`group ${customBgClass} rounded-2xl p-4 md:p-6 border ${borderClass} hover:border-accent-300 shadow-sm hover:shadow-xl hover:shadow-accent-500/10 transition-all cursor-pointer flex flex-col h-full relative overflow-hidden`}
+    className={`group ${customBgClass} rounded-2xl p-4 md:p-6 border ${borderClass} hover:border-accent-300 shadow-sm dark:shadow-none hover:shadow-xl hover:shadow-accent-500/10 transition-all cursor-pointer flex flex-col h-full relative overflow-hidden`}
   >
     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-400 via-accent-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
     <button
       onClick={(e) => onBookmark(e, tool.id)}
-      className="absolute top-4 right-4 md:top-5 md:right-5 z-20 p-1.5 md:p-2 rounded-full bg-white/80 hover:bg-white backdrop-blur border border-slate-200 text-slate-400 hover:text-accent-500 transition-all opacity-100 shadow-sm"
+      className="absolute top-4 right-4 md:top-5 md:right-5 z-20 p-1.5 md:p-2 rounded-full bg-white dark:bg-slate-900/80 hover:bg-white dark:bg-slate-900 backdrop-blur border border-slate-200 dark:border-slate-700/80 text-slate-400 hover:text-accent-500 transition-all opacity-100 shadow-sm dark:shadow-none"
       title="Save to favorites"
     >
       <Bookmark className={`w-3.5 h-3.5 md:w-4 md:h-4 ${isBookmarked ? 'fill-accent-500 text-accent-500' : ''}`} />
     </button>
 
     <div className="flex justify-between items-start mb-3 md:mb-4 relative z-10">
-      <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center bg-white border border-slate-100 overflow-hidden group-hover:scale-105 transition-transform shadow-sm text-2xl md:text-3xl">
+      <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden group-hover:scale-105 transition-transform shadow-sm dark:shadow-none text-2xl md:text-3xl">
         {tool.emoji || '🤖'}
       </div>
     </div>
 
     <div className="mb-2 relative z-10">
-      <span className="inline-flex text-[9px] md:text-[10px] font-bold px-2 py-0.5 md:px-2.5 rounded-full bg-slate-100 text-slate-600 uppercase tracking-wider mb-1 md:mb-2 border border-slate-200/50">
+      <span className="inline-flex text-[9px] md:text-[10px] font-bold px-2 py-0.5 md:px-2.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 uppercase tracking-wider mb-1 md:mb-2 border border-slate-200 dark:border-slate-700/80/50">
         {tool.sector}
       </span>
       <Link to={`/tool/${tool.id}`} onClick={(e) => e.stopPropagation()} className="block">
-        <h3 className="text-lg md:text-xl font-bold group-hover:text-accent-600 transition-colors text-slate-900 leading-tight pr-8 hover:underline decoration-accent-500/50 underline-offset-4">{tool.name}</h3>
+        <h3 className="text-lg md:text-xl font-bold group-hover:text-accent-600 transition-colors text-slate-900 dark:text-white leading-tight pr-8 hover:underline decoration-accent-500/50 underline-offset-4">{tool.name}</h3>
       </Link>
     </div>
 
-    <p className="text-slate-600 text-xs md:text-sm leading-relaxed mb-4 md:mb-5 flex-grow line-clamp-3 relative z-10">
+    <p className="text-slate-600 dark:text-slate-400 text-xs md:text-sm leading-relaxed mb-4 md:mb-5 flex-grow line-clamp-3 relative z-10">
       {tool.description}
     </p>
 
-    <div className="mt-auto pt-3 md:pt-4 border-t border-slate-200/50 flex items-center justify-between relative z-10">
+    <div className="mt-auto pt-3 md:pt-4 border-t border-slate-200 dark:border-slate-700/80/50 flex items-center justify-between relative z-10">
       <button
         onClick={(e) => onUpvote(e, tool.id)}
-        className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all z-20 shadow-sm ${hasUpvoted ? 'bg-accent-500 border-accent-500 text-white hover:bg-accent-600' : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50'}`}
+        className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all z-20 shadow-sm dark:shadow-none ${hasUpvoted ? 'bg-accent-500 border-accent-500 text-white hover:bg-accent-600' : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700/80 text-slate-600 dark:text-slate-400 hover:border-slate-300 hover:bg-slate-50 dark:bg-slate-950'}`}
         title="Vote for this tool"
       >
         <ChevronUp className={`w-3 h-3 md:w-4 md:h-4 ${hasUpvoted ? 'text-white' : 'text-slate-400'}`} />
@@ -163,7 +163,7 @@ const ToolCard = ({ tool, onClick, customBgClass = "bg-white", borderClass = "bo
             {tool.freeTierDetails}
           </span>
         </div>
-        <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-accent-50 group-hover:text-accent-600 group-hover:border-accent-200 transition-colors shadow-sm flex-shrink-0">
+        <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 flex items-center justify-center text-slate-400 group-hover:bg-accent-50 group-hover:text-accent-600 group-hover:border-accent-200 transition-colors shadow-sm dark:shadow-none flex-shrink-0">
           <ChevronRight className="w-3 h-3 md:w-4 md:h-4" />
         </div>
       </div>
@@ -396,7 +396,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
   }, [selectedTool, selectedBlogPost]);
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white font-sans">
       {/* Header */}
 
 
@@ -416,14 +416,14 @@ export default function Home({ searchTerm, setSearchTerm }) {
         </div>
 
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} className="relative z-20">
-          <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-accent-50/80 backdrop-blur-md border border-accent-200/50 text-accent-700 text-xs md:text-sm font-black mb-6 md:mb-8 shadow-sm tracking-wide uppercase">
+          <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-accent-50/80 backdrop-blur-md border border-accent-200/50 text-accent-700 text-xs md:text-sm font-black mb-6 md:mb-8 shadow-sm dark:shadow-none tracking-wide uppercase">
             <Sparkles className="w-3 h-3 md:w-4 md:h-4" />
             <span>AI Tools Directory • 100% Updated</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 mb-4 md:mb-6 tracking-tight md:tracking-tighter leading-[1.05]">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 dark:text-white mb-4 md:mb-6 tracking-tight md:tracking-tighter leading-[1.05]">
             Find the <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-accent-500 to-indigo-600">AI Tool</span> <br className="hidden sm:block" /> You Need Today
           </h1>
-          <p className="text-base sm:text-lg md:text-2xl text-slate-600 font-medium mb-6 md:mb-8 leading-relaxed md:leading-relaxed max-w-3xl mx-auto px-2">
+          <p className="text-base sm:text-lg md:text-2xl text-slate-600 dark:text-slate-400 font-medium mb-6 md:mb-8 leading-relaxed md:leading-relaxed max-w-3xl mx-auto px-2">
             The largest curated AI directory. Filter through hundreds of <span className="text-accent-600 font-bold">free</span> tools to code, design, write, and automate your workflow.
           </p>
 
@@ -437,7 +437,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
             </button>
             <button
               onClick={() => scrollToSection('blog-section')}
-              className="w-full sm:w-auto bg-white/80 backdrop-blur border border-slate-200 hover:border-slate-300 text-slate-700 font-bold py-3.5 px-6 md:py-4 md:px-8 rounded-full transition-all shadow-sm hover:shadow-md hover:bg-slate-50 hover:text-accent-600 active:scale-95 text-sm md:text-base flex items-center justify-center gap-2"
+              className="w-full sm:w-auto bg-white dark:bg-slate-900/80 backdrop-blur border border-slate-200 dark:border-slate-700/80 hover:border-slate-300 text-slate-700 dark:text-slate-300 font-bold py-3.5 px-6 md:py-4 md:px-8 rounded-full transition-all shadow-sm dark:shadow-none hover:shadow-md hover:bg-slate-50 dark:bg-slate-950 hover:text-accent-600 active:scale-95 text-sm md:text-base flex items-center justify-center gap-2"
             >
               Articles & Guides <BookOpen className="w-4 h-4 md:w-5 md:h-5" />
             </button>
@@ -446,28 +446,28 @@ export default function Home({ searchTerm, setSearchTerm }) {
       </section>
 
       {/* Quick Value Prop / How it Works */}
-      <section className="bg-white border-y border-slate-100 py-8 md:py-12">
+      <section className="bg-white dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800 py-8 md:py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
               <div className="w-12 h-12 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center font-black text-xl flex-shrink-0">1</div>
               <div>
-                <h3 className="font-bold text-slate-900 mb-1">Explore Categories</h3>
-                <p className="text-sm text-slate-500">Navigate through programming, design, video, and more.</p>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">Explore Categories</h3>
+                <p className="text-sm text-slate-500 dark:text-slate-400">Navigate through programming, design, video, and more.</p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-4 border-y md:border-y-0 md:border-x border-slate-100 py-6 md:py-0 md:px-8">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-4 border-y md:border-y-0 md:border-x border-slate-100 dark:border-slate-800 py-6 md:py-0 md:px-8">
               <div className="w-12 h-12 rounded-full bg-accent-100 text-accent-600 flex items-center justify-center font-black text-xl flex-shrink-0">2</div>
               <div>
-                <h3 className="font-bold text-slate-900 mb-1">Find Free Tools</h3>
-                <p className="text-sm text-slate-500">We prioritize free options so you don't spend a dime testing.</p>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">Find Free Tools</h3>
+                <p className="text-sm text-slate-500 dark:text-slate-400">We prioritize free options so you don't spend a dime testing.</p>
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
               <div className="w-12 h-12 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-black text-xl flex-shrink-0">3</div>
               <div>
-                <h3 className="font-bold text-slate-900 mb-1">Boost Your Workflow</h3>
-                <p className="text-sm text-slate-500">Save hours of repetitive tasks using the right AI for each case.</p>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-1">Boost Your Workflow</h3>
+                <p className="text-sm text-slate-500 dark:text-slate-400">Save hours of repetitive tasks using the right AI for each case.</p>
               </div>
             </div>
           </div>
@@ -479,10 +479,10 @@ export default function Home({ searchTerm, setSearchTerm }) {
         {/* AI Facts & Advantages Section */}
         <section className="mb-12 mt-10 md:mb-16 md:mt-12">
           <div className="text-center mb-8 md:mb-10">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-800 tracking-tight mb-2 md:mb-3">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-slate-100 tracking-tight mb-2 md:mb-3">
               Why use Artificial Intelligence today?
             </h2>
-            <p className="text-slate-500 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4">Key advantages and surprising facts that will transform how you work</p>
+            <p className="text-slate-500 dark:text-slate-400 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4">Key advantages and surprising facts that will transform how you work</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
             {aiFacts.map((item, i) => (
@@ -493,28 +493,28 @@ export default function Home({ searchTerm, setSearchTerm }) {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 whileHover={{ y: -5 }}
-                className="bg-white rounded-2xl p-6 border border-slate-200/60 shadow-sm hover:shadow-xl hover:shadow-accent-500/10 transition-all group relative overflow-hidden flex flex-col h-full"
+                className="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-700/80/60 shadow-sm dark:shadow-none hover:shadow-xl hover:shadow-accent-500/10 transition-all group relative overflow-hidden flex flex-col h-full"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-slate-50 to-slate-100 rounded-bl-full -z-0 opacity-50 group-hover:scale-110 transition-transform duration-500"></div>
 
-                <div className="w-10 h-10 md:w-14 md:h-14 rounded-2xl bg-white border border-slate-100 shadow-sm flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 relative z-10">
+                <div className="w-10 h-10 md:w-14 md:h-14 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm dark:shadow-none flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 relative z-10">
                   {item.icon}
                 </div>
 
-                <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2 md:mb-3 group-hover:text-accent-600 transition-colors relative z-10">
+                <h3 className="text-lg md:text-xl font-bold text-slate-900 dark:text-white mb-2 md:mb-3 group-hover:text-accent-600 transition-colors relative z-10">
                   {item.title}
                 </h3>
 
-                <p className="text-slate-600 text-xs md:text-sm mb-4 md:mb-6 leading-relaxed flex-grow relative z-10">
+                <p className="text-slate-600 dark:text-slate-400 text-xs md:text-sm mb-4 md:mb-6 leading-relaxed flex-grow relative z-10">
                   {item.description}
                 </p>
 
-                <div className="pt-4 md:pt-5 border-t border-slate-100 relative z-10 mt-auto">
+                <div className="pt-4 md:pt-5 border-t border-slate-100 dark:border-slate-800 relative z-10 mt-auto">
                   <div className="flex items-start gap-2.5">
                     <div className="bg-accent-50 p-1.5 rounded-full flex-shrink-0 mt-0.5">
                       <Sparkles className="w-3.5 h-3.5 text-accent-500" />
                     </div>
-                    <p className="text-xs md:text-sm font-medium text-slate-700 leading-relaxed italic">
+                    <p className="text-xs md:text-sm font-medium text-slate-700 dark:text-slate-300 leading-relaxed italic">
                       {item.fact}
                     </p>
                   </div>
@@ -530,7 +530,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
           whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="w-full h-32 md:h-48 rounded-3xl overflow-hidden my-12 relative shadow-sm group"
+          className="w-full h-32 md:h-48 rounded-3xl overflow-hidden my-12 relative shadow-sm dark:shadow-none group"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary-900/60 via-accent-900/40 to-indigo-900/60 z-10 mix-blend-multiply border border-white/10 rounded-3xl transition-opacity group-hover:opacity-80"></div>
           <img
@@ -554,30 +554,30 @@ export default function Home({ searchTerm, setSearchTerm }) {
               <div
                 key={`${tool.id}-${index}`}
                 onClick={() => setSelectedTool(tool)}
-                className="flex items-center gap-2 md:gap-3 bg-white px-3 py-2 md:px-5 md:py-3 rounded-xl md:rounded-2xl border border-slate-200/60 shadow-sm cursor-pointer hover:border-accent-300 hover:shadow-md transition-all flex-shrink-0"
+                className="flex items-center gap-2 md:gap-3 bg-white dark:bg-slate-900 px-3 py-2 md:px-5 md:py-3 rounded-xl md:rounded-2xl border border-slate-200 dark:border-slate-700/80/60 shadow-sm dark:shadow-none cursor-pointer hover:border-accent-300 hover:shadow-md transition-all flex-shrink-0"
               >
-                <div className="w-6 h-6 md:w-8 md:h-8 rounded-lg overflow-hidden bg-slate-50 flex items-center justify-center flex-shrink-0 text-base md:text-xl">
+                <div className="w-6 h-6 md:w-8 md:h-8 rounded-lg overflow-hidden bg-slate-50 dark:bg-slate-950 flex items-center justify-center flex-shrink-0 text-base md:text-xl">
                   {tool.emoji || '🤖'}
                 </div>
-                <span className="text-xs md:text-sm font-bold text-slate-700">{tool.name}</span>
-                <span className="text-[9px] md:text-[10px] font-semibold px-1.5 py-0.5 md:px-2 md:py-0.5 rounded-full bg-slate-100 text-slate-500 uppercase tracking-wider">{tool.sector}</span>
+                <span className="text-xs md:text-sm font-bold text-slate-700 dark:text-slate-300">{tool.name}</span>
+                <span className="text-[9px] md:text-[10px] font-semibold px-1.5 py-0.5 md:px-2 md:py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 uppercase tracking-wider">{tool.sector}</span>
               </div>
             ))}
           </div>
         </section>
 
         {/* SEO Text Section for AdSense (Combats Thin Content) */}
-        <section className="bg-white rounded-3xl p-6 md:p-10 shadow-sm border border-slate-200/60 mb-12">
+        <section className="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-10 shadow-sm dark:shadow-none border border-slate-200 dark:border-slate-700/80/60 mb-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 mb-4">What is AI Directory and how does it help you?</h2>
-            <div className="prose prose-slate md:prose-lg max-w-none text-slate-600 space-y-4">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-slate-100 mb-4">What is AI Directory and how does it help you?</h2>
+            <div className="prose prose-slate md:prose-lg max-w-none text-slate-600 dark:text-slate-400 space-y-4">
               <p>
                 At <strong>AI Directory</strong>, our goal is to collect, analyze, and categorize the best Artificial Intelligence tools available today. We know the tech ecosystem changes daily, and finding the perfect free or freemium AI for your business, studies, or creative workflow can be an exhausting task.
               </p>
               <p>
                 Every tool listed in our directory goes through a quality filter where we evaluate its real utility, whether it has a <em>valid free plan</em>, and what kind of problems it solves. From <strong>text generators (LLMs)</strong> that help you write emails in seconds, to advanced <strong>image or video generators</strong> that can create the visual prototype of your next big idea without needing to know how to code.
               </p>
-              <h3 className="text-xl font-bold text-slate-800 mt-6 mb-3">How to make the ultimate of our orders</h3>
+              <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mt-6 mb-3">How to make the ultimate of our orders</h3>
               <p>
                 Use the adulterants below to navigate our inventory.However, the <strong>Visual Design</strong> or <strong>Video</strong> section will be your  swish supporter, If you are a content creator.However, explore <strong>Business & Productivity</strong> to find AI- powered CRMs and automated agents, If you are looking to optimize your business operation. Our directory is constantly streamlined so you noway fall before in this technological revolution.
               </p>
@@ -589,17 +589,17 @@ export default function Home({ searchTerm, setSearchTerm }) {
         <section id="directory-section" className="mt-12 md:mt-20 scroll-mt-24">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 md:mb-12">
             <div className="text-left">
-              <h2 className="text-2xl md:text-4xl font-black text-slate-900 mb-3 tracking-tight">AI Tools Directory</h2>
+              <h2 className="text-2xl md:text-4xl font-black text-slate-900 dark:text-white mb-3 tracking-tight">AI Tools Directory</h2>
               <p className="font-medium">Found <span className="text-accent-600 font-bold">{typeof filteredTools !== 'undefined' ? filteredTools.length : 0}</span> professional tools for you</p>
             </div>
 
             <div className="flex flex-wrap items-center gap-3">
-              <div className="flex bg-white p-1 rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+              <div className="flex bg-white dark:bg-slate-900 p-1 rounded-xl border border-slate-200 dark:border-slate-700/80 shadow-sm dark:shadow-none overflow-hidden">
                 {['All', 'Free', 'Freemium'].map(price => (
                   <button
                     key={price}
                     onClick={() => setSelectedPricing(price)}
-                    className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${selectedPricing === price ? 'bg-slate-900 text-white shadow-md' : 'text-slate-500 hover:text-slate-900 hover:bg-slate-50'}`}
+                    className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${selectedPricing === price ? 'bg-slate-900 text-white shadow-md' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:text-white hover:bg-slate-50 dark:bg-slate-950'}`}
                   >
                     {price === 'All' ? 'All Plans' : price}
                   </button>
@@ -609,7 +609,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="bg-white border border-slate-200 text-slate-700 text-sm font-bold rounded-xl px-4 py-2 outline-none focus:ring-2 focus:ring-accent-500 cursor-pointer shadow-sm hover:border-slate-300 transition-colors"
+                className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/80 text-slate-700 dark:text-slate-300 text-sm font-bold rounded-xl px-4 py-2 outline-none focus:ring-2 focus:ring-accent-500 cursor-pointer shadow-sm dark:shadow-none hover:border-slate-300 transition-colors"
               >
                 <option value="popular">🔥 Most Popular</option>
                 <option value="newest">✨ Newest</option>
@@ -618,7 +618,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
 
               <button
                 onClick={() => setShowFavorites(!showFavorites)}
-                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl border font-bold text-xs transition-all shadow-sm ${showFavorites ? 'bg-accent-500 border-accent-500 text-white shadow-accent-500/20' : 'bg-white border-slate-200 text-slate-600 hover:border-accent-300 hover:text-accent-600'}`}
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl border font-bold text-xs transition-all shadow-sm dark:shadow-none ${showFavorites ? 'bg-accent-500 border-accent-500 text-white shadow-accent-500/20' : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700/80 text-slate-600 dark:text-slate-400 hover:border-accent-300 hover:text-accent-600'}`}
               >
                 <Bookmark className={`w-3.5 h-3.5 ${showFavorites ? 'fill-white' : ''}`} />
                 My Favorites
@@ -648,7 +648,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                     setSelectedCategory(cat);
                     setDisplayCount(15);
                   }}
-                  className={`flex items-center gap-2 px-5 py-3 rounded-2xl whitespace-nowrap font-bold text-sm transition-all border-2 flex-shrink-0 ${selectedCategory === cat ? 'bg-slate-900 border-slate-900 text-white shadow-xl shadow-slate-900/10 -translate-y-1' : 'bg-white border-slate-100 text-slate-500 hover:border-accent-200 hover:text-accent-600'}`}
+                  className={`flex items-center gap-2 px-5 py-3 rounded-2xl whitespace-nowrap font-bold text-sm transition-all border-2 flex-shrink-0 ${selectedCategory === cat ? 'bg-slate-900 border-slate-900 text-white shadow-xl shadow-slate-900/10 -translate-y-1' : 'bg-white dark:bg-slate-900 border-slate-100 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:border-accent-200 hover:text-accent-600'}`}
                 >
                   {categoryIcons[cat] || <Brain className="w-4 h-4" />}
                   {cat}
@@ -666,11 +666,11 @@ export default function Home({ searchTerm, setSearchTerm }) {
         {/* Dynamic Grids */}
         {filteredTools.length === 0 ? (
           <div className="text-center py-20">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-slate-100 mb-4">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-slate-100 dark:bg-slate-800 mb-4">
               <Search className="w-8 h-8 text-slate-400" />
             </div>
-            <h3 className="text-lg font-bold text-slate-700">No tools found</h3>
-            <p className="text-slate-500">Try adjusting your search or category.</p>
+            <h3 className="text-lg font-bold text-slate-700 dark:text-slate-300">No tools found</h3>
+            <p className="text-slate-500 dark:text-slate-400">Try adjusting your search or category.</p>
           </div>
         ) : (
           <div>
@@ -696,7 +696,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                   <div className="flex justify-center mt-8 md:mt-10">
                     <button
                       onClick={() => setDisplayCount(prev => prev + 15)}
-                      className="bg-white border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-3 px-8 rounded-full shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center gap-2"
+                      className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/80 hover:border-accent-300 text-slate-700 dark:text-slate-300 font-bold py-3 px-8 rounded-full shadow-sm dark:shadow-none hover:shadow-md transition-all active:scale-95 flex items-center gap-2"
                     >
                       <SearchIcon className="w-4 h-4 text-accent-500" />
                       Load {Math.min(15, filteredTools.length - displayCount)} more
@@ -710,7 +710,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                 <section>
                   <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex items-center gap-2 mb-4 md:mb-6">
                     <Flame className="w-5 h-5 md:w-6 md:h-6 text-amber-500" />
-                    <h2 className="text-xl md:text-2xl font-bold text-slate-800">Top 3 Most Used</h2>
+                    <h2 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-100">Top 3 Most Used</h2>
                   </motion.div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                     {top3Tools.map((tool) => (
@@ -734,7 +734,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                 <section>
                   <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex items-center gap-2 mb-4 md:mb-6">
                     <Clock className="w-5 h-5 md:w-6 md:h-6 text-accent-500" />
-                    <h2 className="text-xl md:text-2xl font-bold text-slate-800">Recently Added</h2>
+                    <h2 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-100">Recently Added</h2>
                   </motion.div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                     {recentTools.map((tool) => (
@@ -760,7 +760,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                   whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.8 }}
-                  className="w-full h-32 md:h-48 rounded-3xl overflow-hidden my-8 relative shadow-sm group"
+                  className="w-full h-32 md:h-48 rounded-3xl overflow-hidden my-8 relative shadow-sm dark:shadow-none group"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-accent-900/60 via-indigo-900/40 to-primary-900/60 z-10 mix-blend-multiply border border-white/10 rounded-3xl transition-opacity group-hover:opacity-80"></div>
                   <img
@@ -775,9 +775,9 @@ export default function Home({ searchTerm, setSearchTerm }) {
 
                 {/* All Other Tools Section */}
                 <section className="pt-2 md:pt-4 mt-6 md:mt-8">
-                  <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex items-center gap-2 mb-4 md:mb-6 border-b border-slate-200/60 pb-2 md:pb-3">
+                  <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex items-center gap-2 mb-4 md:mb-6 border-b border-slate-200 dark:border-slate-700/80/60 pb-2 md:pb-3">
                     <Sparkles className="w-4 h-4 md:w-5 md:h-5 text-accent-500" />
-                    <h2 className="text-xl md:text-2xl font-bold text-slate-800">Explore Directory</h2>
+                    <h2 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-100">Explore Directory</h2>
                   </motion.div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                     {otherTools.slice(0, displayCount).map((tool) => (
@@ -797,7 +797,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                     <div className="flex justify-center mt-8 md:mt-10">
                       <button
                         onClick={() => setDisplayCount(prev => prev + 15)}
-                        className="bg-white border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-3 px-4 md:px-8 rounded-full shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center gap-2 w-full md:w-auto justify-center"
+                        className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/80 hover:border-accent-300 text-slate-700 dark:text-slate-300 font-bold py-3 px-4 md:px-8 rounded-full shadow-sm dark:shadow-none hover:shadow-md transition-all active:scale-95 flex items-center gap-2 w-full md:w-auto justify-center"
                       >
                         <SearchIcon className="w-4 h-4 text-accent-500" />
                         Load {Math.min(15, otherTools.length - displayCount)} more
@@ -844,8 +844,8 @@ export default function Home({ searchTerm, setSearchTerm }) {
               <BookOpen className="w-5 h-5 md:w-6 md:h-6 text-accent-600" />
             </div>
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">Top Guides & Resources</h2>
-              <p className="text-slate-500 text-xs md:text-sm mt-1">Discover articles and tutorials to get the most out of artificial intelligence.</p>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">Top Guides & Resources</h2>
+              <p className="text-slate-500 dark:text-slate-400 text-xs md:text-sm mt-1">Discover articles and tutorials to get the most out of artificial intelligence.</p>
             </div>
           </div>
 
@@ -854,17 +854,17 @@ export default function Home({ searchTerm, setSearchTerm }) {
               <Link
                 key={post.id}
                 to={`/blog/${post.id}`}
-                className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-accent-500/10 hover:border-accent-200 transition-all group flex flex-col h-full cursor-pointer"
+                className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700/80 overflow-hidden shadow-sm dark:shadow-none hover:shadow-xl hover:shadow-accent-500/10 hover:border-accent-200 transition-all group flex flex-col h-full cursor-pointer"
               >
                 <div className="h-40 overflow-hidden relative">
                   <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors z-10"></div>
                   <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <span className="absolute top-3 left-3 bg-white/90 backdrop-blur text-slate-800 text-[10px] font-bold px-2 py-1 rounded-md z-20 uppercase tracking-wider shadow-sm">{post.category}</span>
+                  <span className="absolute top-3 left-3 bg-white dark:bg-slate-900/90 backdrop-blur text-slate-800 dark:text-slate-100 text-[10px] font-bold px-2 py-1 rounded-md z-20 uppercase tracking-wider shadow-sm dark:shadow-none">{post.category}</span>
                 </div>
                 <div className="p-5 flex flex-col flex-grow">
-                  <h3 className="text-base font-bold text-slate-900 mb-2 leading-tight group-hover:text-accent-600 transition-colors">{post.title}</h3>
-                  <p className="text-slate-500 text-xs mb-4 flex-grow line-clamp-3 leading-relaxed">{post.excerpt}</p>
-                  <div className="mt-auto flex items-center justify-end border-t border-slate-100 pt-3">
+                  <h3 className="text-base font-bold text-slate-900 dark:text-white mb-2 leading-tight group-hover:text-accent-600 transition-colors">{post.title}</h3>
+                  <p className="text-slate-500 dark:text-slate-400 text-xs mb-4 flex-grow line-clamp-3 leading-relaxed">{post.excerpt}</p>
+                  <div className="mt-auto flex items-center justify-end border-t border-slate-100 dark:border-slate-800 pt-3">
                     <ArrowRight className="w-4 h-4 text-accent-500 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
@@ -879,10 +879,10 @@ export default function Home({ searchTerm, setSearchTerm }) {
         {/* FAQ Section - Excellent for AdSense Weight but compact */}
         <section className="mt-16 md:mt-24 max-w-4xl mx-auto px-4 sm:px-0">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-3">Frequently Asked Questions</h2>
-            <p className="text-slate-500 text-sm md:text-base">Everything you need to know about our directory.</p>
+            <h2 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white mb-3">Frequently Asked Questions</h2>
+            <p className="text-slate-500 dark:text-slate-400 text-sm md:text-base">Everything you need to know about our directory.</p>
           </div>
-          <div className="bg-white rounded-3xl p-2 md:p-6 shadow-sm border border-slate-200/60">
+          <div className="bg-white dark:bg-slate-900 rounded-3xl p-2 md:p-6 shadow-sm dark:shadow-none border border-slate-200 dark:border-slate-700/80/60">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} {...faq} />
             ))}
@@ -895,20 +895,20 @@ export default function Home({ searchTerm, setSearchTerm }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.7 }}
-          className="mt-16 pt-8 md:mt-24 md:pt-12 border-t border-slate-200"
+          className="mt-16 pt-8 md:mt-24 md:pt-12 border-t border-slate-200 dark:border-slate-700/80"
         >
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-4xl font-black text-slate-900 mb-6 md:mb-10 text-center md:text-left leading-tight">
+            <h2 className="text-2xl md:text-4xl font-black text-slate-900 dark:text-white mb-6 md:mb-10 text-center md:text-left leading-tight">
               Global and Free <span className="text-accent-600">Artificial Intelligence</span> Directory
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
               <div className="space-y-4 md:space-y-6">
-                <p className="text-slate-600 text-sm md:text-lg leading-relaxed">
+                <p className="text-slate-600 dark:text-slate-400 text-sm md:text-lg leading-relaxed">
                   Welcome to the most comprehensive and rigorously curated directory of <strong>free and freemium Artificial Intelligence tools</strong> on the market. In an ecosystem where hundreds of new models are born daily, finding the ones that truly add value can be a titanic task.
                 </p>
-                <h3 className="text-lg md:text-xl font-bold text-slate-800">How to choose the stylish AI for you?</h3>
-                <p className="text-slate-600 text-sm md:text-base leading-relaxed">
+                <h3 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100">How to choose the stylish AI for you?</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed">
                   Our platform is distributed by crucial sectors from <strong>Writing & Rendering</strong>, to niches like <strong>Fashion, cuisine, and Management</strong>. Each tool passes through a demanding human quality filter where we evaluate real utility and the generosity of its free plans.
                 </p>
               </div>
@@ -920,8 +920,8 @@ export default function Home({ searchTerm, setSearchTerm }) {
                       <Zap className="w-3.5 h-3.5 text-primary-600" />
                     </div>
                     <div>
-                      <strong className="text-slate-900 block text-sm md:text-base">Productivity & Study</strong>
-                      <p className="text-slate-500 text-xs md:text-sm">Maximize your efficiency with powerful Smart Assistants and chatbots like ChatGPT, Gemini, or Perplexity.</p>
+                      <strong className="text-slate-900 dark:text-white block text-sm md:text-base">Productivity & Study</strong>
+                      <p className="text-slate-500 dark:text-slate-400 text-xs md:text-sm">Maximize your efficiency with powerful Smart Assistants and chatbots like ChatGPT, Gemini, or Perplexity.</p>
                     </div>
                   </li>
                   <li className="flex gap-3">
@@ -929,12 +929,12 @@ export default function Home({ searchTerm, setSearchTerm }) {
                       <Palette className="w-3.5 h-3.5 text-accent-600" />
                     </div>
                     <div>
-                      <strong className="text-slate-900 block text-sm md:text-base">Multimedia Generation</strong>
-                      <p className="text-slate-500 text-xs md:text-sm">Access Image Generators (Flux, Leonardo) and Video Generators (Runway) for professional designs in seconds.</p>
+                      <strong className="text-slate-900 dark:text-white block text-sm md:text-base">Multimedia Generation</strong>
+                      <p className="text-slate-500 dark:text-slate-400 text-xs md:text-sm">Access Image Generators (Flux, Leonardo) and Video Generators (Runway) for professional designs in seconds.</p>
                     </div>
                   </li>
                 </ul>
-                <p className="text-slate-500 text-xs md:text-sm italic border-l-2 border-accent-500 pl-4 py-1">
+                <p className="text-slate-500 dark:text-slate-400 text-xs md:text-sm italic border-l-2 border-accent-500 pl-4 py-1">
                   Add our directory to your favorites. We constantly analyze the latest extensions and mobile apps based on AI that are revolutionizing the digital world.
                 </p>
               </div>
@@ -948,8 +948,8 @@ export default function Home({ searchTerm, setSearchTerm }) {
           <div className="max-w-4xl mx-auto px-4 sm:px-0">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-10">
               <div className="text-center md:text-left">
-                <h2 className="text-2xl md:text-4xl font-black text-slate-900 mb-2">Community Evaluation</h2>
-                <p className="text-slate-500">Has the directory been useful to you? Leave us your feedback.</p>
+                <h2 className="text-2xl md:text-4xl font-black text-slate-900 dark:text-white mb-2">Community Evaluation</h2>
+                <p className="text-slate-500 dark:text-slate-400">Has the directory been useful to you? Leave us your feedback.</p>
               </div>
             </div>
 
@@ -974,9 +974,9 @@ export default function Home({ searchTerm, setSearchTerm }) {
                       name="name"
                       placeholder="Your name"
                       required
-                      className="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all"
+                      className="bg-white dark:bg-slate-900/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all"
                     />
-                    <div className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 min-w-[140px]">
+                    <div className="flex items-center gap-3 bg-white dark:bg-slate-900/5 border border-white/10 rounded-xl px-4 py-3 min-w-[140px]">
                       <span className="text-sm text-slate-400 font-medium whitespace-nowrap">Your rating:</span>
                       <div className="flex gap-1">
                         {[1, 2, 3, 4, 5].map((s) => (
@@ -991,7 +991,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                             <Star
                               className={`w-6 h-6 transition-all ${s <= (hoverRating || formRating)
                                 ? 'fill-amber-400 text-amber-400 scale-110'
-                                : 'text-slate-600'
+                                : 'text-slate-600 dark:text-slate-400'
                                 }`}
                             />
                           </button>
@@ -1005,7 +1005,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                     rows="3"
                     placeholder="Write your comment or suggestion here..."
                     required
-                    className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all resize-none"
+                    className="w-full bg-white dark:bg-slate-900/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all resize-none"
                   ></textarea>
                   <button
                     type="submit"
@@ -1013,7 +1013,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                   >
                     Submit evaluation
                   </button>
-                  <p className="text-[10px] text-center text-slate-500 mt-2 italic">We value every suggestion to improve the directory daily.</p>
+                  <p className="text-[10px] text-center text-slate-500 dark:text-slate-400 mt-2 italic">We value every suggestion to improve the directory daily.</p>
                 </form>
               </div>
             </div>
@@ -1056,30 +1056,30 @@ export default function Home({ searchTerm, setSearchTerm }) {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed inset-y-0 right-0 w-full md:w-[480px] bg-white shadow-2xl z-50 overflow-y-auto border-l border-slate-200"
+              className="fixed inset-y-0 right-0 w-full md:w-[480px] bg-white dark:bg-slate-900 shadow-2xl z-50 overflow-y-auto border-l border-slate-200 dark:border-slate-700/80"
             >
               <div className="relative min-h-full flex flex-col">
                 {/* Drawer Header */}
-                <div className="sticky top-0 bg-white/80 backdrop-blur-md border-b border-slate-100 px-6 py-4 flex items-center justify-between z-10">
+                <div className="sticky top-0 bg-white dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-100 dark:border-slate-800 px-6 py-4 flex items-center justify-between z-10">
                   <span className="text-xs font-bold uppercase tracking-wider text-slate-400">Tool details</span>
                   <button
                     onClick={() => setSelectedTool(null)}
-                    className="p-2 -mr-2 rounded-full hover:bg-slate-100 text-slate-500 transition-colors"
+                    className="p-2 -mr-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 dark:text-slate-400 transition-colors"
                   >
                     <X className="w-5 h-5" />
                   </button>
                 </div>
 
                 {/* Drawer Content */}
-                <div className="p-5 md:p-8 flex-grow text-slate-900">
+                <div className="p-5 md:p-8 flex-grow text-slate-900 dark:text-white">
                   <div className="flex items-start gap-4 md:gap-5 mb-6 md:mb-8">
-                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl border border-slate-100 shadow-sm overflow-hidden bg-slate-50 flex items-center justify-center flex-shrink-0 text-4xl md:text-5xl">
+                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm dark:shadow-none overflow-hidden bg-slate-50 dark:bg-slate-950 flex items-center justify-center flex-shrink-0 text-4xl md:text-5xl">
                       {selectedTool.emoji || '🤖'}
                     </div>
                     <div className="flex-grow">
-                      <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-2">{selectedTool.name}</h2>
+                      <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white mb-2">{selectedTool.name}</h2>
                       <div className="flex flex-wrap items-center gap-2 mb-3">
-                        <span className="flex text-[10px] md:text-xs font-bold px-2.5 py-1 md:px-3 md:py-1 rounded-full bg-slate-100 text-slate-600">
+                        <span className="flex text-[10px] md:text-xs font-bold px-2.5 py-1 md:px-3 md:py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
                           {selectedTool.sector}
                         </span>
                         <span className={`flex items-center gap-1 text-[10px] md:text-xs font-bold px-2.5 py-1 md:px-3 md:py-1 rounded-full ${selectedTool.isFullyFree ? 'bg-green-50 text-green-700' : 'bg-amber-50 text-amber-700'}`}>
@@ -1089,14 +1089,14 @@ export default function Home({ searchTerm, setSearchTerm }) {
                       <div className="flex items-center gap-2 mb-2">
                         <button
                           onClick={(e) => handleUpvote(e, selectedTool.id)}
-                          className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all z-20 shadow-sm ${userUpvoted.includes(selectedTool.id) ? 'bg-accent-500 border-accent-500 text-white hover:bg-accent-600' : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50'}`}
+                          className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all z-20 shadow-sm dark:shadow-none ${userUpvoted.includes(selectedTool.id) ? 'bg-accent-500 border-accent-500 text-white hover:bg-accent-600' : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700/80 text-slate-600 dark:text-slate-400 hover:border-slate-300 hover:bg-slate-50 dark:bg-slate-950'}`}
                         >
                           <ChevronUp className={`w-3.5 h-3.5 md:w-4 md:h-4 ${userUpvoted.includes(selectedTool.id) ? 'text-white' : 'text-slate-400'}`} />
                           {upvotes[selectedTool.id] || 0} Votes
                         </button>
                         <button
                           onClick={(e) => toggleBookmark(e, selectedTool.id)}
-                          className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all shadow-sm ${bookmarks.includes(selectedTool.id) ? 'bg-amber-50 border-amber-200 text-amber-700 hover:bg-amber-100' : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50'}`}
+                          className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all shadow-sm dark:shadow-none ${bookmarks.includes(selectedTool.id) ? 'bg-amber-50 border-amber-200 text-amber-700 hover:bg-amber-100' : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700/80 text-slate-600 dark:text-slate-400 hover:border-slate-300 hover:bg-slate-50 dark:bg-slate-950'}`}
                         >
                           <Bookmark className={`w-3.5 h-3.5 md:w-4 md:h-4 ${bookmarks.includes(selectedTool.id) ? 'fill-amber-500 text-amber-500' : 'text-slate-400'}`} />
                           Favorite
@@ -1106,22 +1106,22 @@ export default function Home({ searchTerm, setSearchTerm }) {
                   </div>
 
                   <div className="prose prose-slate prose-p:leading-relaxed max-w-none">
-                    <h3 className="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2 mb-4">Why use it?</h3>
-                    <p className="text-slate-600 text-[15px] mb-4">
+                    <h3 className="text-lg font-bold text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800 pb-2 mb-4">Why use it?</h3>
+                    <p className="text-slate-600 dark:text-slate-400 text-[15px] mb-4">
                       {selectedTool.description}
                     </p>
-                    <p className="text-slate-600 text-[15px]">
+                    <p className="text-slate-600 dark:text-slate-400 text-[15px]">
                       {selectedTool.longDescription}
                     </p>
                   </div>
                 </div>
 
                 {/* Drawer Footer with CTA */}
-                <div className="sticky bottom-0 bg-white border-t border-slate-100 p-4 md:p-6 z-10 space-y-2 md:space-y-3">
+                <div className="sticky bottom-0 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 p-4 md:p-6 z-10 space-y-2 md:space-y-3">
                   <a href={selectedTool.url} target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center gap-2 bg-slate-900 hover:bg-accent-600 text-white font-bold py-3 px-4 md:py-3.5 md:px-6 rounded-xl transition-all shadow-lg hover:shadow-accent-500/25 active:scale-[0.98] text-sm md:text-base">
                     Try {selectedTool.name} Free <ExternalLink className="w-4 h-4" />
                   </a>
-                  <Link to={`/tool/${selectedTool.id}`} className="w-full flex items-center justify-center gap-2 bg-slate-50 border border-slate-200 hover:border-accent-300 text-slate-700 font-bold py-2.5 px-4 md:py-3 md:px-6 rounded-xl transition-all shadow-sm hover:shadow-md hover:text-accent-600 text-sm md:text-base">
+                  <Link to={`/tool/${selectedTool.id}`} className="w-full flex items-center justify-center gap-2 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700/80 hover:border-accent-300 text-slate-700 dark:text-slate-300 font-bold py-2.5 px-4 md:py-3 md:px-6 rounded-xl transition-all shadow-sm dark:shadow-none hover:shadow-md hover:text-accent-600 text-sm md:text-base">
                     View full review page
                   </Link>
                 </div>
@@ -1147,14 +1147,14 @@ export default function Home({ searchTerm, setSearchTerm }) {
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative w-full max-w-3xl bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] border"
+              className="relative w-full max-w-3xl bg-white dark:bg-slate-900 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] border"
             >
               <div className="relative h-48 sm:h-64 flex-shrink-0">
                 <img src={selectedBlogPost.image} alt={selectedBlogPost.title} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
                 <button
                   onClick={() => setSelectedBlogPost(null)}
-                  className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/40 backdrop-blur text-white transition-colors"
+                  className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-white dark:bg-slate-900/20 hover:bg-white dark:bg-slate-900/40 backdrop-blur text-white transition-colors"
                 >
                   <X className="w-5 h-5" />
                 </button>
@@ -1165,15 +1165,15 @@ export default function Home({ searchTerm, setSearchTerm }) {
               </div>
 
               <div className="p-6 sm:p-8 overflow-y-auto">
-                <div className="flex items-center gap-4 text-sm text-slate-500 font-medium mb-6 pb-6 border-b border-slate-100">
+                <div className="flex items-center gap-4 text-sm text-slate-500 dark:text-slate-400 font-medium mb-6 pb-6 border-b border-slate-100 dark:border-slate-800">
                   <span className="flex items-center gap-1.5 text-accent-600"><Sparkles className="w-4 h-4" /> Editorial</span>
                 </div>
 
-                <div className="prose prose-slate prose-lg max-w-none prose-headings:text-slate-900 prose-a:text-accent-600 hover:prose-a:text-accent-500">
-                  <p className="lead text-xl text-slate-700 font-medium mb-6">
+                <div className="prose prose-slate prose-lg max-w-none prose-headings:text-slate-900 dark:text-white prose-a:text-accent-600 hover:prose-a:text-accent-500">
+                  <p className="lead text-xl text-slate-700 dark:text-slate-300 font-medium mb-6">
                     {selectedBlogPost.excerpt}
                   </p>
-                  <p className="whitespace-pre-line text-slate-600 leading-relaxed">
+                  <p className="whitespace-pre-line text-slate-600 dark:text-slate-400 leading-relaxed">
                     {selectedBlogPost.content}
                   </p>
                 </div>

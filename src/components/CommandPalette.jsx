@@ -79,9 +79,9 @@ export default function CommandPalette() {
                             initial={{ opacity: 0, scale: 0.95, y: -20 }}
                             animate={{ opacity: 1, scale: 1, y: 0 }}
                             exit={{ opacity: 0, scale: 0.95, y: -20 }}
-                            className="bg-white rounded-2xl shadow-2xl overflow-hidden w-full max-w-2xl border border-slate-200 pointer-events-auto"
+                            className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl overflow-hidden w-full max-w-2xl border border-slate-200 dark:border-slate-700/80 pointer-events-auto"
                         >
-                            <div className="flex items-center px-4 py-4 border-b border-slate-100 relative">
+                            <div className="flex items-center px-4 py-4 border-b border-slate-100 dark:border-slate-800 relative">
                                 <Search className="w-5 h-5 text-accent-500 absolute left-6" />
                                 <input 
                                     ref={inputRef}
@@ -90,25 +90,25 @@ export default function CommandPalette() {
                                     onChange={(e) => setQuery(e.target.value)}
                                     placeholder="Search APIs, tools, articles..."
                                     autoFocus
-                                    className="w-full pl-10 pr-4 py-2 bg-transparent text-lg text-slate-900 placeholder-slate-400 focus:outline-none"
+                                    className="w-full pl-10 pr-4 py-2 bg-transparent text-lg text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none"
                                 />
-                                <button onClick={() => setIsOpen(false)} className="text-slate-400 hover:text-slate-600 bg-slate-50 hover:bg-slate-100 p-1.5 rounded-lg border border-slate-200 ml-2 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-300">
+                                <button onClick={() => setIsOpen(false)} className="text-slate-400 hover:text-slate-600 dark:text-slate-400 bg-slate-50 dark:bg-slate-950 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 rounded-lg border border-slate-200 dark:border-slate-700/80 ml-2 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-300">
                                     <X className="w-4 h-4" />
                                 </button>
                             </div>
                             
-                            <div className="max-h-[60vh] overflow-y-auto p-4 bg-slate-50/50 hidden-scrollbar">
+                            <div className="max-h-[60vh] overflow-y-auto p-4 bg-slate-50 dark:bg-slate-950/50 hidden-scrollbar">
                                 {searchString === '' ? (
                                     <div>
                                         <h3 className="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider px-2">Popular Tools</h3>
                                         <div className="space-y-1.5">
                                             {defaultTools.map(t => (
-                                                <button key={t.id} onClick={() => handleSelectPath(`/tool/${t.id}`)} className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-white border border-transparent hover:border-slate-200 hover:shadow-sm transition-all focus:outline-none focus:bg-white focus:border-slate-200 focus:shadow-sm">
+                                                <button key={t.id} onClick={() => handleSelectPath(`/tool/${t.id}`)} className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-white dark:bg-slate-900 border border-transparent hover:border-slate-200 dark:border-slate-700/80 hover:shadow-sm dark:shadow-none transition-all focus:outline-none focus:bg-white dark:bg-slate-900 focus:border-slate-200 dark:border-slate-700/80 focus:shadow-sm dark:shadow-none">
                                                     <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-lg bg-white border border-slate-100 shadow-sm flex items-center justify-center text-xl">{t.emoji || '🤖'}</div>
-                                                        <span className="font-bold text-slate-800">{t.name}</span>
+                                                        <div className="w-8 h-8 rounded-lg bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm dark:shadow-none flex items-center justify-center text-xl">{t.emoji || '🤖'}</div>
+                                                        <span className="font-bold text-slate-800 dark:text-slate-100">{t.name}</span>
                                                     </div>
-                                                    <span className="text-[10px] font-bold px-2 py-1 rounded bg-slate-100 text-slate-500 hidden sm:block">{t.sector}</span>
+                                                    <span className="text-[10px] font-bold px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hidden sm:block">{t.sector}</span>
                                                 </button>
                                             ))}
                                         </div>
@@ -120,15 +120,15 @@ export default function CommandPalette() {
                                                 <h3 className="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider px-2 flex items-center gap-1.5"><Zap className="w-3.5 h-3.5" /> AI Tools</h3>
                                                 <div className="space-y-1.5">
                                                     {matchedTools.map(t => (
-                                                        <button key={t.id} onClick={() => handleSelectPath(`/tool/${t.id}`)} className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-white border border-transparent hover:border-slate-200 hover:shadow-sm transition-all focus:outline-none focus:bg-white focus:border-slate-200 focus:shadow-sm text-left">
+                                                        <button key={t.id} onClick={() => handleSelectPath(`/tool/${t.id}`)} className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-white dark:bg-slate-900 border border-transparent hover:border-slate-200 dark:border-slate-700/80 hover:shadow-sm dark:shadow-none transition-all focus:outline-none focus:bg-white dark:bg-slate-900 focus:border-slate-200 dark:border-slate-700/80 focus:shadow-sm dark:shadow-none text-left">
                                                             <div className="flex items-center gap-3">
-                                                                <div className="w-8 h-8 rounded-lg bg-white border border-slate-100 shadow-sm flex items-center justify-center text-xl flex-shrink-0">{t.emoji || '🤖'}</div>
+                                                                <div className="w-8 h-8 rounded-lg bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm dark:shadow-none flex items-center justify-center text-xl flex-shrink-0">{t.emoji || '🤖'}</div>
                                                                 <div className="w-full">
-                                                                    <div className="font-bold text-slate-800 flex items-center justify-between w-full">
+                                                                    <div className="font-bold text-slate-800 dark:text-slate-100 flex items-center justify-between w-full">
                                                                         {t.name}
-                                                                        <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-100 text-slate-500 ml-2 hidden sm:block">{t.sector}</span>
+                                                                        <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 ml-2 hidden sm:block">{t.sector}</span>
                                                                     </div>
-                                                                    <div className="text-xs text-slate-500 line-clamp-1">{t.description}</div>
+                                                                    <div className="text-xs text-slate-500 dark:text-slate-400 line-clamp-1">{t.description}</div>
                                                                 </div>
                                                             </div>
                                                         </button>
@@ -142,11 +142,11 @@ export default function CommandPalette() {
                                                 <h3 className="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider px-2 flex items-center gap-1.5"><FileText className="w-3.5 h-3.5" /> Articles & Guides</h3>
                                                 <div className="space-y-1.5">
                                                     {matchedBlogs.map(b => (
-                                                        <button key={b.id} onClick={() => handleSelectPath(`/blog/${b.id}`)} className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-white border border-transparent hover:border-slate-200 hover:shadow-sm transition-all focus:outline-none focus:bg-white focus:border-slate-200 text-left">
+                                                        <button key={b.id} onClick={() => handleSelectPath(`/blog/${b.id}`)} className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-white dark:bg-slate-900 border border-transparent hover:border-slate-200 dark:border-slate-700/80 hover:shadow-sm dark:shadow-none transition-all focus:outline-none focus:bg-white dark:bg-slate-900 focus:border-slate-200 dark:border-slate-700/80 text-left">
                                                             <div className="flex items-center gap-3 w-full">
-                                                                <div className="w-8 h-8 flex-shrink-0 rounded-lg bg-accent-50 border border-accent-100 shadow-sm flex items-center justify-center text-accent-500"><FileText className="w-4 h-4" /></div>
+                                                                <div className="w-8 h-8 flex-shrink-0 rounded-lg bg-accent-50 border border-accent-100 shadow-sm dark:shadow-none flex items-center justify-center text-accent-500"><FileText className="w-4 h-4" /></div>
                                                                  <div className="overflow-hidden w-full">
-                                                                    <div className="font-bold text-slate-800 line-clamp-1">{b.title}</div>
+                                                                    <div className="font-bold text-slate-800 dark:text-slate-100 line-clamp-1">{b.title}</div>
                                                                     <div className="text-[10px] font-bold text-slate-400 mt-0.5">{b.category}</div>
                                                                 </div>
                                                             </div>
@@ -158,18 +158,18 @@ export default function CommandPalette() {
                                         
                                         {matchedTools.length === 0 && matchedBlogs.length === 0 && (
                                             <div className="text-center py-10 px-4">
-                                                <div className="w-12 h-12 rounded-2xl bg-slate-100 flex items-center justify-center mx-auto mb-3">
+                                                <div className="w-12 h-12 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center mx-auto mb-3">
                                                     <Search className="w-6 h-6 text-slate-400" />
                                                 </div>
-                                                <p className="font-bold text-slate-800">No results found for "{query}"</p>
-                                                <p className="text-sm text-slate-500 mt-1">Try searching for keywords like "video", "writing", or "Claude".</p>
+                                                <p className="font-bold text-slate-800 dark:text-slate-100">No results found for "{query}"</p>
+                                                <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">Try searching for keywords like "video", "writing", or "Claude".</p>
                                             </div>
                                         )}
                                     </div>
                                 )}
                             </div>
-                            <div className="bg-slate-100/50 px-4 py-3 border-t border-slate-100 flex items-center justify-between text-[10px] sm:text-xs text-slate-400 font-medium hidden sm:flex">
-                                <span className="flex items-center gap-1"><kbd className="bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-sm text-slate-600 font-sans font-bold text-[10px]">Esc</kbd> to close</span>
+                            <div className="bg-slate-100 dark:bg-slate-800/50 px-4 py-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[10px] sm:text-xs text-slate-400 font-medium hidden sm:flex">
+                                <span className="flex items-center gap-1"><kbd className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/80 px-1.5 py-0.5 rounded shadow-sm dark:shadow-none text-slate-600 dark:text-slate-400 font-sans font-bold text-[10px]">Esc</kbd> to close</span>
                             </div>
                         </motion.div>
                     </div>

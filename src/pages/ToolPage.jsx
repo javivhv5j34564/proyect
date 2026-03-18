@@ -149,7 +149,7 @@ export default function ToolPage() {
         return (
             <div className="min-h-screen flex flex-col items-center justify-center p-6 text-center">
                 <h1 className="text-3xl font-bold mb-4">Tool not found</h1>
-                <p className="text-slate-600 mb-8">This page does not exist or the AI has been removed from the directory.</p>
+                <p className="text-slate-600 dark:text-slate-400 mb-8">This page does not exist or the AI has been removed from the directory.</p>
                 <Link to="/" className="bg-slate-900 text-white px-6 py-3 rounded-xl font-bold hover:bg-accent-600 transition-colors">
                     Back to Home
                 </Link>
@@ -158,7 +158,7 @@ export default function ToolPage() {
     }
 
     return (
-        <div className="min-h-[80vh] bg-slate-50 py-12">
+        <div className="min-h-[80vh] bg-slate-50 dark:bg-slate-950 py-12">
             <div className="max-w-4xl mx-auto px-6">
                 {/* Breadcrumbs */}
                 <nav className="flex items-center gap-2 text-xs md:text-sm text-slate-400 mb-6 overflow-x-auto no-scrollbar whitespace-nowrap px-1">
@@ -166,10 +166,10 @@ export default function ToolPage() {
                     <ChevronRight className="w-3 h-3 flex-shrink-0" />
                     <button onClick={() => { /* Esto requeriría pasar estado o usar URL params en Home */ window.location.href = "/?category=" + tool.sector; }} className="hover:text-accent-600 transition-colors">{tool.sector}</button>
                     <ChevronRight className="w-3 h-3 flex-shrink-0" />
-                    <span className="text-slate-600 font-bold truncate">{tool.name}</span>
+                    <span className="text-slate-600 dark:text-slate-400 font-bold truncate">{tool.name}</span>
                 </nav>
 
-                <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-accent-600 transition-colors bg-white border border-slate-200 hover:border-accent-200 px-4 py-2 rounded-full shadow-sm hover:shadow-md mb-8">
+                <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-accent-600 transition-colors bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/80 hover:border-accent-200 px-4 py-2 rounded-full shadow-sm dark:shadow-none hover:shadow-md mb-8">
                     <ArrowLeft className="w-4 h-4" />
                     Back to Directory
                 </Link>
@@ -177,18 +177,18 @@ export default function ToolPage() {
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="bg-white rounded-3xl p-6 sm:p-8 md:p-12 shadow-sm border border-slate-200"
+                    className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 md:p-12 shadow-sm dark:shadow-none border border-slate-200 dark:border-slate-700/80"
                 >
                     <div className="flex flex-col md:flex-row gap-5 md:gap-8 items-start mb-6 md:mb-10">
-                        <div className="w-20 h-20 md:w-32 md:h-32 rounded-3xl border border-slate-100 shadow-sm overflow-hidden bg-slate-50 flex items-center justify-center flex-shrink-0 text-5xl md:text-7xl">
+                        <div className="w-20 h-20 md:w-32 md:h-32 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm dark:shadow-none overflow-hidden bg-slate-50 dark:bg-slate-950 flex items-center justify-center flex-shrink-0 text-5xl md:text-7xl">
                             {tool.emoji || '🤖'}
                         </div>
 
                         <div className="flex-grow w-full">
-                            <h1 className="text-3xl md:text-5xl font-black text-slate-900 mb-3 md:mb-4">{tool.name}</h1>
+                            <h1 className="text-3xl md:text-5xl font-black text-slate-900 dark:text-white mb-3 md:mb-4">{tool.name}</h1>
 
                             <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-4 md:mb-6">
-                                <Link to={`/category/${tool.sector.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`} className="flex text-xs md:text-sm font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors">
+                                <Link to={`/category/${tool.sector.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`} className="flex text-xs md:text-sm font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 transition-colors">
                                     {tool.sector}
                                 </Link>
                                 <span className={`flex items-center gap-1.5 text-xs md:text-sm font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full ${tool.isFullyFree ? 'bg-green-50 text-green-700' : 'bg-amber-50 text-amber-700'}`}>
@@ -207,7 +207,7 @@ export default function ToolPage() {
                                             <Star
                                                 key={star}
                                                 className={`w-6 h-6 md:w-7 md:h-7 cursor-pointer transition-all hover:scale-110 active:scale-95 ${isFilled
-                                                    ? 'fill-amber-400 text-amber-400 drop-shadow-sm'
+                                                    ? 'fill-amber-400 text-amber-400 drop-shadow-sm dark:shadow-none'
                                                     : 'fill-slate-100 text-slate-200 hover:text-amber-200'
                                                     }`}
                                                 onMouseEnter={() => setHoveredStar(star)}
@@ -216,9 +216,9 @@ export default function ToolPage() {
                                             />
                                         );
                                     })}
-                                    <span className="text-slate-800 font-bold text-base md:text-lg ml-1 md:ml-2">{ratingData.average}</span>
+                                    <span className="text-slate-800 dark:text-slate-100 font-bold text-base md:text-lg ml-1 md:ml-2">{ratingData.average}</span>
                                 </div>
-                                <span className="text-slate-500 text-xs md:text-sm font-medium">
+                                <span className="text-slate-500 dark:text-slate-400 text-xs md:text-sm font-medium">
                                     {ratingData.userRating > 0
                                         ? `You voted ${ratingData.userRating} stars. (Click to remove)`
                                         : `Based on ${ratingData.count} reviews. Rate it too!`
@@ -235,22 +235,22 @@ export default function ToolPage() {
                     </div>
 
                     <div className="prose prose-base md:prose-lg max-w-none mb-8 md:mb-12">
-                        <h2 className="text-xl md:text-2xl font-bold text-slate-900 border-b border-slate-100 pb-2 md:pb-3 mb-4 md:mb-6">What is {tool.name} and why use it?</h2>
-                        <p className="text-slate-700 font-medium text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
+                        <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800 pb-2 md:pb-3 mb-4 md:mb-6">What is {tool.name} and why use it?</h2>
+                        <p className="text-slate-700 dark:text-slate-300 font-medium text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
                             {tool.description}
                         </p>
                         <div className="my-8">
                             <AdSensePlaceholder type="horizontal" />
                         </div>
-                        <h3 className="text-lg md:text-xl font-bold text-slate-800 mb-3 md:mb-4">Use Cases and Details</h3>
-                        <div className="bg-slate-50 p-5 md:p-8 rounded-2xl border border-slate-100 text-slate-600 leading-relaxed space-y-4">
+                        <h3 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100 mb-3 md:mb-4">Use Cases and Details</h3>
+                        <div className="bg-slate-50 dark:bg-slate-950 p-5 md:p-8 rounded-2xl border border-slate-100 dark:border-slate-800 text-slate-600 dark:text-slate-400 leading-relaxed space-y-4">
                             <p>{tool.longDescription}</p>
-                            <p className="text-sm text-slate-500 italic mt-4 pt-4 border-t border-slate-200">Note: Integrating these types of tools into your daily workflow can save from 2 to 5 hours per week, depending on the level of automation you apply. We suggest you always review the terms of the free plan of {tool.name} before implementing it at a corporate level.</p>
+                            <p className="text-sm text-slate-500 dark:text-slate-400 italic mt-4 pt-4 border-t border-slate-200 dark:border-slate-700/80">Note: Integrating these types of tools into your daily workflow can save from 2 to 5 hours per week, depending on the level of automation you apply. We suggest you always review the terms of the free plan of {tool.name} before implementing it at a corporate level.</p>
                         </div>
                     </div>
 
-                    <div className="flex flex-col sm:flex-row items-center gap-4 pt-8 border-t border-slate-100">
-                        <span className="text-slate-500 font-semibold flex flex-row items-center gap-2"><Share2 className="w-5 h-5" /> Share tool:</span>
+                    <div className="flex flex-col sm:flex-row items-center gap-4 pt-8 border-t border-slate-100 dark:border-slate-800">
+                        <span className="text-slate-500 dark:text-slate-400 font-semibold flex flex-row items-center gap-2"><Share2 className="w-5 h-5" /> Share tool:</span>
                         <div className="w-full sm:w-auto">
                             <ShareButtons title={tool.name} text={tool.description} />
                         </div>
@@ -264,21 +264,21 @@ export default function ToolPage() {
                     viewport={{ once: true }}
                     className="mt-12"
                 >
-                    <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                    <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
                         User Reviews
                     </h3>
-                    <div className="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm mb-8">
+                    <div className="bg-white dark:bg-slate-900 rounded-2xl p-6 md:p-8 border border-slate-200 dark:border-slate-700/80 shadow-sm dark:shadow-none mb-8">
                         <form onSubmit={handleAddComment} className="flex flex-col gap-4">
                             <input 
                                 name="author" 
                                 type="text"
-                                className="w-full sm:max-w-xs p-3 rounded-xl border border-slate-200 focus:border-accent-500 focus:ring-2 focus:ring-accent-200 outline-none transition-all text-sm font-medium" 
+                                className="w-full sm:max-w-xs p-3 rounded-xl border border-slate-200 dark:border-slate-700/80 focus:border-accent-500 focus:ring-2 focus:ring-accent-200 outline-none transition-all text-sm font-medium" 
                                 placeholder="Your name (optional)" 
                                 maxLength={30}
                             />
                             <textarea 
                                 name="comment" 
-                                className="w-full p-4 rounded-xl border border-slate-200 focus:border-accent-500 focus:ring-2 focus:ring-accent-200 outline-none resize-none transition-all" 
+                                className="w-full p-4 rounded-xl border border-slate-200 dark:border-slate-700/80 focus:border-accent-500 focus:ring-2 focus:ring-accent-200 outline-none resize-none transition-all" 
                                 rows="3" 
                                 placeholder="What do you think about this tool? Share your experience..."
                             ></textarea>
@@ -296,18 +296,18 @@ export default function ToolPage() {
                                     initial={{ opacity: 0, y: 10 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: idx * 0.05 }}
-                                    className="bg-white rounded-xl p-5 border border-slate-200 shadow-sm"
+                                    className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-700/80 shadow-sm dark:shadow-none"
                                 >
                                     <div className="flex justify-between items-center mb-3">
                                         <div className="flex items-center gap-2">
                                             <div className="w-8 h-8 rounded-full bg-accent-100 flex items-center justify-center text-accent-600 font-bold text-sm">
                                                 {c.author.charAt(0)}
                                             </div>
-                                            <span className="font-bold text-slate-800">{c.author}</span>
+                                            <span className="font-bold text-slate-800 dark:text-slate-100">{c.author}</span>
                                         </div>
                                         <span className="text-xs font-semibold text-slate-400">{c.date}</span>
                                     </div>
-                                    <p className="text-slate-600 pl-10 leading-relaxed text-sm md:text-base">{c.text}</p>
+                                    <p className="text-slate-600 dark:text-slate-400 pl-10 leading-relaxed text-sm md:text-base">{c.text}</p>
                                 </motion.div>
                             ))}
                         </AnimatePresence>
@@ -322,23 +322,23 @@ export default function ToolPage() {
                         viewport={{ once: true }}
                         className="mt-16"
                     >
-                        <h3 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
+                        <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-8 flex items-center gap-2">
                             <Sparkles className="w-5 h-5 text-accent-500" /> Alternatives to {tool.name}
                         </h3>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             {relatedTools.map(relatedTool => (
                                 <Link to={`/tool/${relatedTool.id}`} key={relatedTool.id} className="block group">
-                                    <div className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-accent-300 shadow-sm hover:shadow-xl hover:shadow-accent-500/10 transition-all h-full flex flex-col pt-1">
+                                    <div className="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-700/80 hover:border-accent-300 shadow-sm dark:shadow-none hover:shadow-xl hover:shadow-accent-500/10 transition-all h-full flex flex-col pt-1">
                                         <div className="flex justify-between items-start mb-4">
-                                            <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-slate-50 border border-slate-100 text-2xl group-hover:scale-105 transition-transform">
+                                            <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 text-2xl group-hover:scale-105 transition-transform">
                                                 {relatedTool.emoji || '🤖'}
                                             </div>
                                             <span className={`text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full ${relatedTool.isFullyFree ? 'bg-green-50 text-green-700' : 'bg-amber-50 text-amber-700'}`}>
                                                 {relatedTool.freeTierDetails}
                                             </span>
                                         </div>
-                                        <h4 className="font-bold text-slate-900 group-hover:text-accent-600 mb-2 leading-tight">{relatedTool.name}</h4>
-                                        <p className="text-slate-500 text-xs line-clamp-3 leading-relaxed mb-4 flex-grow">{relatedTool.description}</p>
+                                        <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-accent-600 mb-2 leading-tight">{relatedTool.name}</h4>
+                                        <p className="text-slate-500 dark:text-slate-400 text-xs line-clamp-3 leading-relaxed mb-4 flex-grow">{relatedTool.description}</p>
                                     </div>
                                 </Link>
                             ))}

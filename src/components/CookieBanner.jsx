@@ -35,19 +35,19 @@ export const CookieBanner = () => {
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
                     className="fixed bottom-0 left-0 right-0 z-50 p-4 pointer-events-none"
                 >
-                    <div className="max-w-4xl mx-auto bg-white rounded-2xl md:rounded-full shadow-2xl border border-slate-200 p-4 md:p-3 flex flex-col md:flex-row items-center justify-between gap-4 pointer-events-auto">
+                    <div className="max-w-4xl mx-auto bg-white dark:bg-slate-900 rounded-2xl md:rounded-full shadow-2xl border border-slate-200 dark:border-slate-700/80 p-4 md:p-3 flex flex-col md:flex-row items-center justify-between gap-4 pointer-events-auto">
                         <div className="flex items-center gap-3">
                             <div className="w-10 h-10 rounded-full bg-accent-50 text-accent-600 flex items-center justify-center flex-shrink-0">
                                 <Shield className="w-5 h-5" />
                             </div>
-                            <p className="text-sm text-slate-600">
+                            <p className="text-sm text-slate-600 dark:text-slate-400">
                                 🍪 We use own and third-party analytical and advertising cookies (Google AdSense) to offer you a personalized experience. <Link to="/cookies" className="text-accent-600 hover:underline font-medium">Read Cookies Policy 📜</Link>.
                             </p>
                         </div>
                         <div className="flex items-center gap-2 w-full md:w-auto flex-shrink-0">
                             <button
                                 onClick={handleDecline}
-                                className="flex-1 md:flex-none px-4 py-2 text-sm font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200 rounded-xl md:rounded-full transition-colors"
+                                className="flex-1 md:flex-none px-4 py-2 text-sm font-semibold text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 rounded-xl md:rounded-full transition-colors"
                             >
                                 ❌ Decline
                             </button>

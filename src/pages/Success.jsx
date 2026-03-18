@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 
 export default function SuccessPage() {
     return (
-        <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
+        <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex items-center justify-center p-4">
             <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="max-w-md w-full bg-white rounded-3xl shadow-xl border border-slate-100 p-8 md:p-10 text-center"
+                className="max-w-md w-full bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800 p-8 md:p-10 text-center"
             >
                 <div className="mb-6 flex justify-center">
                     <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center relative">
@@ -26,7 +26,7 @@ export default function SuccessPage() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3 }}
-                    className="text-4xl font-black text-slate-900 mb-4"
+                    className="text-4xl font-black text-slate-900 dark:text-white mb-4"
                 >
                     Message Sent!
                 </motion.h1>
@@ -35,7 +35,7 @@ export default function SuccessPage() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 }}
-                    className="text-lg text-slate-600 mb-10"
+                    className="text-lg text-slate-600 dark:text-slate-400 mb-10"
                 >
                     Thank you for your feedback. We'll get back to you soon.
                 </motion.p>

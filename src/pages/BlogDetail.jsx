@@ -21,9 +21,9 @@ export default function BlogDetail() {
 
     if (!post) {
         return (
-            <div className="min-h-screen flex items-center justify-center bg-slate-50 px-4">
+            <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 px-4">
                 <div className="text-center">
-                    <h2 className="text-2xl font-bold text-slate-900 mb-4">Post not found</h2>
+                    <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Post not found</h2>
                     <Link to="/" className="text-accent-600 font-bold hover:underline">Return to Home</Link>
                 </div>
             </div>
@@ -31,26 +31,26 @@ export default function BlogDetail() {
     }
 
     return (
-        <div className="min-h-screen bg-slate-50 pt-8 pb-20">
+        <div className="min-h-screen bg-slate-50 dark:bg-slate-950 pt-8 pb-20">
             <div className="max-w-4xl mx-auto px-4 md:px-6">
                 {/* Breadcrumbs */}
                 <nav className="flex items-center gap-2 text-xs md:text-sm text-slate-400 mb-8 overflow-x-auto no-scrollbar whitespace-nowrap px-1">
                     <Link to="/" className="hover:text-accent-600 transition-colors flex items-center gap-1">Home</Link>
                     <ChevronRight className="w-3 h-3 flex-shrink-0" />
-                    <span className="text-slate-600 font-bold">Blog</span>
+                    <span className="text-slate-600 dark:text-slate-400 font-bold">Blog</span>
                     <ChevronRight className="w-3 h-3 flex-shrink-0" />
                     <span className="text-slate-400 truncate max-w-[200px]">{post.title}</span>
                 </nav>
 
                 <Link
                     to="/"
-                    className="inline-flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-accent-600 transition-all bg-white border border-slate-200 hover:border-accent-200 px-5 py-2.5 rounded-2xl shadow-sm hover:shadow-md mb-10 active:scale-95"
+                    className="inline-flex items-center gap-2 text-sm font-bold text-slate-500 dark:text-slate-400 hover:text-accent-600 transition-all bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/80 hover:border-accent-200 px-5 py-2.5 rounded-2xl shadow-sm dark:shadow-none hover:shadow-md mb-10 active:scale-95"
                 >
                     <ArrowLeft className="w-4 h-4" />
                     Back to Directory
                 </Link>
 
-                <article className="bg-white rounded-[2.5rem] border border-slate-200/60 shadow-xl shadow-slate-200/40 overflow-hidden">
+                <article className="bg-white dark:bg-slate-900 rounded-[2.5rem] border border-slate-200 dark:border-slate-700/80/60 shadow-xl shadow-slate-200/40 overflow-hidden">
                     {/* Header Image */}
                     <div className="relative h-[300px] md:h-[450px] w-full">
                         <img
@@ -63,7 +63,7 @@ export default function BlogDetail() {
                             <span className="inline-block px-4 py-1.5 rounded-full bg-accent-500 text-white text-xs font-black uppercase tracking-widest mb-4 shadow-lg shadow-accent-500/30">
                                 {post.category}
                             </span>
-                            <h1 className="text-2xl md:text-5xl font-black text-white leading-tight tracking-tight drop-shadow-sm">
+                            <h1 className="text-2xl md:text-5xl font-black text-white leading-tight tracking-tight drop-shadow-sm dark:shadow-none">
                                 {post.title}
                             </h1>
                         </div>
@@ -71,10 +71,10 @@ export default function BlogDetail() {
 
                     <div className="p-8 md:p-12">
                         {/* Meta info */}
-                        <div className="flex flex-wrap items-center gap-6 mb-10 pb-8 border-b border-slate-100 text-sm font-bold text-slate-500">
+                        <div className="flex flex-wrap items-center gap-6 mb-10 pb-8 border-b border-slate-100 dark:border-slate-800 text-sm font-bold text-slate-500 dark:text-slate-400">
 
                             <div className="flex items-center gap-2">
-                                <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center">
+                                <div className="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
                                     <Calendar className="w-4 h-4 text-slate-400" />
                                 </div>
                                 <span>March 2026</span>
@@ -86,11 +86,11 @@ export default function BlogDetail() {
 
                         {/* Content */}
                         <div className="prose prose-slate prose-lg md:prose-xl max-w-none">
-                            <p className="text-xl md:text-2xl font-medium text-slate-700 leading-relaxed italic border-l-4 border-accent-400 pl-6 mb-10">
+                            <p className="text-xl md:text-2xl font-medium text-slate-700 dark:text-slate-300 leading-relaxed italic border-l-4 border-accent-400 pl-6 mb-10">
                                 {post.excerpt}
                             </p>
 
-                            <div className="text-slate-600 leading-relaxed space-y-6">
+                            <div className="text-slate-600 dark:text-slate-400 leading-relaxed space-y-6">
                                 {post.content.split('\n\n').map((paragraph, idx) => (
                                     <p key={idx}>{paragraph}</p>
                                 ))}

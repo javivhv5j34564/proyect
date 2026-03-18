@@ -4,7 +4,7 @@ import { ArrowLeft } from 'lucide-react';
 
 const BackButton = () => (
     <div className="mb-8">
-        <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-accent-600 transition-colors bg-white border border-slate-200 hover:border-accent-200 px-4 py-2 rounded-full shadow-sm hover:shadow-md">
+        <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-accent-600 transition-colors bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/80 hover:border-accent-200 px-4 py-2 rounded-full shadow-sm dark:shadow-none hover:shadow-md">
             <ArrowLeft className="w-4 h-4" />
             Back to Home
         </Link>
@@ -100,24 +100,24 @@ export const Contact = () => {
         <div className="max-w-2xl mx-auto px-4 md:px-6 py-10 md:py-16">
             <BackButton />
             <h1 className="text-3xl font-bold mb-6">📬 Contact</h1>
-            <p className="text-slate-600 mb-8">Do you have any questions 🤔, collaboration proposals 🤝, or want to suggest a new Artificial Intelligence 💡? Write to us and we will respond soon ⚡.</p>
+            <p className="text-slate-600 dark:text-slate-400 mb-8">Do you have any questions 🤔, collaboration proposals 🤝, or want to suggest a new Artificial Intelligence 💡? Write to us and we will respond soon ⚡.</p>
 
-            <form action="https://formsubmit.co/f.javiergg06@gmail.com" method="POST" className="space-y-4 shadow-sm bg-white p-5 md:p-8 rounded-2xl border border-slate-200">
+            <form action="https://formsubmit.co/f.javiergg06@gmail.com" method="POST" className="space-y-4 shadow-sm dark:shadow-none bg-white dark:bg-slate-900 p-5 md:p-8 rounded-2xl border border-slate-200 dark:border-slate-700/80">
                 <input type="hidden" name="_next" value={`${window.location.origin}/success`} />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_subject" value="New contact message - AI Directory" />
 
                 <div>
-                    <label className="block text-sm font-bold text-slate-700 mb-1.5">👤 Name or Company</label>
-                    <input type="text" name="name" required className="w-full border border-slate-200 rounded-xl p-3.5 focus:ring-2 focus:ring-accent-500 outline-none transition-shadow hover:border-accent-200 bg-slate-50 focus:bg-white" placeholder="Ex. Jane Doe" />
+                    <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-1.5">👤 Name or Company</label>
+                    <input type="text" name="name" required className="w-full border border-slate-200 dark:border-slate-700/80 rounded-xl p-3.5 focus:ring-2 focus:ring-accent-500 outline-none transition-shadow hover:border-accent-200 bg-slate-50 dark:bg-slate-950 focus:bg-white dark:bg-slate-900" placeholder="Ex. Jane Doe" />
                 </div>
                 <div>
-                    <label className="block text-sm font-bold text-slate-700 mb-1.5">📧 Contact Email</label>
-                    <input type="email" name="email" required className="w-full border border-slate-200 rounded-xl p-3.5 focus:ring-2 focus:ring-accent-500 outline-none transition-shadow hover:border-accent-200 bg-slate-50 focus:bg-white" placeholder="email@example.com" />
+                    <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-1.5">📧 Contact Email</label>
+                    <input type="email" name="email" required className="w-full border border-slate-200 dark:border-slate-700/80 rounded-xl p-3.5 focus:ring-2 focus:ring-accent-500 outline-none transition-shadow hover:border-accent-200 bg-slate-50 dark:bg-slate-950 focus:bg-white dark:bg-slate-900" placeholder="email@example.com" />
                 </div>
                 <div>
-                    <label className="block text-sm font-bold text-slate-700 mb-1.5">💬 How can we help you?</label>
-                    <textarea name="message" required className="w-full border border-slate-200 rounded-xl p-3.5 focus:ring-2 focus:ring-accent-500 outline-none h-36 transition-shadow hover:border-accent-200 bg-slate-50 focus:bg-white resize-y" placeholder="Write your message or proposal here..."></textarea>
+                    <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-1.5">💬 How can we help you?</label>
+                    <textarea name="message" required className="w-full border border-slate-200 dark:border-slate-700/80 rounded-xl p-3.5 focus:ring-2 focus:ring-accent-500 outline-none h-36 transition-shadow hover:border-accent-200 bg-slate-50 dark:bg-slate-950 focus:bg-white dark:bg-slate-900 resize-y" placeholder="Write your message or proposal here..."></textarea>
                 </div>
                 <button type="submit" className="w-full bg-slate-900 text-white font-bold py-4 px-6 rounded-xl hover:bg-accent-600 transition-colors shadow-lg shadow-slate-900/10 active:scale-[0.98]">
                     🚀 Send Message

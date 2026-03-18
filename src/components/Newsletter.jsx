@@ -27,7 +27,7 @@ export function Newsletter() {
                     type="email"
                     name="email"
                     placeholder="Your best email..."
-                    className="flex-grow px-5 py-3.5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all font-medium"
+                    className="flex-grow px-5 py-3.5 rounded-xl bg-white dark:bg-slate-900/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all font-medium"
                     required
                   />
                   <button type="submit" className="px-6 py-3.5 bg-accent-500 hover:bg-accent-400 text-white font-bold rounded-xl transition-colors shadow-lg shadow-accent-500/30 whitespace-nowrap active:scale-95 flex items-center justify-center">
