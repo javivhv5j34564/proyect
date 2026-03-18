@@ -71,3 +71,59 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-primary-500/50;
 }
+
+/* PITCH BLACK DARK MODE COMPONENT OVERRIDES */
+html.dark body {
+  background-color: #050505 !important;
+  color: #e2e8f0 !important;
+}
+
+html.dark .bg-slate-950,
+html.dark .bg-slate-900 {
+  background-color: #0a0a0a !important;
+}
+
+html.dark .bg-slate-800 {
+  background-color: #121212 !important;
+}
+
+html.dark .border-slate-800,
+html.dark .border-slate-700\/80 {
+  border-color: #1a1a1a !important;
+}
+
+/* Remove weird glows globally in dark mode */
+html.dark *, html.dark ::before, html.dark ::after {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+}
+
+/* THEME TOGGLE VIEW TRANSITION (PANEO LATERAL) */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+html.theme-transitioning::view-transition-old(root) {
+  z-index: 10;
+}
+
+html.theme-transitioning::view-transition-new(root) {
+  z-index: 20;
+  animation: theme-swipe 0.7s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+}
+
+html.theme-transitioning-light::view-transition-new(root) {
+  animation: theme-swipe-reverse 0.7s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+}
+
+@keyframes theme-swipe {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes theme-swipe-reverse {
+  from { clip-path: inset(0 0 0 100%); }
+  to { clip-path: inset(0 0 0 0); }
+}

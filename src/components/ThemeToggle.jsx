@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { flushSync } from 'react-dom';
 import { Sun, Moon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -19,7 +20,36 @@ export default function ThemeToggle() {
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
+    const isDark = theme === 'dark';
+    const nextTheme = isDark ? 'light' : 'dark';
+
+    localStorage.setItem('theme', nextTheme);
+
+    if (!document.startViewTransition) {
+      setTheme(nextTheme);
+      return;
+    }
+
+    document.documentElement.classList.add('theme-transitioning');
+    if (nextTheme === 'light') {
+      document.documentElement.classList.add('theme-transitioning-light');
+    }
+
+    const transition = document.startViewTransition(() => {
+      flushSync(() => {
+        setTheme(nextTheme);
+      });
+      // Force DOM mutation immediately inside startViewTransition
+      if (nextTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    });
+
+    transition.finished.finally(() => {
+      document.documentElement.classList.remove('theme-transitioning', 'theme-transitioning-light');
+    });
   };
 
   return (
