@@ -412,7 +412,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
           >
             <source src="https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-50/80 via-slate-50/95 to-slate-50 z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-50/80 via-slate-50/95 to-slate-50 dark:from-[#000000]/80 dark:via-[#000000]/95 dark:to-[#000000] z-10"></div>
         </div>
 
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} className="relative z-20">
@@ -627,7 +627,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
           </div>
 
           <div className="relative">
-            <div className="absolute right-0 top-0 bottom-8 w-12 bg-gradient-to-l from-slate-50 to-transparent pointer-events-none z-10"></div>
+            <div className="absolute right-0 top-0 bottom-8 w-12 bg-gradient-to-l from-slate-50 dark:from-[#000000] to-transparent pointer-events-none z-10"></div>
             <div 
               ref={categoryContainerRef}
               onMouseDown={handleMouseDown}
@@ -718,8 +718,8 @@ export default function Home({ searchTerm, setSearchTerm }) {
                         key={tool.id}
                         tool={tool}
                         onClick={setSelectedTool}
-                        customBgClass="bg-gradient-to-br from-amber-50 to-orange-50/50"
-                        borderClass="border-amber-200/60"
+                        customBgClass="bg-gradient-to-br from-amber-50 to-orange-50/50 dark:from-[#111111] dark:to-[#0a0a0a]"
+                        borderClass="border-amber-200/60 dark:border-slate-800"
                         isBookmarked={bookmarks.includes(tool.id)}
                         onBookmark={toggleBookmark}
                         upvotes={upvotes[tool.id]}
@@ -742,8 +742,8 @@ export default function Home({ searchTerm, setSearchTerm }) {
                         key={tool.id}
                         tool={tool}
                         onClick={setSelectedTool}
-                        customBgClass="bg-gradient-to-br from-fuchsia-50 to-purple-50/50"
-                        borderClass="border-fuchsia-200/60"
+                        customBgClass="bg-gradient-to-br from-fuchsia-50 to-purple-50/50 dark:from-[#111111] dark:to-[#0a0a0a]"
+                        borderClass="border-fuchsia-200/60 dark:border-slate-800"
                         isBookmarked={bookmarks.includes(tool.id)}
                         onBookmark={toggleBookmark}
                         upvotes={upvotes[tool.id]}
