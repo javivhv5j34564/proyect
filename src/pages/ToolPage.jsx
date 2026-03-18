@@ -6,6 +6,7 @@ import { Star, ExternalLink, ChevronRight, Share2, Check, Copy, Twitter, Zap, Ar
 import { motion, AnimatePresence } from 'framer-motion';
 import { AdSensePlaceholder } from '../components/AdSensePlaceholder';
 import { db } from '../firebase';
+import { doc, updateDoc, setDoc, arrayUnion, onSnapshot } from 'firebase/firestore';
 import { ShareButtons } from '../components/ShareButtons';
 
 export default function ToolPage() {
@@ -58,22 +59,48 @@ export default function ToolPage() {
     const [hoveredStar, setHoveredStar] = useState(0);
 
     // Comments State
-    const [comments, setComments] = useState(() => {
-        const saved = localStorage.getItem(`comments_${id}`);
-        return saved ? JSON.parse(saved) : [
-            { id: 1, author: 'Auto-Moderator', date: 'Just now', text: 'Welcome to the reviews section! Be the first to share your experience using this AI.' }
-        ];
-    });
+    const [comments, setComments] = useState([]);
 
-    const handleAddComment = (e) => {
+    useEffect(() => {
+        if (!id) return;
+        const toolRef = doc(db, 'tools', id);
+        const unsubscribe = onSnapshot(toolRef, (docSnap) => {
+            if (docSnap.exists()) {
+                const data = docSnap.data();
+                if (data.comments) {
+                    setComments([...data.comments].reverse());
+                }
+            }
+        });
+        return () => unsubscribe();
+    }, [id]);
+
+    const handleAddComment = async (e) => {
         e.preventDefault();
-        const text = e.target.comment.value;
-        if (!text.trim()) return;
-        const newComment = { id: Date.now(), text, date: new Date().toLocaleDateString(), author: 'Anonymous User' };
-        const updated = [newComment, ...comments];
-        setComments(updated);
-        localStorage.setItem(`comments_${id}`, JSON.stringify(updated));
+        const text = e.target.comment.value.trim();
+        const authorInput = e.target.author?.value?.trim();
+        if (!text) return;
+        
+        const newComment = { 
+            id: Date.now().toString(), 
+            text, 
+            date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }), 
+            author: authorInput || 'Anonymous User' 
+        };
+        
+        setComments(prev => [newComment, ...prev]);
         e.target.reset();
+
+        const toolRef = doc(db, 'tools', id);
+        try {
+            await updateDoc(toolRef, {
+                comments: arrayUnion(newComment)
+            });
+        } catch (error) {
+            if (error.code === 'not-found') {
+                await setDoc(toolRef, { comments: [newComment], count: 0 });
+            }
+        }
     };
 
     useEffect(() => {
@@ -242,6 +269,13 @@ export default function ToolPage() {
                     </h3>
                     <div className="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm mb-8">
                         <form onSubmit={handleAddComment} className="flex flex-col gap-4">
+                            <input 
+                                name="author" 
+                                type="text"
+                                className="w-full sm:max-w-xs p-3 rounded-xl border border-slate-200 focus:border-accent-500 focus:ring-2 focus:ring-accent-200 outline-none transition-all text-sm font-medium" 
+                                placeholder="Your name (optional)" 
+                                maxLength={30}
+                            />
                             <textarea 
                                 name="comment" 
                                 className="w-full p-4 rounded-xl border border-slate-200 focus:border-accent-500 focus:ring-2 focus:ring-accent-200 outline-none resize-none transition-all" 
