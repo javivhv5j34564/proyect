@@ -372,7 +372,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
     });
   }, [searchTerm, selectedCategory, selectedPricing, showFavorites, bookmarks, upvotes, sortBy]);
 
-  const showSections = searchTerm === '' && selectedCategory === 'All' && selectedPricing === 'All' && !showFavorites;
+  const showSections = searchTerm === '' && selectedCategory === 'All' && selectedPricing === 'All' && !showFavorites && sortBy === 'popular';
 
   // Sorting explicit sections by upvotes too
   // Sorting explicit sections: Top3 and Recent keep their fixed id order/upvotes, 
