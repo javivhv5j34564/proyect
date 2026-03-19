@@ -1,14 +1,21 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Sparkles, Menu, X, Search as SearchIcon } from 'lucide-react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Sparkles, Menu, X, Search as SearchIcon, Dices, PlusCircle, ArrowLeftRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { tools } from '../data';
 import ThemeToggle from './ThemeToggle';
 
 export default function Header({ searchTerm = '', onSearchChange = () => { } }) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isSearchFocused, setIsSearchFocused] = useState(false);
     const location = useLocation();
+    const navigate = useNavigate();
     const isHome = location.pathname === '/';
+
+    const handleSurpriseMe = () => {
+        const randomTool = tools[Math.floor(Math.random() * tools.length)];
+        navigate(`/tool/${randomTool.id}`);
+    };
 
     const scrollToSection = (id) => {
         setIsMobileMenuOpen(false);
@@ -61,8 +68,9 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
 
                 <nav className="hidden md:flex items-center gap-6 font-semibold text-sm text-slate-600 dark:text-slate-400">
                     <button onClick={() => scrollToSection('directory-section')} className="hover:text-accent-600 transition-colors">Directory</button>
+                    <Link to="/compare" className="hover:text-accent-600 transition-colors flex items-center gap-1"><ArrowLeftRight className="w-4 h-4"/> Compare</Link>
                     <Link to="/blog" className="hover:text-accent-600 transition-colors">Guides & Blog</Link>
-                    <button onClick={() => scrollToSection('footer-contacto')} className="hover:text-accent-600 transition-colors">Contact</button>
+                    <Link to="/submit-tool" className="hover:text-accent-600 transition-colors flex items-center gap-1"><PlusCircle className="w-4 h-4"/> Submit AI</Link>
                 </nav>
 
                 <AnimatePresence>
@@ -83,8 +91,9 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                             >
                                 <div className="flex flex-col p-4 gap-2">
                                     <button onClick={() => scrollToSection('directory-section')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800">AI Directory</button>
+                                    <Link to="/compare" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2"><ArrowLeftRight className="w-4 h-4"/> Compare AIs</Link>
                                     <Link to="/blog" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800">Guides & Blog</Link>
-                                    <button onClick={() => scrollToSection('footer-contacto')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800">Contact</button>
+                                    <Link to="/submit-tool" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2"><PlusCircle className="w-4 h-4"/> Submit AI</Link>
                                 </div>
                             </motion.nav>
                         </>
@@ -104,7 +113,14 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                             <span className="text-[12px] leading-none">⌘</span> K
                         </kbd>
                     </button>
-                    <div className="flex-shrink-0">
+                    <div className="flex-shrink-0 flex items-center gap-2">
+                        <button 
+                            onClick={handleSurpriseMe} 
+                            className="bg-accent-100 dark:bg-accent-900/40 hover:bg-accent-200 dark:hover:bg-accent-900/60 text-accent-600 dark:text-accent-400 p-2.5 rounded-full transition-colors hidden sm:flex items-center justify-center border border-accent-200 dark:border-accent-800/60 shadow-sm dark:shadow-none"
+                            title="Surprise me with a random tool!"
+                        >
+                            <Dices className="w-4 h-4" />
+                        </button>
                         <ThemeToggle />
                     </div>
                 </div>
