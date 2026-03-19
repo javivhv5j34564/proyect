@@ -3,7 +3,7 @@ import { tools } from '../data';
 import { useSEO } from '../hooks/useSEO';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Search, ChevronDown, Check, X, Shield, Zap, TrendingUp, ExternalLink } from 'lucide-react';
+import { Search, ChevronDown, Check, X, Shield, Zap, TrendingUp, ExternalLink, Dices } from 'lucide-react';
 
 export default function CompareToolsPage() {
     const [tool1Id, setTool1Id] = useState('');
