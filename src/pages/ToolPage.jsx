@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { tools } from '../data';
 import { useSEO } from '../hooks/useSEO';
-import { Star, ExternalLink, ChevronRight, Share2, Check, Copy, Twitter, Zap, ArrowLeft, Heart, MessageSquare } from 'lucide-react';
+import { Star, ExternalLink, ChevronRight, Share2, Check, Copy, Twitter, Zap, ArrowLeft, Heart, MessageSquare, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { AdSensePlaceholder } from '../components/AdSensePlaceholder';
 import { db } from '../firebase';

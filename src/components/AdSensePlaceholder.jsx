@@ -6,7 +6,7 @@ import React, { useEffect } from 'react';
 export const AdSensePlaceholder = ({ type = 'horizontal', adClient = 'ca-pub-XXXXXXXXXXXXXXXX', adSlot = 'XXXXXXXXXX' }) => {
     useEffect(() => {
         try {
-            if (window.adsbygoogle && process.env.NODE_ENV === "production") {
+            if (window.adsbygoogle && import.meta.env.PROD) {
                 (window.adsbygoogle = window.adsbygoogle || []).push({});
             }
         } catch (err) {
@@ -15,7 +15,7 @@ export const AdSensePlaceholder = ({ type = 'horizontal', adClient = 'ca-pub-XXX
     }, []);
 
     // Local Environment (Development): Shows the "Placeholder" box so you know where it goes.
-    if (process.env.NODE_ENV !== "production") {
+    if (!import.meta.env.PROD) {
         return (
             <div className={`w-full bg-slate-100 dark:bg-slate-800 border-2 border-dashed border-slate-200 dark:border-slate-700/80 rounded-xl flex flex-col items-center justify-center p-4 my-6 text-slate-400 ${type === 'horizontal' ? 'h-32' : 'h-64'}`}>
                 <span className="text-xs font-bold uppercase tracking-wider mb-1">Subtle Advertising Space</span>
