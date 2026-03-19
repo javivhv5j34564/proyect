@@ -17,13 +17,40 @@ export default function CompareToolsPage() {
     const tool1 = tools.find(t => t.id === tool1Id);
     const tool2 = tools.find(t => t.id === tool2Id);
 
-    const ToolSelector = ({ value, onChange, label }) => {
+    // Calculate Winner
+    let winner = null;
+    let winReason = "";
+    if (tool1 && tool2) {
+        let score1 = (tool1.isFullyFree ? 3 : 0) + (tool1.hasAPI ? 1 : 0);
+        let score2 = (tool2.isFullyFree ? 3 : 0) + (tool2.hasAPI ? 1 : 0);
+        
+        // Tie breaker
+        if (score1 === score2) {
+            score1 += tool1.name.length;
+            score2 += tool2.name.length;
+        }
+
+        if (score1 >= score2) {
+            winner = tool1;
+            winReason = tool1.isFullyFree && !tool2.isFullyFree 
+                ? "Is 100% Free / Open Source!" 
+                : "Better overall flexibility and features.";
+        } else {
+            winner = tool2;
+            winReason = tool2.isFullyFree && !tool1.isFullyFree 
+                ? "Is 100% Free / Open Source!" 
+                : "Better overall flexibility and features.";
+        }
+    }
+
+    const ToolSelector = ({ value, onChange, label, restrictSector }) => {
         const [search, setSearch] = useState('');
         const [isOpen, setIsOpen] = useState(false);
 
         const filtered = tools.filter(t => 
-            t.name.toLowerCase().includes(search.toLowerCase()) || 
-            t.sector.toLowerCase().includes(search.toLowerCase())
+            (!restrictSector || t.sector === restrictSector) &&
+            (t.name.toLowerCase().includes(search.toLowerCase()) || 
+             t.sector.toLowerCase().includes(search.toLowerCase()))
         ).slice(0, 10);
 
         const selectedTool = tools.find(t => t.id === value);
@@ -88,17 +115,41 @@ export default function CompareToolsPage() {
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-4 mb-10">
-                    <ToolSelector value={tool1Id} onChange={setTool1Id} label="First Tool" />
+                    <ToolSelector value={tool1Id} onChange={(id) => { setTool1Id(id); setTool2Id(''); }} label="First Tool" />
                     <div className="hidden md:flex items-end pb-3 px-4 text-slate-400 font-bold italic">VS</div>
-                    <ToolSelector value={tool2Id} onChange={setTool2Id} label="Second Tool" />
+                    <ToolSelector 
+                        value={tool2Id} 
+                        onChange={setTool2Id} 
+                        label="Second Tool (Same Category)" 
+                        restrictSector={tool1 ? tool1.sector : null} 
+                    />
                 </div>
 
                 {(tool1 && tool2) ? (
-                    <motion.div 
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="bg-white dark:bg-slate-900 rounded-3xl shadow-sm dark:shadow-none border border-slate-200 dark:border-slate-700/80 overflow-hidden"
-                    >
+                    <div className="space-y-6">
+                        {/* Winner Section */}
+                        <motion.div
+                            initial={{ scale: 0.9, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ type: "spring", bounce: 0.5, delay: 0.2 }}
+                            className="bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 p-1 rounded-3xl"
+                        >
+                            <div className="bg-white dark:bg-slate-900 rounded-[22px] p-6 md:p-8 text-center relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-400/10 dark:bg-yellow-400/5 rounded-full blur-3xl -mr-10 -mt-10"></div>
+                                <h3 className="text-xl md:text-2xl font-black text-slate-900 dark:text-white mb-2">
+                                    🏆 Recommended Winner: <span className="text-amber-500">{winner.name}</span>
+                                </h3>
+                                <p className="text-slate-600 dark:text-slate-400 font-medium">
+                                    {winReason}
+                                </p>
+                            </div>
+                        </motion.div>
+
+                        <motion.div 
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="bg-white dark:bg-slate-900 rounded-3xl shadow-sm dark:shadow-none border border-slate-200 dark:border-slate-700/80 overflow-hidden"
+                        >
                         <div className="grid grid-cols-2 divide-x divide-slate-200 dark:divide-slate-700/80">
                             {/* Headers */}
                             {[tool1, tool2].map(t => (
@@ -156,6 +207,7 @@ export default function CompareToolsPage() {
                             ))}
                         </div>
                     </motion.div>
+                    </div>
                 ) : (
                     <div className="text-center py-20 bg-slate-100 dark:bg-slate-800/50 rounded-3xl border border-dashed border-slate-300 dark:border-slate-700/80">
                         <Dices className="w-12 h-12 text-slate-300 dark:text-slate-600 mx-auto mb-4" />

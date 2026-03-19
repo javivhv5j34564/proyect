@@ -14,6 +14,7 @@ import CategoryPage from './pages/CategoryPage';
 import Blog from './pages/Blog';
 import CommandPalette from './components/CommandPalette';
 import CompareToolsPage from './pages/CompareToolsPage';
+import SurprisePage from './pages/SurprisePage';
 import { useState } from 'react';
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           <Route path="/submit-tool" element={<SubmitToolPage />} />
           <Route path="/success" element={<SuccessPage />} />
           <Route path="/compare" element={<CompareToolsPage />} />
+          <Route path="/surprise" element={<SurprisePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

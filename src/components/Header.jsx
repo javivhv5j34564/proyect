@@ -8,19 +8,12 @@ import ThemeToggle from './ThemeToggle';
 export default function Header({ searchTerm = '', onSearchChange = () => { } }) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isSearchFocused, setIsSearchFocused] = useState(false);
-    const [isRolling, setIsRolling] = useState(false);
     const location = useLocation();
     const navigate = useNavigate();
     const isHome = location.pathname === '/';
 
     const handleSurpriseMe = () => {
-        if (isRolling) return;
-        setIsRolling(true);
-        setTimeout(() => {
-            const randomTool = tools[Math.floor(Math.random() * tools.length)];
-            navigate(`/tool/${randomTool.id}`);
-            setIsRolling(false);
-        }, 800);
+        navigate('/surprise');
     };
 
     const scrollToSection = (id) => {
@@ -122,20 +115,10 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                     <div className="flex-shrink-0 flex items-center gap-2">
                         <button 
                             onClick={handleSurpriseMe} 
-                            disabled={isRolling}
-                            className={`bg-accent-100 dark:bg-accent-900/40 hover:bg-accent-200 dark:hover:bg-accent-900/60 text-accent-600 dark:text-accent-400 p-2.5 rounded-full transition-colors hidden sm:flex items-center justify-center border border-accent-200 dark:border-accent-800/60 shadow-sm dark:shadow-none ${isRolling ? 'opacity-80' : ''}`}
+                            className="bg-accent-100 dark:bg-accent-900/40 hover:bg-accent-200 dark:hover:bg-accent-900/60 text-accent-600 dark:text-accent-400 p-2.5 rounded-full transition-colors hidden sm:flex items-center justify-center border border-accent-200 dark:border-accent-800/60 shadow-sm dark:shadow-none"
                             title="Surprise me with a random tool!"
                         >
-                            <motion.div
-                                animate={isRolling ? { 
-                                    rotate: [0, -30, 360, 720, 1080],
-                                    scale: [1, 1.3, 0.8, 1.1, 1],
-                                    y: [0, -10, 5, -5, 0]
-                                } : {}}
-                                transition={{ duration: 0.8, ease: "easeInOut" }}
-                            >
-                                <Dices className="w-4 h-4" />
-                            </motion.div>
+                            <Dices className="w-4 h-4" />
                         </button>
                         <ThemeToggle />
                     </div>
