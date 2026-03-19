@@ -974,9 +974,9 @@ export default function Home({ searchTerm, setSearchTerm }) {
                       name="name"
                       placeholder="Your name"
                       required
-                      className="bg-white dark:bg-slate-900/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all"
+                      className="bg-white dark:bg-slate-900/10 border border-white/20 dark:border-slate-700/80 rounded-xl px-4 py-3 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all"
                     />
-                    <div className="flex items-center gap-3 bg-white dark:bg-slate-900/5 border border-white/10 rounded-xl px-4 py-3 min-w-[140px]">
+                    <div className="flex items-center gap-3 bg-white dark:bg-slate-900/5 border border-white/20 dark:border-slate-700/80 rounded-xl px-4 py-3 min-w-[140px]">
                       <span className="text-sm text-slate-400 font-medium whitespace-nowrap">Your rating:</span>
                       <div className="flex gap-1">
                         {[1, 2, 3, 4, 5].map((s) => (
@@ -991,7 +991,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                             <Star
                               className={`w-6 h-6 transition-all ${s <= (hoverRating || formRating)
                                 ? 'fill-amber-400 text-amber-400 scale-110'
-                                : 'text-slate-600 dark:text-slate-400'
+                                : 'text-slate-300 dark:text-slate-600'
                                 }`}
                             />
                           </button>
@@ -1005,7 +1005,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                     rows="3"
                     placeholder="Write your comment or suggestion here..."
                     required
-                    className="w-full bg-white dark:bg-slate-900/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all resize-none"
+                    className="w-full bg-white dark:bg-slate-900/10 border border-white/20 dark:border-slate-700/80 rounded-xl px-4 py-3 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all resize-none"
                   ></textarea>
                   <button
                     type="submit"
