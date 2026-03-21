@@ -16,12 +16,14 @@ import CommandPalette from './components/CommandPalette';
 import CompareToolsPage from './pages/CompareToolsPage';
 import SurprisePage from './pages/SurprisePage';
 import { useState } from 'react';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
 
   return (
     <div className="flex flex-col min-h-screen">
+      <ScrollToTop />
       <Header searchTerm={searchTerm} onSearchChange={setSearchTerm} />
       <div className="flex-grow">
         <Routes>
