@@ -115,7 +115,7 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                     <div className="flex-shrink-0 flex items-center gap-2">
                         <button 
                             onClick={handleSurpriseMe} 
-                            className="bg-accent-100 dark:bg-accent-900/40 hover:bg-accent-200 dark:hover:bg-accent-900/60 text-accent-600 dark:text-accent-400 p-2.5 rounded-full transition-colors hidden sm:flex items-center justify-center border border-accent-200 dark:border-accent-800/60 shadow-sm dark:shadow-none"
+                            className="bg-accent-100 dark:bg-accent-900/40 hover:bg-accent-200 dark:hover:bg-accent-900/60 text-accent-600 dark:text-accent-400 p-2.5 rounded-full transition-colors flex items-center justify-center border border-accent-200 dark:border-accent-800/60 shadow-sm dark:shadow-none"
                             title="Surprise me with a random tool!"
                         >
                             <Dices className="w-4 h-4" />
