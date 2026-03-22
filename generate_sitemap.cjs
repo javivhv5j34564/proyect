@@ -12,7 +12,7 @@ const toolIds = [...dataContent.matchAll(/id:\s*'([^']*)'/g)].map(m => m[1]);
 const blogIds = toolIds.filter(id => id.startsWith('blog-'));
 const realToolIds = toolIds.filter(id => !id.startsWith('blog-'));
 
-const baseUrl = 'https://the-ai-toolbox.com'; // Cambiar por el dominio real si se conoce
+const baseUrl = 'https://myiadirectory.com'; // Cambiar por el dominio real si se conoce
 const date = new Date().toISOString().split('T')[0];
 
 let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
