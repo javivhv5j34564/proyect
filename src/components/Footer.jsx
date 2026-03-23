@@ -7,7 +7,10 @@ export default function Footer() {
             <div className="max-w-6xl mx-auto px-4 md:px-6 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 mb-6 md:mb-8">
                     <div className="col-span-1 md:col-span-2">
-                        <h3 className="text-xl font-bold text-white mb-3 md:mb-4 tracking-tight">AI Directory</h3>
+                        <div className="flex items-center gap-2 mb-3 md:mb-4">
+                            <img src="/logo.png" alt="AI Directory Logo" className="w-8 h-8 rounded-md object-cover shadow-sm bg-slate-800" />
+                            <h3 className="text-xl font-bold text-white tracking-tight m-0">AI Directory</h3>
+                        </div>
                         <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
                             Your trusted portal to discover the best free and freemium Artificial Intelligence tools. We analyze and catalog the most powerful software to boost your productivity.
                         </p>

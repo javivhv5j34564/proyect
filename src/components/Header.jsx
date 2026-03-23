@@ -49,9 +49,11 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4 relative">
                 <div className={`flex w-full md:w-auto items-center justify-between gap-2 ${isSearchFocused ? 'hidden md:flex' : 'flex'}`}>
                     <Link to="/" className="flex items-center gap-2 cursor-pointer">
-                        <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-primary-500 via-accent-500 to-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-accent-500/20 flex-shrink-0">
-                            <Sparkles className="w-4 h-4 md:w-5 md:h-5" />
-                        </div>
+                        <img 
+                            src="/logo.png" 
+                            alt="AI Directory Logo" 
+                            className="w-8 h-8 md:w-10 md:h-10 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700/80 flex-shrink-0 object-cover"
+                        />
                         <div>
                             <h1 className="text-lg md:text-xl font-bold tracking-tight text-slate-900 dark:text-white">AI Directory</h1>
                             <p className="text-[10px] md:text-xs text-slate-500 dark:text-slate-400 font-medium tracking-wide uppercase hidden sm:block">The Best Professional Tools</p>
