@@ -30,7 +30,7 @@ Experiment with these prompts and adjust them to your specific niche. The key to
         id: "midjourney-realistic-images",
         title: "How to Create Photorealistic Images with Midjourney v6",
         excerpt: "A step-by-step guide to mastering parameters, lighting, and camera angles in Midjourney to generate stunning, lifelike photographs.",
-        coverImage: "https://images.unsplash.com/photo-1678995632900-53bcba0a80e1?w=800&q=80",
+        coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80",
         author: "AI Directory Team",
         date: "March 24, 2026",
         readTime: "8 min read",

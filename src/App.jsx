@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Footer from './components/Footer';
@@ -18,8 +19,10 @@ import Glossary from './pages/Glossary';
 import CommandPalette from './components/CommandPalette';
 import CompareToolsPage from './pages/CompareToolsPage';
 import SurprisePage from './pages/SurprisePage';
-import { useState } from 'react';
 import ScrollToTop from './components/ScrollToTop';
+import AIStackBuilder from './pages/AIStackBuilder';
+import AutomationRisk from './pages/AutomationRisk';
+import MatchMaker from './pages/MatchMaker';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -47,6 +50,9 @@ function App() {
           <Route path="/success" element={<SuccessPage />} />
           <Route path="/compare" element={<CompareToolsPage />} />
           <Route path="/surprise" element={<SurprisePage />} />
+          <Route path="/stack-builder" element={<AIStackBuilder />} />
+          <Route path="/automation-risk" element={<AutomationRisk />} />
+          <Route path="/matchmaker" element={<MatchMaker />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
