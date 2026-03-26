@@ -3951,8 +3951,8 @@ export const tools = [
         description: 'Anthropic’s powerful, nuanced, and highly steerable AI assistant.',
         longDescription: 'Claude 3.5 Sonnet is widely considered the best model for complex reasoning and creative writing. It boasts a massive context window (capable of reading entire books at once) and features "Artifacts", a dedicated UI panel that renders code, SVGs, and documents right beside your chat.',
         keywords: 'ai, artificial intelligence, tools, chatbot, assistant, claude, anthropic, gpt alternative, writing, coding'
-,
-{
+    },
+    {
         id: 'github_copilot_new',
         name: 'GitHub Copilot',
         sector: 'Programación',
