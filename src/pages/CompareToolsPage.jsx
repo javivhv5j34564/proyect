@@ -3,215 +3,143 @@ import { tools } from '../data';
 import { useSEO } from '../hooks/useSEO';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Search, ChevronDown, Check, X, Shield, Zap, TrendingUp, ExternalLink, Dices } from 'lucide-react';
+import { ChevronDown, Check, Shield, Zap, TrendingUp, ExternalLink, Dices, FolderTree } from 'lucide-react';
 
 export default function CompareToolsPage() {
-    const [tool1Id, setTool1Id] = useState('');
-    const [tool2Id, setTool2Id] = useState('');
+    const [selectedCategory, setSelectedCategory] = useState('');
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     
     useSEO({
-        title: 'Compare AI Tools | AI Directory',
-        description: 'Compare two artificial intelligence tools side by side to find the perfect fit for your workflow.'
+        title: 'Comparar IAs por Categoría | Directorio de IA',
+        description: 'Compara múltiples herramientas de inteligencia artificial en cualquier categoría para encontrar la perfecta para tu flujo de trabajo.'
     });
 
-    const tool1 = tools.find(t => t.id === tool1Id);
-    const tool2 = tools.find(t => t.id === tool2Id);
-
-    // Calculate Winner
-    let winner = null;
-    let winReason = "";
-    if (tool1 && tool2) {
-        let score1 = (tool1.isFullyFree ? 3 : 0) + (tool1.hasAPI ? 1 : 0);
-        let score2 = (tool2.isFullyFree ? 3 : 0) + (tool2.hasAPI ? 1 : 0);
-        
-        // Tie breaker
-        if (score1 === score2) {
-            score1 += tool1.name.length;
-            score2 += tool2.name.length;
-        }
-
-        if (score1 >= score2) {
-            winner = tool1;
-            winReason = tool1.isFullyFree && !tool2.isFullyFree 
-                ? "Is 100% Free / Open Source!" 
-                : "Better overall flexibility and features.";
-        } else {
-            winner = tool2;
-            winReason = tool2.isFullyFree && !tool1.isFullyFree 
-                ? "Is 100% Free / Open Source!" 
-                : "Better overall flexibility and features.";
-        }
-    }
-
-    const ToolSelector = ({ value, onChange, label, restrictSector }) => {
-        const [search, setSearch] = useState('');
-        const [isOpen, setIsOpen] = useState(false);
-
-        const filtered = tools.filter(t => 
-            (!restrictSector || t.sector === restrictSector) &&
-            (t.name.toLowerCase().includes(search.toLowerCase()) || 
-             t.sector.toLowerCase().includes(search.toLowerCase()))
-        ).slice(0, 10);
-
-        const selectedTool = tools.find(t => t.id === value);
-
-        return (
-            <div className="relative flex-1">
-                <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{label}</label>
-                <div 
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/80 rounded-xl px-4 py-3 flex items-center justify-between cursor-pointer shadow-sm dark:shadow-none"
-                >
-                    <span className="font-medium text-slate-800 dark:text-slate-200">
-                        {selectedTool ? selectedTool.name : "Select an AI tool..."}
-                    </span>
-                    <ChevronDown className="w-4 h-4 text-slate-400" />
-                </div>
-
-                {isOpen && (
-                    <div className="absolute top-full left-0 w-full mt-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/80 rounded-xl shadow-xl z-50 overflow-hidden">
-                        <div className="p-3 border-b border-slate-100 dark:border-slate-800">
-                            <div className="relative">
-                                <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
-                                <input 
-                                    type="text" 
-                                    autoFocus
-                                    placeholder="Search..." 
-                                    value={search}
-                                    onChange={(e) => setSearch(e.target.value)}
-                                    className="w-full pl-9 pr-3 py-2 bg-slate-50 dark:bg-slate-800 rounded-lg text-sm focus:outline-none"
-                                />
-                            </div>
-                        </div>
-                        <div className="max-h-60 overflow-y-auto">
-                            {filtered.map(t => (
-                                <div 
-                                    key={t.id}
-                                    onClick={() => { onChange(t.id); setIsOpen(false); setSearch(''); }}
-                                    className="px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer flex items-center gap-3 transition-colors"
-                                >
-                                    <span className="text-xl">{t.emoji || '🤖'}</span>
-                                    <div>
-                                        <div className="font-bold text-sm text-slate-900 dark:text-white">{t.name}</div>
-                                        <div className="text-[10px] text-slate-500 uppercase">{t.sector}</div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                )}
-            </div>
-        );
-    };
+    const categories = [...new Set(tools.map(t => t.sector))].sort();
+    
+    const toolsToCompare = selectedCategory 
+        ? tools.filter(t => t.sector === selectedCategory) 
+        : [];
 
     return (
         <div className="min-h-[80vh] bg-slate-50 dark:bg-slate-950 py-10 md:py-16 px-4 md:px-6">
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-[95vw] 2xl:max-w-7xl mx-auto">
                 <div className="text-center mb-10 md:mb-16">
-                    <h1 className="text-3xl md:text-5xl font-black text-slate-900 dark:text-white mb-4">⚔️ Compare AI Tools</h1>
+                    <h1 className="text-3xl md:text-5xl font-black text-slate-900 dark:text-white mb-4">⚔️ Comparador Global de IAs</h1>
                     <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                        Not sure which AI is best for you? Select two tools from our directory below and compare their features, pricing, and use cases side by side.
+                        Selecciona una categoría (nodo) en el desplegable inferior para comparar simultáneamente todas las inteligencias artificiales de ese sector.
                     </p>
                 </div>
 
-                <div className="flex flex-col md:flex-row gap-4 mb-10">
-                    <ToolSelector value={tool1Id} onChange={(id) => { setTool1Id(id); setTool2Id(''); }} label="First Tool" />
-                    <div className="hidden md:flex items-end pb-3 px-4 text-slate-400 font-bold italic">VS</div>
-                    <ToolSelector 
-                        value={tool2Id} 
-                        onChange={setTool2Id} 
-                        label="Second Tool (Same Category)" 
-                        restrictSector={tool1 ? tool1.sector : null} 
-                    />
-                </div>
+                {/* Category Selector */}
+                <div className="max-w-md mx-auto mb-10 relative">
+                    <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2 text-center">Selecciona un Nodo / Categoría</label>
+                    <div 
+                        onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                        className="w-full bg-white dark:bg-slate-900 border-2 border-slate-200 hover:border-accent-500 dark:border-slate-800 dark:hover:border-accent-500 rounded-2xl px-5 py-4 flex items-center justify-between cursor-pointer shadow-sm transition-colors"
+                    >
+                        <div className="flex items-center gap-3">
+                            <FolderTree className="w-5 h-5 text-accent-500" />
+                            <span className="font-bold text-slate-800 dark:text-slate-200">
+                                {selectedCategory || "Elige una categoría..."}
+                            </span>
+                        </div>
+                        <ChevronDown className={`w-5 h-5 text-slate-400 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} />
+                    </div>
 
-                {(tool1 && tool2) ? (
-                    <div className="space-y-6">
-                        {/* Winner Section */}
-                        <motion.div
-                            initial={{ scale: 0.9, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            transition={{ type: "spring", bounce: 0.5, delay: 0.2 }}
-                            className="bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 p-1 rounded-3xl"
-                        >
-                            <div className="bg-white dark:bg-slate-900 rounded-[22px] p-6 md:p-8 text-center relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-400/10 dark:bg-yellow-400/5 rounded-full blur-3xl -mr-10 -mt-10"></div>
-                                <h3 className="text-xl md:text-2xl font-black text-slate-900 dark:text-white mb-2">
-                                    🏆 Recommended Winner: <span className="text-amber-500">{winner.name}</span>
-                                </h3>
-                                <p className="text-slate-600 dark:text-slate-400 font-medium">
-                                    {winReason}
-                                </p>
+                    {isDropdownOpen && (
+                        <div className="absolute top-full left-0 w-full mt-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl z-50 overflow-hidden max-h-80 overflow-y-auto">
+                            <div 
+                                onClick={() => { setSelectedCategory(''); setIsDropdownOpen(false); }}
+                                className="px-5 py-3 hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer font-medium text-slate-500 transition-colors border-b border-slate-100 dark:border-slate-800"
+                            >
+                                Limpiar selección
                             </div>
-                        </motion.div>
-
-                        <motion.div 
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            className="bg-white dark:bg-slate-900 rounded-3xl shadow-sm dark:shadow-none border border-slate-200 dark:border-slate-700/80 overflow-hidden"
-                        >
-                        <div className="grid grid-cols-2 divide-x divide-slate-200 dark:divide-slate-700/80">
-                            {/* Headers */}
-                            {[tool1, tool2].map(t => (
-                                <div key={t.id} className="p-6 md:p-8 text-center bg-slate-50/50 dark:bg-slate-900">
-                                    <div className="w-16 h-16 md:w-24 md:h-24 mx-auto rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-4xl md:text-5xl mb-4 shadow-sm dark:shadow-none">
-                                        {t.emoji || '🤖'}
-                                    </div>
-                                    <h2 className="text-2xl font-black text-slate-900 dark:text-white mb-2">{t.name}</h2>
-                                    <span className="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 rounded-full text-xs font-bold uppercase tracking-wide">
-                                        {t.sector}
+                            {categories.map(cat => (
+                                <div 
+                                    key={cat}
+                                    onClick={() => { setSelectedCategory(cat); setIsDropdownOpen(false); }}
+                                    className="px-5 py-3 hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer flex items-center gap-3 transition-colors text-slate-700 dark:text-slate-300 font-bold"
+                                >
+                                    {cat}
+                                    <span className="ml-auto text-xs font-normal text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded-full">
+                                        {tools.filter(t => t.sector === cat).length} IAs
                                     </span>
                                 </div>
                             ))}
+                        </div>
+                    )}
+                </div>
 
-                            {/* Pricing Row */}
-                            {[tool1, tool2].map(t => (
-                                <div key={t.id + '-price'} className="p-6 border-t border-slate-200 dark:border-slate-700/80">
-                                    <div className="text-xs uppercase tracking-wider text-slate-400 font-bold mb-3 flex items-center gap-2">
-                                        <Zap className="w-4 h-4 text-amber-500" /> Pricing Model
-                                    </div>
-                                    <p className={`font-bold text-lg ${t.isFullyFree ? 'text-green-600 dark:text-green-400' : 'text-slate-800 dark:text-slate-200'}`}>
-                                        {t.freeTierDetails}
-                                    </p>
-                                    <div className="mt-2 flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
-                                        {t.isFullyFree ? <Check className="w-4 h-4 text-green-500" /> : <Shield className="w-4 h-4 text-amber-500" />}
-                                        {t.isFullyFree ? '100% Free / Open Source' : 'Paid plans available'}
-                                    </div>
-                                </div>
-                            ))}
+                {toolsToCompare.length > 0 ? (
+                    <motion.div 
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        className="bg-white dark:bg-slate-900 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden relative"
+                    >
+                        {/* Horizontal Scroll Container */}
+                        <div className="overflow-x-auto pb-4" style={{scrollbarWidth: 'thin'}}>
+                            <div className="flex min-w-max">
+                                {toolsToCompare.map((t, index) => (
+                                    <div 
+                                        key={t.id} 
+                                        className={`w-80 flex-shrink-0 flex flex-col ${index !== toolsToCompare.length - 1 ? 'border-r border-slate-200 dark:border-slate-800' : ''}`}
+                                    >
+                                        {/* Header */}
+                                        <div className="p-6 md:p-8 text-center bg-slate-50/50 dark:bg-slate-900 flex-1 border-b border-slate-200 dark:border-slate-800">
+                                            <div className="w-16 h-16 md:w-24 md:h-24 mx-auto rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-4xl md:text-5xl mb-4 shadow-sm">
+                                                {t.emoji || '🤖'}
+                                            </div>
+                                            <h2 className="text-xl font-black text-slate-900 dark:text-white mb-2">{t.name}</h2>
+                                            <span className="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 rounded-full text-xs font-bold uppercase tracking-wide">
+                                                {t.sector}
+                                            </span>
+                                        </div>
 
-                            {/* Description Row */}
-                            {[tool1, tool2].map(t => (
-                                <div key={t.id + '-desc'} className="p-6 border-t border-slate-200 dark:border-slate-700/80">
-                                    <div className="text-xs uppercase tracking-wider text-slate-400 font-bold mb-3 flex items-center gap-2">
-                                        <TrendingUp className="w-4 h-4 text-primary-500" /> Core Focus
-                                    </div>
-                                    <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                                        {t.description}
-                                    </p>
-                                </div>
-                            ))}
+                                        {/* Pricing Row */}
+                                        <div className="p-6 border-b border-slate-200 dark:border-slate-800 flex-1">
+                                            <div className="text-xs uppercase tracking-wider text-slate-400 font-bold mb-3 flex items-center gap-2">
+                                                <Zap className="w-4 h-4 text-amber-500" /> Precios
+                                            </div>
+                                            <p className={`font-bold text-lg ${t.isFullyFree ? 'text-green-600 dark:text-green-400' : 'text-slate-800 dark:text-slate-200'}`}>
+                                                {t.freeTierDetails}
+                                            </p>
+                                            <div className="mt-2 flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                                {t.isFullyFree ? <Check className="w-4 h-4 text-green-500" /> : <Shield className="w-4 h-4 text-amber-500" />}
+                                                {t.isFullyFree ? '100% Gratis / Libre' : 'Opciones de pago'}
+                                            </div>
+                                        </div>
 
-                            {/* Actions Row */}
-                            {[tool1, tool2].map(t => (
-                                <div key={t.id + '-action'} className="p-6 text-center border-t border-slate-200 dark:border-slate-700/80 bg-slate-50/50 dark:bg-slate-900/50">
-                                    <div className="flex flex-col gap-3">
-                                        <a href={t.url} target="_blank" rel="noopener noreferrer" className="bg-slate-900 hover:bg-accent-600 dark:bg-accent-600 dark:hover:bg-accent-500 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-md active:scale-95 flex items-center justify-center gap-2">
-                                            Visit Website <ExternalLink className="w-4 h-4" />
-                                        </a>
-                                        <Link to={`/tool/${t.id}`} className="text-sm font-semibold text-slate-500 hover:text-accent-600 transition-colors">
-                                            Read full review
-                                        </Link>
+                                        {/* Description Row */}
+                                        <div className="p-6 border-b border-slate-200 dark:border-slate-800 flex-1">
+                                            <div className="text-xs uppercase tracking-wider text-slate-400 font-bold mb-3 flex items-center gap-2">
+                                                <TrendingUp className="w-4 h-4 text-accent-500" /> Enfoque
+                                            </div>
+                                            <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                                                {t.description}
+                                            </p>
+                                        </div>
+
+                                        {/* Actions Row */}
+                                        <div className="p-6 text-center bg-slate-50/50 dark:bg-slate-900/50 mt-auto">
+                                            <div className="flex flex-col gap-3">
+                                                <a href={t.url} target="_blank" rel="noopener noreferrer" className="bg-slate-900 hover:bg-accent-600 dark:bg-accent-600 dark:hover:bg-accent-500 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-md active:scale-95 flex items-center justify-center gap-2">
+                                                    Visitar Web <ExternalLink className="w-4 h-4" />
+                                                </a>
+                                                <Link to={`/tool/${t.id}`} className="text-sm font-semibold text-slate-500 hover:text-accent-600 transition-colors">
+                                                    Leer review completa
+                                                </Link>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
                     </motion.div>
-                    </div>
                 ) : (
-                    <div className="text-center py-20 bg-slate-100 dark:bg-slate-800/50 rounded-3xl border border-dashed border-slate-300 dark:border-slate-700/80">
+                    <div className="text-center py-20 bg-slate-100 dark:bg-slate-800/50 rounded-3xl border border-dashed border-slate-300 dark:border-slate-800 max-w-2xl mx-auto">
                         <Dices className="w-12 h-12 text-slate-300 dark:text-slate-600 mx-auto mb-4" />
-                        <h3 className="text-xl font-bold text-slate-500 dark:text-slate-400">Select two tools above to begin</h3>
+                        <h3 className="text-xl font-bold text-slate-500 dark:text-slate-400">Selecciona una categoría arriba para iniciar</h3>
+                        <p className="text-sm text-slate-400 mt-2">Podrás comparar lado a lado todas las inteligencias artificiales del sector simultáneamente deslizando hacia la derecha.</p>
                     </div>
                 )}
             </div>
