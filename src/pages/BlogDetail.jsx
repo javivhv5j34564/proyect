@@ -19,6 +19,19 @@ export default function BlogDetail() {
         window.scrollTo(0, 0);
     }, [id]);
 
+    const isHeading = (text) => text.length > 5 && text.length < 80 && !text.endsWith('.') && !text.endsWith('!') && !text.endsWith('?') && !text.includes(':');
+
+    const generateTOC = (content) => {
+        const headings = [];
+        const paragraphs = content.split('\n\n');
+        paragraphs.forEach(p => {
+             if (isHeading(p)) {
+                 headings.push({ text: p, id: p.toLowerCase().replace(/[^a-z0-9]+/g, '-') });
+             }
+        });
+        return headings;
+    }
+
     if (!post) {
         return (
             <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 px-4">
@@ -90,10 +103,30 @@ export default function BlogDetail() {
                                 {post.excerpt}
                             </p>
 
+                            {/* Table of Contents */}
+                            {generateTOC(post.content).length > 0 && (
+                                <div className="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 mb-10 border border-slate-100 dark:border-slate-800">
+                                    <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4">Table of Contents</h3>
+                                    <ul className="space-y-2.5">
+                                        {generateTOC(post.content).map((h, i) => (
+                                            <li key={i} className="list-disc ml-4">
+                                                <a href={`#${h.id}`} className="text-slate-600 dark:text-slate-400 hover:text-accent-500 transition-colors font-medium">
+                                                    {h.text}
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+
                             <div className="text-slate-600 dark:text-slate-400 leading-relaxed space-y-6">
-                                {post.content.split('\n\n').map((paragraph, idx) => (
-                                    <p key={idx}>{paragraph}</p>
-                                ))}
+                                {post.content.split('\n\n').map((paragraph, idx) => {
+                                    if (isHeading(paragraph)) {
+                                        const id = paragraph.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+                                        return <h2 key={idx} id={id} className="text-2xl font-bold text-slate-900 dark:text-white mt-10 mb-4 scroll-mt-24">{paragraph}</h2>;
+                                    }
+                                    return <p key={idx}>{paragraph}</p>;
+                                })}
                             </div>
 
                             <div className="mt-16 p-8 md:p-10 bg-slate-900 rounded-[2rem] text-white relative overflow-hidden group">
@@ -117,6 +150,39 @@ export default function BlogDetail() {
                         </div>
                     </div>
                 </article>
+
+                {/* E-E-A-T Author Box */}
+                <div className="mt-12 bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center md:items-start border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+                    <img src="https://ui-avatars.com/api/?name=Javier+AI&background=6366f1&color=fff&size=128" alt="Javier - AI Expert" className="w-20 h-20 rounded-full flex-shrink-0" />
+                    <div>
+                        <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Written by Javier</h4>
+                        <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed mb-3">Javier is an AI researcher and automation expert. He actively curates the Global AI Directory, rigorously testing new LLMs, computer vision frameworks, and generative AI tools to help professionals integrate artificial intelligence into their daily workflows.</p>
+                        <Link to="/about" className="text-sm font-bold text-accent-600 dark:text-accent-500 hover:text-accent-500 transition-colors">Read our editorial criteria →</Link>
+                    </div>
+                </div>
+
+                {/* Related Articles Section */}
+                {blogPosts.filter(p => p.id !== post.id).length > 0 && (
+                    <div className="mt-16 border-t border-slate-200 dark:border-slate-800 pt-16">
+                        <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-8">Related Articles</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            {blogPosts.filter(p => p.id !== post.id && p.category === post.category).slice(0, 2).concat(
+                                blogPosts.filter(p => p.id !== post.id && p.category !== post.category).slice(0, 1)
+                            ).slice(0, 2).map((relatedPost) => (
+                                <Link to={`/blog/${relatedPost.id}`} key={relatedPost.id} className="group bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-xl hover:border-accent-200 transition-all">
+                                    <div className="w-full md:w-2/5 h-40 md:h-auto relative overflow-hidden flex-shrink-0">
+                                        <img src={relatedPost.image} alt={relatedPost.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                                    </div>
+                                    <div className="p-5 flex flex-col justify-center">
+                                        <span className="text-[10px] font-bold uppercase tracking-wider text-accent-600 dark:text-accent-500 mb-2">{relatedPost.category}</span>
+                                        <h4 className="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-accent-600 transition-colors line-clamp-2">{relatedPost.title}</h4>
+                                        <span className="text-sm font-bold text-slate-400 flex items-center gap-1"><Clock className="w-3.5 h-3.5"/> {relatedPost.readTime}</span>
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                )}
             </div>
         </div>
     );

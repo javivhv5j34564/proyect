@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Sparkles, Menu, X, Search as SearchIcon, Dices, PlusCircle, ArrowLeftRight } from 'lucide-react';
+import { Sparkles, Menu, X, Search as SearchIcon, Dices, PlusCircle, ArrowLeftRight, Lightbulb } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { tools } from '../data';
 import ThemeToggle from './ThemeToggle';
@@ -70,7 +70,8 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                 <nav className="hidden md:flex items-center gap-6 font-semibold text-sm text-slate-600 dark:text-slate-400">
                     <button onClick={() => scrollToSection('directory-section')} className="hover:text-accent-600 transition-colors">Directory</button>
                     <Link to="/compare" className="hover:text-accent-600 transition-colors flex items-center gap-1"><ArrowLeftRight className="w-4 h-4"/> Compare</Link>
-                    <Link to="/blog" className="hover:text-accent-600 transition-colors">Guides & Blog</Link>
+                    <Link to="/guides" className="hover:text-yellow-500 transition-colors flex items-center gap-1"><Lightbulb className="w-4 h-4 text-yellow-500"/> Guides</Link>
+                    <Link to="/blog" className="hover:text-accent-600 transition-colors">Blog</Link>
                     <Link to="/submit-tool" className="hover:text-accent-600 transition-colors flex items-center gap-1"><PlusCircle className="w-4 h-4"/> Submit AI</Link>
                 </nav>
 
@@ -93,7 +94,8 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                                 <div className="flex flex-col p-4 gap-2">
                                     <button onClick={() => scrollToSection('directory-section')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800">AI Directory</button>
                                     <Link to="/compare" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2"><ArrowLeftRight className="w-4 h-4"/> Compare AIs</Link>
-                                    <Link to="/blog" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800">Guides & Blog</Link>
+                                    <Link to="/guides" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2 text-yellow-600 dark:text-yellow-500"><Lightbulb className="w-4 h-4"/> AI Guides</Link>
+                                    <Link to="/blog" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800">Blog</Link>
                                     <Link to="/submit-tool" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2"><PlusCircle className="w-4 h-4"/> Submit AI</Link>
                                 </div>
                             </motion.nav>

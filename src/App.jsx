@@ -12,6 +12,9 @@ import { CookieBanner } from './components/CookieBanner';
 import Header from './components/Header';
 import CategoryPage from './pages/CategoryPage';
 import Blog from './pages/Blog';
+import Guides from './pages/Guides';
+import GuideDetail from './pages/GuideDetail';
+import Glossary from './pages/Glossary';
 import CommandPalette from './components/CommandPalette';
 import CompareToolsPage from './pages/CompareToolsPage';
 import SurprisePage from './pages/SurprisePage';
@@ -37,6 +40,9 @@ function App() {
           <Route path="/category/:categoryId" element={<CategoryPage />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="/guides" element={<Guides />} />
+          <Route path="/guide/:id" element={<GuideDetail />} />
+          <Route path="/glossary" element={<Glossary />} />
           <Route path="/submit-tool" element={<SubmitToolPage />} />
           <Route path="/success" element={<SuccessPage />} />
           <Route path="/compare" element={<CompareToolsPage />} />

@@ -31,6 +31,7 @@ export default function Footer() {
                         <ul className="space-y-2 text-sm">
                             <li><Link to="/about" className="hover:text-accent-400 transition-colors">About Us</Link></li>
                             <li><Link to="/contact" className="hover:text-accent-400 transition-colors">Contact</Link></li>
+                            <li><Link to="/glossary" className="hover:text-accent-400 transition-colors">AI Glossary</Link></li>
                             <li><Link to="/submit-tool" className="hover:text-accent-400 transition-colors font-bold text-accent-500 hover:text-accent-400">➕ Suggest a Tool</Link></li>
                         </ul>
                     </div>
