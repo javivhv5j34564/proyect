@@ -7,31 +7,31 @@ import { MousePointerClick, ChevronRight, Zap, RefreshCw, Star } from 'lucide-re
 const QUESTIONS = [
     {
         id: 'task',
-        title: '¿Qué necesitas crear o resolver hoy?',
+        title: 'What are you trying to accomplish today?',
         options: [
-            { label: 'Escribir textos o ideas', value: 'Writing', emoji: '✍️' },
-            { label: 'Generar imágenes / arte', value: 'Image', emoji: '🎨' },
-            { label: 'Programar o depurar código', value: 'Programming', emoji: '💻' },
-            { label: 'Crear videos o animaciones', value: 'Video', emoji: '🎬' },
-            { label: 'Investigar o resumir PDFs', value: 'Research', emoji: '📚' }
+            { label: 'Writing & Brainstorming Ideas', value: 'Writing', emoji: '✍️' },
+            { label: 'Generating Art & Visuals', value: 'Image', emoji: '🎨' },
+            { label: 'Writing & Debugging Code', value: 'Programming', emoji: '💻' },
+            { label: 'Producing Video Content', value: 'Video', emoji: '🎬' },
+            { label: 'Researching & Summarizing', value: 'Research', emoji: '📚' }
         ]
     },
     {
         id: 'budget',
-        title: '¿Cuál es tu presupuesto actual?',
+        title: 'What is your assigned budget?',
         options: [
-            { label: 'Uso gratuito intermitente', value: 'free_tier', emoji: '🆓' },
-            { label: '100% Gratis o Código Abierto', value: 'fully_free', emoji: '🔓' },
-            { label: 'Busco algo Pro (de pago)', value: 'paid', emoji: '💳' }
+            { label: 'Casual Free Usage', value: 'free_tier', emoji: '🆓' },
+            { label: '100% Free / Open Source', value: 'fully_free', emoji: '🔓' },
+            { label: 'Willing to pay for Premium', value: 'paid', emoji: '💳' }
         ]
     },
     {
         id: 'expertise',
-        title: '¿Cuál es tu nivel técnico con IAs?',
+        title: 'Rate your AI technical proficiency:',
         options: [
-            { label: 'Principiante total (fácil de usar)', value: 'beginner', emoji: '👶' },
-            { label: 'Intermedio (uso prompts diarios)', value: 'intermediate', emoji: '😎' },
-            { label: 'Avanzado / Desarrollador (APIs)', value: 'advanced', emoji: '🥷' }
+            { label: 'Complete Beginner (Easy UI)', value: 'beginner', emoji: '👶' },
+            { label: 'Intermediate (Daily Prompting)', value: 'intermediate', emoji: '😎' },
+            { label: 'Advanced Developer (APIs)', value: 'advanced', emoji: '🥷' }
         ]
     }
 ];
@@ -84,10 +84,10 @@ export default function MatchMaker() {
                 <div className="text-center mb-10">
                     <h1 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-3 flex items-center justify-center gap-3">
                         <Zap className="w-10 h-10 text-amber-500" />
-                        Trivago de las IAs
+                        AI Tool Matchmaker
                     </h1>
                     <p className="text-lg text-slate-600 dark:text-slate-400">
-                        No pierdas horas buscando. Responde 3 preguntas y encontraremos tu herramienta perfecta al instante.
+                        Stop wasting hours browsing directories. Answer 3 minimal questions and let our algorithm instantly pinpoint the exact application you need.
                     </p>
                 </div>
 
@@ -111,8 +111,8 @@ export default function MatchMaker() {
                                 className="flex flex-col items-center justify-center text-center space-y-4"
                             >
                                 <RefreshCw className="w-12 h-12 text-accent-500 animate-spin" />
-                                <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Analizando algoritmos...</h2>
-                                <p className="text-slate-500">Filtrando entre más de {tools.length} IAs...</p>
+                                <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Analyzing heuristics...</h2>
+                                <p className="text-slate-500">Cross-referencing over {tools.length} trusted AI models...</p>
                             </motion.div>
                         )}
 
@@ -123,7 +123,7 @@ export default function MatchMaker() {
                                 className="text-center"
                             >
                                 <span className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-400 rounded-full font-bold text-sm mb-6">
-                                    ¡MATCH PERFECTO ENCONTRADO 99%!
+                                    99% ACCURACY MATCH FOUND!
                                 </span>
                                 
                                 <div className="bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 p-8 rounded-3xl mb-8 transform transition hover:-translate-y-1">
@@ -135,12 +135,12 @@ export default function MatchMaker() {
                                     <p className="text-slate-700 dark:text-slate-300 mb-6">{match.description}</p>
                                     
                                     <Link to={`/tool/${match.id}`} className="block w-full bg-accent-600 hover:bg-accent-700 text-white font-bold py-4 px-6 rounded-xl transition shadow-lg shadow-accent-500/20">
-                                        Ver review de {match.name}
+                                        Read {match.name} Breakdown
                                     </Link>
                                 </div>
 
                                 <button onClick={startOver} className="text-slate-400 hover:text-slate-800 dark:hover:text-white font-semibold transition text-sm">
-                                    ↻ Volver a intentar el test
+                                    ↻ Retake the Assessment
                                 </button>
                             </motion.div>
                         )}
@@ -151,7 +151,7 @@ export default function MatchMaker() {
                                 initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}
                                 className="w-full"
                             >
-                                <p className="text-accent-500 font-bold text-sm mb-2 uppercase tracking-wide">Paso {step + 1} de {QUESTIONS.length}</p>
+                                <p className="text-accent-500 font-bold text-sm mb-2 uppercase tracking-wide">Phase {step + 1} of {QUESTIONS.length}</p>
                                 <h2 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white mb-8">
                                     {QUESTIONS[step].title}
                                 </h2>

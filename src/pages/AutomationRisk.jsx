@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 import { Briefcase, Zap, ShieldAlert, ArrowRight, CheckCircle2, AlertTriangle, ExternalLink } from 'lucide-react';
 
 const PROFESSIONS = [
-    { name: 'Desarrollador / Programador', risk: 45, skills: ['Code Generation', 'Debugging', 'Automatización'], keyword: 'Programming' },
-    { name: 'Creador de Contenido (Video/YouTube)', risk: 35, skills: ['Generación de guiones', 'Edición de Video', 'Audio'], keyword: 'Video & Animation' },
-    { name: 'Diseñador Gráfico', risk: 65, skills: ['Generación de imágenes', 'Vectores', 'Mockups'], keyword: 'Image & Design' },
-    { name: 'Copywriter / Escritor', risk: 75, skills: ['Redacción SEO', 'Generación de ideas', 'Traducción'], keyword: 'Writing & SEO' },
-    { name: 'Educador / Profesor', risk: 20, skills: ['Creación de temarios', 'Corrección de exámenes', 'Tutoría'], keyword: 'Education' },
-    { name: 'Analista de Datos / Data Scientist', risk: 40, skills: ['Visualización', 'Limpieza de datos', 'Consultas SQL'], keyword: 'Research' }
+    { name: 'Software Engineer', risk: 45, skills: ['Code Generation', 'Debugging', 'Automatización'], keyword: 'Programming' },
+    { name: 'Content Creator (Video)', risk: 35, skills: ['Generación de guiones', 'Edición de Video', 'Audio'], keyword: 'Video & Animation' },
+    { name: 'Graphic Designer', risk: 65, skills: ['Generación de imágenes', 'Vectores', 'Mockups'], keyword: 'Image & Design' },
+    { name: 'Copywriter / Marketer', risk: 75, skills: ['Redacción SEO', 'Generación de ideas', 'Traducción'], keyword: 'Writing & SEO' },
+    { name: 'Educator', risk: 20, skills: ['Creación de temarios', 'Corrección de exámenes', 'Tutoría'], keyword: 'Education' },
+    { name: 'Data Analyst', risk: 40, skills: ['Visualización', 'Limpieza de datos', 'Consultas SQL'], keyword: 'Research' }
 ];
 
 export default function AutomationRisk() {
@@ -31,10 +31,10 @@ export default function AutomationRisk() {
             <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-4">
-                        ⚠️ Calculadora de <span className="text-rose-500">Supervivencia</span> Profesional
+                        ⚠️ Career <span className="text-rose-500">Automation</span> Risk Test
                     </h1>
                     <p className="text-lg text-slate-600 dark:text-slate-400">
-                        ¿Qué probabilidad hay de que la IA automatice tus tareas diarias? Descubre tu porcentaje de riesgo y adopta las herramientas clave para volverte indispensable.
+                        Determine the probability of AI replacing your manual daily tasks. Discover your job's exposure rate and unlock the exact AI toolkit you must master to remain indispensable.
                     </p>
                 </div>
 
@@ -48,7 +48,7 @@ export default function AutomationRisk() {
                             >
                                 <Briefcase className="w-8 h-8 text-slate-400 group-hover:text-accent-500 mb-4 transition-colors" />
                                 <h3 className="font-bold text-slate-900 dark:text-white text-lg">{job.name}</h3>
-                                <p className="text-sm text-slate-500 mt-2">Haz clic para analizar</p>
+                                <p className="text-sm text-slate-500 mt-2">Click to calculate risk</p>
                             </button>
                         ))}
                     </div>
@@ -60,21 +60,21 @@ export default function AutomationRisk() {
                     >
                         <div className="mb-8 border-b border-slate-100 dark:border-slate-800 pb-8 text-center flex flex-col items-center">
                             <span className="bg-rose-100 text-rose-600 dark:bg-rose-500/20 dark:text-rose-400 px-4 py-1.5 rounded-full font-bold text-sm tracking-wide mb-4">
-                                RIESGO DE AUTOMATIZACIÓN
+                                ESTIMATED EXPOSURE RATE
                             </span>
                             <div className="text-7xl font-black text-slate-900 dark:text-white mb-2">
                                 {selectedJob.risk}%
                             </div>
                             <p className="text-slate-600 dark:text-slate-400 max-w-lg">
-                                La IA puede automatizar un {selectedJob.risk}% de las tareas repetitivas de un <strong className="text-slate-900 dark:text-white">{selectedJob.name}</strong>. 
-                                La única forma de no quedarte atrás es dominar estas herramientas:
+                                AI technologies are currently capable of automating {selectedJob.risk}% of the repetitive workload of a typical <strong className="text-slate-900 dark:text-white">{selectedJob.name}</strong>. 
+                                The only strategy to future-proof your career is to adopt these core platforms:
                             </p>
                         </div>
 
                         <div className="mb-6">
                             <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
                                 <ShieldAlert className="w-5 h-5 text-emerald-500" /> 
-                                Kit de Supervivencia (Aprende esto hoy)
+                                Professional Survival Kit
                             </h3>
                             <div className="grid gap-4">
                                 {recommendedTools.map(t => (
@@ -87,12 +87,12 @@ export default function AutomationRisk() {
                                             <p className="text-sm text-slate-500 line-clamp-1">{t.description}</p>
                                         </div>
                                         <Link to={`/tool/${t.id}`} className="px-5 py-2.5 bg-accent-600 text-white rounded-xl font-bold hover:bg-accent-700 transition flex items-center gap-2 whitespace-nowrap w-full sm:w-auto justify-center">
-                                            Estudiar IA <ArrowRight className="w-4 h-4" />
+                                            Master this AI <ArrowRight className="w-4 h-4" />
                                         </Link>
                                     </div>
                                 ))}
                                 {recommendedTools.length === 0 && (
-                                    <p className="text-slate-500 italic">No se encontraron herramientas específicas, pero ChatGPT siempre es un buen comienzo.</p>
+                                    <p className="text-slate-500 italic">No specific tools found in this exact category, but starting with ChatGPT is strongly advised.</p>
                                 )}
                             </div>
                         </div>
@@ -101,7 +101,7 @@ export default function AutomationRisk() {
                             onClick={() => setShowResults(false)}
                             className="text-sm font-bold text-slate-500 hover:text-slate-800 dark:hover:text-white transition w-full text-center mt-6"
                         >
-                            ← Analizar otra profesión
+                            ← Analyze a different profession
                         </button>
                     </motion.div>
                 )}

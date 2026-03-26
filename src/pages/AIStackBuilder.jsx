@@ -5,20 +5,20 @@ import { tools } from '../data';
 import { Link } from 'react-router-dom';
 
 const WORKFLOWS = {
-    'Marketing': [
-        { desc: '1. Generación de Ideas & Copys', role: 'Writing & SEO', toolIds: ['chatgpt', 'claude-3'] },
-        { desc: '2. Creatividades Visuales', role: 'Image & Design', toolIds: ['midjourney', 'krea'] },
-        { desc: '3. Edición de Video Corto', role: 'Video & Animation', toolIds: ['opus-clip', 'capcut-ai'] }
+    'Digital Marketing & Copy': [
+        { desc: '1. Brainstorming & Copywriting', role: 'Writing & SEO', toolIds: ['chatgpt', 'claude-3'] },
+        { desc: '2. Visual Creatives & Assets', role: 'Image & Design', toolIds: ['midjourney', 'krea'] },
+        { desc: '3. Short-Form Video Editing', role: 'Video & Animation', toolIds: ['opus-clip', 'capcut-ai'] }
     ],
-    'Desarrollo Web': [
-        { desc: '1. Arquitectura y Lógica', role: 'Programming', toolIds: ['claude-3', 'o1'] },
-        { desc: '2. Programación de UI (Frontend)', role: 'Programming', toolIds: ['v0', 'lovable'] },
-        { desc: '3. Autocompletado mientras programas', role: 'Programming', toolIds: ['cursor', 'supermaven'] }
+    'Full-Stack Developer': [
+        { desc: '1. Architecture & Core Logic', role: 'Programming', toolIds: ['claude-3', 'o1'] },
+        { desc: '2. Frontend UI Generation', role: 'Programming', toolIds: ['v0', 'lovable'] },
+        { desc: '3. Real-Time Pair Programming', role: 'Programming', toolIds: ['cursor', 'supermaven'] }
     ],
-    'Emprendedores (Startups)': [
-        { desc: '1. Análisis de Mercado y Competencia', role: 'Research', toolIds: ['perplexity', 'consensus'] },
-        { desc: '2. Diseño de Logotipo y Marca', role: 'Image & Design', toolIds: ['logoai', 'midjourney'] },
-        { desc: '3. Creación de Presentación (Pitch Deck)', role: 'Productivity', toolIds: ['gamma'] }
+    'Startup Founder': [
+        { desc: '1. Market Research & Validation', role: 'Research', toolIds: ['perplexity', 'consensus'] },
+        { desc: '2. Brand Identity & Logo', role: 'Image & Design', toolIds: ['logoai', 'midjourney'] },
+        { desc: '3. Pitch Deck Generation', role: 'Productivity', toolIds: ['gamma'] }
     ]
 };
 
@@ -30,13 +30,13 @@ export default function AIStackBuilder() {
             <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-16">
                     <span className="bg-purple-100 text-purple-700 dark:bg-purple-500/20 dark:text-purple-400 px-4 py-1.5 rounded-full font-bold text-sm tracking-wide mb-4 inline-block">
-                        FLUJOS DE TRABAJO (WORKFLOWS)
+                        AUTOMATED WORKFLOWS
                     </span>
                     <h1 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mt-4 mb-4">
-                        El Creador de <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-accent-500">Stacks de IA</span>
+                        The AI <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-accent-500">Stack Builder</span>
                     </h1>
                     <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                        No uses las herramientas de forma aislada. Aprende a conectarlas para crear flujos de trabajo automatizados como los profesionales.
+                        Stop using basic tools in isolation. Discover how top industry professionals chain powerful AI platforms together to build fully automated workflows.
                     </p>
                 </div>
 
@@ -47,7 +47,7 @@ export default function AIStackBuilder() {
                             <button
                                 key={role}
                                 onClick={() => setSelectedRole(role)}
-                                className={`w-full text-left px-6 py-5 rounded-2xl font-bold transition-all border-2 flex justify-between items-center \${
+                                className={`w-full text-left px-6 py-5 rounded-2xl font-bold transition-all border-2 flex justify-between items-center ${
                                     selectedRole === role 
                                         ? 'bg-purple-50 dark:bg-purple-900/20 border-purple-500 text-purple-700 dark:text-purple-400 shadow-md' 
                                         : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-700'
@@ -65,7 +65,7 @@ export default function AIStackBuilder() {
                             <Layers className="w-40 h-40 text-slate-500" />
                         </div>
                         <h2 className="text-2xl font-black text-slate-900 dark:text-white mb-8 relative z-10 flex items-center gap-2">
-                            <Wand2 className="w-6 h-6 text-purple-500" /> Pipeline Ideal: {selectedRole}
+                            <Wand2 className="w-6 h-6 text-purple-500" /> Optimal Pipeline: {selectedRole}
                         </h2>
 
                         <div className="space-y-4 relative z-10">
