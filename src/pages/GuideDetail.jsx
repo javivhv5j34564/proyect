@@ -144,10 +144,10 @@ export default function GuideDetail() {
 
                 {/* E-E-A-T Author Box */}
                 <div className="mt-12 bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center md:items-start border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
-                    <img src="https://ui-avatars.com/api/?name=Javier+AI&background=f59e0b&color=fff&size=128" alt="Javier - AI Expert" className="w-20 h-20 rounded-full flex-shrink-0" />
+                    <img src="https://ui-avatars.com/api/?name=Editorial+Team&background=f59e0b&color=fff&size=128" alt="Editorial Team" className="w-20 h-20 rounded-full flex-shrink-0" />
                     <div>
-                        <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Written by Javier</h4>
-                        <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed mb-3">Javier is an AI researcher and automation expert. He actively curates the Global AI Directory, rigorously testing new LLMs, computer vision frameworks, and generative AI tools to help professionals integrate artificial intelligence into their daily workflows.</p>
+                        <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Written by the Editorial Team</h4>
+                        <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed mb-3">Our team of AI researchers and automation experts actively curates the Global AI Directory, rigorously testing new LLMs, computer vision frameworks, and generative AI tools to help professionals integrate artificial intelligence into their daily workflows.</p>
                         <Link to="/about" className="text-sm font-bold text-yellow-600 dark:text-yellow-500 hover:text-yellow-500 transition-colors">Read our editorial criteria →</Link>
                     </div>
                 </div>
