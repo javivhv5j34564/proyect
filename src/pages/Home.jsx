@@ -527,14 +527,14 @@ export default function Home({ searchTerm, setSearchTerm }) {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-slate-100 mb-4">What is AI Directory and how does it help you?</h2>
             <div className="prose prose-slate md:prose-lg max-w-none text-slate-600 dark:text-slate-400 space-y-4">
               <p>
-                At <strong>AI Directory</strong>, our goal is to collect, analyze, and categorize the best Artificial Intelligence tools available today. We know the tech ecosystem changes daily, and finding the perfect free or freemium AI for your business, studies, or creative workflow can be an exhausting task.
+                At <strong>AI Directory</strong>, our ultimate goal is to collect, analyze, and categorize the best Artificial Intelligence tools available today. We know the tech ecosystem changes daily, and finding the perfect free or freemium AI for your business, studies, or creative workflow can be an exhausting task.
               </p>
               <p>
-                Every tool listed in our directory goes through a quality filter where we evaluate its real utility, whether it has a <em>valid free plan</em>, and what kind of problems it solves. From <strong>text generators (LLMs)</strong> that help you write emails in seconds, to advanced <strong>image or video generators</strong> that can create the visual prototype of your next big idea without needing to know how to code.
+                Every tool listed in our directory goes through a strict quality filter where we evaluate its real utility, whether it has a <em>valid free plan</em>, and exactly what kind of problems it solves. From <strong>text generators (LLMs)</strong> that help you write emails in seconds, to advanced <strong>image or video generators</strong> that can create the visual prototype of your next big idea without needing to know a single line of code.
               </p>
-              <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mt-6 mb-3">How to make the ultimate of our orders</h3>
+              <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mt-6 mb-3">How to make the most of our directory</h3>
               <p>
-                Use the adulterants below to navigate our inventory.However, the <strong>Visual Design</strong> or <strong>Video</strong> section will be your  swish supporter, If you are a content creator.However, explore <strong>Business & Productivity</strong> to find AI- powered CRMs and automated agents, If you are looking to optimize your business operation. Our directory is constantly streamlined so you noway fall before in this technological revolution.
+                Use the filters below to easily navigate our extensive inventory. If you are a content creator, the <strong>Visual Design</strong> or <strong>Video & Animation</strong> categories will be your best allies. However, if you are an entrepreneur looking to optimize your enterprise operations, explore <strong>Business & Productivity</strong> to find AI-powered CRMs and automated autonomous agents. Our directory is constantly updated so you never fall behind in this ongoing technological revolution.
               </p>
             </div>
           </div>
