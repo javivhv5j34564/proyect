@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Sparkles, Menu, X, Search as SearchIcon, Dices, PlusCircle, ArrowLeftRight, Lightbulb, Target, ShieldAlert, Layers, FolderTree, MessageSquare, TrendingUp } from 'lucide-react';
+import { Sparkles, Menu, X, Search as SearchIcon, Dices, PlusCircle, ArrowLeftRight, Lightbulb, Target, ShieldAlert, Layers, FolderTree, MessageSquare, TrendingUp, Compass, BookOpen } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { tools } from '../data';
 import ThemeToggle from './ThemeToggle';
@@ -67,11 +67,11 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                     </button>
                 </div>
 
-                <nav className="hidden md:flex items-center gap-6 font-semibold text-sm text-slate-600 dark:text-slate-400">
-                    <button onClick={() => scrollToSection('directory-section')} className="hover:text-accent-600 transition-colors">Directory</button>
+                <nav className="hidden md:flex items-center gap-6 font-semibold text-sm">
+                    <button onClick={() => scrollToSection('directory-section')} className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors flex items-center gap-1.5"><FolderTree className="w-4 h-4" /> Directory</button>
                     
                     <div className="relative group">
-                        <button className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors flex items-center gap-1.5"><Sparkles className="w-4 h-4 text-purple-500" /> Discover ✨</button>
+                        <button className="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors flex items-center gap-1.5"><Sparkles className="w-4 h-4" /> Discover ✨</button>
                         <div className="absolute top-full left-0 pt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
                             <div className="bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl border border-white/40 dark:border-slate-800 rounded-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden">
                                 <Link to="/compare" className="px-4 py-3 hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-2 text-slate-700 dark:text-slate-300"><ArrowLeftRight className="w-4 h-4 text-blue-500"/> Industry Matrix</Link>
@@ -84,9 +84,9 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                         </div>
                     </div>
 
-                    <Link to="/guides" className="hover:text-yellow-500 transition-colors flex items-center gap-1"><Lightbulb className="w-4 h-4 text-yellow-500"/> Guides</Link>
-                    <Link to="/blog" className="hover:text-accent-600 transition-colors">Blog</Link>
-                    <Link to="/submit-tool" className="hover:text-accent-600 transition-colors flex items-center gap-1"><PlusCircle className="w-4 h-4"/> Submit AI</Link>
+                    <Link to="/guides" className="text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 transition-colors flex items-center gap-1.5"><Lightbulb className="w-4 h-4"/> Guides</Link>
+                    <Link to="/blog" className="text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors flex items-center gap-1.5"><BookOpen className="w-4 h-4"/> Blog</Link>
+                    <Link to="/submit-tool" className="text-rose-600 dark:text-rose-400 hover:text-rose-700 dark:hover:text-rose-300 transition-colors flex items-center gap-1.5"><PlusCircle className="w-4 h-4"/> Submit AI</Link>
                 </nav>
 
                 <AnimatePresence>
@@ -106,7 +106,7 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                                 className="md:hidden flex flex-col w-full overflow-hidden absolute top-full left-0 bg-white dark:bg-slate-900/95 shadow-xl rounded-b-2xl border-t border-slate-100 dark:border-slate-800 z-40 max-h-[80vh] overflow-y-auto"
                             >
                                 <div className="flex flex-col p-4 gap-2">
-                                    <button onClick={() => scrollToSection('directory-section')} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800">AI Directory</button>
+                                    <button onClick={() => scrollToSection('directory-section')} className="w-full text-center px-4 py-3 font-semibold text-blue-600 dark:text-blue-400 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2"><FolderTree className="w-4 h-4"/> AI Directory</button>
                                     
                                     <div className="w-full rounded-xl border border-purple-100 dark:border-purple-900/50 bg-purple-50/50 dark:bg-purple-900/10 p-2 space-y-2">
                                         <div className="text-xs font-bold text-purple-600 dark:text-purple-400 text-center uppercase tracking-wider mb-2 pt-2">Premium Tools</div>
@@ -118,9 +118,9 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                                         <Link to="/prompts" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-2 font-semibold text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-900 rounded-lg flex items-center justify-center gap-2 border border-slate-100 dark:border-slate-800"><MessageSquare className="w-4 h-4 text-emerald-500"/> AI Prompts</Link>
                                     </div>
 
-                                    <Link to="/guides" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2 text-yellow-600 dark:text-yellow-500"><Lightbulb className="w-4 h-4"/> AI Guides</Link>
-                                    <Link to="/blog" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800">Blog</Link>
-                                    <Link to="/submit-tool" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2"><PlusCircle className="w-4 h-4"/> Submit AI</Link>
+                                    <Link to="/guides" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-amber-600 dark:text-amber-500 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2"><Lightbulb className="w-4 h-4"/> AI Guides</Link>
+                                    <Link to="/blog" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-emerald-600 dark:text-emerald-500 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2"><BookOpen className="w-4 h-4"/> Blog</Link>
+                                    <Link to="/submit-tool" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-rose-600 dark:text-rose-500 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2"><PlusCircle className="w-4 h-4"/> Submit AI</Link>
                                 </div>
                             </motion.nav>
                         </>
