@@ -22,7 +22,8 @@ import SurprisePage from './pages/SurprisePage';
 import ScrollToTop from './components/ScrollToTop';
 import AIStackBuilder from './pages/AIStackBuilder';
 import AutomationRisk from './pages/AutomationRisk';
-import MatchMaker from './pages/MatchMaker';
+import PromptsPage from './pages/PromptsPage';
+import SocialMediaGrowth from './pages/SocialMediaGrowth';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -53,6 +54,8 @@ function App() {
           <Route path="/stack-builder" element={<AIStackBuilder />} />
           <Route path="/automation-risk" element={<AutomationRisk />} />
           <Route path="/matchmaker" element={<MatchMaker />} />
+          <Route path="/prompts" element={<PromptsPage />} />
+          <Route path="/viral" element={<SocialMediaGrowth />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

@@ -623,7 +623,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
           <div>
             {!showSections ? (
               <div className="flex flex-col">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
                   <AnimatePresence>
                     {filteredTools.slice(0, displayCount).map((tool) => (
                       <ToolCard
@@ -642,7 +642,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                 {displayCount < filteredTools.length && (
                   <div className="flex justify-center mt-8 md:mt-10">
                     {isLoadingMore ? (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-full">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 w-full">
                             {[...Array(3)].map((_, i) => <ToolCardSkeleton key={i} />)}
                         </div>
                     ) : (
@@ -665,7 +665,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                     <Flame className="w-5 h-5 md:w-6 md:h-6 text-amber-500" />
                     <h2 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-100">Top 3 Most Used</h2>
                   </motion.div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
                     {top3Tools.map((tool) => (
                       <ToolCard
                         key={tool.id}
@@ -689,7 +689,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                     <Clock className="w-5 h-5 md:w-6 md:h-6 text-accent-500" />
                     <h2 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-100">Recently Added</h2>
                   </motion.div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
                     {recentTools.map((tool) => (
                       <ToolCard
                         key={tool.id}
@@ -732,7 +732,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                     <Sparkles className="w-4 h-4 md:w-5 md:h-5 text-accent-500" />
                     <h2 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-100">Explore Directory</h2>
                   </motion.div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
                     {otherTools.slice(0, displayCount).map((tool) => (
                       <ToolCard
                         key={tool.id}
@@ -749,7 +749,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                   {displayCount < otherTools.length && (
                     <div className="flex justify-center mt-8 md:mt-10 w-full">
                       {isLoadingMore ? (
-                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-full">
+                          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 w-full">
                               {[...Array(6)].map((_, i) => <ToolCardSkeleton key={i} />)}
                           </div>
                       ) : (

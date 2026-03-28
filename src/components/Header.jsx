@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Sparkles, Menu, X, Search as SearchIcon, Dices, PlusCircle, ArrowLeftRight, Lightbulb, Target, ShieldAlert, Layers, FolderTree } from 'lucide-react';
+import { Sparkles, Menu, X, Search as SearchIcon, Dices, PlusCircle, ArrowLeftRight, Lightbulb, Target, ShieldAlert, Layers, FolderTree, MessageSquare, TrendingUp } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { tools } from '../data';
 import ThemeToggle from './ThemeToggle';
@@ -78,10 +78,12 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                                 <Link to="/matchmaker" className="px-4 py-3 hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-2 text-slate-700 dark:text-slate-300"><Target className="w-4 h-4 text-rose-500"/> AI Matchmaker</Link>
                                 <Link to="/automation-risk" className="px-4 py-3 hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-2 text-slate-700 dark:text-slate-300"><ShieldAlert className="w-4 h-4 text-amber-500"/> Risk Calculator</Link>
                                 <Link to="/stack-builder" className="px-4 py-3 hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-2 text-slate-700 dark:text-slate-300"><Layers className="w-4 h-4 text-indigo-500"/> Workflow Builder</Link>
+                                <Link to="/viral" className="px-4 py-3 hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-2 text-slate-700 dark:text-slate-300"><TrendingUp className="w-4 h-4 text-orange-500"/> Viral AI</Link>
                             </div>
                         </div>
                     </div>
 
+                    <Link to="/prompts" className="hover:text-emerald-500 transition-colors flex items-center gap-1"><MessageSquare className="w-4 h-4 text-emerald-500"/> Prompts</Link>
                     <Link to="/guides" className="hover:text-yellow-500 transition-colors flex items-center gap-1"><Lightbulb className="w-4 h-4 text-yellow-500"/> Guides</Link>
                     <Link to="/blog" className="hover:text-accent-600 transition-colors">Blog</Link>
                     <Link to="/submit-tool" className="hover:text-accent-600 transition-colors flex items-center gap-1"><PlusCircle className="w-4 h-4"/> Submit AI</Link>
@@ -112,8 +114,10 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                                         <Link to="/matchmaker" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-2 font-semibold text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-900 rounded-lg flex items-center justify-center gap-2 border border-slate-100 dark:border-slate-800"><Target className="w-4 h-4 text-rose-500"/> AI Matchmaker</Link>
                                         <Link to="/automation-risk" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-2 font-semibold text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-900 rounded-lg flex items-center justify-center gap-2 border border-slate-100 dark:border-slate-800"><ShieldAlert className="w-4 h-4 text-amber-500"/> Risk Calculator</Link>
                                         <Link to="/stack-builder" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-2 font-semibold text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-900 rounded-lg flex items-center justify-center gap-2 border border-slate-100 dark:border-slate-800"><Layers className="w-4 h-4 text-indigo-500"/> Workflow Builder</Link>
+                                        <Link to="/viral" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-2 font-semibold text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-900 rounded-lg flex items-center justify-center gap-2 border border-slate-100 dark:border-slate-800"><TrendingUp className="w-4 h-4 text-orange-500"/> Viral AI</Link>
                                     </div>
 
+                                    <Link to="/prompts" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2 text-emerald-600 dark:text-emerald-500"><MessageSquare className="w-4 h-4"/> AI Prompts</Link>
                                     <Link to="/guides" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2 text-yellow-600 dark:text-yellow-500"><Lightbulb className="w-4 h-4"/> AI Guides</Link>
                                     <Link to="/blog" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800">Blog</Link>
                                     <Link to="/submit-tool" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2"><PlusCircle className="w-4 h-4"/> Submit AI</Link>

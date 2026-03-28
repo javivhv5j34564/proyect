@@ -21,7 +21,7 @@ export const ToolCard = ({
     exit={{ opacity: 0, scale: 0.9 }}
     transition={{ duration: 0.5, ease: "easeOut" }}
     onClick={() => onClick(tool)}
-    className={`group ${customBgClass} rounded-2xl p-4 md:p-6 border ${borderClass} hover:border-accent-300 shadow-sm dark:shadow-none hover:shadow-xl hover:shadow-accent-500/10 transition-all cursor-pointer flex flex-col h-full relative overflow-hidden`}
+    className={`group ${customBgClass} rounded-3xl p-5 md:p-6 border ${borderClass} hover:border-accent-300 shadow-[0_4px_20px_rgb(0,0,0,0.03)] dark:shadow-[0_4px_20px_rgb(0,0,0,0.2)] hover:shadow-xl dark:hover:shadow-[0_8px_30px_rgba(99,102,241,0.15)] transition-all duration-300 hover:-translate-y-1 cursor-pointer flex flex-col h-full relative overflow-hidden`}
   >
     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-400 via-accent-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
