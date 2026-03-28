@@ -42,8 +42,8 @@ export default function AutomationRisk() {
     const [selectedJob, setSelectedJob] = useState(null);
     const [showResults, setShowResults] = useState(false);
 
-    const handleSelect = (job) => {
-        setSelectedJob(job);
+    const handleSelect = (job, variant) => {
+        setSelectedJob({ ...job, variant });
         setShowResults(true);
     };
 
@@ -65,17 +65,36 @@ export default function AutomationRisk() {
 
                 {!showResults ? (
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                        {PROFESSIONS.map((job) => (
-                            <button
-                                key={job.name}
-                                onClick={() => handleSelect(job)}
-                                className="bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-800 p-6 rounded-2xl hover:border-accent-500 hover:shadow-lg transition-all text-left group"
-                            >
-                                <Briefcase className="w-8 h-8 text-slate-400 group-hover:text-accent-500 mb-4 transition-colors" />
-                                <h3 className="font-bold text-slate-900 dark:text-white text-lg">{job.name}</h3>
-                                <p className="text-sm text-slate-500 mt-2">Click to calculate risk</p>
-                            </button>
-                        ))}
+                        {PROFESSIONS.map((job, idx) => {
+                            const COLOR_VARIANTS = [
+                                { bg: 'bg-gradient-to-br from-rose-500 to-pink-600', shadow: 'hover:shadow-rose-500/40' },
+                                { bg: 'bg-gradient-to-br from-blue-500 to-indigo-600', shadow: 'hover:shadow-blue-500/40' },
+                                { bg: 'bg-gradient-to-br from-emerald-500 to-teal-600', shadow: 'hover:shadow-emerald-500/40' },
+                                { bg: 'bg-gradient-to-br from-purple-500 to-fuchsia-600', shadow: 'hover:shadow-purple-500/40' },
+                                { bg: 'bg-gradient-to-br from-amber-500 to-orange-600', shadow: 'hover:shadow-amber-500/40' },
+                                { bg: 'bg-gradient-to-br from-cyan-500 to-blue-600', shadow: 'hover:shadow-cyan-500/40' },
+                                { bg: 'bg-gradient-to-br from-pink-500 to-rose-600', shadow: 'hover:shadow-pink-500/40' },
+                                { bg: 'bg-gradient-to-br from-indigo-500 to-purple-600', shadow: 'hover:shadow-indigo-500/40' },
+                            ];
+                            const variant = COLOR_VARIANTS[idx % COLOR_VARIANTS.length];
+                            
+                            return (
+                                <button
+                                    key={job.name}
+                                    onClick={() => handleSelect(job, variant)}
+                                    className={`relative ${variant.bg} p-6 rounded-2xl hover:scale-[1.03] hover:shadow-2xl ${variant.shadow} transition-all duration-300 text-left group overflow-hidden border border-white/20`}
+                                >
+                                    <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300" />
+                                    <div className="absolute -right-4 -top-4 w-28 h-28 bg-white/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500" />
+                                    
+                                    <div className="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-4 transition-transform group-hover:-translate-y-1 relative z-10 border border-white/30 shadow-sm">
+                                        <Briefcase className="w-6 h-6 text-white" />
+                                    </div>
+                                    <h3 className="font-bold text-white text-lg relative z-10 drop-shadow-sm">{job.name}</h3>
+                                    <p className="text-sm text-white/90 mt-2 relative z-10 font-medium tracking-wide">Click to calculate risk</p>
+                                </button>
+                            );
+                        })}
                     </div>
                 ) : (
                     <motion.div 
@@ -84,10 +103,10 @@ export default function AutomationRisk() {
                         className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 shadow-xl"
                     >
                         <div className="mb-8 border-b border-slate-100 dark:border-slate-800 pb-8 text-center flex flex-col items-center">
-                            <span className="bg-rose-100 text-rose-600 dark:bg-rose-500/20 dark:text-rose-400 px-4 py-1.5 rounded-full font-bold text-sm tracking-wide mb-4">
+                            <span className={`text-white px-5 py-2 rounded-full font-bold text-sm tracking-widest shadow-sm ${selectedJob.variant?.bg || 'bg-rose-500'} bg-[length:200%_200%] animate-gradient`}>
                                 ESTIMATED EXPOSURE RATE
                             </span>
-                            <div className="text-7xl font-black text-slate-900 dark:text-white mb-2">
+                            <div className={`text-7xl font-black mb-2 bg-clip-text text-transparent ${selectedJob.variant?.bg || 'bg-gradient-to-r from-rose-500 to-pink-600'}`}>
                                 {selectedJob.risk}%
                             </div>
                             <p className="text-slate-600 dark:text-slate-400 max-w-lg">
