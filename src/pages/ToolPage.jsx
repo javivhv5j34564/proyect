@@ -4,7 +4,6 @@ import { tools } from '../data';
 import { useSEO } from '../hooks/useSEO';
 import { Star, ExternalLink, ChevronRight, Share2, Check, Copy, Twitter, Zap, ArrowLeft, Heart, MessageSquare, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { AdSensePlaceholder } from '../components/AdSensePlaceholder';
 import { db } from '../firebase';
 import { doc, updateDoc, setDoc, arrayUnion, onSnapshot } from 'firebase/firestore';
 import { ShareButtons } from '../components/ShareButtons';
@@ -240,10 +239,7 @@ export default function ToolPage() {
                         <p className="text-slate-700 dark:text-slate-300 font-medium text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
                             {tool.description}
                         </p>
-                        <div className="my-8">
-                            <AdSensePlaceholder type="horizontal" />
-                        </div>
-                        <h3 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100 mb-3 md:mb-4">Use Cases and Details</h3>
+                        <h3 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100 mb-3 md:mb-4 mt-8 md:mt-12">Use Cases and Details</h3>
                         <div className="bg-slate-50 dark:bg-slate-950 p-5 md:p-8 rounded-2xl border border-slate-100 dark:border-slate-800 text-slate-600 dark:text-slate-400 leading-relaxed space-y-4">
                             <p>{tool.longDescription}</p>
                             <p className="text-sm text-slate-500 dark:text-slate-400 italic mt-4 pt-4 border-t border-slate-200 dark:border-slate-700/80">Note: Integrating these types of tools into your daily workflow can save from 2 to 5 hours per week, depending on the level of automation you apply. We suggest you always review the terms of the free plan of {tool.name} before implementing it at a corporate level.</p>
