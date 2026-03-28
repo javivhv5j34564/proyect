@@ -9,7 +9,7 @@ const PROFESSIONS = [
     { name: 'Video Content Creator', risk: 35, skills: ['Scripting', 'Video Editing', 'Audio'], keyword: 'Video' },
     { name: 'Graphic Designer', risk: 65, skills: ['Image Generation', 'Vectors', 'Mockups'], keyword: 'Design' },
     { name: 'Copywriter / Marketer', risk: 75, skills: ['SEO Writing', 'Idea Generation', 'Translation'], keyword: 'Writing' },
-    { name: 'Educator', risk: 20, skills: ['Syllabus Creation', 'Grading', 'Tutoring'], keyword: 'Education' },
+    { name: 'Educator / Teacher', risk: 20, skills: ['Syllabus Creation', 'Grading', 'Tutoring'], keyword: 'Education' },
     { name: 'Data Analyst', risk: 40, skills: ['Visualization', 'Data Cleaning', 'SQL Queries'], keyword: 'Data' },
     { name: 'Customer Support Agent', risk: 85, skills: ['Ticket Resolution', 'Chatbots', 'Email Drafting'], keyword: 'Support' },
     { name: 'HR & Recruiter', risk: 50, skills: ['Resume Screening', 'Interview Prep', 'Onboarding'], keyword: 'HR' },
@@ -22,7 +22,20 @@ const PROFESSIONS = [
     { name: 'SEO Specialist', risk: 60, skills: ['Keyword Research', 'Content Outlines', 'Link Analysis'], keyword: 'SEO' },
     { name: 'Translator / Interpreter', risk: 80, skills: ['Real-time Translation', 'Localization', 'Proofreading'], keyword: 'Translation' },
     { name: 'UI / UX Designer', risk: 45, skills: ['Wireframing', 'User Flows', 'Prototyping'], keyword: 'Design' },
-    { name: 'Cybersecurity Analyst', risk: 30, skills: ['Threat Detection', 'Log Analysis', 'Vulnerability Scans'], keyword: 'Security' }
+    { name: 'Cybersecurity Analyst', risk: 30, skills: ['Threat Detection', 'Log Analysis', 'Vulnerability Scans'], keyword: 'Security' },
+    { name: 'Financial Analyst', risk: 45, skills: ['Forecasting', 'Market Research', 'Reporting'], keyword: 'Finance' },
+    { name: 'Data Scientist', risk: 35, skills: ['Machine Learning', 'Big Data', 'Pattern Recognition'], keyword: 'Data' },
+    { name: 'Project Manager', risk: 25, skills: ['Task Allocation', 'Sprint Planning', 'Risk Mitigation'], keyword: 'Productivity' },
+    { name: 'Social Media Manager', risk: 60, skills: ['Content Scheduling', 'Trend Analysis', 'Engagement'], keyword: 'SEO' },
+    { name: 'Journalist / Reporter', risk: 65, skills: ['Article Drafting', 'Fact-checking', 'Transcriptions'], keyword: 'Writing' },
+    { name: 'Photographer', risk: 40, skills: ['Retouching', 'Lighting Correction', 'Culling'], keyword: 'Design' },
+    { name: '3D Artist / Animator', risk: 30, skills: ['Rigging', 'Texture Generation', 'Rendering'], keyword: 'Video' },
+    { name: 'Real Estate Agent', risk: 35, skills: ['Listing Descriptions', 'Virtual Tours', 'Client Follow-ups'], keyword: 'Sales' },
+    { name: 'Architect', risk: 20, skills: ['Floor Plan Generation', 'Structural Analysis', '3D Modeling'], keyword: 'Design' },
+    { name: 'Virtual Assistant', risk: 80, skills: ['Email Management', 'Calendar Sync', 'Research'], keyword: 'Productivity' },
+    { name: 'DevOps Engineer', risk: 30, skills: ['CI/CD Pipeline', 'Infrastructure as Code', 'Monitoring'], keyword: 'Programming' },
+    { name: 'Musician / Composer', risk: 25, skills: ['Chord Generation', 'Mixing', 'Stem Separation'], keyword: 'Audio' },
+    { name: 'Librarian / Archivist', risk: 45, skills: ['Cataloging', 'Metadata Tagging', 'Search Indexing'], keyword: 'Research' }
 ];
 
 export default function AutomationRisk() {
