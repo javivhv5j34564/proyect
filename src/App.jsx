@@ -24,6 +24,7 @@ import AIStackBuilder from './pages/AIStackBuilder';
 import AutomationRisk from './pages/AutomationRisk';
 import PromptsPage from './pages/PromptsPage';
 import SocialMediaGrowth from './pages/SocialMediaGrowth';
+import MatchMaker from './pages/MatchMaker';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
