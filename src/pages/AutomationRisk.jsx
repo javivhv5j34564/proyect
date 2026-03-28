@@ -6,11 +6,23 @@ import { Briefcase, Zap, ShieldAlert, ArrowRight, CheckCircle2, AlertTriangle, E
 
 const PROFESSIONS = [
     { name: 'Software Engineer', risk: 45, skills: ['Code Generation', 'Debugging', 'Automatización'], keyword: 'Programming' },
-    { name: 'Content Creator (Video)', risk: 35, skills: ['Generación de guiones', 'Edición de Video', 'Audio'], keyword: 'Video & Animation' },
-    { name: 'Graphic Designer', risk: 65, skills: ['Generación de imágenes', 'Vectores', 'Mockups'], keyword: 'Image & Design' },
-    { name: 'Copywriter / Marketer', risk: 75, skills: ['Redacción SEO', 'Generación de ideas', 'Traducción'], keyword: 'Writing & SEO' },
-    { name: 'Educator', risk: 20, skills: ['Creación de temarios', 'Corrección de exámenes', 'Tutoría'], keyword: 'Education' },
-    { name: 'Data Analyst', risk: 40, skills: ['Visualización', 'Limpieza de datos', 'Consultas SQL'], keyword: 'Research' }
+    { name: 'Video Content Creator', risk: 35, skills: ['Scripting', 'Video Editing', 'Audio'], keyword: 'Video' },
+    { name: 'Graphic Designer', risk: 65, skills: ['Image Generation', 'Vectors', 'Mockups'], keyword: 'Design' },
+    { name: 'Copywriter / Marketer', risk: 75, skills: ['SEO Writing', 'Idea Generation', 'Translation'], keyword: 'Writing' },
+    { name: 'Educator', risk: 20, skills: ['Syllabus Creation', 'Grading', 'Tutoring'], keyword: 'Education' },
+    { name: 'Data Analyst', risk: 40, skills: ['Visualization', 'Data Cleaning', 'SQL Queries'], keyword: 'Data' },
+    { name: 'Customer Support Agent', risk: 85, skills: ['Ticket Resolution', 'Chatbots', 'Email Drafting'], keyword: 'Support' },
+    { name: 'HR & Recruiter', risk: 50, skills: ['Resume Screening', 'Interview Prep', 'Onboarding'], keyword: 'HR' },
+    { name: 'Accountant', risk: 30, skills: ['Bookkeeping', 'Trend Analysis', 'Tax Prep'], keyword: 'Finance' },
+    { name: 'Legal Professional', risk: 55, skills: ['Contract Review', 'Legal Research', 'Briefs'], keyword: 'Legal' },
+    { name: 'Sales Representative', risk: 40, skills: ['Lead Scoring', 'Email Outreach', 'CRM'], keyword: 'Sales' },
+    { name: 'Administrative Assistant', risk: 70, skills: ['Scheduling', 'Data Entry', 'Email Triage'], keyword: 'Productivity' },
+    { name: 'Audio Engineer', risk: 40, skills: ['Mixing', 'Mastering', 'Noise Reduction'], keyword: 'Audio' },
+    { name: 'E-commerce Manager', risk: 55, skills: ['Product Descriptions', 'Inventory', 'Ad Creatives'], keyword: 'E-commerce' },
+    { name: 'SEO Specialist', risk: 60, skills: ['Keyword Research', 'Content Outlines', 'Link Analysis'], keyword: 'SEO' },
+    { name: 'Translator / Interpreter', risk: 80, skills: ['Real-time Translation', 'Localization', 'Proofreading'], keyword: 'Translation' },
+    { name: 'UI / UX Designer', risk: 45, skills: ['Wireframing', 'User Flows', 'Prototyping'], keyword: 'Design' },
+    { name: 'Cybersecurity Analyst', risk: 30, skills: ['Threat Detection', 'Log Analysis', 'Vulnerability Scans'], keyword: 'Security' }
 ];
 
 export default function AutomationRisk() {
