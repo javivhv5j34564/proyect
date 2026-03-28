@@ -45,7 +45,7 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
     };
 
     return (
-        <header className="sticky top-0 z-40 bg-white dark:bg-slate-900/90 backdrop-blur-lg border-b border-slate-200 dark:border-slate-700/80/50 px-4 py-3 md:px-6 md:py-4 shadow-sm dark:shadow-none">
+        <header className="sticky top-0 z-40 bg-white/70 dark:bg-slate-950/70 backdrop-blur-xl border-b border-white/40 dark:border-slate-800/60 px-4 py-3 md:px-6 md:py-4 shadow-sm dark:shadow-[0_10px_30px_rgb(0,0,0,0.3)] transition-all duration-300">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4 relative">
                 <div className={`flex w-full md:w-auto items-center justify-between gap-2 ${isSearchFocused ? 'hidden md:flex' : 'flex'}`}>
                     <Link to="/" className="flex items-center gap-2 cursor-pointer">
@@ -73,7 +73,7 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                     <div className="relative group">
                         <button className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors flex items-center gap-1.5"><Sparkles className="w-4 h-4 text-purple-500" /> Discover ✨</button>
                         <div className="absolute top-full left-0 pt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
-                            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-xl flex flex-col overflow-hidden">
+                            <div className="bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl border border-white/40 dark:border-slate-800 rounded-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden">
                                 <Link to="/compare" className="px-4 py-3 hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-2 text-slate-700 dark:text-slate-300"><ArrowLeftRight className="w-4 h-4 text-blue-500"/> Industry Matrix</Link>
                                 <Link to="/matchmaker" className="px-4 py-3 hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-2 text-slate-700 dark:text-slate-300"><Target className="w-4 h-4 text-rose-500"/> AI Matchmaker</Link>
                                 <Link to="/automation-risk" className="px-4 py-3 hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-2 text-slate-700 dark:text-slate-300"><ShieldAlert className="w-4 h-4 text-amber-500"/> Risk Calculator</Link>
@@ -130,7 +130,7 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                 <div className="relative w-full md:w-auto md:min-w-[300px] lg:min-w-[400px] group flex items-center gap-3">
                     <button 
                         onClick={() => window.dispatchEvent(new Event('open-command-palette'))}
-                        className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-700/80 hover:border-accent-300 hover:shadow-sm dark:shadow-none rounded-full py-2.5 pl-4 pr-3 flex items-center justify-between transition-all group-focus-within:border-accent-500"
+                        className="w-full bg-white/50 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200 dark:border-slate-700/80 hover:border-accent-400 dark:hover:border-accent-500 hover:shadow-md dark:hover:shadow-[0_0_20px_rgba(217,70,239,0.15)] rounded-full py-2.5 pl-4 pr-3 flex items-center justify-between transition-all group-focus-within:border-accent-500 group-focus-within:ring-2 group-focus-within:ring-accent-500/20 shadow-inner"
                     >
                         <div className="flex items-center gap-2.5">
                             <SearchIcon className="w-4 h-4 text-slate-400 group-hover:text-accent-500 transition-colors" />
@@ -143,7 +143,7 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                     <div className="flex-shrink-0 flex items-center gap-2">
                         <button 
                             onClick={handleSurpriseMe} 
-                            className="bg-accent-100 dark:bg-accent-900/40 hover:bg-accent-200 dark:hover:bg-accent-900/60 text-accent-600 dark:text-accent-400 p-2.5 rounded-full transition-colors flex items-center justify-center border border-accent-200 dark:border-accent-800/60 shadow-sm dark:shadow-none"
+                            className="bg-accent-50 dark:bg-accent-900/30 hover:bg-accent-100 dark:hover:bg-accent-900/50 text-accent-600 dark:text-accent-400 p-2.5 rounded-full transition-all flex items-center justify-center border border-accent-200 dark:border-accent-800/60 shadow-sm hover:shadow-lg dark:hover:shadow-[0_0_15px_rgba(217,70,239,0.3)] hover:-translate-y-0.5 active:scale-95"
                             title="Surprise me with a random tool!"
                         >
                             <Dices className="w-4 h-4" />

@@ -79,7 +79,7 @@ export default function CommandPalette() {
                             initial={{ opacity: 0, scale: 0.95, y: -20 }}
                             animate={{ opacity: 1, scale: 1, y: 0 }}
                             exit={{ opacity: 0, scale: 0.95, y: -20 }}
-                            className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl overflow-hidden w-full max-w-2xl border border-slate-200 dark:border-slate-700/80 pointer-events-auto"
+                            className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-3xl rounded-3xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.2)] dark:shadow-[0_30px_60px_-15px_rgba(217,70,239,0.2)] overflow-hidden w-full max-w-2xl border border-white/60 dark:border-slate-700/80 pointer-events-auto"
                         >
                             <div className="flex items-center px-4 py-4 border-b border-slate-100 dark:border-slate-800 relative">
                                 <Search className="w-5 h-5 text-accent-500 absolute left-6" />
@@ -97,13 +97,13 @@ export default function CommandPalette() {
                                 </button>
                             </div>
                             
-                            <div className="max-h-[60vh] overflow-y-auto p-4 bg-slate-50 dark:bg-slate-950/50 hidden-scrollbar">
+                            <div className="max-h-[60vh] overflow-y-auto p-4 bg-slate-50/50 dark:bg-slate-950/40 hidden-scrollbar">
                                 {searchString === '' ? (
                                     <div>
                                         <h3 className="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider px-2">Popular Tools</h3>
                                         <div className="space-y-1.5">
                                             {defaultTools.map(t => (
-                                                <button key={t.id} onClick={() => handleSelectPath(`/tool/${t.id}`)} className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-white dark:bg-slate-900 border border-transparent hover:border-slate-200 dark:border-slate-700/80 hover:shadow-sm dark:shadow-none transition-all focus:outline-none focus:bg-white dark:bg-slate-900 focus:border-slate-200 dark:border-slate-700/80 focus:shadow-sm dark:shadow-none">
+                                                <button key={t.id} onClick={() => handleSelectPath(`/tool/${t.id}`)} className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-white dark:hover:bg-slate-900 border border-transparent hover:border-slate-200 dark:hover:border-slate-700/80 hover:shadow-md dark:hover:shadow-[0_4px_20px_rgba(217,70,239,0.1)] transition-all focus:outline-none text-left">
                                                     <div className="flex items-center gap-3">
                                                         <div className="w-8 h-8 rounded-lg bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm dark:shadow-none flex items-center justify-center text-xl">{t.emoji || '🤖'}</div>
                                                         <span className="font-bold text-slate-800 dark:text-slate-100">{t.name}</span>
@@ -120,7 +120,7 @@ export default function CommandPalette() {
                                                 <h3 className="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider px-2 flex items-center gap-1.5"><Zap className="w-3.5 h-3.5" /> AI Tools</h3>
                                                 <div className="space-y-1.5">
                                                     {matchedTools.map(t => (
-                                                        <button key={t.id} onClick={() => handleSelectPath(`/tool/${t.id}`)} className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-white dark:bg-slate-900 border border-transparent hover:border-slate-200 dark:border-slate-700/80 hover:shadow-sm dark:shadow-none transition-all focus:outline-none focus:bg-white dark:bg-slate-900 focus:border-slate-200 dark:border-slate-700/80 focus:shadow-sm dark:shadow-none text-left">
+                                                        <button key={t.id} onClick={() => handleSelectPath(`/tool/${t.id}`)} className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-white dark:hover:bg-slate-900 border border-transparent hover:border-slate-200 dark:hover:border-slate-700/80 hover:shadow-md dark:hover:shadow-[0_4px_20px_rgba(217,70,239,0.1)] transition-all focus:outline-none text-left">
                                                             <div className="flex items-center gap-3">
                                                                 <div className="w-8 h-8 rounded-lg bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm dark:shadow-none flex items-center justify-center text-xl flex-shrink-0">{t.emoji || '🤖'}</div>
                                                                 <div className="w-full">
@@ -142,7 +142,7 @@ export default function CommandPalette() {
                                                 <h3 className="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider px-2 flex items-center gap-1.5"><FileText className="w-3.5 h-3.5" /> Articles & Guides</h3>
                                                 <div className="space-y-1.5">
                                                     {matchedBlogs.map(b => (
-                                                        <button key={b.id} onClick={() => handleSelectPath(`/blog/${b.id}`)} className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-white dark:bg-slate-900 border border-transparent hover:border-slate-200 dark:border-slate-700/80 hover:shadow-sm dark:shadow-none transition-all focus:outline-none focus:bg-white dark:bg-slate-900 focus:border-slate-200 dark:border-slate-700/80 text-left">
+                                                        <button key={b.id} onClick={() => handleSelectPath(`/blog/${b.id}`)} className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-white dark:hover:bg-slate-900 border border-transparent hover:border-slate-200 dark:hover:border-slate-700/80 hover:shadow-md dark:hover:shadow-[0_4px_20px_rgba(217,70,239,0.1)] transition-all focus:outline-none text-left">
                                                             <div className="flex items-center gap-3 w-full">
                                                                 <div className="w-8 h-8 flex-shrink-0 rounded-lg bg-accent-50 border border-accent-100 shadow-sm dark:shadow-none flex items-center justify-center text-accent-500"><FileText className="w-4 h-4" /></div>
                                                                  <div className="overflow-hidden w-full">

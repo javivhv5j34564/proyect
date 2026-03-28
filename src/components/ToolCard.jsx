@@ -21,9 +21,10 @@ export const ToolCard = ({
     exit={{ opacity: 0, scale: 0.9 }}
     transition={{ duration: 0.5, ease: "easeOut" }}
     onClick={() => onClick(tool)}
-    className={`group ${customBgClass} rounded-3xl p-5 md:p-6 border ${borderClass} hover:border-accent-300 shadow-[0_4px_20px_rgb(0,0,0,0.03)] dark:shadow-[0_4px_20px_rgb(0,0,0,0.2)] hover:shadow-xl dark:hover:shadow-[0_8px_30px_rgba(99,102,241,0.15)] transition-all duration-300 hover:-translate-y-1 cursor-pointer flex flex-col h-full relative overflow-hidden`}
+    className={`group ${customBgClass} rounded-3xl p-5 md:p-6 border ${borderClass} hover:border-accent-400 dark:hover:border-accent-500 shadow-[0_4px_20px_rgb(0,0,0,0.03)] dark:shadow-[0_4px_20px_rgb(0,0,0,0.2)] hover:shadow-2xl dark:hover:shadow-[0_8px_40px_rgba(217,70,239,0.2)] transition-all duration-500 hover:-translate-y-2 cursor-pointer flex flex-col h-full relative overflow-hidden backdrop-blur-sm`}
   >
-    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-400 via-accent-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-primary-400 via-accent-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-all duration-300 transform origin-left scale-x-0 group-hover:scale-x-100 z-30"></div>
+    <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 via-transparent to-primary-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
 
     <button
       onClick={(e) => onBookmark(e, tool.id)}
@@ -34,8 +35,9 @@ export const ToolCard = ({
     </button>
 
     <div className="flex justify-between items-start mb-3 md:mb-4 relative z-10">
-      <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden group-hover:scale-105 transition-transform shadow-sm dark:shadow-none text-2xl md:text-3xl">
-        {tool.emoji || '🤖'}
+      <div className="w-10 h-10 md:w-14 md:h-14 rounded-2xl flex items-center justify-center bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 shadow-sm dark:shadow-none text-2xl md:text-3xl relative">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-100 to-accent-100 dark:from-primary-900/20 dark:to-accent-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <span className="relative z-10">{tool.emoji || '🤖'}</span>
       </div>
     </div>
 
@@ -55,7 +57,7 @@ export const ToolCard = ({
     <div className="mt-auto pt-3 md:pt-4 border-t border-slate-200 dark:border-slate-700/80/50 flex items-center justify-between relative z-10">
       <button
         onClick={(e) => onUpvote(e, tool.id)}
-        className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all z-20 shadow-sm dark:shadow-none ${hasUpvoted ? 'bg-accent-500 border-accent-500 text-white hover:bg-accent-600' : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700/80 text-slate-600 dark:text-slate-400 hover:border-slate-300 hover:bg-slate-50 dark:bg-slate-950'}`}
+        className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border text-xs md:text-sm font-bold transition-all z-20 shadow-sm dark:shadow-none hover:scale-105 active:scale-95 ${hasUpvoted ? 'bg-gradient-to-r from-accent-500 to-primary-500 border-transparent text-white shadow-md' : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700/80 text-slate-600 dark:text-slate-400 hover:border-accent-300 hover:text-accent-600 hover:bg-accent-50 dark:hover:bg-slate-800'}`}
         title="Vote for this tool"
       >
         <ChevronUp className={`w-3 h-3 md:w-4 md:h-4 ${hasUpvoted ? 'text-white' : 'text-slate-400'}`} />

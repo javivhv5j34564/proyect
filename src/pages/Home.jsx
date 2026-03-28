@@ -342,8 +342,16 @@ export default function Home({ searchTerm, setSearchTerm }) {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white font-sans">
-      {/* Header */}
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white font-sans relative overflow-hidden">
+      {/* Background Grid Setup */}
+      <div className="absolute inset-0 z-0 pointer-events-none w-full h-full bg-grid-slate-100 dark:bg-grid-slate-900 [mask-image:linear-gradient(to_bottom,white,transparent)]"></div>
+      
+      {/* Abstract Animated Blobs */}
+      <div className="absolute top-20 left-10 w-72 h-72 bg-primary-400/30 dark:bg-primary-600/20 blob z-0"></div>
+      <div className="absolute top-40 right-10 w-96 h-96 bg-accent-400/30 dark:bg-accent-600/20 blob animation-delay-2000 z-0"></div>
+      <div className="absolute -bottom-20 left-1/3 w-80 h-80 bg-indigo-400/30 dark:bg-indigo-600/20 blob animation-delay-4000 z-0"></div>
+
+      {/* Header element is already rendered via App.jsx */}
 
 
       {/* Hero Section */}
@@ -366,10 +374,10 @@ export default function Home({ searchTerm, setSearchTerm }) {
             <Sparkles className="w-3 h-3 md:w-4 md:h-4" />
             <span>AI Tools Directory • 100% Updated</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 dark:text-white mb-4 md:mb-6 tracking-tight md:tracking-tighter leading-[1.05]">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 dark:text-white mb-4 md:mb-6 tracking-tight md:tracking-tighter leading-[1.05] drop-shadow-sm">
             Find the <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-accent-500 to-indigo-600">AI Tool</span> <br className="hidden sm:block" /> You Need Today
           </h1>
-          <p className="text-base sm:text-lg md:text-2xl text-slate-600 dark:text-slate-400 font-medium mb-6 md:mb-8 leading-relaxed md:leading-relaxed max-w-3xl mx-auto px-2">
+          <p className="text-base sm:text-lg md:text-2xl text-slate-600 dark:text-slate-400 font-medium mb-6 md:mb-8 leading-relaxed md:leading-relaxed max-w-3xl mx-auto px-2 drop-shadow-sm">
             The largest curated AI directory. Filter through hundreds of <span className="text-accent-600 font-bold">free</span> tools to code, design, write, and automate your workflow.
           </p>
 
@@ -383,7 +391,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
             </button>
             <button
               onClick={() => scrollToSection('blog-section')}
-              className="w-full sm:w-auto bg-white dark:bg-slate-900/80 backdrop-blur border border-slate-200 dark:border-slate-700/80 hover:border-slate-300 text-slate-700 dark:text-slate-300 font-bold py-3.5 px-6 md:py-4 md:px-8 rounded-full transition-all shadow-sm dark:shadow-none hover:shadow-md hover:bg-slate-50 dark:bg-slate-950 hover:text-accent-600 active:scale-95 text-sm md:text-base flex items-center justify-center gap-2"
+              className="w-full sm:w-auto bg-white/80 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200 dark:border-slate-700/80 hover:border-slate-300 dark:hover:border-slate-600 text-slate-700 dark:text-slate-300 font-bold py-3.5 px-6 md:py-4 md:px-8 rounded-full transition-all shadow-sm dark:shadow-[0_4px_15px_rgba(0,0,0,0.5)] hover:shadow-md dark:hover:shadow-[0_0_20px_rgba(217,70,239,0.15)] hover:bg-white dark:hover:bg-slate-900 hover:text-accent-600 active:scale-95 text-sm md:text-base flex items-center justify-center gap-2"
             >
               Articles & Guides <BookOpen className="w-4 h-4 md:w-5 md:h-5" />
             </button>
@@ -439,11 +447,11 @@ export default function Home({ searchTerm, setSearchTerm }) {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 whileHover={{ y: -5 }}
-                className="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-700/80/60 shadow-sm dark:shadow-none hover:shadow-xl hover:shadow-accent-500/10 transition-all group relative overflow-hidden flex flex-col h-full"
+                className="bg-white/90 dark:bg-slate-900/80 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-slate-200 dark:border-slate-700/80 shadow-[0_4px_20px_rgb(0,0,0,0.03)] dark:shadow-[0_4px_20px_rgb(0,0,0,0.2)] hover:shadow-xl dark:hover:shadow-[0_8px_30px_rgba(217,70,239,0.15)] transition-all group relative overflow-hidden flex flex-col h-full"
               >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-slate-50 to-slate-100 rounded-bl-full -z-0 opacity-50 group-hover:scale-110 transition-transform duration-500"></div>
+                <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-indigo-50/50 to-purple-50/50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-bl-full -z-0 opacity-50 group-hover:scale-110 transition-transform duration-500"></div>
 
-                <div className="w-10 h-10 md:w-14 md:h-14 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm dark:shadow-none flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 relative z-10">
+                <div className="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-white dark:bg-slate-900/90 border border-slate-100 dark:border-slate-800 shadow-sm dark:shadow-[0_2px_10px_rgb(0,0,0,0.3)] flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 relative z-10">
                   {item.icon}
                 </div>
 
@@ -501,7 +509,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
               <div
                 key={`${tool.id}-${index}`}
                 onClick={() => setSelectedTool(tool)}
-                className="flex items-center gap-2 md:gap-3 bg-white dark:bg-slate-900 px-3 py-2 md:px-5 md:py-3 rounded-xl md:rounded-2xl border border-slate-200 dark:border-slate-700/80/60 shadow-sm dark:shadow-none cursor-pointer hover:border-accent-300 hover:shadow-md transition-all flex-shrink-0"
+                className="flex items-center gap-2 md:gap-3 bg-white/80 dark:bg-slate-900/50 backdrop-blur-sm px-3 py-2 md:px-5 md:py-3 rounded-xl md:rounded-2xl border border-slate-200 dark:border-slate-700/80 shadow-[0_4px_15px_rgba(0,0,0,0.02)] dark:shadow-[0_4px_15px_rgba(0,0,0,0.3)] cursor-pointer hover:border-accent-400 dark:hover:border-accent-600 hover:shadow-lg dark:hover:shadow-[0_4px_20px_rgba(217,70,239,0.2)] transition-all flex-shrink-0 hover:-translate-y-0.5"
               >
                 <div className="w-6 h-6 md:w-8 md:h-8 rounded-lg overflow-hidden bg-slate-50 dark:bg-slate-950 flex items-center justify-center flex-shrink-0 text-base md:text-xl">
                   {tool.emoji || '🤖'}
@@ -514,7 +522,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
         </section>
 
         {/* SEO Text Section for AdSense (Combats Thin Content) */}
-        <section className="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-10 shadow-sm dark:shadow-none border border-slate-200 dark:border-slate-700/80/60 mb-12">
+        <section className="bg-white/90 dark:bg-slate-900/80 backdrop-blur-md rounded-3xl p-6 md:p-10 shadow-[0_4px_20px_rgb(0,0,0,0.03)] dark:shadow-[0_4px_20px_rgb(0,0,0,0.2)] border border-slate-200 dark:border-slate-700/80/60 mb-12">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-slate-100 mb-4">What is AI Directory and how does it help you?</h2>
             <div className="prose prose-slate md:prose-lg max-w-none text-slate-600 dark:text-slate-400 space-y-4">
@@ -595,7 +603,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                     setSelectedCategory(cat);
                     setDisplayCount(15);
                   }}
-                  className={`flex items-center gap-2 px-5 py-3 rounded-2xl whitespace-nowrap font-bold text-sm transition-all border-2 flex-shrink-0 ${selectedCategory === cat ? 'bg-slate-900 border-slate-900 text-white shadow-xl shadow-slate-900/10 -translate-y-1' : 'bg-white dark:bg-slate-900 border-slate-100 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:border-accent-200 hover:text-accent-600'}`}
+                  className={`flex items-center gap-2 px-5 py-3 rounded-2xl whitespace-nowrap font-bold text-sm transition-all border-2 flex-shrink-0 ${selectedCategory === cat ? 'bg-gradient-to-r from-primary-600 to-indigo-600 border-transparent text-white shadow-[0_4px_15px_rgba(20,184,166,0.3)] dark:shadow-[0_4px_15px_rgba(20,184,166,0.5)] -translate-y-1' : 'bg-white/80 dark:bg-slate-900/50 backdrop-blur-sm border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:border-accent-300 dark:hover:border-accent-700 hover:text-accent-600 dark:hover:text-accent-400 hover:-translate-y-0.5 shadow-sm'}`}
                 >
                   {categoryIcons[cat] || <Brain className="w-4 h-4" />}
                   {cat}

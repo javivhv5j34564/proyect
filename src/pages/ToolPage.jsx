@@ -177,10 +177,11 @@ export default function ToolPage() {
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 md:p-12 shadow-sm dark:shadow-none border border-slate-200 dark:border-slate-700/80"
+                    className="bg-white/90 dark:bg-slate-900/80 backdrop-blur-md rounded-3xl p-6 sm:p-8 md:p-12 shadow-[0_4px_20px_rgb(0,0,0,0.03)] dark:shadow-[0_4px_20px_rgb(0,0,0,0.2)] border border-slate-200 dark:border-slate-700/80 relative overflow-hidden"
                 >
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-primary-50/50 to-indigo-50/50 dark:from-primary-900/10 dark:to-indigo-900/10 rounded-bl-full -z-0 opacity-50 blur-3xl pointer-events-none"></div>
                     <div className="flex flex-col md:flex-row gap-5 md:gap-8 items-start mb-6 md:mb-10">
-                        <div className="w-20 h-20 md:w-32 md:h-32 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm dark:shadow-none overflow-hidden bg-slate-50 dark:bg-slate-950 flex items-center justify-center flex-shrink-0 text-5xl md:text-7xl">
+                        <div className="w-20 h-20 md:w-32 md:h-32 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-md dark:shadow-[0_4px_15px_rgb(0,0,0,0.3)] overflow-hidden bg-white dark:bg-slate-950 flex items-center justify-center flex-shrink-0 text-5xl md:text-7xl relative z-10">
                             {tool.emoji || '🤖'}
                         </div>
 
@@ -207,7 +208,7 @@ export default function ToolPage() {
                                             <Star
                                                 key={star}
                                                 className={`w-6 h-6 md:w-7 md:h-7 cursor-pointer transition-all hover:scale-110 active:scale-95 ${isFilled
-                                                    ? 'fill-amber-400 text-amber-400 drop-shadow-sm dark:shadow-none'
+                                                    ? 'fill-amber-400 text-amber-400 drop-shadow-sm dark:drop-shadow-[0_0_10px_rgba(251,191,36,0.3)]'
                                                     : 'fill-slate-100 text-slate-200 hover:text-amber-200'
                                                     }`}
                                                 onMouseEnter={() => setHoveredStar(star)}
@@ -228,7 +229,7 @@ export default function ToolPage() {
                         </div>
 
                         <div className="w-full md:w-auto mt-4 md:mt-0 pb-4 md:pb-0">
-                            <a href={tool.url} target="_blank" rel="noopener noreferrer" className="w-full md:w-auto flex items-center justify-center gap-2 bg-slate-900 hover:bg-accent-600 text-white font-bold py-3 px-6 md:py-4 md:px-8 rounded-xl transition-all shadow-lg hover:shadow-accent-500/25 active:scale-95 text-base md:text-lg">
+                            <a href={tool.url} target="_blank" rel="noopener noreferrer" className="w-full md:w-auto flex items-center justify-center gap-2 bg-gradient-to-r from-primary-600 to-indigo-600 hover:from-primary-500 hover:to-indigo-500 text-white font-bold py-3 px-6 md:py-4 md:px-8 rounded-2xl transition-all shadow-lg shadow-primary-600/20 hover:shadow-primary-600/40 active:scale-95 text-base md:text-lg hover:-translate-y-1 relative z-10">
                                 Visit Website <ExternalLink className="w-5 h-5" />
                             </a>
                         </div>

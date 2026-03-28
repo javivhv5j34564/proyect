@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
-        <footer id="footer-contacto" className="bg-slate-900 text-slate-300 py-8 md:py-12 mt-12 md:mt-20 border-t border-slate-800 relative overflow-hidden scroll-mt-24">
+        <footer id="footer-contacto" className="bg-slate-950 text-slate-300 py-8 md:py-12 mt-12 md:mt-20 border-t border-slate-800/50 relative overflow-hidden scroll-mt-24 shadow-[0_-20px_40px_rgba(0,0,0,0.1)] dark:shadow-[0_-20px_40px_rgba(0,0,0,0.3)]">
+            <div className="absolute top-0 left-1/4 right-1/4 h-px bg-gradient-to-r from-transparent via-accent-500/50 to-transparent"></div>
             <div className="absolute inset-0 bg-gradient-to-b from-white/[0.02] to-transparent pointer-events-none"></div>
             <div className="max-w-6xl mx-auto px-4 md:px-6 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 mb-6 md:mb-8">
