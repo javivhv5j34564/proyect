@@ -13,16 +13,24 @@ const QUESTIONS = [
             { label: 'Generating Art & Visuals', value: 'Image', emoji: '🎨' },
             { label: 'Writing & Debugging Code', value: 'Programming', emoji: '💻' },
             { label: 'Producing Video Content', value: 'Video', emoji: '🎬' },
-            { label: 'Researching & Summarizing', value: 'Research', emoji: '📚' }
+            { label: 'Researching & Summarizing', value: 'Research', emoji: '📚' },
+            { label: 'Creating Music & Audio', value: 'Audio', emoji: '🎵' },
+            { label: 'Boosting Daily Productivity', value: 'Productivity', emoji: '⚡' },
+            { label: 'Customer Support & Chatbots', value: 'Chatbots', emoji: '💬' },
+            { label: 'SEO & Digital Marketing', value: 'SEO', emoji: '📈' },
+            { label: 'Sales & CRM Management', value: 'Sales', emoji: '🤝' },
+            { label: 'Education & Studying', value: 'Education', emoji: '✏️' },
+            { label: 'Translation & Localization', value: 'Translation', emoji: '🌍' }
         ]
     },
     {
         id: 'budget',
         title: 'What is your assigned budget?',
         options: [
-            { label: 'Casual Free Usage', value: 'free_tier', emoji: '🆓' },
+            { label: 'Casual Free Usage (Freemium)', value: 'free_tier', emoji: '🆓' },
             { label: '100% Free / Open Source', value: 'fully_free', emoji: '🔓' },
-            { label: 'Willing to pay for Premium', value: 'paid', emoji: '💳' }
+            { label: 'Willing to pay for Premium', value: 'paid', emoji: '💳' },
+            { label: 'Corporate / Enterprise Budget', value: 'enterprise', emoji: '🏢' }
         ]
     },
     {
@@ -31,7 +39,8 @@ const QUESTIONS = [
         options: [
             { label: 'Complete Beginner (Easy UI)', value: 'beginner', emoji: '👶' },
             { label: 'Intermediate (Daily Prompting)', value: 'intermediate', emoji: '😎' },
-            { label: 'Advanced Developer (APIs)', value: 'advanced', emoji: '🥷' }
+            { label: 'Advanced Developer (APIs)', value: 'advanced', emoji: '🥷' },
+            { label: 'Data Scientist / Integrator', value: 'architect', emoji: '🧠' }
         ]
     }
 ];
