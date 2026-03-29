@@ -138,6 +138,10 @@ export default function GuideDetail() {
                                     src={guide.coverImage}
                                     alt={guide.title}
                                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000"
+                                    onError={(e) => {
+                                        e.target.onerror = null;
+                                        e.target.src = "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80";
+                                    }}
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent" />
                                 <div className="absolute bottom-8 left-8 right-8 md:bottom-12 md:left-12 md:right-12">
@@ -247,7 +251,15 @@ export default function GuideDetail() {
                                 {guidesData.filter(g => g.id !== guide.id).slice(0, 2).map((relatedGuide) => (
                                     <Link to={`/guide/${relatedGuide.id}`} key={relatedGuide.id} className="group bg-white/80 dark:bg-slate-900/80 backdrop-blur-md rounded-[2rem] border border-slate-200/80 dark:border-slate-800 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-2xl hover:border-yellow-300 dark:hover:border-yellow-500/50 transition-all duration-300">
                                         <div className="w-full md:w-2/5 h-48 md:h-auto relative overflow-hidden flex-shrink-0 m-2 rounded-[1.5rem]">
-                                            <img src={relatedGuide.coverImage} alt={relatedGuide.title} className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-2 transition-transform duration-700" />
+                                            <img 
+                                                src={relatedGuide.coverImage} 
+                                                alt={relatedGuide.title} 
+                                                className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-2 transition-transform duration-700" 
+                                                onError={(e) => {
+                                                    e.target.onerror = null;
+                                                    e.target.src = "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80";
+                                                }}
+                                            />
                                         </div>
                                         <div className="p-6 md:p-8 flex flex-col justify-center flex-grow">
                                             <span className="text-xs font-black uppercase tracking-widest text-yellow-600 dark:text-yellow-500 mb-3">{relatedGuide.category}</span>

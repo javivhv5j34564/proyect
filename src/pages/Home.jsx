@@ -492,6 +492,10 @@ export default function Home({ searchTerm, setSearchTerm }) {
             alt="AI Brain technology"
             loading="lazy"
             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80";
+            }}
           />
           <div className="absolute inset-0 flex items-center justify-center z-20">
             <p className="text-white/90 font-medium tracking-[0.2em] uppercase text-xs md:text-sm drop-shadow-md">The future is here</p>
@@ -728,6 +732,10 @@ export default function Home({ searchTerm, setSearchTerm }) {
                     src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1200&q=80"
                     alt="Digital Evolution"
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80";
+                    }}
                   />
                   <div className="absolute inset-0 flex items-center justify-center z-20">
                     <p className="text-white/90 font-medium tracking-[0.2em] uppercase text-xs md:text-sm drop-shadow-md">Digital Evolution</p>
@@ -791,6 +799,10 @@ export default function Home({ searchTerm, setSearchTerm }) {
             alt="AI abstract technology"
             loading="lazy"
             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80";
+            }}
           />
           <div className="absolute bottom-6 left-6 md:bottom-8 md:left-10 z-20">
             <p className="text-white font-bold text-xl md:text-3xl drop-shadow-lg">Universe of Possibilities.</p>
@@ -826,7 +838,16 @@ export default function Home({ searchTerm, setSearchTerm }) {
               >
                 <div className="h-40 overflow-hidden relative">
                   <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors z-10"></div>
-                  <img src={post.image} alt={post.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img 
+                    src={post.image} 
+                    alt={post.title} 
+                    loading="lazy" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80";
+                    }}
+                  />
                   <span className="absolute top-3 left-3 bg-white dark:bg-slate-900/90 backdrop-blur text-slate-800 dark:text-slate-100 text-[10px] font-bold px-2 py-1 rounded-md z-20 uppercase tracking-wider shadow-sm dark:shadow-none">{post.category}</span>
                 </div>
                 <div className="p-5 flex flex-col flex-grow">
@@ -1118,7 +1139,15 @@ export default function Home({ searchTerm, setSearchTerm }) {
               className="relative w-full max-w-3xl bg-white dark:bg-slate-900 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] border"
             >
               <div className="relative h-48 sm:h-64 flex-shrink-0">
-                <img src={selectedBlogPost.image} alt={selectedBlogPost.title} className="w-full h-full object-cover" />
+                <img 
+                  src={selectedBlogPost.image} 
+                  alt={selectedBlogPost.title} 
+                  className="w-full h-full object-cover" 
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80";
+                  }}
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
                 <button
                   onClick={() => setSelectedBlogPost(null)}
