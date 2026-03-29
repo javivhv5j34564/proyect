@@ -3,7 +3,69 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, Clock, Calendar, Sparkles, ChevronRight } from 'lucide-react';
 import { guidesData } from '../guidesData';
 import { useSEO } from '../hooks/useSEO';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+
+const InteractiveQuiz = ({ category }) => {
+    const [selectedAnswer, setSelectedAnswer] = useState(null);
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
+    const getQuizData = () => {
+        if (category === "Productivity") {
+            return { question: "What is the primary benefit of RAG (Retrieval-Augmented Generation)?", options: ["It draws vector art", "It allows AI to search your private documents safely", "It creates new LLMs from scratch", "It speeds up local internet connections"], correctIndex: 1, explanation: "RAG grounds the AI in your specific data, eliminating hallucinations and keeping data private." };
+        } else if (category === "Creative & Design") {
+            return { question: "What does ControlNet do in Stable Diffusion?", options: ["It writes better prompts", "It generates free royalty-free music", "It forces the AI to respect exact structural lines and architectural boundaries", "It edits video automatically"], correctIndex: 2, explanation: "ControlNet allows for precise spatial control, like locking in the dimensions and walls of a real living room." };
+        } else if (category === "Coding & Dev") {
+            return { question: "What differentiates an AutoGPT 'Agent' from standard ChatGPT?", options: ["It speaks more natural languages natively", "It can execute multi-step tasks autonomously and browse the web without manual prompting", "It runs entirely offline without an API", "It has a better dark-mode UI"], correctIndex: 1, explanation: "Agents don't just answer questions; they set sub-goals, interact with tools, and act autonomously." };
+        } else {
+             return { question: "Which psychological technique significantly improves AI retention hooks?", options: ["Saying 'Hello guys, welcome back'", "Opening a 'curiosity gap' while introducing a high stakes conflict", "Using extreme clickbait with no payoff", "Rambling for 30 seconds before the point"], correctIndex: 1, explanation: "A viral hook validates the title, introduces conflict, and opens a curiosity gap in the first 5 seconds." };
+        }
+    }
+    
+    const data = getQuizData();
+
+    return (
+        <div className="mt-16 bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950/30 dark:to-purple-950/30 border border-indigo-100 dark:border-indigo-800/50 rounded-[2.5rem] p-8 md:p-12 shadow-inner group transition-all duration-500 hover:shadow-xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-white/40 dark:bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+            <h3 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white mb-6 flex items-center gap-3 relative z-10">
+                <span className="bg-gradient-to-br from-indigo-500 to-purple-600 text-white w-10 h-10 rounded-2xl flex items-center justify-center text-lg shadow-lg">?</span>
+                Interactive Knowledge Check
+            </h3>
+            <p className="font-medium text-slate-700 dark:text-slate-300 text-xl md:text-2xl mb-8 leading-relaxed relative z-10">{data.question}</p>
+            <div className="space-y-4 relative z-10">
+                {data.options.map((option, idx) => (
+                    <button 
+                        key={idx}
+                        onClick={() => !isSubmitted && setSelectedAnswer(idx)}
+                        className={`w-full text-left px-6 py-5 rounded-2xl font-bold border-2 transition-all duration-300 transform ${isSubmitted && idx === data.correctIndex ? 'bg-green-100 border-green-500 text-green-900 dark:bg-green-900/40 dark:border-green-500 dark:text-green-100 shadow-md scale-[1.02]' : isSubmitted && selectedAnswer === idx ? 'bg-red-100 border-red-500 text-red-900 dark:bg-red-900/40 dark:border-red-500 dark:text-red-100' : selectedAnswer === idx ? 'border-indigo-500 bg-indigo-50 dark:bg-indigo-900/50 text-indigo-900 dark:text-indigo-100 scale-[1.02] shadow-md' : 'border-white dark:border-slate-800/80 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-indigo-300 dark:hover:border-indigo-600 shadow-sm hover:shadow-md'}`}
+                    >
+                        <div className="flex items-center gap-4">
+                            <span className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center border-2 ${isSubmitted && idx === data.correctIndex ? 'border-green-500 bg-green-500 text-white' : isSubmitted && selectedAnswer === idx ? 'border-red-500 bg-red-500 text-white' : selectedAnswer === idx ? 'border-indigo-500 bg-indigo-500 text-white' : 'border-slate-300 dark:border-slate-600'}`}>
+                                {String.fromCharCode(65 + idx)}
+                            </span>
+                            <span className="text-lg">{option}</span>
+                        </div>
+                    </button>
+                ))}
+            </div>
+            {!isSubmitted ? (
+                <button 
+                    onClick={() => setIsSubmitted(true)}
+                    disabled={selectedAnswer === null}
+                    className="mt-8 relative z-10 bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-indigo-600 dark:hover:bg-indigo-500 disabled:opacity-50 disabled:hover:bg-slate-900 font-black px-10 py-4 md:py-5 rounded-2xl shadow-xl hover:shadow-indigo-500/30 transition-all duration-300 w-full md:w-auto text-lg hover:-translate-y-1"
+                >
+                    Submit Answer
+                </button>
+            ) : (
+                <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className={`mt-10 p-8 rounded-[2rem] relative z-10 ${selectedAnswer === data.correctIndex ? 'bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 border border-green-200 dark:border-green-800/50 text-green-900 dark:text-green-100' : 'bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 border border-orange-200 dark:border-orange-800/50 text-orange-900 dark:text-orange-100'}`}>
+                    <p className="mb-3 text-2xl font-black flex items-center gap-2">
+                        {selectedAnswer === data.correctIndex ? '🎯 Flawless Victory!' : '🤔 Not quite...'}
+                    </p>
+                    <p className="text-lg leading-relaxed font-medium opacity-90">{data.explanation}</p>
+                </motion.div>
+            )}
+        </div>
+    );
+};
 
 export default function GuideDetail() {
     const { id } = useParams();
@@ -133,6 +195,8 @@ export default function GuideDetail() {
                                 )}
 
                                 <div className="text-slate-600 dark:text-slate-300 leading-relaxed md:leading-[1.8] space-y-6" dangerouslySetInnerHTML={{ __html: guide.content.replace(/\\n/g, '<br />').replace(/> "(.*?)"/g, '<blockquote class="border-l-4 border-yellow-500 pl-6 py-4 italic bg-yellow-50/50 dark:bg-yellow-500/5 my-8 text-slate-700 dark:text-slate-300 rounded-r-2xl font-medium shadow-sm">"$1"</blockquote>').replace(/^##\s+(.*?)$/gm, (match, p1) => `<h2 id="${p1.toLowerCase().replace(/[^a-z0-9]+/g, '-')}" class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mt-16 mb-8 scroll-mt-24 tracking-tight"><span class="text-yellow-500 mr-2">#</span>${p1}</h2>`).replace(/^###\s+(.*?)$/gm, (match, p1) => `<h3 id="${p1.toLowerCase().replace(/[^a-z0-9]+/g, '-')}" class="text-2xl font-bold text-slate-800 dark:text-slate-100 mt-10 mb-6 scroll-mt-24">${p1}</h3>`) }} />
+
+                                <InteractiveQuiz category={guide.category} />
 
                                 <div className="mt-20 p-8 md:p-12 bg-slate-900 rounded-[3rem] text-white relative overflow-hidden group">
                                     <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-transparent pointer-events-none" />
