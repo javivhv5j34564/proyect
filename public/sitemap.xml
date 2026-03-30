@@ -2,1678 +2,2452 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://myiadirectory.com/</loc>
-    <lastmod>2026-03-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-03-30</lastmod>
+    <priority>1</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/about</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/submit-tool</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/contact</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/privacy</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/cookies</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://myiadirectory.com/legal-notice</loc>
-    <lastmod>2026-03-22</lastmod>
+    <loc>https://myiadirectory.com/terms-and-conditions</loc>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/blog</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guides</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/glossary</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/compare</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/surprise</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/stack-builder</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/automation-risk</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/matchmaker</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/prompts</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/viral</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-1</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-2</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-3</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-4</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-5</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-6</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-7</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-8</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-9</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-10</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-11</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-12</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-13</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-14</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-15</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-16</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-17</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-18</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-19</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-20</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-21</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-22</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-23</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-24</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-25</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-26</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-27</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-28</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-29</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-30</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-31</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-32</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-33</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-34</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-35</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-36</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-37</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-38</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-39</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-40</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-optimizacion-seo-ia</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-ia-para-estudiantes</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/blog/blog-desarrollo-web-ia</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/blog/blog-29</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/blog/blog-30</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/blog/blog-31</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/blog/blog-32</loc>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/wolfram_alpha_ia</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/quillbot_estudiante</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/elicit_research</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/socratic_google</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/canva_estudiantes</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/notion_ia_estudio</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/gradescope_ia</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/archistar_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/makestory_plans</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/fotor_floorplan</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/veras_evolve</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/swapp_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/sidewalk_labs</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/promeai_design</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/interior_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/spellbook_legal</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/glass_health</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/mindtrip_travel</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/scenario_gaming</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/planner5d_ia</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/harvey_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/roam_around</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/heygen_video</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/leonardo_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/jasper_copy</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/copy_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/descript_audio</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/runway_gen3</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/midjourney_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/tome_app</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/rytr_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/writesonic_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/invideo_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/murf_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/synthesia_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/grammarly_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/canva_magic</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/cursor_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/suno_v4</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/kling_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/notebook_lm</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/gamma_app</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ideogram_2</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/perplexity_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/napkin_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/phind_search</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/luma_dream</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/o3_mini</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/deepseek_v3</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/grok_3</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/pika_2</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/recraft_v3</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/elevenlabs_v3</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/bolt</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/flux_pro_1_1</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/v0_chat</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/claude_3_5_opus</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/kat_coder_pro_v1</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/gemini_1_5_flash</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/claude_sonnet_4_6</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/kimi_k2_5</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/claude_haiku_4_5</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/gemini_2_5_flash</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/minimax_m2_5</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/claude_3_7_sonnet</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/gpt_4o</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/claude</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/leonardo</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/deepseek</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/perplexity</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/gamma</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/capcut</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/copilot</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/cursor</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/suno</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/flux</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/chatgpt</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/cody</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/udio</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/chefgpt</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/julius</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/notebooklm</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/reclaim</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/vmake</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/quillbot</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/consensus</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/luma</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/dishgen</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/chatcsv</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/socratic</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/trevor</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/cala</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/gemini</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/midjourney</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/stablediffusion</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/runway</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/kling</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/mistral_872</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/llama_3058</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/characterai_5581</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/grok_5525</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/dalle_5347</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/adobe_681</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/canva_1777</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/kreaai_3219</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/magnific_8492</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/recraftai_2074</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/looka_8362</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/uizard_223</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/framer_2789</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/relume_1767</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/heygen_4644</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/sora_8370</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/pika_7068</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/synthesia_2351</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/invideo_7750</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/wonder_2097</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/kaiber_7755</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/captionsai_6624</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/descript_6948</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/github_8281</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/replit_6127</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/boltnew_6272</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/v0dev_372</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/lovable_8283</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/anima_3712</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/blackbox_538</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/tabnine_1076</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/sourcegraph_6843</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/notion_9516</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/jasper_3064</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/copyai_3982</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/writesonic_6327</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/grammarly_3403</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/deepl_2698</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/gamma_3549</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/beautifulai_5317</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/otterai_314</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/firefliesai_4489</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/motion_722</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/reclaimai_9768</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/elicit_1899</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/sciteai_683</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/chatpdf_36</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/genei_3478</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/roseai_7791</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/elevenlabs_3261</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/adobe_9176</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/speechify_6979</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/moisesai_42</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/lalalai_7447</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/soundraw_2632</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/voicemod_8700</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/zapier_7026</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/n8n_7803</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/glean_7983</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/mindos_8988</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/adcreativeai_3753</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/apolloai_7235</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ocoya_6624</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/brand24_4784</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/typeform_1464</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/topaz_3728</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/vectary_2296</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/nomic_3414</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/humata_2301</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/tome_8028</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/eightify_4539</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/monica_8048</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/hugging_8161</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/civitai_5754</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/poindexter_2523</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/feedly_9345</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/scribe_4342</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/heckfree_446</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/did_4663</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/memai_3328</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/make_1001</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/zapier_1002</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/chatbase_1003</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/fireflies_1004</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/otterai_1005</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/clay_1006</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/gong_1007</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/beautifulai_1008</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/browseai_1009</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/colossyan_1010</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/lavender_1011</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/anyword_1012</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/mutiny_1013</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/tome_1014</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/alice_1015</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/akkio_1016</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/fathom_1017</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/brandmark_1018</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/attention_1019</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/retellai_1020</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/elevenlabs_2001</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/opusclip_2002</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/deepl_2003</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/grammarly_2004</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/surferseo_2005</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/rytr_2006</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/photoroom_2007</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/removebg_2008</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ideogram_2009</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/playground_2010</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/youcom_2011</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/elicit_2012</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/speechify_2013</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/adobepodcast_2014</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/fliki_2015</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/pictory_2016</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/codeium_2017</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/phind_2018</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/superhuman_2019</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/pi_2020</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/frase_2021</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/slidesai_2022</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/scholarcy_2023</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/murf_2024</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/webflow_2025</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/playht_2026</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/amazonq_2027</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/whisper_openai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/munch_2029</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/xembly_2030</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/chatgpt_openai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/claude_anthropic</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/perplexity_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/gemini_google</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/cursor_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/suno_ai</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/luma_dream_machine</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/v0_dev_vercel</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_1</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_2</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_3</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_4</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_5</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_6</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_7</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_8</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_9</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_10</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_11</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_12</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_13</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_14</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_15</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_16</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_17</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_18</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_19</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_20</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_21</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_22</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_23</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_24</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_25</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_26</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_27</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_28</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_29</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_30</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_31</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_32</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_33</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_34</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_35</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_36</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_37</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_38</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_39</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_40</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_41</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_42</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_43</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_44</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_45</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_46</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_47</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_48</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_49</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://myiadirectory.com/tool/ai_tool_generated_50</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/sora_openai</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/google_veo</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/haiper_ai</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/d_id_studio</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/kaiber_ai</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/stable_video</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/microsoft_copilot</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/mistral_le_chat</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/meta_llama_3</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/pi_inflection</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/midjourney_ai</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/leonardo_ai</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/cursor_ai_editor</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/github_copilot</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/suno_ai_music</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/elevenlabs_ai</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/make_com_ai</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/krea_ai_upscale</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/claude_3_anthropic</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/github_copilot_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/krea_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/udio_music_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/magnific_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/julius_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/chatpdf_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/meshy_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/websim_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/hedra_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/gpt_4o_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/mistral_le_chat_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/claude_3_7_sonnet_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/freepik_pikaso_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/civitai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/suno_bark_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/udio_music_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/krea_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/magnific_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/devin_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/lovable_dev_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/perplexity_pages_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/vidu_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/cohere_coral_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/blackbox_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/websim_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/capcut_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/logoai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/soundraw_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/aiva_music_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/playht_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/opus_clip_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/o1_openai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/poe_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/ollama_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/lm_studio_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/hedra_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/julius_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/consensus_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/supermaven_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/groq_engine_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/adobe_podcast_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/figma_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/hailuo_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/humata_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/tool/scribe_ai_new</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/education-students</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/architecture-design</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/legal-contracts</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/medicine-health</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/travel-tourism</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/gaming</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/video-animation</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/image-design</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/writing-productivity</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/audio-music</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/programming</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/research-data</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/chatbots-assistants</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/cooking</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/schedules</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/fashion</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/automation</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/marketing-sales</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/utilities</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/search-research</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/productivity</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/programación</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/imagen-y-diseño</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/audio-y-música</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/investigación-y-datos</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/video-y-animación</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/chatbots-y-asistentes</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/category/productividad-y-organización</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/chatgpt-prompts-seo</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/midjourney-realistic-images</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/automate-workflow-zapier-openai</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-guide-for-seniors-beginners</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-everyday-chores-beginners</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/beginner-guide-ai-images-art</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-privacy-paranoia-free-guide</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-internet-search-guide</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-free-tech-support-guide</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-everyday-questions-rules</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-scam-fraud-detector</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-translating-slang-emojis</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-medical-jargon-translator</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-vacation-planning-guide</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-excel-spreadsheets-guide</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-resume-job-interview-guide</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/best-free-ai-video-generators-guide</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/build-custom-gpt-no-code</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-image-generation-prompts</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-for-freelancers</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-automation-zapier-guide</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-prompt-engineering-masterclass</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-for-small-business-guide</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/reverse-prompting-viral-audit</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/local-ai-run-llms-offline</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/autonomous-youtube-faceless-channels</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/midjourney-character-consistency</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/chain-of-thought-bribery</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-ancestry-photo-audio-restoration</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/rag-revolution-chat-with-pdfs</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-coding-for-non-programmers-cursor</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-executive-assistant-inbox-zero</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/custom-gpt-profit-playbook</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/audio-ai-musicians-stem-splitting</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/automating-excel-chatgpt-macros</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/agentic-workflow-autogpt-crewai</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/ai-interior-design-controlnet</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/youtube-viral-hook-claude-3</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/perplexity-pro-research-mastery</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/v0-vercel-ui-generation</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/elevenlabs-sfx-generation</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/luma-dream-machine-video-prompts</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/claude-3-5-artifacts-dashboards</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/heygen-video-translation-dubbing</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/make-com-advanced-api-automation</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/chatgpt-sql-data-analysis</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/magnific-ai-upscaling</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/koalawriter-bulk-seo-generation</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myiadirectory.com/guide/notion-ai-database-automation</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>
