@@ -72,8 +72,8 @@ export default function GuideDetail() {
     const guide = guidesData.find(g => g.id === id);
 
     useSEO({
-        title: guide ? `${guide.title} | AI Directory Guides` : 'Guide Not Found',
-        description: guide ? guide.excerpt : 'The requested guide was not found.',
+        title: guide ? `${guide.title} | 2024 Ultimate AI Guide` : 'Guide Not Found',
+        description: guide ? `${guide.excerpt} Discover the best AI strategies and step-by-step tutorials.` : 'The requested guide was not found.',
     });
 
     useEffect(() => {

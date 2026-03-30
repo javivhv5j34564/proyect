@@ -190,8 +190,8 @@ export default function Home({ searchTerm, setSearchTerm }) {
   };
 
   useSEO({
-    title: 'Artificial Intelligence (AI) Directory | Home',
-    description: 'Explore our curated collection of hundreds of free and freemium Artificial Intelligence tools, organized by category to skyrocket your productivity.'
+    title: 'The Ultimate Artificial Intelligence (AI) Directory & Tools List',
+    description: 'Explore the largest curated collection of free and freemium Artificial Intelligence tools. Discover the best AI software for productivity, design, writing, and more in 2024.'
   });
 
   // Persistence State
@@ -375,7 +375,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
             <span>AI Tools Directory • 100% Updated</span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 dark:text-white mb-4 md:mb-6 tracking-tight md:tracking-tighter leading-[1.05] drop-shadow-sm">
-            Find the <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-accent-500 to-indigo-600">AI Tool</span> <br className="hidden sm:block" /> You Need Today
+            Find the Best <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-accent-500 to-indigo-600">AI Tools</span> <br className="hidden sm:block" /> For Your Workflow
           </h1>
           <p className="text-base sm:text-lg md:text-2xl text-slate-600 dark:text-slate-400 font-medium mb-6 md:mb-8 leading-relaxed md:leading-relaxed max-w-3xl mx-auto px-2 drop-shadow-sm">
             The largest curated AI directory. Filter through hundreds of <span className="text-accent-600 font-bold">free</span> tools to code, design, write, and automate your workflow.
@@ -528,10 +528,10 @@ export default function Home({ searchTerm, setSearchTerm }) {
         {/* SEO Text Section for AdSense (Combats Thin Content) */}
         <section className="bg-white/90 dark:bg-slate-900/80 backdrop-blur-md rounded-3xl p-6 md:p-10 shadow-[0_4px_20px_rgb(0,0,0,0.03)] dark:shadow-[0_4px_20px_rgb(0,0,0,0.2)] border border-slate-200 dark:border-slate-700/80/60 mb-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-slate-100 mb-4">What is AI Directory and how does it help you?</h2>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-slate-100 mb-4">What is an AI Directory and how does it help you find AI Software?</h2>
             <div className="prose prose-slate md:prose-lg max-w-none text-slate-600 dark:text-slate-400 space-y-4">
               <p>
-                At <strong>AI Directory</strong>, our ultimate goal is to collect, analyze, and categorize the best Artificial Intelligence tools available today. We know the tech ecosystem changes daily, and finding the perfect free or freemium AI for your business, studies, or creative workflow can be an exhausting task.
+                At <strong>AI Directory</strong>, our ultimate goal is to collect, analyze, and categorize the best Artificial Intelligence software and tools available today. We know the tech ecosystem changes daily, and finding the perfect free or freemium AI app for your business, studies, or creative workflow can be an exhausting task.
               </p>
               <p>
                 Every tool listed in our directory goes through a strict quality filter where we evaluate its real utility, whether it has a <em>valid free plan</em>, and exactly what kind of problems it solves. From <strong>text generators (LLMs)</strong> that help you write emails in seconds, to advanced <strong>image or video generators</strong> that can create the visual prototype of your next big idea without needing to know a single line of code.

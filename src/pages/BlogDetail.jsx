@@ -11,8 +11,8 @@ export default function BlogDetail() {
     const post = blogPosts.find(p => p.id === id);
 
     useSEO({
-        title: post ? `${post.title} | AI Directory Blog` : 'Post Not Found',
-        description: post ? post.excerpt : 'The requested blog post was not found.',
+        title: post ? `${post.title} | AI News & Tutorials 2024` : 'Post Not Found',
+        description: post ? `${post.excerpt} Learn more about Artificial Intelligence trends and guides.` : 'The requested blog post was not found.',
     });
 
     useEffect(() => {

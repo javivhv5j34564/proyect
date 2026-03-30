@@ -31,8 +31,8 @@ export default function ToolPage() {
     } : null;
 
     useSEO({
-        title: tool ? `${tool.name} - Try this AI | AI Directory` : 'Tool Not Found',
-        description: tool ? tool.description : 'This Artificial Intelligence tool does not exist or has been removed from the directory.',
+        title: tool ? `${tool.name} Reviews & Pricing 2024 | Best AI for ${tool.sector}` : 'Tool Not Found',
+        description: tool ? `Read our full review of ${tool.name}. ${tool.description} Discover pricing, best alternatives, and use cases for ${tool.sector}.` : 'This Artificial Intelligence tool does not exist or has been removed from the directory.',
         schema: schemaData
     });
 
@@ -235,7 +235,7 @@ export default function ToolPage() {
                     </div>
 
                     <div className="prose prose-base md:prose-lg max-w-none mb-8 md:mb-12">
-                        <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800 pb-2 md:pb-3 mb-4 md:mb-6">What is {tool.name} and why use it?</h2>
+                        <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800 pb-2 md:pb-3 mb-4 md:mb-6">What is {tool.name}? Features, Pricing & Reviews</h2>
                         <p className="text-slate-700 dark:text-slate-300 font-medium text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
                             {tool.description}
                         </p>

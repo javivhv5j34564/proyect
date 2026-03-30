@@ -18,8 +18,8 @@ export default function CategoryPage() {
     }, [sectorName]);
 
     useSEO({
-        title: `${sectorName} AI Tools | AI Directory`,
-        description: `Explore the best free and freemium Artificial Intelligence tools for ${sectorName}. Compare features and boost your workflow.`
+        title: `Best ${sectorName} AI Tools & Software in 2024 | AI Directory`,
+        description: `Discover the top free and freemium Artificial Intelligence tools for ${sectorName}. Compare features, read reviews, and boost your workflow with the best AI software.`
     });
 
     // Mock states for upvotes and bookmarks to keep cards functional visually
@@ -73,7 +73,7 @@ export default function CategoryPage() {
 
                 <div className="mb-10">
                     <h1 className="text-3xl md:text-5xl font-black text-slate-900 dark:text-white mb-4 flex items-center gap-3">
-                        {sectorName} Tools
+                        Top {sectorName} AI Tools
                     </h1>
                     <p className="text-lg text-slate-500 dark:text-slate-400 max-w-2xl">
                         Discover {categoryTools.length} powerful AI tools specially curated for {sectorName.toLowerCase()}. Filter out the noise and find exactly what you need.

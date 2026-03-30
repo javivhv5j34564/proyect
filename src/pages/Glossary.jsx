@@ -68,8 +68,8 @@ const glossaryTerms = [
 
 export default function Glossary() {
     useSEO({
-        title: 'AI Glossary & Dictionary | AI Directory',
-        description: 'Comprehensive dictionary of Artificial Intelligence terms. Learn the definitions of LLM, RAG, Prompt Engineering, Stable Diffusion, and more.'
+        title: 'AI Glossary: The Ultimate Artificial Intelligence Dictionary | AI Directory',
+        description: 'Comprehensive dictionary of Artificial Intelligence terms. Learn the definitions of LLM, RAG, Prompt Engineering, Stable Diffusion, Generative AI, and more in 2024.'
     });
 
     const [searchTerm, setSearchTerm] = useState('');
@@ -100,7 +100,7 @@ export default function Glossary() {
                     <div className="inline-flex items-center justify-center p-3 rounded-full bg-indigo-100 text-indigo-600 mb-6">
                         <BookA className="w-8 h-8" />
                     </div>
-                    <h1 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-6">AI Glossary</h1>
+                    <h1 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-6">AI Glossary & Dictionary</h1>
                     <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
                         Your definitive dictionary to understand the terminology of Artificial Intelligence. From basic concepts to advanced architectures.
                     </p>
