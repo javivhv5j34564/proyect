@@ -23,6 +23,16 @@ export function useSEO({ title, description, schema }) {
             if (twitterDesc) twitterDesc.setAttribute('content', description);
         }
 
+        // Canonical URL logic
+        const url = window.location.origin + window.location.pathname;
+        let canonicalLink = document.querySelector('link[rel="canonical"]');
+        if (!canonicalLink) {
+            canonicalLink = document.createElement('link');
+            canonicalLink.setAttribute('rel', 'canonical');
+            document.head.appendChild(canonicalLink);
+        }
+        canonicalLink.setAttribute('href', url);
+
         if (schema) {
             let script = document.querySelector('script[type="application/ld+json"]');
             if (!script) {
@@ -40,6 +50,8 @@ export function useSEO({ title, description, schema }) {
                     script.remove();
                 }
             }
+            // Optional: You could clean up the canonicalLink here, but usually it's fine 
+            // to leave it and overwrite on next navigation to prevent split second canonical drops.
         };
     }, [title, description, schema]);
 }
