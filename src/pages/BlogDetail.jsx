@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Clock, Calendar, Bookmark, Share2, Sparkles, ChevronRight } from 'lucide-react';
-import { blogPosts } from '../data';
+import { blogPosts, tools } from '../data';
 import { useSEO } from '../hooks/useSEO';
 import { useEffect } from 'react';
 import { ShareButtons } from '../components/ShareButtons';
@@ -30,6 +30,32 @@ export default function BlogDetail() {
              }
         });
         return headings;
+    }
+
+    const renderInterlinkedText = (text, idx) => {
+        const validTools = tools.filter(t => t.name.length > 3).sort((a,b) => b.name.length - a.name.length);
+        let foundTool = null;
+        for (let tool of validTools) {
+            const regex = new RegExp(`\\b(${tool.name})\\b`, 'i');
+            if (regex.test(text)) {
+                foundTool = tool;
+                break;
+            }
+        }
+        
+        if (foundTool) {
+            const parts = text.split(new RegExp(`\\b(${foundTool.name})\\b`, 'i'));
+            return (
+                <p key={idx}>
+                    {parts.map((part, i) => 
+                        part.toLowerCase() === foundTool.name.toLowerCase() ? 
+                            <Link key={i} to={`/tool/${foundTool.id}`} className="text-indigo-600 dark:text-indigo-400 font-bold hover:underline decoration-2 underline-offset-2" title={`View ${foundTool.name}`}>{part}</Link> 
+                            : part
+                    )}
+                </p>
+            );
+        }
+        return <p key={idx}>{text}</p>;
     }
 
     if (!post) {
@@ -76,6 +102,7 @@ export default function BlogDetail() {
                                 <img
                                     src={post.image}
                                     alt={post.title}
+                                    loading="lazy"
                                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent" />
@@ -142,7 +169,7 @@ export default function BlogDetail() {
                                             const id = paragraph.toLowerCase().replace(/[^a-z0-9]+/g, '-');
                                             return <h2 key={idx} id={id} className="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mt-16 mb-8 scroll-mt-24 tracking-tight"><span className="text-indigo-500 mr-2">#</span>{paragraph}</h2>;
                                         }
-                                        return <p key={idx}>{paragraph}</p>;
+                                        return renderInterlinkedText(paragraph, idx);
                                     })}
                                 </div>
 
@@ -174,7 +201,7 @@ export default function BlogDetail() {
                     {/* E-E-A-T Author Box */}
                     <div className="mt-12 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl rounded-[2.5rem] p-8 md:p-10 flex flex-col md:flex-row gap-8 items-center md:items-start border border-slate-200/80 dark:border-slate-800/80 shadow-md">
                         <div className="relative">
-                            <img src="https://ui-avatars.com/api/?name=Editorial+Team&background=6366f1&color=fff&size=128" alt="Editorial Team" className="w-24 h-24 rounded-full flex-shrink-0 shadow-lg border-4 border-white dark:border-slate-800" />
+                            <img src="https://ui-avatars.com/api/?name=Editorial+Team&background=6366f1&color=fff&size=128" alt="Editorial Team" loading="lazy" className="w-24 h-24 rounded-full flex-shrink-0 shadow-lg border-4 border-white dark:border-slate-800" />
                             <div className="absolute -bottom-2 -right-2 bg-green-500 w-6 h-6 rounded-full border-4 border-white dark:border-slate-900"></div>
                         </div>
                         <div>
@@ -197,7 +224,7 @@ export default function BlogDetail() {
                                 ).slice(0, 2).map((relatedPost) => (
                                     <Link to={`/blog/${relatedPost.id}`} key={relatedPost.id} className="group bg-white/80 dark:bg-slate-900/80 backdrop-blur-md rounded-[2rem] border border-slate-200/80 dark:border-slate-800 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-2xl hover:border-indigo-300 dark:hover:border-indigo-500/50 transition-all duration-300">
                                         <div className="w-full md:w-2/5 h-48 md:h-auto relative overflow-hidden flex-shrink-0 m-2 rounded-[1.5rem]">
-                                            <img src={relatedPost.image} alt={relatedPost.title} className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-2 transition-transform duration-700" />
+                                            <img src={relatedPost.image} alt={relatedPost.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-2 transition-transform duration-700" />
                                         </div>
                                         <div className="p-6 md:p-8 flex flex-col justify-center flex-grow">
                                             <span className="text-xs font-black uppercase tracking-widest text-indigo-600 dark:text-indigo-500 mb-3">{relatedPost.category}</span>

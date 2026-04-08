@@ -2,7 +2,8 @@ import { useState, useMemo, useEffect, useRef } from 'react';
 import { Search, Sparkles, X, ExternalLink, ChevronRight, Zap, Flame, Clock, ChevronDown, TrendingUp, Lightbulb, Brain, Bookmark, ChevronUp, BookOpen, ArrowRight, ArrowDown, ArrowUp, Menu, Search as SearchIcon, Sun, Moon, Palette, Video, Code, PenTool, Music, Settings, Utensils, Calendar, ShoppingBag, Star, User, MessageSquare, MoveHorizontal } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { tools, categories, blogPosts } from '../data';
+import { tools, categories } from '../data';
+import { guidesData } from '../guidesData';
 import { AdSensePlaceholder } from '../components/AdSensePlaceholder';
 import { useSEO } from '../hooks/useSEO';
 import { db } from '../firebase';
@@ -430,6 +431,82 @@ export default function Home({ searchTerm, setSearchTerm }) {
 
       <main className="max-w-6xl mx-auto px-4 sm:px-6 py-2 md:py-6">
 
+        {/* FEATURED GUIDES (HIGH VALUE CONTENT FOR ADSENSE) */}
+        <section className="mb-16 mt-8">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
+                <div>
+                    <h2 className="text-2xl md:text-4xl font-black text-slate-900 dark:text-white mb-2 tracking-tight flex items-center gap-2">
+                        <BookOpen className="w-6 h-6 md:w-8 md:h-8 text-accent-500" />
+                        Featured Guides & Tutorials
+                    </h2>
+                    <p className="text-slate-600 dark:text-slate-400 font-medium">100% original pedagogical content to master Artificial Intelligence.</p>
+                </div>
+                <Link to="/guides" className="flex items-center gap-2 text-accent-600 font-bold hover:text-accent-700 transition-colors bg-accent-50 dark:bg-accent-900/30 px-5 py-2.5 rounded-full">
+                    View All Guides <ArrowRight className="w-4 h-4" />
+                </Link>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {guidesData.slice(0, 3).map((guide, index) => (
+                    <motion.div 
+                        key={guide.id}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 }}
+                        className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-700/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:shadow-xl transition-all group flex flex-col"
+                    >
+                        <Link to={`/guide/${guide.id}`} className="block relative aspect-[16/9] overflow-hidden m-2 rounded-2xl">
+                            <img 
+                                src={guide.coverImage} 
+                                alt={guide.title}
+                                loading="lazy"
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            />
+                            <div className="absolute top-3 left-3 bg-white/90 dark:bg-slate-900/90 text-slate-800 dark:text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider backdrop-blur-sm shadow-sm">
+                                {guide.category}
+                            </div>
+                        </Link>
+                        <div className="p-5 flex flex-col flex-grow">
+                            <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-accent-600 transition-colors line-clamp-2 leading-tight">
+                                {guide.title}
+                            </h3>
+                            <p className="text-slate-500 dark:text-slate-400 text-sm line-clamp-3 mb-4 flex-grow">
+                                {guide.excerpt}
+                            </p>
+                            <Link to={`/guide/${guide.id}`} className="mt-auto text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1 group-hover/link:text-accent-600">
+                                Read Guide <ChevronRight className="w-4 h-4" />
+                            </Link>
+                        </div>
+                    </motion.div>
+                ))}
+            </div>
+        </section>
+
+        {/* SEO Text Section for AdSense (Combats Thin Content) */}
+        <section className="bg-white/90 dark:bg-slate-900/80 backdrop-blur-md rounded-3xl p-6 md:p-10 shadow-[0_4px_20px_rgb(0,0,0,0.03)] dark:shadow-[0_4px_20px_rgb(0,0,0,0.2)] border border-slate-200 dark:border-slate-700/80/60 mb-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500/10 rounded-full blur-3xl -z-10"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl -z-10"></div>
+          
+          <div className="max-w-4xl mx-auto relative z-10">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-slate-100 mb-6">Mastering Artificial Intelligence: Your Comprehensive Educational Hub</h2>
+            <div className="prose prose-slate md:prose-lg max-w-none text-slate-600 dark:text-slate-400 space-y-5">
+              <p>
+                Welcome to the leading educational platform dedicated to demystifying Artificial Intelligence. Our mission is to provide <strong>100% original, high-value pedagogical content</strong> that empowers professionals, students, and beginners to leverage AI technologies safely and effectively. The landscape of machine learning and natural language processing is evolving rapidly, and staying informed requires reliable, deeply researched information rather than scraped or superficial data.
+              </p>
+              <p>
+                Unlike basic tool aggregators, we prioritize <strong>in-depth tutorials, practical step-by-step guides, and analytical reviews</strong>. Whether you are looking to understand the nuanced differences between large language models (LLMs) via our extensive <Link to="/guides" className="text-accent-600 font-bold hover:underline">Guides section</Link>, or seeking rigorous evaluations of productivity software, our human-authored content ensures you receive actionable and factual insights. We strongly advocate against plagiarism and auto-generated spam, ensuring every article provides distinct value.
+              </p>
+              <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mt-8 mb-4 border-l-4 border-accent-500 pl-4">Why Originality and Deep Understanding Matter</h3>
+              <p>
+                In an era where "thin content" is pervasive, discovering authentic usage scenarios for AI is critical. For instance, our tutorials not only list tools but explicitly demonstrate <em>how</em> to integrate them into daily workflows—such as automating spreadsheet formulas or optimizing SEO metadata using advanced prompting techniques. This pedagogical approach is designed to elevate your technological literacy, ensuring that when you browse our categorized resources (from Data Analysis to Generative Video), you comprehend the underlying mechanics. 
+              </p>
+              <p>
+                Explore our constantly updated educational resources, read our comprehensive analyses, and transform the way you interact with digital environments. We are committed to maintaining the highest standards of content excellence, providing you with a safe, verified, and immensely valuable learning environment.
+              </p>
+            </div>
+          </div>
+        </section>
         {/* AI Facts & Advantages Section */}
         <section className="mb-12 mt-10 md:mb-16 md:mt-12">
           <div className="text-center mb-8 md:mb-10">
@@ -519,30 +596,12 @@ export default function Home({ searchTerm, setSearchTerm }) {
                   {tool.emoji || '🤖'}
                 </div>
                 <span className="text-xs md:text-sm font-bold text-slate-700 dark:text-slate-300">{tool.name}</span>
-                <span className="text-[9px] md:text-[10px] font-semibold px-1.5 py-0.5 md:px-2 md:py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 uppercase tracking-wider">{tool.sector}</span>
+                <span className="text-[9px] md:text-[10px] font-semibold px-1.5 py-0.5 md:px-2 md:py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-400 uppercase tracking-wider">{tool.sector}</span>
               </div>
             ))}
           </div>
         </section>
 
-        {/* SEO Text Section for AdSense (Combats Thin Content) */}
-        <section className="bg-white/90 dark:bg-slate-900/80 backdrop-blur-md rounded-3xl p-6 md:p-10 shadow-[0_4px_20px_rgb(0,0,0,0.03)] dark:shadow-[0_4px_20px_rgb(0,0,0,0.2)] border border-slate-200 dark:border-slate-700/80/60 mb-12">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-slate-100 mb-4">What is an AI Directory and how does it help you find AI Software?</h2>
-            <div className="prose prose-slate md:prose-lg max-w-none text-slate-600 dark:text-slate-400 space-y-4">
-              <p>
-                At <strong>AI Directory</strong>, our ultimate goal is to collect, analyze, and categorize the best Artificial Intelligence software and tools available today. We know the tech ecosystem changes daily, and finding the perfect free or freemium AI app for your business, studies, or creative workflow can be an exhausting task.
-              </p>
-              <p>
-                Every tool listed in our directory goes through a strict quality filter where we evaluate its real utility, whether it has a <em>valid free plan</em>, and exactly what kind of problems it solves. From <strong>text generators (LLMs)</strong> that help you write emails in seconds, to advanced <strong>image or video generators</strong> that can create the visual prototype of your next big idea without needing to know a single line of code.
-              </p>
-              <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mt-6 mb-3">How to make the most of our directory</h3>
-              <p>
-                Use the filters below to easily navigate our extensive inventory. If you are a content creator, the <strong>Visual Design</strong> or <strong>Video & Animation</strong> categories will be your best allies. However, if you are an entrepreneur looking to optimize your enterprise operations, explore <strong>Business & Productivity</strong> to find AI-powered CRMs and automated autonomous agents. Our directory is constantly updated so you never fall behind in this ongoing technological revolution.
-              </p>
-            </div>
-          </div>
-        </section>
 
         {/* Categories / Filters */}
         <section id="directory-section" className="mt-12 md:mt-20 scroll-mt-24">
@@ -731,6 +790,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                   <img
                     src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1200&q=80"
                     alt="Digital Evolution"
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                     onError={(e) => {
                       e.target.onerror = null;

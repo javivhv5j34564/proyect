@@ -234,15 +234,77 @@ export default function ToolPage() {
                         </div>
                     </div>
 
-                    <div className="prose prose-base md:prose-lg max-w-none mb-8 md:mb-12">
-                        <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800 pb-2 md:pb-3 mb-4 md:mb-6">What is {tool.name}? Features, Pricing & Reviews</h2>
-                        <p className="text-slate-700 dark:text-slate-300 font-medium text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
-                            {tool.description}
-                        </p>
-                        <h3 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100 mb-3 md:mb-4 mt-8 md:mt-12">Use Cases and Details</h3>
-                        <div className="bg-slate-50 dark:bg-slate-950 p-5 md:p-8 rounded-2xl border border-slate-100 dark:border-slate-800 text-slate-600 dark:text-slate-400 leading-relaxed space-y-4">
-                            <p>{tool.longDescription}</p>
-                            <p className="text-sm text-slate-500 dark:text-slate-400 italic mt-4 pt-4 border-t border-slate-200 dark:border-slate-700/80">Note: Integrating these types of tools into your daily workflow can save from 2 to 5 hours per week, depending on the level of automation you apply. We suggest you always review the terms of the free plan of {tool.name} before implementing it at a corporate level.</p>
+                    <div className="flex flex-col lg:flex-row gap-8 md:gap-12 mb-8 md:mb-12">
+                        {/* Main Content Area */}
+                        <div className="prose prose-base md:prose-lg max-w-none flex-grow">
+                            <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800 pb-2 md:pb-3 mb-4 md:mb-6">
+                                Comprehensive Review: {tool.name} for {tool.sector}
+                            </h2>
+                            <p className="text-slate-700 dark:text-slate-300 font-medium text-lg md:text-xl leading-relaxed mb-4 md:mb-6">
+                                {tool.description}
+                            </p>
+                            
+                            <h3 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100 mb-3 md:mb-4 mt-8">Deep Dive & Use Cases</h3>
+                            <div className="bg-slate-50 dark:bg-slate-950 p-5 md:p-8 rounded-2xl border border-slate-100 dark:border-slate-800 text-slate-600 dark:text-slate-400 leading-relaxed max-w-none">
+                                <p className="mb-4">{tool.longDescription}</p>
+                                <p>
+                                    When evaluating AI solutions in the <strong>{tool.sector}</strong> space, {tool.name} consistently stands out for its specific approach and ease of integration into existing workflows. Whether you are scaling operations, automating redundant tasks, or exploring new creative avenues, understanding how {tool.name} fits into your technical stack is crucial.
+                                </p>
+                            </div>
+
+                            <h3 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100 mb-3 md:mb-4 mt-8 border-l-4 border-accent-500 pl-4">
+                                Why {tool.name} is highly recommended
+                            </h3>
+                            <ul className="list-disc pl-5 space-y-3 mb-8 text-slate-600 dark:text-slate-400">
+                                <li><strong>Targeted Efficiency:</strong> Designed specifically to meet the rigorous demands of {tool.sector.toLowerCase()}, significantly reducing manual processing time.</li>
+                                <li><strong>Cost-to-Value Ratio:</strong> With its <em>{tool.freeTierDetails}</em> model, it allows users to test core functionalities before committing to an enterprise upgrade.</li>
+                                <li><strong>Adaptability:</strong> Seamlessly fits into varying skill levels, offering intuitive interfaces for beginners while retaining advanced configurations for professional users.</li>
+                                <li><strong>Continuous Improvement:</strong> Regularly updated algorithms ensure the platform stays competitive amidst fast-paced Artificial Intelligence advancements.</li>
+                            </ul>
+
+                            <h3 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100 mb-3 md:mb-4 mt-8">
+                                Frequently Asked Questions regarding {tool.name}
+                            </h3>
+                            <div className="space-y-4">
+                                <div className="p-4 border border-slate-200 dark:border-slate-700 rounded-xl bg-white dark:bg-slate-900">
+                                    <strong className="block text-slate-800 dark:text-slate-100 mb-1">Is {tool.name} completely free to use?</strong>
+                                    <span className="text-slate-600 dark:text-slate-400 text-sm">It operates under a <em>{tool.freeTierDetails}</em> structure. We highly recommend utilizing the free tier to run a pilot test on your specific {tool.sector.toLowerCase()} tasks before upgrading.</span>
+                                </div>
+                                <div className="p-4 border border-slate-200 dark:border-slate-700 rounded-xl bg-white dark:bg-slate-900">
+                                    <strong className="block text-slate-800 dark:text-slate-100 mb-1">Is it suitable for beginners?</strong>
+                                    <span className="text-slate-600 dark:text-slate-400 text-sm">Yes, while it offers advanced capabilities, the onboarding process is optimized to help non-technical users achieve immediate productivity gains.</span>
+                                </div>
+                                <div className="p-4 border border-slate-200 dark:border-slate-700 rounded-xl bg-white dark:bg-slate-900">
+                                    <strong className="block text-slate-800 dark:text-slate-100 mb-1">How can I maximize my results?</strong>
+                                    <span className="text-slate-600 dark:text-slate-400 text-sm">By clearly defining your inputs and context. Experimenting with different configurations within {tool.name} will yield the most tailored and accurate outputs for your projects.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Sidebar */}
+                        <div className="w-full lg:w-80 flex-shrink-0 space-y-6">
+                            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/80 rounded-2xl p-6 shadow-sm">
+                                <h4 className="font-bold text-slate-800 dark:text-slate-100 mb-4 flex items-center gap-2">
+                                    <Check className="w-5 h-5 text-emerald-500" /> Key Specs
+                                </h4>
+                                <ul className="space-y-3 text-sm">
+                                    <li className="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2">
+                                        <span className="text-slate-500">Category:</span>
+                                        <span className="font-semibold text-slate-800 dark:text-slate-200">{tool.sector}</span>
+                                    </li>
+                                    <li className="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2">
+                                        <span className="text-slate-500">Pricing Model:</span>
+                                        <span className="font-semibold text-slate-800 dark:text-slate-200">{tool.freeTierDetails}</span>
+                                    </li>
+                                    <li className="flex justify-between pb-2">
+                                        <span className="text-slate-500">Global Rating:</span>
+                                        <span className="font-semibold text-amber-600 flex items-center gap-1"><Star className="w-3.5 h-3.5 fill-amber-500" /> {ratingData.average} / 5</span>
+                                    </li>
+                                </ul>
+                                <div className="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-400 italic">
+                                    Please note: AI capabilities evolve rapidly. Always check the official website of {tool.name} for the most current features array.
+                                </div>
+                            </div>
                         </div>
                     </div>
 

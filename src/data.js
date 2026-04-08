@@ -10,7 +10,7 @@ export const tools = [
         url: 'https://www.wolframalpha.com',
         description: 'Computational knowledge engine for mathematics and science.',
         longDescription: 'Indispensable for STEM students. Solves equations step-by-step, analyzes complex statistical data, and provides precise scientific data that other LLMs often hallucinate. It is the ultimate source of mathematical "truth".',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'quillbot_estudiante',
@@ -23,7 +23,7 @@ export const tools = [
         url: 'https://quillbot.com',
         description: 'Paraphrasing and summarizing tool for academic work.',
         longDescription: 'Helps students rewrite essays to improve fluency and vocabulary. Includes a plagiarism checker, a citation generator (APA, MLA), and a summarizer for long articles to save hours of reading.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'elicit_research',
@@ -36,7 +36,7 @@ export const tools = [
         url: 'https://elicit.org',
         description: 'Research assistant that analyzes scientific articles.',
         longDescription: 'Ideal for theses and research papers. Elicit searches through millions of academic articles, summarizes the main findings, and extracts key data in a structured way, ensuring your sources are always rigorous.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'socratic_google',
@@ -49,7 +49,7 @@ export const tools = [
         url: 'https://socratic.org',
         description: 'Homework help app that explains concepts visually.',
         longDescription: 'Take a photo of any problem (math, history, or chemistry) and Google\'s AI offers step-by-step explanations, educational videos, and visual resources so you truly understand the concept behind the answer.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'canva_estudiantes',
@@ -62,7 +62,7 @@ export const tools = [
         url: 'https://www.canva.com/education/',
         description: 'Create presentations and visual works with academic templates.',
         longDescription: 'The special version of Canva for the education sector offers thousands of free premium resources so your school projects have a professional design finish effortlessly.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'notion_ia_estudio',
@@ -75,7 +75,7 @@ export const tools = [
         url: 'https://www.notion.so/product/ai',
         description: 'Organize your notes and generate automatic summaries.',
         longDescription: 'Notion AI helps you structure your class notes, create study quizzes from your own notes, and improve the writing of your assignments directly from your workspace.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'gradescope_ia',
@@ -88,7 +88,7 @@ export const tools = [
         url: 'https://www.gradescope.com',
         description: 'Platform to correct and receive detailed feedback with AI.',
         longDescription: 'Used by top universities, it allows scanning handwritten exams and provides fast and fair grading, helping students understand exactly where they failed and how to improve.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'archistar_ai',
@@ -101,7 +101,7 @@ export const tools = [
         url: 'https://www.archistar.ai',
         description: 'Generative design platform to find the maximum potential of a plot of land.',
         longDescription: 'Archistar allows architects and real estate developers to generate hundreds of building designs compliant with local regulations in seconds. Analyzes sunlight, wind, and profitability, optimizing architectural design from the planning phase.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'makestory_plans',
@@ -114,7 +114,7 @@ export const tools = [
         url: 'https://www.maket.ai',
         description: 'Generative design of residential floor plans and zoning.',
         longDescription: 'Maket uses AI to instantly generate thousands of floor plan variations based on specific requirements. It is ideal for quickly exploring different space distributions and ensuring compliance with zoning restrictions without manual drawing.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'fotor_floorplan',
@@ -127,7 +127,7 @@ export const tools = [
         url: 'https://www.fotor.com/features/ai-floor-plan-generator/',
         description: 'Professional 2D and 3D floor plan generator from sketches.',
         longDescription: 'Converts basic sketches, hand-drawn drawings, or photos of old floor plans into clean and professional 2D and 3D representations. An excellent tool for real estate agents and renovators who need high-quality visual material quickly.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'veras_evolve',
@@ -140,7 +140,7 @@ export const tools = [
         url: 'https://www.evolvelab.io/veras',
         description: 'AI-powered rendering integrated into Revit, Rhino, and SketchUp.',
         longDescription: 'Veras is a visualization engine that uses AI to create realistic renders of your architectural models directly within your usual design software. It allows iterating materials and environments in seconds with astonishing fidelity.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'swapp_ai',
@@ -153,7 +153,7 @@ export const tools = [
         url: 'https://www.swapp.ai',
         description: 'Total automation of construction documentation.',
         longDescription: 'SWAPP automates the most tedious phase of architecture: construction plans. Its AI takes the basic design and automatically generates the entire set of technical plans, sections, and details needed for the construction, reducing months of work to days.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'sidewalk_labs',
@@ -166,7 +166,7 @@ export const tools = [
         url: 'https://www.sidewalklabs.com/products/delve',
         description: 'AI for urban design and high-density neighborhood planning.',
         longDescription: 'A Google tool for urban planners and large developers. It uses algorithms to design entire neighborhoods, optimizing quality of life, access to parks, and the energy efficiency of buildings.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'promeai_design',
@@ -179,7 +179,7 @@ export const tools = [
         url: 'https://www.promeai.com',
         description: 'Ultra-fast artistic rendering and interior design.',
         longDescription: 'PromeAI converts simple line sketches into photorealistic architectural renders. It is especially powerful for interior design and landscape architecture visualization, allowing you to quickly test thousands of textures and materials.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'interior_ai',
@@ -192,7 +192,7 @@ export const tools = [
         url: 'https://interiorai.com',
         description: 'Redesign any room with AI from a photo.',
         longDescription: 'Upload a photo of your living room or empty room and choose from over 30 design styles (Scandinavian, Modern, Zen). The AI furnishes and decorates the space realistically, ideal for architects and interior designers who need fast visualizations.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'spellbook_legal',
@@ -205,7 +205,7 @@ export const tools = [
         url: 'https://www.spellbook.com',
         description: 'AI that drafts and reviews legal contracts in Word.',
         longDescription: 'Spellbook uses GPT-4 to analyze contracts and suggest clauses, detect risks, and draft new sections based on standard legal language. It is the preferred tool for lawyers to speed up the drafting of complex documents.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'glass_health',
@@ -218,7 +218,7 @@ export const tools = [
         url: 'https://glass.health',
         description: 'Clinical diagnosis assistant and treatment plans for doctors.',
         longDescription: 'Glass Health helps healthcare professionals structure differential diagnoses and treatment plans from clinical cases. It is powered by an expert-reviewed medical knowledge database.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'mindtrip_travel',
@@ -231,7 +231,7 @@ export const tools = [
         url: 'https://mindtrip.ai',
         description: 'Smart travel planner that books flights and hotels.',
         longDescription: 'Organize complete travel itineraries by chatting with the AI. It not only suggests what to see but integrates real maps, flight, and hotel availability so you can book the whole trip on a single platform.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'scenario_gaming',
@@ -244,7 +244,7 @@ export const tools = [
         url: 'https://www.scenario.com',
         description: 'Generate game assets consistent with your artistic style.',
         longDescription: 'Scenario allows you to train AI models with your own drawings or designs and then generate hundreds of new characters, weapons, or environments that exactly respect the visual style of your video game.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'planner5d_ia',
@@ -257,7 +257,7 @@ export const tools = [
         url: 'https://planner5d.com',
         description: 'Convert hand-drawn sketches into professional 3D plans.',
         longDescription: 'Draw a basic floor plan on paper, upload it, and the AI will convert it into a detailed 3D model with furniture and finishes. An essential tool for renovations and real estate presales.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'harvey_ai',
@@ -270,7 +270,7 @@ export const tools = [
         url: 'https://www.harvey.ai',
         description: 'Elite AI designed for global law firms.',
         longDescription: 'Harvey offers a secure platform for large law firms that allows for legal audits, jurisprudence research, and the drafting of regulatory documents with supervised precision.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'roam_around',
@@ -283,7 +283,7 @@ export const tools = [
         url: 'https://www.roamaround.io',
         description: 'Create a personalized travel itinerary for any city in the world.',
         longDescription: 'Just say where you\'re going and how many days you\'ll be there. The AI generates an optimized daily plan based on geographical proximity with the best restaurants and points of interest.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'heygen_video',
@@ -296,7 +296,7 @@ export const tools = [
         url: 'https://heygen.com',
         description: 'Create hyper-realistic AI avatars that speak for you in minutes.',
         longDescription: 'HeyGen allows you to generate professional videos of digital spokespersons simply by typing text. Its lip-sync and voice cloning technology is market-leading, even allowing you to translate a video of yourself into other languages while maintaining your own voice and gestures.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'leonardo_ai',
@@ -309,7 +309,7 @@ export const tools = [
         url: 'https://leonardo.ai',
         description: 'Complete image generation platform with custom models.',
         longDescription: 'Leonardo offers a creative ecosystem for generating art, textures, and game assets with amazing control. Includes tools like Canvas for real-time editing and "image-to-video", allowing for flexibility that few competitors match in their free version.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'jasper_copy',
@@ -322,7 +322,7 @@ export const tools = [
         url: 'https://jasper.ai',
         description: 'The most robust writing AI for marketing teams and businesses.',
         longDescription: 'Jasper stands out for its ability to learn a company\'s "brand voice" to generate consistent content for blogs, ads, and social media. It offers SEO-optimized templates and collaboration tools that make it ideal for corporate environments.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'copy_ai',
@@ -335,7 +335,7 @@ export const tools = [
         url: 'https://copy.ai',
         description: 'Automate your marketing and sales writing with AI flows.',
         longDescription: 'Copy.ai specializes in "Content Workflows", allowing you to automate content creation at scale. It is exceptionally good for writing sales emails, product descriptions for e-commerce, and optimized posts for LinkedIn.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'descript_audio',
@@ -348,7 +348,7 @@ export const tools = [
         url: 'https://descript.com',
         description: 'Edit audio and video by editing the transcription text.',
         longDescription: 'Descript has changed the game in podcast editing. By uploading audio, it is automatically transcribed and you can delete words from the text to make them disappear from the original audio. It also includes "Overdub" to correct recordings using your own cloned voice.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'runway_gen3',
@@ -361,7 +361,7 @@ export const tools = [
         url: 'https://runwayml.com',
         description: 'The gold standard in AI cinematic video generation.',
         longDescription: 'Runway\'s Gen-3 Alpha offers amazing visual fidelity, consistency, and expressiveness. It is capable of generating complex scenes with a deep understanding of movement and lighting, being the tool of choice for film editors and top advertising agencies.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'midjourney_ai',
@@ -374,7 +374,7 @@ export const tools = [
         url: 'https://midjourney.com',
         description: 'The image generation AI with the most artistic and detailed aesthetic.',
         longDescription: 'Although used mainly through Discord, Midjourney is recognized as the leader in artistic quality and visual "vibe". Its models are capable of producing everything from photorealistic photographs to digital illustrations with a level of detail that remains hard to beat.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'tome_app',
@@ -387,7 +387,7 @@ export const tools = [
         url: 'https://tome.app',
         description: 'AI for storytelling and creating interactive presentations.',
         longDescription: 'Tome not only creates slides but complete narratives. It generates both text and images and layouts, allowing for the creation of presentation decks that feel like modern, fluid microsites, breaking with the rigid format of PowerPoint.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'rytr_ai',
@@ -400,7 +400,7 @@ export const tools = [
         url: 'https://rytr.me',
         description: 'Powerful, fast, and very affordable writing assistant.',
         longDescription: 'Rytr is known for its simplicity and effectiveness. It allows you to choose from over 20 tones of voice to adjust the content to your audience. Ideal for writing Instagram captions, web micro-copy, and email subject lines that generate clicks.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'writesonic_ai',
@@ -413,7 +413,7 @@ export const tools = [
         url: 'https://writesonic.com',
         description: 'AI for SEO, blogs, and custom chatbot creation (Chatsonic).',
         longDescription: 'Writesonic includes specific tools for blog writers who want to rank on Google. Its Chatsonic assistant also has real-time internet access, outperforming GPT-4 in the accuracy of current data and trends.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'invideo_ai',
@@ -426,7 +426,7 @@ export const tools = [
         url: 'https://invideo.io',
         description: 'Convert any idea or script into a published video with AI.',
         longDescription: 'InVideo AI generates complete videos (including stock footage, voice-over, and music) from a simple prompt. It is perfect for creating informative videos for YouTube or social media ads without needing to know how to edit.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'murf_ai',
@@ -439,7 +439,7 @@ export const tools = [
         url: 'https://murf.ai',
         description: 'Convert text into professional voices for e-learning and advertising.',
         longDescription: 'Murf offers a massive library of voice-overs that sound natural and professional. It allows you to adjust pitch, speed, and emphasis, making it ideal for narrating corporate videos, tutorials, and educational presentations.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'synthesia_ai',
@@ -452,7 +452,7 @@ export const tools = [
         url: 'https://synthesia.io',
         description: 'The leading video creation platform with avatars for businesses.',
         longDescription: 'Synthesia is the ultimate corporate choice for generating training and internal communication videos. It allows you to create videos in more than 120 languages using digital avatars that move and speak naturally.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'grammarly_ai',
@@ -465,7 +465,7 @@ export const tools = [
         url: 'https://grammarly.com',
         description: 'Checker and writing assistant that improves your tone and clarity.',
         longDescription: 'Grammarly has integrated generative AI to help you not only correct grammar but rewrite entire sentences to sound more friendly, formal, or concise, adapting to your professional context.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'canva_magic',
@@ -478,7 +478,7 @@ export const tools = [
         url: 'https://canva.com',
         description: 'All the power of AI integrated into your favorite design tool.',
         longDescription: 'Canva Magic Studio includes a magic eraser, image expansion, and complete design generation. It allows inexperienced users to achieve visually impactful results automatically.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'cursor_ai',
@@ -491,7 +491,7 @@ export const tools = [
         url: 'https://cursor.com',
         description: 'The AI code editor that is replacing VS Code.',
         longDescription: 'Cursor is a fork of VS Code that integrates AI natively at the core of the editor. It allows for predicting edits, making massive code changes with "Composer," and understanding complex codebases instantly. It is currently the favorite tool for professional developers to multiply their productivity.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'suno_v4',
@@ -504,7 +504,7 @@ export const tools = [
         url: 'https://suno.com',
         description: 'Create complete songs with voice and lyrics in any style.',
         longDescription: 'Suno V4 is capable of generating studio-quality musical themes in seconds. Just describe the style and lyrics, and the AI will compose the melody, arrangements, and vocals with amazing realism. Very useful for content creators seeking original and royalty-free music.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'kling_ai',
@@ -517,7 +517,7 @@ export const tools = [
         url: 'https://klingai.com',
         description: 'Cinematic video generation of up to 2 minutes.',
         longDescription: 'Kling AI is one of the most advanced video models today, allowing for the creation of clips with a stability and realism that rivals professional cinema. It stands out for its ability to maintain character consistency and perform complex camera movements without distortion.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'notebook_lm',
@@ -530,7 +530,7 @@ export const tools = [
         url: 'https://notebooklm.google.com',
         description: 'Smart research assistant based on your own documents.',
         longDescription: 'Developed by Google, NotebookLM allows you to upload PDFs, documents, and notes to "chat" with them. Most impressive is its ability to generate automatic podcasts between two voices that summarize and discuss your files naturally and entertainingly.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'gamma_app',
@@ -543,7 +543,7 @@ export const tools = [
         url: 'https://gamma.app',
         description: 'Generates presentations, documents, and websites in seconds.',
         longDescription: 'Gamma uses the power of natural language to create slides with flawless design without you having to move a single object. It is ideal for creating sales decks or fast academic presentations while maintaining a professional and modern aesthetic.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'ideogram_2',
@@ -556,7 +556,7 @@ export const tools = [
         url: 'https://ideogram.ai',
         description: 'The undisputed leader in typography and text generation in images.',
         longDescription: 'Ideogram 2.0 is famous for its ability to render perfect text within any design. Whether for posters, logos, or t-shirts, this AI ensures that the text looks integrated and without spelling errors, something other models still struggle to achieve.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'perplexity_ai',
@@ -569,7 +569,7 @@ export const tools = [
         url: 'https://perplexity.ai',
         description: 'The search engine of the future: direct answers with verified sources.',
         longDescription: 'Perplexity doesn\'t give you a list of links but writes a complete answer citing the original sources where it gets the information. It is the perfect tool for fast research and web navigation without going through traditional search engine ads.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'napkin_ai',
@@ -582,7 +582,7 @@ export const tools = [
         url: 'https://napkin.ai',
         description: 'Convert text into professional diagrams and visuals instantly.',
         longDescription: 'Napkin AI is designed for those who need to explain complex concepts visually. You write a paragraph and the AI generates diagrams, flowcharts, and elegant infographics that you can copy directly to your documents or presentations.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'phind_search',
@@ -595,7 +595,7 @@ export const tools = [
         url: 'https://phind.com',
         description: 'Smart search engine optimized specifically for developers.',
         longDescription: 'Phind browses technical documentation and Stack Overflow for you to give you the exact solution to your code problems. It includes a specialized AI model that writes functional examples and explains the reason for each bug.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'luma_dream',
@@ -608,7 +608,7 @@ export const tools = [
         url: 'https://lumalabs.ai/dream-machine',
         description: 'Create high-quality hyper-realistic videos from text or images.',
         longDescription: 'Luma Dream Machine is a highly capable video model that stands out for its speed and for perfectly understanding the laws of physics and movement. It is ideal for bringing old photos to life or creating cinematic scenes from nothing in less than 120 seconds.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'o3_mini',
@@ -621,7 +621,7 @@ export const tools = [
         url: 'https://chat.openai.com',
         description: 'New ultra-fast and precise reasoning model from OpenAI.',
         longDescription: 'The o3-mini is OpenAI\'s latest innovation focused on tasks requiring deep reasoning but maintaining extremely low latency. It is ideal for programmers and data scientists who need complex answers in record time. It outpaces much larger models in efficiency, offering superior critical capacity for bug resolution and advanced math logic.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'deepseek_v3',
@@ -634,7 +634,7 @@ export const tools = [
         url: 'https://chat.deepseek.com',
         description: 'The world\'s most powerful open-weights model, outperforming GPT-4o.',
         longDescription: 'DeepSeek-V3 has shaken the industry by offering SOTA (State of the Art) performance while being an open-weights model. It is exceptionally good at programming, mathematics, and logical reasoning. Its MoE (Mixture of Experts) architecture allows it to be incredibly efficient, providing a real and free alternative to the most expensive closed models on the market.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'grok_3',
@@ -647,7 +647,7 @@ export const tools = [
         url: 'https://x.ai',
         description: 'Musk\'s boldest and most powerful AI, with real-time search.',
         longDescription: 'Grok-3 is xAI\'s definitive bet to dominate the LLM sector. Trained on one of the largest GPU clusters in the world, it stands out for its unfiltered reasoning capacity and total integration with real-time data from X. It is ideal for analysis of current trends, breaking news, and complex engineering tasks requiring a massive context window.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'pika_2',
@@ -660,7 +660,7 @@ export const tools = [
         url: 'https://pika.art',
         description: 'Video generation with realistic physics effects and high resolution.',
         longDescription: 'Pika 2.0 redefines AI video creation with its new special effects engine (Pikaffects), allowing the application of dynamic physics such as squashing, melting, or inflating to objects. It provides cinematic quality with amazing temporal stability, becoming a favorite tool for content creators to generate surreal scenes and high-end commercials.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'recraft_v3',
@@ -673,7 +673,7 @@ export const tools = [
         url: 'https://www.recraft.ai',
         description: 'The first model capable of generating long text and pure vector design.',
         longDescription: 'Recraft V3 is a revolution for graphic designers. It is the first AI that understands and generates long, readable text within images, besides allowing the export of designs in vector format (SVG). Its control over artistic style and anatomy positions it ahead of traditional competitors for creating logos, illustrations, and complete brand kits.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'elevenlabs_v3',
@@ -686,7 +686,7 @@ export const tools = [
         url: 'https://elevenlabs.io',
         description: 'The most human synthetic voice in the world with instant cloning.',
         longDescription: 'ElevenLabs V3 introduces almost zero latency and unprecedented emotional expressiveness. Its ability to clone voices in seconds with just a small audio sample is amazing. It now supports more than 30 languages with perfect regional accents, being the standard tool for content creators, audiobook narrators, and video game developers.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'bolt',
@@ -699,7 +699,7 @@ export const tools = [
         url: 'https://bolt.new',
         description: 'Develop complete fullstack applications from your browser.',
         longDescription: 'Bolt.new integrates the power of Claude 3.5/3.7 with a browser execution environment. You can ask it to build an entire app, and it will write the code, install dependencies, and deploy it in seconds. It is the ultimate tool for rapid prototyping and developing MVPs without setting up a local environment.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'flux_pro_1_1',
@@ -712,7 +712,7 @@ export const tools = [
         url: 'https://blackforestlabs.ai',
         description: 'The new standard in speed and quality for image generation.',
         longDescription: 'Flux 1.1 [pro] is up to 6 times faster than its predecessor and offers a significant improvement in photorealism and prompt adherence. Developed by Black Forest Labs, this model dominates skin texture generation, complex lighting, and integrated text, surpassing Midjourney in versatility and coherence.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'v0_chat',
@@ -725,7 +725,7 @@ export const tools = [
         url: 'https://v0.dev',
         description: 'Generate UI components and complete web applications with just text.',
         longDescription: 'Vercel v0 has evolved from a simple component generator to an application architect. Now it is capable of generating complex flows in Next.js, integrating icon libraries and component libraries like shadcn/ui perfectly. It is the ideal companion for designers who want to go from concept to code in minutes.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'claude_3_5_opus',
@@ -738,7 +738,7 @@ export const tools = [
         url: 'https://claude.ai',
         description: 'The most powerful version of Claude for high-complexity tasks.',
         longDescription: 'Claude 3 Opus is Anthropic\'s most capable model, outperforming many competitors in reasoning, knowledge, and coding. It is ideal for deep data analysis and high-quality creative writing.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'kat_coder_pro_v1',
@@ -751,7 +751,7 @@ export const tools = [
         url: 'https://kat-coder.org',
         description: 'Specialized programming assistant generating bug-free code.',
         longDescription: 'KAT-Coder-pro V1 is an innovative tool for developers that speeds up the development cycle by generating, analyzing, and optimizing advanced code. This platform is revolutionizing how professionals tackle daily challenges in their sector. Its intuitive interface and powerful processing capabilities make it a standout choice. By integrating it into your workflow, you can expect a significant reduction in time spent on repetitive tasks, allowing you to focus on strategy and creativity. Ideal for both beginners and experts looking to scale their productivity.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'gemini_1_5_flash',
@@ -764,7 +764,7 @@ export const tools = [
         url: 'https://gemini.google.com',
         description: 'Google\'s ultra-fast model designed for speed and efficiency.',
         longDescription: 'Gemini 1.5 Flash is the perfect solution for tasks requiring near-instant response. With a massive context window of up to 1 million tokens, it is capable of processing extensive video files and documents in seconds.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'claude_sonnet_4_6',
@@ -777,7 +777,7 @@ export const tools = [
         url: 'https://claude.ai',
         description: 'The perfect balance between intelligence and speed from Anthropic.',
         longDescription: 'Claude Sonnet 4.6 stands out for its superior efficiency for day-to-day business tasks, offering fast results without sacrificing understanding or eloquence. Designed with user experience in mind, it simplifies complex processes by delivering high-quality results consistently.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'kimi_k2_5',
@@ -790,7 +790,7 @@ export const tools = [
         url: 'https://kimi.moonshot.cn',
         description: 'AI specialized in deep processing of long documents.',
         longDescription: 'Kimi K2.5 allows you to upload and analyze extremely long and complex documents, being the preferred tool for researchers and students who need to summarize dense texts. By leveraging state-of-the-art algorithms, this AI provides fast and effective interactions.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'claude_haiku_4_5',
@@ -803,7 +803,7 @@ export const tools = [
         url: 'https://claude.ai',
         description: 'The fastest and most accessible model in the Claude family.',
         longDescription: 'Claude Haiku 4.5 is ideal for agile conversational interactions and simple tasks requiring near-instant response with the security that characterizes Anthropic. With growing adoption by companies and individuals, this tool stands out for its robustness and precision.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'gemini_2_5_flash',
@@ -816,7 +816,7 @@ export const tools = [
         url: 'https://gemini.google.com',
         description: 'Superior efficiency and performance in fast multimodal processing.',
         longDescription: 'Gemini 2.5 Flash incorporates significant speed improvements to handle multimodal inputs (text, audio, and video) quickly and cost-efficiently on Google Cloud and the web interface. It stands out for its exceptional technical features and long-term value.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'minimax_m2_5',
@@ -829,7 +829,7 @@ export const tools = [
         url: 'https://hailuoai.video',
         description: 'Innovative language model with great role-play capability.',
         longDescription: 'MiniMax M2.5 is a leader in generating humanized dialogue and creativity, standing out enormously in creating interactive characters and conversational entertainment. Designed with user experience in mind, it simplifies complex processes efficiently.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'claude_3_7_sonnet',
@@ -842,7 +842,7 @@ export const tools = [
         url: 'https://claude.ai',
         description: 'Key model in Anthropic\'s artificial intelligence evolution.',
         longDescription: 'Claude 3.7 Sonnet combines amazing coding capabilities with expert writing, marking a powerful milestone in the Claude family. With growing adoption by companies and individuals, this tool stands out for its robustness and precision.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'gpt_4o',
@@ -855,7 +855,7 @@ export const tools = [
         url: 'https://chatgpt.com',
         description: 'OpenAI\'s flagship model for real-time text, vision, and voice.',
         longDescription: 'GPT-4o ("o" for omni) is OpenAI\'s most advanced model that allows reasoning through audio, vision, and text in real-time. It is much faster than GPT-4 Turbo and offers natively integrated multimodal capabilities.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'claude',
@@ -868,7 +868,7 @@ export const tools = [
         url: 'https://claude.ai',
         description: 'The most advanced AI for natural writing and text analysis.',
         longDescription: 'Offers the most human and coherent writing on the market at no cost. Ideal for essays, emails, and any type of professional writing. It stands out for its ability to follow format instructions and its natural tone, often surpassing paid alternatives.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'leonardo',
@@ -881,7 +881,7 @@ export const tools = [
         url: 'https://leonardo.ai',
         description: 'Spectacular image generation with professional quality. The best freemium.',
         longDescription: 'Gives 150 free daily tokens. Better than Midjourney if you don\'t want to pay, allowing for professional art. The platform includes many finetuned models, 3D texture creation, and AI-assisted editing.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'deepseek',
@@ -894,7 +894,7 @@ export const tools = [
         url: 'https://chat.deepseek.com',
         description: 'Powerful model for solving logical problems and programming. High efficiency.',
         longDescription: 'A very powerful open-source AI. It outshines many paid models in logical reasoning and programming. Offers precise code suggestions, advanced repo analysis, and a wide context window.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'perplexity',
@@ -907,7 +907,7 @@ export const tools = [
         url: 'https://www.perplexity.ai',
         description: 'The best current conversational search engine with real-time sources.',
         longDescription: 'Replaces Google. Gives responses with sources cited in real-time, ideal for students and journalists. Combines a search engine with top LLMs to synthesize info from multiple sites.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'gamma',
@@ -920,7 +920,7 @@ export const tools = [
         url: 'https://gamma.app',
         description: 'Generates complete presentations and aesthetic documents with just one prompt.',
         longDescription: 'Creates entire presentations with one prompt. Saves hours of PowerPoint design. Interface is ultra-fluid, allowing interactive adjustment of each slide. Ideal for client proposals.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'capcut',
@@ -933,7 +933,7 @@ export const tools = [
         url: 'https://www.capcut.com',
         description: 'The favorite video editor now with auto captions and more AI.',
         longDescription: 'Includes free auto-captioning and AI editing functions. Removes backgrounds without chroma key, improves audio, and generates dynamic subtitles for social media.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'copilot',
@@ -946,7 +946,7 @@ export const tools = [
         url: 'https://copilot.microsoft.com',
         description: 'Comprehensive AI assistant using GPT-4 and DALL-E for free.',
         longDescription: 'Integrated into the Microsoft ecosystem, Copilot offers free access to advanced models (GPT-4) and image generators (DALL-E 3) with real-time internet. Your best ally for searching, summarizing, and creating.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'cursor',
@@ -959,7 +959,7 @@ export const tools = [
         url: 'https://www.cursor.com',
         description: 'Modern code editor with native AI and smart refactoring.',
         longDescription: 'Built on VS Code, it includes advanced autocomplete and AI chat based on project context. The free plan offers a generous amount of requests to advanced models.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'suno',
@@ -972,7 +972,7 @@ export const tools = [
         url: 'https://suno.com',
         description: 'Generate complete songs with ultra-realistic voices and backing tracks.',
         longDescription: 'Suno revolutionizes audio creation, allowing anyone to compose complete songs by specifying genre and theme. The free tier gives enough credits for several creative tracks each day.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'flux',
@@ -985,7 +985,7 @@ export const tools = [
         url: 'https://fal.ai/models/fal-ai/flux/schnell',
         description: 'The highest quality open-source image generator currently available.',
         longDescription: 'Created by the brains behind Stable Diffusion, Flux.1 provides hyper-realistic anatomy and understands prompt text better than almost any other AI. Accessible through multiple free hubs for spectacular results.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'chatgpt',
@@ -998,7 +998,7 @@ export const tools = [
         url: 'https://chatgpt.com',
         description: 'Versatile and powerful AI assistant for any daily work task.',
         longDescription: 'The world\'s most popular AI allows you to write, summarize emails, generate ideas, and organize your work. The free plan now includes access to the GPT-4o mini model, fast and smart enough to streamline almost any office task or teamwork.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'cody',
@@ -1011,7 +1011,7 @@ export const tools = [
         url: 'https://sourcegraph.com/cody',
         description: 'AI code assistant that knows your entire work repository.',
         longDescription: 'Unlike other limited autocompletes, Cody reads all your code to write and fix functions based on the overall context of your software architecture. It is the perfect companion for programming and computer science, and its personal plan is 100% free.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'udio',
@@ -1024,7 +1024,7 @@ export const tools = [
         url: 'https://www.udio.com',
         description: 'Create ultra-high quality music with professional clarity instantly.',
         longDescription: 'Udio is spectacular for creating songs, rap beats, epic game music, or jingles. Unlike others, the quality and instrument separation is almost indistinguishable from real studio audio. Great for music production and creative exploration.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'chefgpt',
@@ -1037,7 +1037,7 @@ export const tools = [
         url: 'https://chefgpt.xyz',
         description: 'Your personal AI chef. Recipes based on what\'s in your fridge.',
         longDescription: 'Ideal for daily cooking. Simply tell the AI what ingredients you have left in the pantry, your macro-nutritional goals, or allergies, and it will generate healthy step-by-step recipes to cook without wasting food. Eliminates the eternal question of "what\'s for dinner?".',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, cooking, recipes, diet, nutrition, fitness, yoga, health, mindfulness, biohacking, longevity'
+        
     },
     {
         id: 'julius',
@@ -1050,7 +1050,7 @@ export const tools = [
         url: 'https://julius.ai',
         description: 'Data analyst that processes Excel, CSV, and draws advanced charts.',
         longDescription: 'Julius is your personal data scientist. Upload an Excel file, CSV, or connect your database and ask it in natural language to find trends, make forecasts, or graph your sales. Perfect for analysts without deep knowledge of Python programming.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'notebooklm',
@@ -1063,7 +1063,7 @@ export const tools = [
         url: 'https://notebooklm.google.com',
         description: 'Convert your notes into interactive podcasts and study guides.',
         longDescription: 'A revolution for students. Upload your PDFs, class notes, or YouTube links, and NotebookLM will create summaries, review tests, and even a podcast where two AI hosts discuss and explain your notes in a very entertaining way.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'reclaim',
@@ -1076,7 +1076,7 @@ export const tools = [
         url: 'https://reclaim.ai',
         description: 'Organize your calendar by grouping tasks, habits, and automatic breaks.',
         longDescription: 'Ideal for managing your time without stress. Syncs with Google Calendar and automatically fits your pending tasks into free slots, protecting time for yourself, your habits (e.g., "Go to the gym"), and rescheduling everything automatically if an urgency arises.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, organize, calendar, notes, notion, meeting summaries, workflow, productivity, project management, pomodoro, habits, reminders'
+        
     },
     {
         id: 'vmake',
@@ -1089,7 +1089,7 @@ export const tools = [
         url: 'https://vmake.ai',
         description: 'Try on clothes on virtual models or change clothes in photos.',
         longDescription: 'An impressive tool for fashion and e-commerce. You can upload a photo of a garment and Vmake will generate realistic models of different sizes and ethnicities wearing it. Also includes Virtual Try-On functions to see how outfits would look on you.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, fashion design, patterns, textures, branding'
+        
     },
     {
         id: 'quillbot',
@@ -1102,7 +1102,7 @@ export const tools = [
         url: 'https://quillbot.com',
         description: 'The best AI-powered paraphraser and grammar checker.',
         longDescription: 'Perfect for rewriting texts, improving vocabulary, and avoiding plagiarism. Its free version allows you to paraphrase short paragraphs in different tones (formal, fluent, etc.) immediately with excellent results in Spanish and English.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'consensus',
@@ -1115,7 +1115,7 @@ export const tools = [
         url: 'https://consensus.app',
         description: 'AI search engine that only extracts responses from real scientific articles.',
         longDescription: 'If you are doing a thesis or academic work, this tool extracts citations and conclusions directly from peer-reviewed scientific paper databases. Say goodbye to made-up answers and get scientific rigor for free.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'luma',
@@ -1128,7 +1128,7 @@ export const tools = [
         url: 'https://lumalabs.ai/dream-machine',
         description: 'Generate high-quality hyper-realistic video clips from text.',
         longDescription: 'A revolutionary AI to create videos from scratch or animate static images. With its free plan, you get enough monthly credits to render fluid cinematics or fast assets for your audiovisual projects and social networks.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'dishgen',
@@ -1141,7 +1141,7 @@ export const tools = [
         url: 'https://www.dishgen.com',
         description: 'Creative recipe generator that uses leftovers from your fridge.',
         longDescription: 'Type the few ingredients you have left and DishGen will instantly formulate a unique recipe with exact step-by-step instructions, cooking times, and alternatives. Perfect for getting out of a jam without having to buy extra ingredients.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, cooking, recipes, diet, nutrition, fitness, yoga, health, mindfulness, biohacking, longevity'
+        
     },
     {
         id: 'chatcsv',
@@ -1154,7 +1154,7 @@ export const tools = [
         url: 'https://www.chatcsv.co',
         description: 'Chat directly with your spreadsheets and data documents.',
         longDescription: 'Turn your tabular CSV files into a smart assistant. Ask questions about your table like "which month did we sell the most?" or "filter inactive users", and ChatCSV will read the information returning processed data instantly.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'socratic',
@@ -1167,7 +1167,7 @@ export const tools = [
         url: 'https://socratic.org',
         description: 'Solve math, physics, and science problems with just a photo.',
         longDescription: 'Take a photo of that algebra or chemistry problem you don\'t understand, and Socratic\'s AI breaks it down explaining the solution step by step with charts and key concepts. A must-have app for students.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'trevor',
@@ -1180,7 +1180,7 @@ export const tools = [
         url: 'https://trevorai.com',
         description: 'Time-Blocking planner to increase your focus time.',
         longDescription: 'Applies the famous Time-Blocking technique by assigning specific hours to each task on your pending list in the calendar. Trevor AI calculates your workload and prevents burnout keeping you focused.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, organize, calendar, notes, notion, meeting summaries, workflow, productivity, project management, pomodoro, habits, reminders'
+        
     },
     {
         id: 'cala',
@@ -1193,7 +1193,7 @@ export const tools = [
         url: 'https://ca.la',
         description: 'Clothing design and fashion collection generation in seconds.',
         longDescription: 'It is the definitive operating system for designers and clothing brands to create AI-driven sketches. Combines garment descriptions and styles to get high-quality 3D renders ready for production.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, fashion design, patterns, textures, branding'
+        
     },
     {
         id: 'gemini',
@@ -1206,7 +1206,7 @@ export const tools = [
         url: 'https://gemini.google.com',
         description: 'Google\'s multimodal artificial intelligence integrated into its ecosystem.',
         longDescription: 'Gemini stands out for its huge context window and native ability to understand text, code, images, and videos at the same time. Integrated with Google Workspace, it is ideal for summarizing spreadsheets or drafting emails.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'midjourney',
@@ -1219,7 +1219,7 @@ export const tools = [
         url: 'https://www.midjourney.com',
         description: 'The undisputed king of artistic and photorealistic image generation.',
         longDescription: 'While it no longer offers a constant free trial, Midjourney v6 is the creative industry standard. Generates everything from ultra-realistic photos to logos and game concept art with unparalleled graphic fidelity.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'stablediffusion',
@@ -1232,7 +1232,7 @@ export const tools = [
         url: 'https://stability.ai',
         description: 'The most powerful free model for generating uncensored images locally.',
         longDescription: 'The great advantage of Stable Diffusion is that you can download and install it for free on your own PC. Offers absolute control via interfaces like ComfyUI or Automatic1111, allowing you to train your own models (LoRAs).',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'runway',
@@ -1245,7 +1245,7 @@ export const tools = [
         url: 'https://runwayml.com',
         description: 'The leading platform for creative creation and generative visual effects.',
         longDescription: 'Runway is oriented towards filmmakers and content creators. Its Gen-3 Alpha model produces high-fidelity video and precise camera control. Allows advanced Text-to-Video and Image-to-Video functions.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'kling',
@@ -1258,7 +1258,7 @@ export const tools = [
         url: 'https://klingai.com',
         description: 'Hyper-realistic video generation and advanced physics simulation.',
         longDescription: 'The main competitor to Sora (OpenAI) accessible to the public. Kling stands out for its incredible understanding of real-world physics: fluids, reflections, and complex body movements are rendered with amazing precision.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'mistral_872',
@@ -1271,7 +1271,7 @@ export const tools = [
         url: 'https://www.mistral.com',
         description: 'Powerful and efficient European model (Open Source).',
         longDescription: 'Mistral AI is a leading European artificial intelligence company focused on open-weights models. Their models are known for high efficiency and performance, offering a robust alternative for Chatbots and Assistants tasks.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'llama_3058',
@@ -1284,7 +1284,7 @@ export const tools = [
         url: 'https://www.llama.com',
         description: 'The most widely used open model by developers.',
         longDescription: 'Meta\'s Llama 3 is a state-of-the-art open source large language model. It is highly robust and precise, adaptable to various use scenarios, from project launches to large-scale engineering tasks.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'characterai_5581',
@@ -1297,7 +1297,7 @@ export const tools = [
         url: 'https://www.characterai.com',
         description: 'Chat with historical or fictional characters.',
         longDescription: 'Character.ai allows users to interact with AI-driven characters based on historical figures, fictional personalities, or user-created entities. It provides a unique conversational entertainment experience.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'grok_5525',
@@ -1310,7 +1310,7 @@ export const tools = [
         url: 'https://www.grok.com',
         description: 'Elon Musk\'s AI integrated into X (Twitter).',
         longDescription: 'Grok is a conversational AI developed by xAI, designed to answer questions with a bit of wit and has access to real-time information via the X platform.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'dalle_5347',
@@ -1323,7 +1323,7 @@ export const tools = [
         url: 'https://openai.com/dall-e-3',
         description: 'Precise image generation from chat.',
         longDescription: 'OpenAI\'s DALL-E 3 translates complex prompts into extremely precise images, understanding nuances and details better than previous versions.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'adobe_681',
@@ -1336,7 +1336,7 @@ export const tools = [
         url: 'https://www.adobe.com',
         description: 'Professional generative fill and editing.',
         longDescription: 'Adobe Firefly is a family of creative generative AI models integrated into Adobe Creative Cloud, allowing for professional-grade generative fill and content creation.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'canva_1777',
@@ -1349,7 +1349,7 @@ export const tools = [
         url: 'https://www.canva.com',
         description: 'Assisted graphic design for non-designers.',
         longDescription: 'Canva Magic Studio leverages AI to simplify graphic design tasks, from removing backgrounds to generating entire layouts based on a prompt.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'kreaai_3219',
@@ -1362,7 +1362,7 @@ export const tools = [
         url: 'https://www.kreaai.com',
         description: 'Real-time image generation and enhancement.',
         longDescription: 'Krea.ai provides a state-of-the-art creative suite for real-time image generation, upscaling, and enhancement, optimized for quick and high-quality outputs.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'magnific_8492',
@@ -1375,7 +1375,7 @@ export const tools = [
         url: 'https://www.magnific.com',
         description: 'The best high-definition upscaler.',
         longDescription: 'Magnific AI uses advanced generative technology to upscale images to extreme resolutions while adding incredible detail and maintaining consistency.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'recraftai_2074',
@@ -1388,7 +1388,7 @@ export const tools = [
         url: 'https://www.recraftai.com',
         description: 'Generation of vectors (.svg) and icons.',
         longDescription: 'Recraft.ai allows users to generate and edit high-quality vector art, illustrations, and icons with extensive control over style and output format.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'looka_8362',
@@ -1401,7 +1401,7 @@ export const tools = [
         url: 'https://www.looka.com',
         description: 'Logo creation and complete branding.',
         longDescription: 'Looka uses AI to help entrepreneurs design a professional brand identity, starting with a unique logo and expanding to social media kits and business cards.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'uizard_223',
@@ -1414,7 +1414,7 @@ export const tools = [
         url: 'https://www.uizard.com',
         description: 'Turn sketches into app prototypes.',
         longDescription: 'Uizard uses AI to convert hand-drawn sketches or screenshots into editable digital prototypes for mobile apps and websites.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'framer_2789',
@@ -1427,7 +1427,7 @@ export const tools = [
         url: 'https://www.framer.com',
         description: 'Complete website generation from text.',
         longDescription: 'Framer AI allows users to generate high-quality, responsive websites from a simple text prompt, which can then be further refined with professional design tools.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'relume_1767',
@@ -1440,7 +1440,7 @@ export const tools = [
         url: 'https://www.relume.com',
         description: 'Website structure and sitemap via AI.',
         longDescription: 'Relume helps web designers and developers generate sitemaps and wireframes using AI, accelerating the planning phase of web projects.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'heygen_4644',
@@ -1453,7 +1453,7 @@ export const tools = [
         url: 'https://www.heygen.com',
         description: 'Speaking avatars and video translation with lip-sync.',
         longDescription: 'HeyGen produces high-quality AI videos with digital avatars and has advanced video translation capabilities that include perfect lip-sync.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'sora_8370',
@@ -1466,7 +1466,7 @@ export const tools = [
         url: 'https://www.sora.com',
         description: 'Long-duration cinematic video (deployment in progress).',
         longDescription: 'OpenAI\'s Sora is an AI model that can create realistic and imaginative scenes from text instructions, producing high-fidelity videos of up to a minute.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'pika_7068',
@@ -1479,7 +1479,7 @@ export const tools = [
         url: 'https://pika.art',
         description: 'Creative animations and visual effects.',
         longDescription: 'Pika Labs provides a powerful ideation-to-video platform that allows creators to bring their stories to life through high-quality AI-generated animations.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'synthesia_2351',
@@ -1492,7 +1492,7 @@ export const tools = [
         url: 'https://www.synthesia.com',
         description: 'Corporate videos with virtual presenters.',
         longDescription: 'Synthesia is an AI video generation platform that enables users to create professional-looking videos with AI avatars in over 120 languages.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'invideo_7750',
@@ -1505,7 +1505,7 @@ export const tools = [
         url: 'https://invideo.io',
         description: 'Create videos for YouTube/TikTok from a prompt.',
         longDescription: 'InVideo AI automates video creation for social media, providing a library of stock media and generating scripts and voice-overs based on user prompts.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'wonder_2097',
@@ -1518,7 +1518,7 @@ export const tools = [
         url: 'https://www.wonder.com',
         description: 'Replaces people with 3D characters in video.',
         longDescription: 'Wonder Dynamics automatically animates, lights, and composes 3D characters into a live-action scene, removing the need for complex motion capture or manual VFX work.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'kaiber_7755',
@@ -1531,7 +1531,7 @@ export const tools = [
         url: 'https://kaiber.ai',
         description: 'Music videos and transformation effects.',
         longDescription: 'Kaiber is an AI creative lab that allows users to create stunning visuals and music videos using advanced generative techniques like frame-to-frame animation and style transformation.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'captionsai_6624',
@@ -1544,7 +1544,7 @@ export const tools = [
         url: 'https://www.captions.ai',
         description: 'Automatic subtitles and viral clip editing.',
         longDescription: 'Captions.ai is a comprehensive studio for creators, offering AI-powered subtitling, eye contact correction, and automated video editing specialized for social media.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'descript_6948',
@@ -1557,7 +1557,7 @@ export const tools = [
         url: 'https://www.descript.com',
         description: 'Text-based video editor (transcription).',
         longDescription: 'Descript is a revolutionary audio and video editor that feels like a document. Edit your media by editing the text transcript, and use AI features like studio sound and green screen.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'github_8281',
@@ -1570,7 +1570,7 @@ export const tools = [
         url: 'https://www.github.com',
         description: 'Leading code autocomplete assistant.',
         longDescription: 'GitHub Copilot uses the OpenAI Codex to suggest code and entire functions in real-time, right from your editor, helping you code faster and focus on logic.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'replit_6127',
@@ -1583,7 +1583,7 @@ export const tools = [
         url: 'https://www.replit.com',
         description: 'Build and deploy complete apps just by asking.',
         longDescription: 'Replit Agent is an AI-powered assistant that helps you build, test, and deploy software applications entirely within the browser, handling both frontend and backend.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'boltnew_6272',
@@ -1596,7 +1596,7 @@ export const tools = [
         url: 'https://www.boltnew.com',
         description: 'Full-stack web development in the browser.',
         longDescription: 'Bolt.new is an AI-powered full-stack web development environment that allows you to prompt, build, and deploy web applications instantly.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'v0dev_372',
@@ -1609,7 +1609,7 @@ export const tools = [
         url: 'https://v0.dev',
         description: 'UI generation in React and Tailwind.',
         longDescription: 'V0.dev is a generative AI tool by Vercel that creates professional React UI components and layouts based on your text descriptions.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'lovable_8283',
@@ -1622,7 +1622,7 @@ export const tools = [
         url: 'https://www.lovable.com',
         description: 'Creation of complex web apps without code.',
         longDescription: 'Lovable is an AI-powered platform that enables anyone to build and iterate on full-stack web applications by simply describing what they want.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'anima_3712',
@@ -1635,7 +1635,7 @@ export const tools = [
         url: 'https://www.anima.com',
         description: 'Converts Figma designs to functional code.',
         longDescription: 'Anima helps designers and developers bridge the gap between design and production by converting Figma, Adobe XD, and Sketch designs into high-quality code.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'blackbox_538',
@@ -1648,7 +1648,7 @@ export const tools = [
         url: 'https://www.blackbox.com',
         description: 'Ultra-fast code search and suggestions.',
         longDescription: 'Blackbox AI is a powerful coding assistant that allows you to search for code snippets and provides intelligent completions for over 20 programming languages.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'tabnine_1076',
@@ -1661,7 +1661,7 @@ export const tools = [
         url: 'https://www.tabnine.com',
         description: 'Private autocomplete for enterprise development.',
         longDescription: 'Tabnine is an AI code assistant that prioritizes privacy and security, offering localized or cloud-based completions specifically for professional teams.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'sourcegraph_6843',
@@ -1674,7 +1674,7 @@ export const tools = [
         url: 'https://www.sourcegraph.com',
         description: 'Assistant to understand giant codebases.',
         longDescription: 'Sourcegraph Cody uses AI to answer questions about your entire codebase, summarize complex files, and generate code based on your project context.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'notion_9516',
@@ -1687,7 +1687,7 @@ export const tools = [
         url: 'https://www.notion.com',
         description: 'Project management and integrated writing assistant.',
         longDescription: 'Notion AI adds generative capabilities to your workspace, helping you summarize documents, brainstorm ideas, and refine your writing within your existing notes.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'jasper_3064',
@@ -1700,7 +1700,7 @@ export const tools = [
         url: 'https://www.jasper.ai',
         description: 'AI for content marketing and blogs.',
         longDescription: 'Jasper is a comprehensive content platform for marketing teams, enabling the creation of high-quality copy, blog posts, and marketing materials aligned with your brand voice.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'copyai_3982',
@@ -1713,7 +1713,7 @@ export const tools = [
         url: 'https://www.copy.ai',
         description: 'High-converting sales copy and ad generation.',
         longDescription: 'Copy.ai is an AI writing assistant that enables teams to generate high-quality marketing copy, social media posts, and sales emails in seconds.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'writesonic_6327',
@@ -1726,7 +1726,7 @@ export const tools = [
         url: 'https://www.writesonic.com',
         description: 'SEO-optimized articles for Google ranking.',
         longDescription: 'Writesonic is an AI-powered content writing platform that helps businesses generate SEO-friendly blog posts, landing pages, and product descriptions.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'grammarly_3403',
@@ -1739,7 +1739,7 @@ export const tools = [
         url: 'https://www.grammarly.com',
         description: 'Advanced style and tone correction.',
         longDescription: 'Grammarly uses AI to provide real-time suggestions for grammar, spelling, and tone, ensuring your communication is clear and professional.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'deepl_2698',
@@ -1752,7 +1752,7 @@ export const tools = [
         url: 'https://www.deepl.com',
         description: 'Improves grammar and naturalness in multiple languages.',
         longDescription: 'DeepL Write is an AI writing tool that goes beyond grammar checking to improve your style and phrasing across various languages.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'gamma_3549',
@@ -1765,7 +1765,7 @@ export const tools = [
         url: 'https://www.gamma.com',
         description: 'Automatic presentation and webpage generator.',
         longDescription: 'Gamma is a new medium for presenting ideas, powered by AI to create beautiful, interactive presentations and webpages from a prompt.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'beautifulai_5317',
@@ -1778,7 +1778,7 @@ export const tools = [
         url: 'https://www.beautifulai.com',
         description: 'Smart presentation design software.',
         longDescription: 'Beautiful.ai is an expert presentation deck designer that applies the rules of good design in real-time as you add content to your slides.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'otterai_314',
@@ -1791,7 +1791,7 @@ export const tools = [
         url: 'https://www.otterai.com',
         description: 'Meeting transcription and automated summaries.',
         longDescription: 'Otter.ai records meetings and provides real-time transcription, automated summaries, and searchable notes for better collaboration.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'firefliesai_4489',
@@ -1804,7 +1804,7 @@ export const tools = [
         url: 'https://fireflies.ai',
         description: 'Records and analyzes video calls automatically.',
         longDescription: 'Fireflies.ai is an AI voice assistant that helps transcribe, take notes, and complete actions during meetings across various platforms.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'motion_722',
@@ -1817,7 +1817,7 @@ export const tools = [
         url: 'https://www.motion.com',
         description: 'Smart calendar that prioritizes your tasks.',
         longDescription: 'Motion uses AI to automatically build your schedule, prioritizing your tasks and protecting time for deep work.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'reclaimai_9768',
@@ -1830,7 +1830,7 @@ export const tools = [
         url: 'https://www.reclaimai.com',
         description: 'Schedule optimization for teams.',
         longDescription: 'Reclaim.ai is an intelligent scheduling app that helps teams find time for tasks, habits, and meetings across their busy calendars.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'elicit_1899',
@@ -1843,7 +1843,7 @@ export const tools = [
         url: 'https://www.elicit.com',
         description: 'Automates academic literature review.',
         longDescription: 'Elicit uses language models to help researchers discover and synthesize academic papers, providing high-quality summaries and extracting data from studies.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'sciteai_683',
@@ -1856,7 +1856,7 @@ export const tools = [
         url: 'https://www.sciteai.com',
         description: 'Verifies citations and scientific accuracy.',
         longDescription: 'Scite.ai is an award-winning platform that allows users to see how scientific articles have been cited by providing the context of the citation.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'chatpdf_36',
@@ -1869,7 +1869,7 @@ export const tools = [
         url: 'https://www.chatpdf.com',
         description: 'Interact with any PDF file using AI.',
         longDescription: 'ChatPDF allows you to talk to any PDF document. Ask questions, get summaries, and extract information from your files instantly.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'genei_3478',
@@ -1882,7 +1882,7 @@ export const tools = [
         url: 'https://www.genei.com',
         description: 'Article summarization and research management.',
         longDescription: 'Genei uses AI to summarize articles and research papers, helping you work through information faster and more effectively.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'roseai_7791',
@@ -1895,7 +1895,7 @@ export const tools = [
         url: 'https://rose.ai',
         description: 'Economic and financial data platform.',
         longDescription: 'Rose.ai is a cloud-native data platform that enables users to find, visualize, and share data insights through natural language queries.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'elevenlabs_3261',
@@ -1908,7 +1908,7 @@ export const tools = [
         url: 'https://elevenlabs.io',
         description: 'Realistic voice cloning and text-to-speech.',
         longDescription: 'ElevenLabs is the most advanced AI audio platform, offering lifelike voice synthesis and cloning technology for creators and developers.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'adobe_9176',
@@ -1921,7 +1921,7 @@ export const tools = [
         url: 'https://www.adobe.com',
         description: 'Professional audio cleaning and enhancement.',
         longDescription: 'Adobe Podcast (formerly Project Shasta) provides AI-powered audio tools for people to record and edit audio with studio-quality results.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'speechify_6979',
@@ -1934,7 +1934,7 @@ export const tools = [
         url: 'https://www.speechify.com',
         description: 'Converts text into audiobooks with natural voices.',
         longDescription: 'Speechify is a high-quality text-to-speech app that helps you read faster and listen to any document or book on the go.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'moisesai_42',
@@ -1947,7 +1947,7 @@ export const tools = [
         url: 'https://www.moisesai.com',
         description: 'Separates instruments and vocals from songs.',
         longDescription: 'Moises.ai is an essential app for musicians, allowing them to isolate instruments and voices from any track using advanced AI stem separation.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'lalalai_7447',
@@ -1960,7 +1960,7 @@ export const tools = [
         url: 'https://www.lalal.ai',
         description: 'Next-generation audio track extraction (stems).',
         longDescription: 'LALAL.AI is a high-quality vocal remover and instrumental isolation service for fast, easy, and precise stem extraction.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'soundraw_2632',
@@ -1973,7 +1973,7 @@ export const tools = [
         url: 'https://www.soundraw.com',
         description: 'Customizable background music for creators.',
         longDescription: 'Soundraw is an AI music generator that allows creators to customize their own royalty-free music by choosing the mood, genre, and length.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'voicemod_8700',
@@ -1986,7 +1986,7 @@ export const tools = [
         url: 'https://www.voicemod.com',
         description: 'Real-time voice transformation and soundboard.',
         longDescription: 'VoiceMod is a real-time AI voice changer and soundboard software that allows you to transform your voice for gaming and streaming.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'zapier_7026',
@@ -1999,7 +1999,7 @@ export const tools = [
         url: 'https://www.zapier.com',
         description: 'Create AI agents that execute tasks across apps.',
         longDescription: 'Zapier Central is an AI-powered workspace that allows you to build autonomous agents that can trigger workflows and take action in 6,000+ apps.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, automation, workflows, zapier, make, ifttt, slack, discord, telegram, whatsapp, bots, moderation, community, task automation'
+        
     },
     {
         id: 'n8n_7803',
@@ -2012,7 +2012,7 @@ export const tools = [
         url: 'https://n8n.io',
         description: 'Technical workflow automation for developers.',
         longDescription: 'n8n is an open-source workflow automation tool that allows you to connect any app and automate complex business processes with a visual interface.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, automation, workflows, zapier, make, ifttt, slack, discord, telegram, whatsapp, bots, moderation, community, task automation'
+        
     },
     {
         id: 'glean_7983',
@@ -2025,7 +2025,7 @@ export const tools = [
         url: 'https://www.glean.com',
         description: 'The smart search engine for internal company data.',
         longDescription: 'Glean is an AI-powered enterprise search tool that connects to all your company\'s apps to find information and people instantly.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, automation, workflows, zapier, make, ifttt, slack, discord, telegram, whatsapp, bots, moderation, community, task automation'
+        
     },
     {
         id: 'mindos_8988',
@@ -2038,7 +2038,7 @@ export const tools = [
         url: 'https://www.mindos.com',
         description: 'Creation of personalized autonomous agents.',
         longDescription: 'MindOS is a platform for creating AI agents that can handle complex research, schedule meetings, and automate your professional workspace.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, automation, workflows, zapier, make, ifttt, slack, discord, telegram, whatsapp, bots, moderation, community, task automation'
+        
     },
     {
         id: 'adcreativeai_3753',
@@ -2051,7 +2051,7 @@ export const tools = [
         url: 'https://www.adcreativeai.com',
         description: 'AI-powered advertising banner generation.',
         longDescription: 'AdCreative.ai allows you to generate conversion-focused ad creatives and social media banners in seconds using AI.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, ads, slogans, cold emails, newsletters, sales automation, crm, leads, prospecting, market analysis, competition, trends, funnels, landing page, conversion, metrics, kpis, analytics, algorithms, social media, virality, copywriting'
+        
     },
     {
         id: 'apolloai_7235',
@@ -2064,7 +2064,7 @@ export const tools = [
         url: 'https://www.apolloai.com',
         description: 'Lead generation and sales email automation.',
         longDescription: 'Apollo.ai is an all-in-one sales intelligence platform with tools to help you find, contact, and close your ideal customers.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, ads, slogans, cold emails, newsletters, sales automation, crm, leads, prospecting, market analysis, competition, trends, funnels, landing page, conversion, metrics, kpis, analytics, algorithms, social media, virality, copywriting'
+        
     },
     {
         id: 'ocoya_6624',
@@ -2077,7 +2077,7 @@ export const tools = [
         url: 'https://www.ocoya.com',
         description: 'Social media management and post creation.',
         longDescription: 'Ocoya is an AI-powered platform that helps you create, schedule, and analyze social media content across all your channels in minutes.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, ads, slogans, cold emails, newsletters, sales automation, crm, leads, prospecting, market analysis, competition, trends, funnels, landing page, conversion, metrics, kpis, analytics, algorithms, social media, virality, copywriting'
+        
     },
     {
         id: 'brand24_4784',
@@ -2090,7 +2090,7 @@ export const tools = [
         url: 'https://www.brand24.com',
         description: 'Online reputation monitoring and insights.',
         longDescription: 'Brand24 provides instant access to online mentions across social media, news, blogs, and videos to help you manage your brand reputation.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, ads, slogans, cold emails, newsletters, sales automation, crm, leads, prospecting, market analysis, competition, trends, funnels, landing page, conversion, metrics, kpis, analytics, algorithms, social media, virality, copywriting'
+        
     },
     {
         id: 'typeform_1464',
@@ -2103,7 +2103,7 @@ export const tools = [
         url: 'https://www.typeform.com',
         description: 'Conversational forms powered by AI.',
         longDescription: 'Typeform Formless uses AI to turn your forms into engaging conversations, increasing completion rates and providing better user insights.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, ads, slogans, cold emails, newsletters, sales automation, crm, leads, prospecting, market analysis, competition, trends, funnels, landing page, conversion, metrics, kpis, analytics, algorithms, social media, virality, copywriting'
+        
     },
     {
         id: 'topaz_3728',
@@ -2116,7 +2116,7 @@ export const tools = [
         url: 'https://www.topaz.com',
         description: 'Restoration and upscaling for old video.',
         longDescription: 'Topaz Video AI uses deep learning to upscale, denoise, and restore video footage, providing professional-grade results for creators.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'vectary_2296',
@@ -2129,7 +2129,7 @@ export const tools = [
         url: 'https://www.vectary.com',
         description: 'Collaborative 3D design and rendering.',
         longDescription: 'Vectary is an accessible 3D design tool that allows teams to create, share, and customize high-quality 3D assets directly in the browser.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'nomic_3414',
@@ -2142,7 +2142,7 @@ export const tools = [
         url: 'https://home.nomic.ai',
         description: 'Visualization of massive unstructured datasets.',
         longDescription: 'Nomic Atlas allows AI engineers and researchers to visualize and interact with millions of data points to improve model performance.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'humata_2301',
@@ -2155,7 +2155,7 @@ export const tools = [
         url: 'https://www.humata.com',
         description: 'Analysis of legal and medical documents.',
         longDescription: 'Humata AI is like ChatGPT for your files, helping you analyze long legal, medical, or technical documents instantly.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'tome_8028',
@@ -2168,7 +2168,7 @@ export const tools = [
         url: 'https://tome.app',
         description: 'Visual narrative and storytelling for business.',
         longDescription: 'Tome uses AI to create polished presentation decks and interactive narratives from a simple text prompt.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'eightify_4539',
@@ -2181,7 +2181,7 @@ export const tools = [
         url: 'https://www.eightify.com',
         description: 'Instant summaries for YouTube videos.',
         longDescription: 'Eightify is a Chrome extension that uses AI to provide instant summaries of any YouTube video, saving you hours of watching time.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'monica_8048',
@@ -2194,7 +2194,7 @@ export const tools = [
         url: 'https://www.monica.com',
         description: 'All-in-one browser extension (Chat + Summary).',
         longDescription: 'Monica is an AI personal assistant extension that lives in your browser, helping you chat with any website and summarize long articles.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'hugging_8161',
@@ -2207,7 +2207,7 @@ export const tools = [
         url: 'https://www.huggingface.co',
         description: 'The largest library of AI models and datasets.',
         longDescription: 'Hugging Face is the central hub for machine learning developers, offering thousands of open-source models for NLP, computer vision, and more.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'civitai_5754',
@@ -2220,7 +2220,7 @@ export const tools = [
         url: 'https://www.civitai.com',
         description: 'Model community for Stable Diffusion and more.',
         longDescription: 'Civitai is the leading community for sharing and discovering custom models for generative AI image tools.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'poindexter_2523',
@@ -2233,7 +2233,7 @@ export const tools = [
         url: 'https://www.poindexter.com',
         description: 'AI for startup financial projections.',
         longDescription: 'Poindexter uses AI to help startups build accurate financial models and projections in minutes without spreadsheets.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'feedly_9345',
@@ -2246,7 +2246,7 @@ export const tools = [
         url: 'https://www.feedly.com',
         description: 'AI-powered news curation and insights.',
         longDescription: 'Feedly Leo is an AI research assistant that learns your interests to curate the most relevant news and insights from across the web.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'scribe_4342',
@@ -2259,7 +2259,7 @@ export const tools = [
         url: 'https://www.scribe.com',
         description: 'Creates automatic user guides by recording your screen.',
         longDescription: 'Scribe automatically captures your workflows and turns them into step-by-step guides with screenshots and text.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'heckfree_446',
@@ -2272,7 +2272,7 @@ export const tools = [
         url: 'https://huggingface.co',
         description: 'Humanizer for AI-generated text.',
         longDescription: 'Heckfree helps you rewrite AI-generated content to sound more natural and human-like, bypassing strict filters.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'did_4663',
@@ -2285,7 +2285,7 @@ export const tools = [
         url: 'https://www.d-id.com',
         description: 'Animation of photos into talking avatars.',
         longDescription: 'D-ID uses AI to turn still photos into high-quality video presenters with natural speech and facial expressions.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'memai_3328',
@@ -2298,7 +2298,7 @@ export const tools = [
         url: 'https://mem.ai',
         description: 'Organization of personal notes and knowledge.',
         longDescription: 'Mem.ai is an intelligent workspace that organizes your notes, schedules, and knowledge base automatically using AI.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'make_1001',
@@ -2311,7 +2311,7 @@ export const tools = [
         url: 'https://www.make.com',
         description: 'Build visual workflows and connect thousands of apps.',
         longDescription: 'The most visual and powerful no-code automation platform. Connect CRMs, email, AI (OpenAI, Anthropic), and databases to automate everything from customer service to billing without writing a single line of code.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, automation, workflows, zapier, make, ifttt, slack, discord, telegram, whatsapp, bots, moderation, community, task automation'
+        
     },
     {
         id: 'zapier_1002',
@@ -2324,7 +2324,7 @@ export const tools = [
         url: 'https://zapier.com/central',
         description: 'AI agents that execute tasks in your daily apps.',
         longDescription: 'Zapier Central allows you to create custom AI agents. You can chat with your database information and instruct the agent to send emails, update CRM records, or create reports using thousands of integrations.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, automation, workflows, zapier, make, ifttt, slack, discord, telegram, whatsapp, bots, moderation, community, task automation'
+        
     },
     {
         id: 'chatbase_1003',
@@ -2337,7 +2337,7 @@ export const tools = [
         url: 'https://www.chatbase.co',
         description: 'Build a chatbot for your website trained on your own business data.',
         longDescription: 'A revolutionary tool for customer service. Upload your business PDFs, link your entire website, or your user manual, and Chatbase will create a ChatGPT-style clone that answers customer questions 24/7 based solely on your information.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'fireflies_1004',
@@ -2350,7 +2350,7 @@ export const tools = [
         url: 'https://fireflies.ai',
         description: 'An AI assistant that records, transcribes, and summarizes your B2B meetings.',
         longDescription: 'Integrates with Google Meet, Zoom, and Teams. It joins your calls, transcribes them in real-time, identifies speakers, and generates summaries with action items, eliminating the need for manual notes.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'otterai_1005',
@@ -2363,7 +2363,7 @@ export const tools = [
         url: 'https://otter.ai',
         description: 'Live meeting assistant and AI for sales team collaboration.',
         longDescription: 'Beyond transcribing corporate meetings with high precision, OtterPilot joins your calls and generates detailed notes. Includes a live bot you can query during the meeting.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'clay_1006',
@@ -2376,7 +2376,7 @@ export const tools = [
         url: 'https://www.clay.com',
         description: 'AI-powered spreadsheet for outbound sales and prospecting.',
         longDescription: 'The secret weapon for modern sales teams. Connect dozens of data providers (LinkedIn, Apollo, Google) in a single table and use AI to research leads and write personalized cold emails at scale.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, ads, slogans, cold emails, newsletters, sales automation, crm, leads, prospecting, market analysis, competition, trends, funnels, landing page, conversion, metrics, kpis, analytics, algorithms, social media, virality, copywriting'
+        
     },
     {
         id: 'gong_1007',
@@ -2389,7 +2389,7 @@ export const tools = [
         url: 'https://www.gong.io',
         description: 'Revenue Intelligence for sales teams.',
         longDescription: 'Gong records and analyzes calls and emails. Using AI, it detects trends, common objections, and evaluates if a negotiation is on track, providing a predictive dashboard based on real interactions.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, ads, slogans, cold emails, newsletters, sales automation, crm, leads, prospecting, market analysis, competition, trends, funnels, landing page, conversion, metrics, kpis, analytics, algorithms, social media, virality, copywriting'
+        
     },
     {
         id: 'beautifulai_1008',
@@ -2402,7 +2402,7 @@ export const tools = [
         url: 'https://www.beautiful.ai',
         description: 'Corporate B2B presentation software that self-designs instantly.',
         longDescription: 'Ideal for B2B. Unlike a blank PowerPoint, this tool applies smart design rules. Just add your content, and the template adjusts instantly into a professional, high-impact format.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'browseai_1009',
@@ -2415,7 +2415,7 @@ export const tools = [
         url: 'https://www.browse.ai',
         description: 'Extract and monitor competitor data without coding.',
         longDescription: 'Build scrapers and monitor competition prices without Python or complex code. Train a bot by clicking, and BrowseAI will scrape competitor sites weekly into your Google Sheets.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'colossyan_1010',
@@ -2428,7 +2428,7 @@ export const tools = [
         url: 'https://www.colossyan.com',
         description: 'B2B corporate videos with realistic actors, ideal for HR and training.',
         longDescription: 'Great for employee onboarding and sales support. Paste your sales manual text, select an avatar, and produce a human video without a film crew.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'lavender_1011',
@@ -2441,7 +2441,7 @@ export const tools = [
         url: 'https://www.lavender.ai',
         description: 'AI assistant for writing high-performing cold emails.',
         longDescription: 'This plugin lives in your inbox and analyzes every sales email. It helps you remove spammy language and researches the prospect\'s company to provide custom icebreakers.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, ads, slogans, cold emails, newsletters, sales automation, crm, leads, prospecting, market analysis, competition, trends, funnels, landing page, conversion, metrics, kpis, analytics, algorithms, social media, virality, copywriting'
+        
     },
     {
         id: 'anyword_1012',
@@ -2454,7 +2454,7 @@ export const tools = [
         url: 'https://anyword.com',
         description: 'Write ad copy and predict conversion scores from 1 to 100.',
         longDescription: 'The king of sales-oriented copy. Anyword generates B2B text for Meta or LinkedIn ads and provides a performance score so you know what will resonate with your audience.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, ads, slogans, cold emails, newsletters, sales automation, crm, leads, prospecting, market analysis, competition, trends, funnels, landing page, conversion, metrics, kpis, analytics, algorithms, social media, virality, copywriting'
+        
     },
     {
         id: 'mutiny_1013',
@@ -2467,7 +2467,7 @@ export const tools = [
         url: 'https://www.mutinyhq.com',
         description: 'Improve website conversion by personalizing content for every visitor.',
         longDescription: 'Mutiny detects if a visitor is from a major corporation or a startup in real-time. It then adjusts your landing page headlines to a specific proposal that captivates that client type.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, ads, slogans, cold emails, newsletters, sales automation, crm, leads, prospecting, market analysis, competition, trends, funnels, landing page, conversion, metrics, kpis, analytics, algorithms, social media, virality, copywriting'
+        
     },
     {
         id: 'tome_1014',
@@ -2480,7 +2480,7 @@ export const tools = [
         url: 'https://tome.app',
         description: 'Sales reports, investment pitch decks, or interactive metrics.',
         longDescription: 'Tell Tome about your company idea and it will replace traditional slides with interactive, AI-generated modular webs that delight investors.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'alice_1015',
@@ -2493,7 +2493,7 @@ export const tools = [
         url: 'https://11x.ai',
         description: 'Digital Sales Representative - your new virtual prospecting employee.',
         longDescription: 'Alice and Charlie identify leads that match your profile and reach out to them to book meetings directly into your calendar.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, ads, slogans, cold emails, newsletters, sales automation, crm, leads, prospecting, market analysis, competition, trends, funnels, landing page, conversion, metrics, kpis, analytics, algorithms, social media, virality, copywriting'
+        
     },
     {
         id: 'akkio_1016',
@@ -2506,7 +2506,7 @@ export const tools = [
         url: 'https://www.akkio.com',
         description: 'Data Science and analytics for SEO-oriented SMEs.',
         longDescription: 'Allows SME managers to upload Excel sheets and get predictions, lead scoring, and revenue estimates without a dedicated data science team.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'fathom_1017',
@@ -2519,7 +2519,7 @@ export const tools = [
         url: 'https://fathom.video',
         description: 'Useful virtual assistant for Zoom/Teams/Meet that syncs with your CRM automatically.',
         longDescription: 'Fathom records, transcribes, and highlights key points from your meetings, automatically updating your Salesforce or HubSpot records.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'brandmark_1018',
@@ -2532,7 +2532,7 @@ export const tools = [
         url: 'https://brandmark.io',
         description: 'Create your visual brand kit and corporate identity in record time.',
         longDescription: 'Aimed at new startups and side projects, this tool uses an AI engine to produce palettes, logos, and social profiles without hiring a specialist.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'attention_1019',
@@ -2545,7 +2545,7 @@ export const tools = [
         url: 'https://www.attention.tech',
         description: 'Coaching for sales teams with real-time AI guidance on overcoming objections.',
         longDescription: 'Scans video calls and provides sellers with real-time scripts and battlecards based on the prospect\'s behavior.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, ads, slogans, cold emails, newsletters, sales automation, crm, leads, prospecting, market analysis, competition, trends, funnels, landing page, conversion, metrics, kpis, analytics, algorithms, social media, virality, copywriting'
+        
     },
     {
         id: 'retellai_1020',
@@ -2558,7 +2558,7 @@ export const tools = [
         url: 'https://www.retellai.com',
         description: 'Ultra-realistic voice agents for B2B phone support and lead capture.',
         longDescription: 'Retell AI allows you to build conversation-level phone bots with human-like latency and emotion for high-scale support.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'elevenlabs_2001',
@@ -2571,7 +2571,7 @@ export const tools = [
         url: 'https://elevenlabs.io',
         description: 'The best cloned voice and text-to-speech generator with terrifying realism.',
         longDescription: 'Indisputable leader in voice synthesis. Clone your own voice or use hundreds of profiles with emotion and natural inflection.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'opusclip_2002',
@@ -2584,7 +2584,7 @@ export const tools = [
         url: 'https://www.opus.pro',
         description: 'Transform long podcasts into viral short clips (Shorts/Reels) automatically.',
         longDescription: 'OpusClip uses predictive AI to find high-retention moments in long videos and crops them into vertical clips with auto-captions.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'deepl_2003',
@@ -2597,7 +2597,7 @@ export const tools = [
         url: 'https://www.deepl.com',
         description: 'Highly accurate text translator and writing assistant, superior to legacy tools.',
         longDescription: 'Uses deep learning to capture human context. DeepL Write ensures your business English or German sounds natural and professional.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'grammarly_2004',
@@ -2610,7 +2610,7 @@ export const tools = [
         url: 'https://www.grammarly.com',
         description: 'Omnipresent grammar assistant and tone-based email rewriting.',
         longDescription: 'The most installed plugin for professionals. Beyond spelling, it helps you adjust tone and improve clarity across all your communications.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'surferseo_2005',
@@ -2623,7 +2623,7 @@ export const tools = [
         url: 'https://surferseo.com',
         description: 'Guides you on the exact words to use to rank on Page 1 of Google.',
         longDescription: 'Surfer SEO analyzes top search results and provides real-time guidance to optimize your content as you write.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, ads, slogans, cold emails, newsletters, sales automation, crm, leads, prospecting, market analysis, competition, trends, funnels, landing page, conversion, metrics, kpis, analytics, algorithms, social media, virality, copywriting'
+        
     },
     {
         id: 'rytr_2006',
@@ -2636,7 +2636,7 @@ export const tools = [
         url: 'https://rytr.me',
         description: 'Fast and affordable AI writing assistant for copywriting.',
         longDescription: 'Rytr provides an affordable way to generate product descriptions, social media posts, and emails in various tones and formats.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'photoroom_2007',
@@ -2649,7 +2649,7 @@ export const tools = [
         url: 'https://www.photoroom.com',
         description: 'Virtual photo studio and AI background removal for e-commerce.',
         longDescription: 'Photoroom allows you to create professional product images by removing backgrounds and adding studio-quality lighting and shadows.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'removebg_2008',
@@ -2662,7 +2662,7 @@ export const tools = [
         url: 'https://www.remove.bg',
         description: 'Instant and easy tool to remove the background from any photo.',
         longDescription: 'Remove.bg is a simple, one-click tool that uses AI to detect subjects and remove backgrounds with incredible precision in seconds.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, utilities, vpn, anonymity, reviews, comparisons, prices, deals, coupons, shopping, e-commerce, dropshipping, logistics, inventory, customer service'
+        
     },
     {
         id: 'ideogram_2009',
@@ -2675,7 +2675,7 @@ export const tools = [
         url: 'https://ideogram.ai',
         description: 'The best AI for rendering high-quality text within generated images.',
         longDescription: 'Ideogram produces stunning AI art with legible, accurate text, making it perfect for logos, posters, and social media graphics.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'playground_2010',
@@ -2688,7 +2688,7 @@ export const tools = [
         url: 'https://playground.com',
         description: 'Creative platform for generating and editing AI images on a giant canvas.',
         longDescription: 'Playground offers a powerful canvas interface to generate, combine, and edit AI images with precision and ease.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'youcom_2011',
@@ -2701,7 +2701,7 @@ export const tools = [
         url: 'https://you.com',
         description: 'Privacy-focused search engine with multimodal AI capabilities.',
         longDescription: 'You.com combines web results with AI chat, allowing users to switch between models like GPT-4 and Claude 3 for a custom search experience.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'elicit_2012',
@@ -2714,7 +2714,7 @@ export const tools = [
         url: 'https://elicit.com',
         description: 'AI research assistant for summarizing and analyzing scientific papers.',
         longDescription: 'Elicit searches through thousands of academic papers to answer questions and summarize findings into structured tables.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'speechify_2013',
@@ -2727,7 +2727,7 @@ export const tools = [
         url: 'https://speechify.com',
         description: 'High-quality screen reader for PDFs, emails, and web content.',
         longDescription: 'Speechify uses natural-sounding voices (including celebrities) to help you listen to any text on the web or in your documents.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'adobepodcast_2014',
@@ -2740,7 +2740,7 @@ export const tools = [
         url: 'https://podcast.adobe.com/enhance',
         description: 'Free tool to fix echo and noise for studio-quality voice recordings.',
         longDescription: 'Adobe Podcast Enhance uses AI to remove background noise and reverb from voice recordings, making them sound like they were recorded in a professional studio.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'fliki_2015',
@@ -2753,7 +2753,7 @@ export const tools = [
         url: 'https://fliki.ai',
         description: 'Convert blog posts or text into fully edited videos instantly.',
         longDescription: 'Fliki is a text-to-video tool that combines AI voices and stock footage to create high-quality social media content in minutes.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'pictory_2016',
@@ -2766,7 +2766,7 @@ export const tools = [
         url: 'https://pictory.ai',
         description: 'Automatically extract key moments from long videos to create social teasers.',
         longDescription: 'Pictory uses AI to summarize long webinars or meetings into short, branded video clips perfect for YouTube and LinkedIn.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'codeium_2017',
@@ -2779,7 +2779,7 @@ export const tools = [
         url: 'https://codeium.com',
         description: 'Open-source alternative to GitHub Copilot; AI extension for modern IDEs.',
         longDescription: 'Codeium provides fast and reliable code completion for dozens of languages, helping developers reduce boilerplate and bugs.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'phind_2018',
@@ -2792,7 +2792,7 @@ export const tools = [
         url: 'https://www.phind.com',
         description: 'An AI search engine for developers that finds and digests technical documentation.',
         longDescription: 'Phind answers technical questions by searching the web and compiling solutions with relevant code snippets and documentation.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'superhuman_2019',
@@ -2805,7 +2805,7 @@ export const tools = [
         url: 'https://superhuman.com',
         description: 'The fastest email experience with integrated AI summaries and shortcuts.',
         longDescription: 'Superhuman uses AI to help you draft emails, summarize long threads, and manage your inbox with lightning speed.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'pi_2020',
@@ -2818,7 +2818,7 @@ export const tools = [
         url: 'https://pi.ai',
         description: 'A friendly and supportive AI chatbot designed for genuine conversation.',
         longDescription: 'Pi (Personal Intelligence) is designed to be a supportive companion, offering empathetic responses and helping users talk through their thoughts.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, essays, letters, emails, summaries, synthesize, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, gpt, chatbot, virtual assistant, automation, study, learn, languages, english, translation, translator, explanations'
+        
     },
     {
         id: 'frase_2021',
@@ -2831,7 +2831,7 @@ export const tools = [
         url: 'https://www.frase.io',
         description: 'Streamline your SEO workflow by analyzing competitor content with AI.',
         longDescription: 'Frase helps content teams research, write, and optimize SEO content by analyzing top search results for any keyword.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, ads, slogans, cold emails, newsletters, sales automation, crm, leads, prospecting, market analysis, competition, trends, funnels, landing page, conversion, metrics, kpis, analytics, algorithms, social media, virality, copywriting'
+        
     },
     {
         id: 'slidesai_2022',
@@ -2844,7 +2844,7 @@ export const tools = [
         url: 'https://www.slidesai.io',
         description: 'Build professional slides in Google Slides instantly from your text.',
         longDescription: 'SlidesAI is a Google Workspace add-on that uses AI to convert outlines and documents into beautifully designed presentation slides.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, writing, texts, blog, articles, copy, copywriting, ads, scripts, essays, thesis, letters, emails, summaries, paraphrase, rewrite, humanize, correct, grammar, spelling, seo, keywords, descriptions, captions, twitter, linkedin, threads, names, slogans, presentations, slides, powerpoint, pitch deck, organize, calendar, notes, notion, meeting summaries'
+        
     },
     {
         id: 'scholarcy_2023',
@@ -2857,7 +2857,7 @@ export const tools = [
         url: 'https://www.scholarcy.com',
         description: 'AI research library that summarizes long papers and extracts references.',
         longDescription: 'Scholarcy transforms massive PDF documents into structured summaries and flashcards for faster academic research.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, excel, spreadsheets, formulas, data analysis, visualization, charts, databases, pdf, chat with pdf, analyze documents, contracts, presentations, study, learn, mathematics, algebra, physics, chemistry, solve problems, homework, exams, mind maps, quizzes, flashcards, tutoring, astronomy, space, nasa, quantum physics, energy'
+        
     },
     {
         id: 'murf_2024',
@@ -2870,7 +2870,7 @@ export const tools = [
         url: 'https://murf.ai',
         description: 'Versatile collection of natural AI voices for e-learning and marketing.',
         longDescription: 'Murf.ai provides studio-quality AI voices for narrations, presentations, and voiceovers in multiple languages and tones.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'webflow_2025',
@@ -2883,7 +2883,7 @@ export const tools = [
         url: 'https://webflow.com/ai',
         description: 'Professional web design with an AI assistant for styles and content.',
         longDescription: 'Webflow AI helps designers build professional sites faster with AI-driven style suggestions and content generation within the visual editor.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, images, photos, art, generation, drawing, painting, logos, avatars, realism, anime, 3d, illustration, portrait, interior design, architecture, branding, mockup, ui, ux, remove background, remove objects, retouch, restore, upscaling, high resolution, expand, vectorize, filters, editing, isometric, sketch, colorization, colorize photos, black and white, noise reduction, blur, bokeh, lighting, shadows, reflections, perspective, symmetry, surrealism, fantasy, science fiction, horror, gothic, comic, manga, storyboard'
+        
     },
     {
         id: 'playht_2026',
@@ -2896,7 +2896,7 @@ export const tools = [
         url: 'https://play.ht',
         description: 'Highly versatile AI voices for professional voiceovers and audiobooks.',
         longDescription: 'Play.ht offers a massive library of AI voices with natural breathing and inflections, perfect for long-form narration and podcasts.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'amazonq_2027',
@@ -2909,7 +2909,7 @@ export const tools = [
         url: 'https://aws.amazon.com/q/developer',
         description: 'The great AI from the Bezos empire for developers focused on the immense world of AWS Cloud Services.',
         longDescription: 'Formerly "CodeWhisperer". Its great advantage over GitHub Copilot is its deep, exhaustive, and radical understanding when it comes to solving, scanning security, and inventing server configurations in Amazon (Cloud/IaaS). Perfect B2B Cloud dev. It also handles repairs at the first directive.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, code, programming, software, python, javascript, html, css, sql, java, c#, debugging, errors, documentation, create apps, create websites, no-code, excel, spreadsheets, databases, scraping, data mining, machine learning, deep learning, neural networks, model training, datasets, prompts, prompt engineering, jailbreak, security, privacy'
+        
     },
     {
         id: 'whisper_openai',
@@ -2922,7 +2922,7 @@ export const tools = [
         url: 'https://openai.com/research/whisper',
         description: 'World-class speech-to-text model with human-level accuracy.',
         longDescription: 'Transcribes long audios into text with ruthless accuracy regardless of marginal languages. It is downloadable in Python and integrated for free with interfaces like MacWhisper, pushing it to the table as one of the free pillars with the most daily uses in this entire current digital revolution.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, audio, music, songs, rhythms, beats, compose, voices, text to speech, tts, voice cloning, voiceover, narrator, podcast, transcription, audio to text, clean audio, remove noise, separate instruments, voice to song, mastering'
+        
     },
     {
         id: 'munch_2029',
@@ -2935,7 +2935,7 @@ export const tools = [
         url: 'https://www.getmunch.com',
         description: 'Destroys mega-long corporate videos and detects moments of emotion or comedy for fast platforms (TikTok/Instagram).',
         longDescription: 'Unlike raw editors, Munch has built-in SEO connectors. If the AI detects your guest talking about "Dopamine for growth," it will extract it and Munch will say: "You should go viral on TikTok today because Dopamine words are trendy," all in vertical. It is a great marketing tool.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, video, create video, video editing, text to video, talking avatars, faces, deepfake, subtitles, transcribe, snippets, clips, shorts, reels, tiktok, visual effects, animation, motion graphics, remove video background, digital clones, streaming, twitch, gaming, video games'
+        
     },
     {
         id: 'xembly_2030',
@@ -2948,7 +2948,7 @@ export const tools = [
         url: 'https://www.xembly.com',
         description: 'Orchestra director. Automates appointments with other humans Negotiating dates via email (Calendar Agent).',
         longDescription: 'Tell your assistant (Xena - in Slack or Mails) "Hey, meet with client so-and-so on Tuesday or Wednesday." The AI will send emails to the client as if it were you looking for availability, politely negotiating for exact hours in all time zones of the world, closing the invitation directly in the agendas of both individuals.',
-        keywords: 'ai, artificial intelligence, tools, free, premium, freemium, no registration, open source, online, browser, app, extension, best, recommended, organize, calendar, notes, notion, meeting summaries, workflow, productivity, project management, pomodoro, habits, reminders'
+        
     },
     {
         id: 'chatgpt_openai',
@@ -2961,7 +2961,7 @@ export const tools = [
         url: 'https://chat.openai.com/',
         description: 'The most famous conversational AI in the world, created by OpenAI, capable of solving incredibly complex logic, coding, and writing tasks.',
         longDescription: 'ChatGPT is the AI that started the generative revolution. In its free version (GPT-3.5 or limited GPT-4o), it functions as a super assistant capable of summarizing pdfs, translating languages naturally, formatting emails, and brainstorming. The premium version includes data analysis, image generation (DALL-E 3), and code execution.',
-        keywords: 'ai, chatgpt, openai, chatbot, assistant, text, generation, writing, coding, math, programming, brainstorming, free, freemium, best, top'
+        
     },
     {
         id: 'claude_anthropic',
@@ -2974,7 +2974,7 @@ export const tools = [
         url: 'https://claude.ai/',
         description: 'OpenAI\'s biggest rival, designed by Anthropic to be harmless, extremely articulate, and superior in massive document analysis.',
         longDescription: 'Claude 3 (Opus, Sonnet, Haiku) excels at nuance and safety limits. The Sonnet version is widely considered the best AI for writing non-robotic, "human-like" text, and has a massive context window capable of reading whole books or huge codebases in seconds without losing the thread.',
-        keywords: 'ai, claude, anthropic, chatbot, text generation, essay writer, coding, large context window, document processing, pdf reader'
+        
     },
     {
         id: 'perplexity_ai',
@@ -2987,7 +2987,7 @@ export const tools = [
         url: 'https://www.perplexity.ai/',
         description: 'The definitive AI search engine. It searches the internet in real-time and provides referenced answers instead of a list of blue links.',
         longDescription: 'Forget Googling. Perplexity reads top web results for your specific query and synthesizes the data with academic footnotes. Incredible for real-time research, fact-checking news, and avoiding AI hallucinations, as every single claim is backed by a clickable source link.',
-        keywords: 'ai, search engine, research, facts, perplexity, internet, live search, references, academic, citations, alternative to google'
+        
     },
     {
         id: 'gemini_google',
@@ -3000,7 +3000,7 @@ export const tools = [
         url: 'https://gemini.google.com/',
         description: 'Google\'s multimodally native AI, natively integrated into the Google ecosystem (Docs, Drive, Gmail).',
         longDescription: 'Gemini (formerly Bard) has a massive advantage: infinite integration with Google services. It can summarize your emails from Gmail, read your Google Drive documents, or analyze your current location via Maps. Extremely fast and totally multimodal (understands images, video, and audio inherently).',
-        keywords: 'ai, google, gemini, bard, assistant, chatbot, drive, docs, gmail integration, video analysis'
+        
     },
     {
         id: 'cursor_ai',
@@ -3013,7 +3013,7 @@ export const tools = [
         url: 'https://www.cursor.com/',
         description: 'The AI code editor built by developers for developers. A VS Code fork that writes software practically for you.',
         longDescription: 'Cursor completely redefines coding. Unlike GitHub Copilot, it natively understands your entire codebase simultaneously and allows you to "chat mode" with your folders. Ask "Implement a login page following my current design system" and it will write perfectly integrated code across multiple files.',
-        keywords: 'ai, code, cursor, programming, developer tools, vs code, copilot alternative, javascript, python, web development'
+        
     },
     {
         id: 'suno_ai',
@@ -3026,7 +3026,7 @@ export const tools = [
         url: 'https://suno.com/',
         description: 'The ChatGPT of music. Type a prompt and get radio-quality, full-length songs with vocals and instruments in seconds.',
         longDescription: 'Suno AI changed the music industry forever. You can input lyrics (or let it write them) and choose a genre like "synthwave" or "operatic metal". It will instantly generate a full 2-minute stunningly realistic track. Perfect for creators needing royalty-free background music or instant jingles.',
-        keywords: 'ai, music, generator, songs, audio, vocals, instruments, beat maker, suno, royalty free, creators'
+        
     },
     {
         id: 'luma_dream_machine',
@@ -3039,7 +3039,7 @@ export const tools = [
         url: 'https://lumalabs.ai/dream-machine',
         description: 'Extremely fast, highly realistic text-to-video AI generation available to the public.',
         longDescription: 'While OpenAI Sora remains closed, Luma released Dream Machine to the public. It generates breathtaking 5-second video clips from images or text prompts with incredible physical physics and cinematic quality. The easiest way to start making AI short films today.',
-        keywords: 'ai, video, generation, luma, dream machine, cinematic, text to video, sora alternative, movies, clips'
+        
     },
     {
         id: 'v0_dev_vercel',
@@ -3052,7 +3052,7 @@ export const tools = [
         url: 'https://v0.dev/',
         description: 'Generate complete, beautiful, and functional UI components just by describing them in plain English.',
         longDescription: 'Built by Vercel (the creators of Next.js), v0 allows you to say "I need a pricing table with 3 tiers and a neon aesthetic" and it instantly codes a stunning, fully-responsive React/Tailwind component right in your browser, ready to copy-paste into your app.',
-        keywords: 'ai, ui, frontend, react, tailwind css, components, vercel, web design, app development, generation'
+        
     }
 ,
     {
@@ -3066,7 +3066,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-1',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 1).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 1 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_2',
@@ -3079,7 +3079,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-2',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 2).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 2 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_3',
@@ -3092,7 +3092,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-3',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 3).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 3 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_4',
@@ -3105,7 +3105,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-4',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 4).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 4 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_5',
@@ -3118,7 +3118,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-5',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 5).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 5 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_6',
@@ -3131,7 +3131,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-6',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 6).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 6 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_7',
@@ -3144,7 +3144,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-7',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 7).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 7 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_8',
@@ -3157,7 +3157,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-8',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 8).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 8 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_9',
@@ -3170,7 +3170,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-9',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 9).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 9 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_10',
@@ -3183,7 +3183,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-10',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 10).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 10 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_11',
@@ -3196,7 +3196,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-11',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 11).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 11 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_12',
@@ -3209,7 +3209,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-12',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 12).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 12 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_13',
@@ -3222,7 +3222,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-13',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 13).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 13 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_14',
@@ -3235,7 +3235,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-14',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 14).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 14 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_15',
@@ -3248,7 +3248,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-15',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 15).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 15 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_16',
@@ -3261,7 +3261,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-16',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 16).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 16 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_17',
@@ -3274,7 +3274,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-17',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 17).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 17 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_18',
@@ -3287,7 +3287,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-18',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 18).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 18 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_19',
@@ -3300,7 +3300,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-19',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 19).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 19 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_20',
@@ -3313,7 +3313,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-20',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 20).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 20 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_21',
@@ -3326,7 +3326,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-21',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 21).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 21 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_22',
@@ -3339,7 +3339,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-22',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 22).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 22 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_23',
@@ -3352,7 +3352,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-23',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 23).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 23 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_24',
@@ -3365,7 +3365,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-24',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 24).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 24 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_25',
@@ -3378,7 +3378,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-25',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 25).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 25 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_26',
@@ -3391,7 +3391,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-26',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 26).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 26 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_27',
@@ -3404,7 +3404,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-27',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 27).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 27 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_28',
@@ -3417,7 +3417,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-28',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 28).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 28 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_29',
@@ -3430,7 +3430,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-29',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 29).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 29 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_30',
@@ -3443,7 +3443,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-30',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 30).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 30 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_31',
@@ -3456,7 +3456,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-31',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 31).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 31 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_32',
@@ -3469,7 +3469,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-32',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 32).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 32 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_33',
@@ -3482,7 +3482,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-33',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 33).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 33 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_34',
@@ -3495,7 +3495,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-34',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 34).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 34 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_35',
@@ -3508,7 +3508,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-35',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 35).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 35 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_36',
@@ -3521,7 +3521,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-36',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 36).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 36 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_37',
@@ -3534,7 +3534,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-37',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 37).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 37 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_38',
@@ -3547,7 +3547,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-38',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 38).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 38 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_39',
@@ -3560,7 +3560,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-39',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 39).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 39 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_40',
@@ -3573,7 +3573,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-40',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 40).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 40 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_41',
@@ -3586,7 +3586,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-41',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 41).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 41 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_42',
@@ -3599,7 +3599,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-42',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 42).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 42 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_43',
@@ -3612,7 +3612,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-43',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 43).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 43 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_44',
@@ -3625,7 +3625,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-44',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 44).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 44 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_45',
@@ -3638,7 +3638,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-45',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 45).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 45 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_46',
@@ -3651,7 +3651,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-46',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 46).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 46 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_47',
@@ -3664,7 +3664,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-47',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 47).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 47 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_48',
@@ -3677,7 +3677,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-48',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 48).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 48 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_49',
@@ -3690,7 +3690,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-49',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 49).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 49 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'ai_tool_generated_50',
@@ -3703,7 +3703,7 @@ export const tools = [
         url: 'https://example.com/ai-tool-50',
         description: 'An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 50).',
         longDescription: 'This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 50 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing.',
-        keywords: 'ai, artificial intelligence, tools, productivity, automation, bots, optimization, software, free, freemium, saas, workflow'
+        
     },
     {
         id: 'sora_openai',
@@ -3716,7 +3716,7 @@ export const tools = [
         url: 'https://openai.com/sora',
         description: 'OpenAI\'s revolutionary text-to-video AI model.',
         longDescription: 'Sora can generate highly detailed, realistic, and complex physical scenes simply from text instructions. It understands how objects exist in the physical world, creating videos with multiple characters, specific types of motion, and accurate details of the subject and background.',
-        keywords: 'ai, artificial intelligence, tools, video, create video, openai, sora, text to video, realistic, animation, cinematic, motion'
+        
     },
     {
         id: 'google_veo',
@@ -3729,7 +3729,7 @@ export const tools = [
         url: 'https://deepmind.google/technologies/veo/',
         description: 'Google DeepMind\'s most capable generative video model.',
         longDescription: 'Veo generates high-quality 1080p video with advanced cinematic capabilities. It accurately captures the semantics of a text prompt and provides an unprecedented level of creative control over visual style, camera movement, and lighting.',
-        keywords: 'ai, artificial intelligence, tools, video, create video, google, deepmind, veo, cinematic, text to video, filmmaking'
+        
     },
     {
         id: 'haiper_ai',
@@ -3742,7 +3742,7 @@ export const tools = [
         url: 'https://haiper.ai/',
         description: 'Fast and intuitive foundational video generative AI.',
         longDescription: 'Haiper allows creators to effortlessly generate stunning video content from text or images. Known for its accessibility and strong community, it provides tools for restyling videos, animating images, and full text-to-video generation.',
-        keywords: 'ai, artificial intelligence, tools, video, create video, haiper, animation, short film, text to video, restyle'
+        
     },
     {
         id: 'd_id_studio',
@@ -3755,7 +3755,7 @@ export const tools = [
         url: 'https://www.d-id.com/',
         description: 'Generates speaking avatars and videos from still photos.',
         longDescription: 'D-ID uses deep learning facial animation technology to turn static images into talking avatars. It is widely used for marketing, corporate training, and interactive digital humans, perfectly syncing audio with natural lip movements.',
-        keywords: 'ai, artificial intelligence, tools, video, create video, did, d-id, avatar, talking head, lip sync, deepfake, digital human'
+        
     },
     {
         id: 'kaiber_ai',
@@ -3768,7 +3768,7 @@ export const tools = [
         url: 'https://kaiber.ai/',
         description: 'AI creative lab specialized in audio-reactive video animation.',
         longDescription: 'Kaiber is a favorite among musicians and artists for creating music videos. The AI can analyze the beat and rhythm of an uploaded audio track and generate highly stylized, morphing animations that react dynamically to the music.',
-        keywords: 'ai, artificial intelligence, tools, video, create video, kaiber, animation, music video, audio reactive, morphing, art'
+        
     },
     {
         id: 'stable_video',
@@ -3781,7 +3781,7 @@ export const tools = [
         url: 'https://www.stablevideo.com/',
         description: 'Open-weight video generation by Stability AI.',
         longDescription: 'Based on the Stable Diffusion architecture, Stable Video Diffusion allows users to animate still images or create short clips from text with excellent consistency. It provides a more open and customizable approach to generative video.',
-        keywords: 'ai, artificial intelligence, tools, video, create video, stability ai, stable video diffusion, open source, animation'
+        
     },
     {
         id: 'microsoft_copilot',
@@ -3794,7 +3794,7 @@ export const tools = [
         url: 'https://copilot.microsoft.com/',
         description: 'Your everyday AI companion powered by GPT-4 and web search.',
         longDescription: 'Integrated deeply into the Microsoft ecosystem (Windows, Office), Copilot serves as an incredibly capable assistant. It combines the reasoning of OpenAI’s latest models with live web access, making it excellent for research, drafting documents, and generating images via Designer.',
-        keywords: 'ai, artificial intelligence, tools, chatbot, assistant, microsoft, copilot, bing, gpt, search, productivity, enterprise'
+        
     },
     {
         id: 'mistral_le_chat',
@@ -3807,7 +3807,7 @@ export const tools = [
         url: 'https://chat.mistral.ai/',
         description: 'Fast, open-weight European AI models.',
         longDescription: 'Developed by the French company Mistral AI, this assistant offers access to highly efficient and powerful models like Mistral Large. It is known for its speed, lack of corporate bloat, strong multilingual capabilities, and open-source philosophy.',
-        keywords: 'ai, artificial intelligence, tools, chatbot, assistant, mistral, europe, open source, open weights, fast, multilingual'
+        
     },
     {
         id: 'meta_llama_3',
@@ -3820,7 +3820,7 @@ export const tools = [
         url: 'https://llama.meta.com/',
         description: 'Meta\'s state-of-the-art open large language model.',
         longDescription: 'Llama 3 is one of the most capable open-source foundation models available. While typically accessed via platforms like HuggingFace or Groq, its raw reasoning power, coding ability, and general knowledge rival the best proprietary models from OpenAI and Google.',
-        keywords: 'ai, artificial intelligence, tools, chatbot, assistant, meta, llama, open source, foundational model, developer'
+        
     },
     {
         id: 'pi_inflection',
@@ -3833,7 +3833,7 @@ export const tools = [
         url: 'https://pi.ai/',
         description: 'The most empathetic and conversational personal AI.',
         longDescription: 'Unlike task-oriented bots, Pi (Personal Intelligence) is designed to be a supportive companion. It asks questions, remembers past conversations, and provides a compassionate, highly conversational voice interface that feels remarkably human-like.',
-        keywords: 'ai, artificial intelligence, tools, chatbot, assistant, pi, inflection, personal, empathetic, conversation, emotional intelligence'
+        
     },
     {
         id: 'midjourney_ai',
@@ -3846,7 +3846,7 @@ export const tools = [
         url: 'https://midjourney.com/',
         description: 'Industry-leading AI image generator known for artistic and photorealistic output.',
         longDescription: 'Midjourney is an independent research lab that produces an artificial intelligence program under the same name. It creates breathtaking, highly detailed images from natural language descriptions (prompts), primarily via a Discord bot interface. It is widely considered the gold standard for AI art creation.',
-        keywords: 'ai, artificial intelligence, tools, image, design, art, midjourney, text to image, photorealism, generative art'
+        
     },
     {
         id: 'leonardo_ai',
@@ -3859,7 +3859,7 @@ export const tools = [
         url: 'https://leonardo.ai/',
         description: 'Comprehensive generative AI platform with fine-tuned models for game assets and concept art.',
         longDescription: 'Leonardo AI offers a massive suite of image generation tools, including access to custom-trained models spanning anime, photography, and isometric 3D. It features a dedicated web interface, an advanced canvas editor, and generous daily free tokens for creators and game developers.',
-        keywords: 'ai, artificial intelligence, tools, image, design, leonardo, stable diffusion, concept art, game assets, canvas editor'
+        
     },
     {
         id: 'cursor_ai_editor',
@@ -3872,7 +3872,7 @@ export const tools = [
         url: 'https://cursor.com/',
         description: 'The AI-first code editor built for pair programming with GPT-4 and Claude.',
         longDescription: 'Cursor is a fork of VS Code that integrates state-of-the-art AI directly into your development workflow. You can chat with your codebase, press Cmd+K to generate or refactor code inline, and let the AI hunt down bugs spanning multiple files. It is currently the most popular AI-native IDE.',
-        keywords: 'ai, artificial intelligence, tools, programming, coding, cursor, ide, vs code, copilot, developer, software engineering'
+        
     },
     {
         id: 'github_copilot',
@@ -3885,7 +3885,7 @@ export const tools = [
         url: 'https://github.com/features/copilot',
         description: 'The world’s most widely adopted AI pair programmer by Microsoft and OpenAI.',
         longDescription: 'GitHub Copilot integrates directly into editors like VS Code and Visual Studio. It suggests entire functions, writes unit tests, and autocompletes lines of code in real-time as you type, drastically speeding up software development by reducing boilerplate work.',
-        keywords: 'ai, artificial intelligence, tools, programming, coding, github, copilot, autocomplete, microsoft, openai'
+        
     },
     {
         id: 'suno_ai_music',
@@ -3898,7 +3898,7 @@ export const tools = [
         url: 'https://suno.com/',
         description: 'Generate full, radio-quality songs with vocals and instrumentation from text.',
         longDescription: 'Suno AI allows anyone to create complete, two-minute songs simply by describing the genre, tempo, and lyrical topic. The AI generates shockingly high-fidelity music, complete with incredibly human-sounding vocals across multiple languages and musical styles.',
-        keywords: 'ai, artificial intelligence, tools, audio, music, suno, song generator, text to music, vocal synthesis'
+        
     },
     {
         id: 'elevenlabs_ai',
@@ -3911,7 +3911,7 @@ export const tools = [
         url: 'https://elevenlabs.io/',
         description: 'The most realistic AI text-to-speech and voice cloning software available.',
         longDescription: 'ElevenLabs revolutionized digital audio with its ultra-realistic voice models. It perfectly captures human intonation, breathing, and emotion. It is widely used by YouTubers, audiobook narrators, and developers for creating voicebots or cloning their own voice for content creation.',
-        keywords: 'ai, artificial intelligence, tools, audio, voice, text to speech, tts, elevenlabs, voice cloning, dubbing'
+        
     },
     {
         id: 'make_com_ai',
@@ -3924,7 +3924,7 @@ export const tools = [
         url: 'https://www.make.com/',
         description: 'Advanced visual platform to build and automate complex AI workflows.',
         longDescription: 'Formerly Integromat, Make.com allows you to visually connect over 1,500 apps. It recently integrated native AI modules, allowing you to route incoming emails to Claude for summarization, then automatically post the result to Slack, creating completely autonomous business operations.',
-        keywords: 'ai, artificial intelligence, tools, automation, make, integromat, workflow, no code, productivity, api'
+        
     },
     {
         id: 'krea_ai_upscale',
@@ -3937,7 +3937,7 @@ export const tools = [
         url: 'https://www.krea.ai/',
         description: 'Real-time image generation and mind-blowing AI upscaling.',
         longDescription: 'Krea AI is famous for its real-time drawing canvas where the AI renders an image instantly as you sketch shapes. Furthermore, its Upscale & Enhance tool adds incredible, hallucinated micro-details to low-resolution photos or 3D renders, making them look hyper-realistic.',
-        keywords: 'ai, artificial intelligence, tools, image, design, krea, upscale, real time, enhancer, enhancer, detail'
+        
     },
     {
         id: 'claude_3_anthropic',
@@ -3950,7 +3950,7 @@ export const tools = [
         url: 'https://claude.ai/',
         description: 'Anthropic’s powerful, nuanced, and highly steerable AI assistant.',
         longDescription: 'Claude 3.5 Sonnet is widely considered the best model for complex reasoning and creative writing. It boasts a massive context window (capable of reading entire books at once) and features "Artifacts", a dedicated UI panel that renders code, SVGs, and documents right beside your chat.',
-        keywords: 'ai, artificial intelligence, tools, chatbot, assistant, claude, anthropic, gpt alternative, writing, coding'
+        
     },
     {
         id: 'github_copilot_new',
@@ -3963,7 +3963,7 @@ export const tools = [
         url: 'https://github.com/features/copilot',
         description: 'Tu autocompletador de código y programador experto integrado.',
         longDescription: 'GitHub Copilot utiliza modelos adelantados para sugerir código y funciones completas en tiempo real directamente en tu editor. Ha sido entrenado con miles de millones de líneas de código y acelera el proceso de desarrollo gestionando el código repetitivo por ti.',
-        keywords: 'ai, inteligencia artificial, herramientas, gratis, premium, freemium, open source, codigo, programacion, software, python, javascript, html, css, sql, java, c#, debugging, errores, documentacion'
+        
     },
     {
         id: 'krea_ai_new',
@@ -3976,7 +3976,7 @@ export const tools = [
         url: 'https://krea.ai',
         description: 'Generador de imágenes y editor en tiempo real extremadamente veloz.',
         longDescription: 'Krea AI revoluciona la generación visual ofreciendo un lienzo en tiempo real. Trata un boceto con formas extremadamente básicas y lo renderiza de manera instantánea como una foto fotorealista. Incluye opción para mejorar la definición.',
-        keywords: 'ai, inteligencia artificial, imagenes, fotos, arte, generacion, dibujar, pintura, logos, avatares, realismo, 3d, ilustracion, upscaling, alta resolucion, expandir, diseno, creatividad'
+        
     },
     {
         id: 'udio_music_new',
@@ -3989,7 +3989,7 @@ export const tools = [
         url: 'https://udio.com',
         description: 'Crea pistas completas y canciones con un text-to-music de máxima calidad.',
         longDescription: 'Genera canciones con calidad de estudio. Crea voces limpias, instrumentales increíbles y arreglos avanzados. Si quieres hacer una banda sonora para un juego o lanzar la siguiente canción del verano, Udio lo consigue fácil.',
-        keywords: 'ai, audio, musica, canciones, ritmos, beats, componer, voces, texto a voz, voz a cancion, masterizacion, generacion, cantar'
+        
     },
     {
         id: 'magnific_ai_new',
@@ -4002,7 +4002,7 @@ export const tools = [
         url: 'https://magnific.ai',
         description: 'El mejor expansor y optimizador de texturas para alcanzar el 8k.',
         longDescription: 'Carga una imagen en baja calidad y añade increíbles detalles extra (upscaling). Ideal para arquitectos que tienen un render a medio hacer o para fotógrafos que quieren texturas alucinantes.',
-        keywords: 'ai, imagenes, upscaling, enhancer, alta resolucion, reescalado, aumentar resolucion, filtros, edicion, realismo, detalles, 4k, 8k, fotografia'
+        
     },
     {
         id: 'julius_ai_new',
@@ -4015,7 +4015,7 @@ export const tools = [
         url: 'https://julius.ai',
         description: 'Un analista de datos inteligente para hojas de cálculo.',
         longDescription: 'Te permite subir un CSV o Excel y obtener conclusiones, estadísticas y gráficos increíbles al instante, conversando con él. Resulta útil para la ciencia de datos sin tener que escribir en Python.',
-        keywords: 'ai, excel, hojas de calculo, formulas, analisis de datos, visualizacion, graficos, bases de datos, estadistica, python, logica'
+        
     },
     {
         id: 'chatpdf_new',
@@ -4028,7 +4028,7 @@ export const tools = [
         url: 'https://www.chatpdf.com',
         description: 'Sube un PDF e interactúa, pregúntale y obtén resúmenes.',
         longDescription: 'Ahorra tiempo a estudiantes, abogados o investigadores. Permite entender documentos extensos porque indica hasta la página precisa donde encontró la respuesta al hacerle las consultas.',
-        keywords: 'ai, pdf, chat con pdf, analizar documentos, contratos, presentaciones, estudiar, aprender, resumenes, texto, universitarios, investigacion'
+        
     },
     {
         id: 'meshy_ai_new',
@@ -4041,7 +4041,7 @@ export const tools = [
         url: 'https://www.meshy.ai',
         description: 'Generación directa de modelos 3D a través de texto.',
         longDescription: 'Agiliza la creación de videojuegos. Carga un texto y obtendrás mallas increíbles texturizadas en 3D en muy poco tiempo para añadir directamente al entorno e iterar escenarios.',
-        keywords: 'ai, 3d, modelos 3d, renders 3d, generacion, videojuegos, unreal engine, unity, blender, texto a 3d, imagen a 3d, arte, modelado'
+        
     },
     {
         id: 'websim_ai_new',
@@ -4054,7 +4054,7 @@ export const tools = [
         url: 'https://websim.ai',
         description: 'Simula páginas web totalmente visuales a través de descripciones.',
         longDescription: 'Un simulador con el que alucinando links diseñas webs interactivas en minutos. Excelente para programadores y diseñadores UX/UI para obtener ideas visuales instantáneas directamente utilizables.',
-        keywords: 'ai, inteligencia artificial, web, gratis, html, css, programar webs, frontend, prototyping, interactivo, simulacion, diseno web'
+        
     },
     {
         id: 'hedra_ai_new',
@@ -4067,7 +4067,7 @@ export const tools = [
         url: 'https://www.hedra.com',
         description: 'Animación y sincronización de rostros que asusta.',
         longDescription: 'Ideal para conseguir locuciones. Inserta la imagen y los audios que desees. La sincronización de labios asombran bastante ofreciéndote influencers digitales muy expresivos.',
-        keywords: 'ai, video, animacion, avatares, caras, rostros, deepfake, labios, locuciones, presentador virtual'
+        
     },
     {
         id: 'gpt_4o_new',
@@ -4080,7 +4080,7 @@ export const tools = [
         url: 'https://chatgpt.com',
         description: 'El archiconocido sistema conversacional del mercado.',
         longDescription: 'Resolutivo para generar todo tipo de respuestas y conversaciones de voz. Ayuda a planificar viajes o código, analizar fotografías y sirve de compañero ideal gracias a ChatGPT.',
-        keywords: 'ai, gpt, chatbot, asistente virtual, automatizacion, escritura, resolucion matematica, voz, openia, openai'
+        
     },
     {
         id: 'mistral_le_chat_new',
@@ -4093,7 +4093,7 @@ export const tools = [
         url: 'https://chat.mistral.ai',
         description: 'Alternativa europea privada de IA generativa sin censura alta.',
         longDescription: 'Perfecto para evitar bloqueos por políticas restrictivas manteniendo alta capacidad de respuesta matemática o código para competir con el modelo GPT4 o superior.',
-        keywords: 'ai, chatbot, mistral, europa, privado, virtual assistant, programar, redaccion, gratis'
+        
     },
     {
         id: 'claude_3_7_sonnet_new',
@@ -4106,7 +4106,7 @@ export const tools = [
         url: 'https://claude.ai',
         description: 'Un modelo muy lógico y especializado estructurando UI/Código.',
         longDescription: 'Brillante estructurando programas complejos a los que además da un vistazo en vivo mediante su sistema de "artefactos" por lo que ves la web desplegada sin sacarlo de su chat. Programación al nivel premium.',
-        keywords: 'ai, claude, anthropic, logica, codigo, web desarrollo, redaccion, ui, ux, programar'
+        
     },
     {
         id: 'freepik_pikaso_new',
@@ -4119,7 +4119,7 @@ export const tools = [
         url: 'https://www.freepik.com/pikaso',
         description: 'Crea bocetos dibujados instantáneamente mientras configuras su resultado.',
         longDescription: 'Dibujando rayas verás los renders definitivos gracias a su potencia visual integrada a fin de conseguir composiciones atractivas de cara a generar iconos y recursos gráficos en segundos.',
-        keywords: 'ai, dibujar, pintura, sketching, arte, logos, ilustracion, vectores, diseño web, rapido'
+        
     },
     {
         id: 'civitai_new',
@@ -4132,7 +4132,7 @@ export const tools = [
         url: 'https://civitai.com',
         description: 'Mega-repositorio de Stable Diffusion con generador de imágenes.',
         longDescription: 'Puedes importar infinidad de modelos entrenados. Entornos desde anime y personajes hiper-específicos, renderizando todas las combinaciones online y visualizando arte subida de tono o comercial sin límites estéticos.',
-        keywords: 'ai, stable diffusion, modelos, lora, open source, arte, anime, realismo, fotos, generador de imagenes'
+        
     },
     {
         id: 'suno_bark_new',
@@ -4145,7 +4145,7 @@ export const tools = [
         url: 'https://github.com/suno-ai/bark',
         description: 'Generación sonora hiperrealista texto a música, habla y no verbal.',
         longDescription: 'Bark está revolucionando lo audible. Añade suspiros, carcajadas, emociones a su vez de efectos o ambientación músical en repositorios mediante descripciones textuales en Github.',
-        keywords: 'ai, audio, clonar voz, open source, repositorios, reir, sonido ambiental'
+        
     },
     {
         id: 'udio_music_new',
@@ -4158,7 +4158,7 @@ export const tools = [
         url: 'https://www.udio.com',
         description: 'Generador hiperrealista de canciones a partir de texto.',
         longDescription: 'Uno de los competidores más potentes de Suno, es capaz de generar pistas completas con vocales perfectas en cualquier género musical como rock, rap, electrónica o baladas orquestales en segundos.',
-        keywords: 'ai, audio, musica, canciones, voces, melodias, composicion, mp3, ritmos'
+        
     },
     {
         id: 'krea_ai_new',
@@ -4171,7 +4171,7 @@ export const tools = [
         url: 'https://www.krea.ai',
         description: 'Generación y upscaling asombroso de imágenes en tiempo real.',
         longDescription: 'Krea permite a los diseñadores visualizar el resultado mientras realizan bocetos bidimensionales. Además, su herramienta mejoradora de resolución transforma imágenes borrosas en fotografías asombrosas y repletas de detalles.',
-        keywords: 'ai, imagen, arte, dibujo, realismo, upscaling, boceto, tiempo real, textura'
+        
     },
     {
         id: 'magnific_ai_new',
@@ -4184,7 +4184,7 @@ export const tools = [
         url: 'https://magnific.ai',
         description: 'La herramienta más revolucionaria para reescalado de imágenes.',
         longDescription: 'Reescala imágenes elevando la resolución de forma mágica agregando texturas o detalles inexistentes como arrugas en un rostro o reflejos en edificios para darle un acabado de superproducción a un render sencillo.',
-        keywords: 'ai, upscaling, resolucion, alta definicion, ampliacion, diseño 3d, renders'
+        
     },
     {
         id: 'devin_ai_new',
@@ -4197,7 +4197,7 @@ export const tools = [
         url: 'https://www.cognition.ai/devin',
         description: 'El primer gran ingeniero de redes neuronales y software de inteligencia autónoma.',
         longDescription: 'Actúa de manera autónoma como un verdadero desarrollador capaz de planificar a lo largo del tiempo, usar comandos para corregir errores propios, testear módulos que autodesarrolla e integrarlos sin la necesidad del código línea por línea.',
-        keywords: 'ai, codigo, software autonomo, app, ingeniero, webs, developer'
+        
     },
     {
         id: 'lovable_dev_new',
@@ -4210,7 +4210,7 @@ export const tools = [
         url: 'https://lovable.dev',
         description: 'Construidor visual para desarrollar aplicaciones frontend completas sin programar.',
         longDescription: 'Basado en GPT-Engineer, permite introducir una orden tipo "quiero un clon de Pinterest oscuro" para desplegar componentes React o Tailwind que no solo se visualizan al momento sino que pueden enviarse directamente a nuestro propio Github.',
-        keywords: 'ai, desarrollo full-stack, react, frontend, tailwind, ui designer'
+        
     },
     {
         id: 'perplexity_pages_new',
@@ -4223,7 +4223,7 @@ export const tools = [
         url: 'https://www.perplexity.ai/pages',
         description: 'Genera robustos reportes e investigaciones completas y estéticas.',
         longDescription: 'Recopila datos verdaderos de la red, para compilarlos armónicamente bajo la jerarquía de un buen reportaje, integrando de este modo citas visuales listas para presentarse digitalmente con formato enciclopedia instantánea.',
-        keywords: 'ai, articulos, enciclopedia, fuentes, busqueda, recopilar datos'
+        
     },
     {
         id: 'vidu_ai_new',
@@ -4236,7 +4236,7 @@ export const tools = [
         url: 'https://www.vidu.studio',
         description: 'Aspirante modelo a destronar la renderización de video realista.',
         longDescription: 'Aporta enorme calidad visual con renders de 1080p, enalteciendo las escenas al poder controlar la cinemática o interpretar lógicamente las leyes físicas basándose en unos sencillos comandos propuestos o imágenes adjuntas de partida.',
-        keywords: 'ai, video realista, creador de clips, animacion cortometrajes, fisica'
+        
     },
     {
         id: 'cohere_coral_new',
@@ -4249,7 +4249,7 @@ export const tools = [
         url: 'https://cohere.com/coral',
         description: 'El chatbot más idóneo enfocado para las medianas y grandes corporaciones.',
         longDescription: 'Diseñado de la mano de RAG, se adapta al grueso volumen de información interna o documentos privados evitando alucinaciones para crear informes coherentes con el conocimiento explícito reservado del negocio interno seguro.',
-        keywords: 'ai, chatbot, documentos privados, corporativo, empresas b2b, RAG, interno'
+        
     },
     {
         id: 'blackbox_ai_new',
@@ -4262,7 +4262,7 @@ export const tools = [
         url: 'https://www.blackbox.ai',
         description: 'Buscador y copiloto para obtener fragmentos de código exactos.',
         longDescription: 'Resuelve problemas muy concretos debido a su capacidad inmensa escaneando miles de líneas de bibliotecas Open-Source en línea en tiempo real y conectándose de manera sencilla como en un IDE directo desde el propio navegador web.',
-        keywords: 'ai, scripts, fragmentos, solucion bugs, github escaneo, frontend, backend'
+        
     },
     {
         id: 'websim_ai_new',
@@ -4275,7 +4275,7 @@ export const tools = [
         url: 'https://websim.ai',
         description: 'Crea sitios web retro e hiperrealistas con prompts extravagantes.',
         longDescription: 'Introduce un link de locura tipo "google1999.com/hack" y la inteligencia fabricará de inmediato una interfaz completa y funcional inventándose las interfaces. Muy útil para los apasionados a juegos de estilo ARG.',
-        keywords: 'ai, simulador, web simulada, arg, frontend experimental, paginas web'
+        
     },
     {
         id: 'capcut_ai_new',
@@ -4288,7 +4288,7 @@ export const tools = [
         url: 'https://www.capcut.com',
         description: 'La suite predilecta de las redes con automatizaciones milagrosas.',
         longDescription: 'No es sólo cortar video, se integra para eliminar silencios, hacer captiones superpuestas animadas en un clic, traducir doblajes e imitar a las personalidades favoritas integrándolo en las rutinas de Tiktok o redes directas.',
-        keywords: 'ai, tiktok, edicion, recortador magico, subtitulos automaticos, instagram'
+        
     },
     {
         id: 'logoai_new',
@@ -4301,7 +4301,7 @@ export const tools = [
         url: 'https://www.logoai.com',
         description: 'La solución corporativa integral para el diseño instantáneo.',
         longDescription: 'Se acabó el buscar plantillas por horas; le provees nombre de tu proyecto sumando algunas preferencias abstractas e invoca vectores listos acompañados de tarjetas, papelería, ropa, así como guías formales manuales para redes sociales enteras.',
-        keywords: 'ai, logo, identidad visual, startup branding, mockups ropa, crear negocio'
+        
     },
     {
         id: 'soundraw_new',
@@ -4314,7 +4314,7 @@ export const tools = [
         url: 'https://soundraw.io',
         description: 'Música de ambiente personalizable despojada de derechos de autor.',
         longDescription: 'Para los videobloggers o montadores es vital; Soundraw genera tonadas según la duración del clip o la longitud deseada a pesar de alterar de súbito tempo para amoldar transiciones al gusto y proteger el material en streaming sin miedos al strike.',
-        keywords: 'ai, vlogs edicion, youtube sin copyright, audio de fondo personalizable'
+        
     },
     {
         id: 'aiva_music_new',
@@ -4327,7 +4327,7 @@ export const tools = [
         url: 'https://www.aiva.ai',
         description: 'Compositor por perfiles estelares para la cinemática o instrumentales.',
         longDescription: 'Usado con frecuencia por creadores de juegos de pequeñas productoras al componer desde lo heroico a emotiva sinergia. Capaz de escupir sus creaciones orquestales en formato MIDI facilitando las ediciones futuras de músicos perfeccionistas.',
-        keywords: 'ai, composicion clasica, instrumental, partituras, cinemática dramatica, soundtracks'
+        
     },
     {
         id: 'playht_ai_new',
@@ -4340,7 +4340,7 @@ export const tools = [
         url: 'https://play.ht',
         description: 'Interpretación inmaculada de doblaje por voz sintética.',
         longDescription: 'Es una referencia sólida convirtiendo texto al habla para podcast producidos y guiones pesados gracias a emular tonos de voz irónicos, lúgubres o de alerta que atraparán verdaderamente a cualquier usuario tras clonar modelos estelares auditivos.',
-        keywords: 'ai, voces tts, doblajes premium, imitacion, audio libros perfectos'
+        
     },
     {
         id: 'opus_clip_new',
@@ -4353,7 +4353,7 @@ export const tools = [
         url: 'https://www.opus.pro',
         description: 'Convierte videos largos en decenas de "shorts" virales con un clic.',
         longDescription: 'Opus Clip analiza podcasts o videos extensos de YouTube, encuentra los momentos más atractivos gracias a su inteligencia artificial, y corta automáticamente fragmentos en formato vertical, añadiendo subtítulos dinámicos y enfoques faciales que retienen la atención.',
-        keywords: 'ai, video, reels, shorts, tiktok, creadores de contenido, edicion automatica, subtitulos dinamicos'
+        
     },
     {
         id: 'o1_openai_new',
@@ -4366,7 +4366,7 @@ export const tools = [
         url: 'https://chatgpt.com',
         description: 'Modelo algorítmico que "desarrolla un pensamiento" detallado antes de responder.',
         longDescription: 'Un modelo avanzado especializado en tareas complejas de áreas STEM. A diferencia de ChatGPT normal, es capaz de pensar y desglosar paso a paso durante varios segundos problemas matemáticos muy duros o lógicas de programación antes de emitir su resultado.',
-        keywords: 'ai, razonamiento, matematicas, logica pura, programacion avanzada, modelo o1, pensamiento'
+        
     },
     {
         id: 'poe_ai_new',
@@ -4379,7 +4379,7 @@ export const tools = [
         url: 'https://poe.com',
         description: 'El mayor agregador de LLMs del mercado creado por Quora.',
         longDescription: 'Poe te ofrece en una única app acceso ilimitado a cientos de modelos de lenguaje tanto propietarios (Claude 3.5, GPT-4, Gemini) como open-source, y a miles de bots personalizados construidos directamente por una comunidad gigante de usuarios.',
-        keywords: 'ai, llm, multimodal, chat, agregador, prompt, bots variados'
+        
     },
     {
         id: 'ollama_ai_new',
@@ -4392,7 +4392,7 @@ export const tools = [
         url: 'https://ollama.com',
         description: 'Instala y controla potentes modelos open-source en tu propia máquina (Local).',
         longDescription: 'Pensada especialmente para desarrolladores, simplifica brutalmente la instalación y ejecución local de los principales LLMs en tu PC o servidor. Proporciona completa soberanía de los datos consumiendo el hardware libre de censura ni subscripciones en la nube.',
-        keywords: 'ai, open-source, local, hardware local, servidor, correr modelos de manera local, terminal'
+        
     },
     {
         id: 'lm_studio_new',
@@ -4405,7 +4405,7 @@ export const tools = [
         url: 'https://lmstudio.ai',
         description: 'La interfaz gráfica perfecta para ejecutar IAs offline de manera limpia.',
         longDescription: 'Mientras que otras herramientas se orientan a la terminal, LM Studio brinda una pulida interfaz de ventana (GUI) para buscar y descargar modelos libres directamente desde HuggingFace y hablar con ellos desde tu computadora de forma totalmente rápida y privada.',
-        keywords: 'ai, privada, seguridad, local, offline, sin limites, modelos llm, ggml, llama3'
+        
     },
     {
         id: 'hedra_ai_new',
@@ -4418,7 +4418,7 @@ export const tools = [
         url: 'https://hedra.com',
         description: 'Revolucionaria sincronización labial y expresión hiperrealista en videos.',
         longDescription: 'Genera avatares muy expresivos y que vocalizan con naturalidad asombrosa al ritmo de un archivo de audio aportado. Puede animar tanto fotografías como pinturas o dibujos surrealistas respetando y enriqueciendo los movimientos corporales en alta resolución.',
-        keywords: 'ai, sincronizacion de labios, deep fake, hablar, expresividad facial, animar fotos, lipsync'
+        
     },
     {
         id: 'julius_ai_new',
@@ -4431,7 +4431,7 @@ export const tools = [
         url: 'https://julius.ai',
         description: 'Tu analista de datos interactivo automatizado de bolsillo.',
         longDescription: 'Perfecto para quienes deseen descubrir tendencias ocultas en bases gigantes de Excel, CSV o bases de datos SQL. Escríbele en lenguaje natural para que analice, procese, filtre y dibuje gráficos sorprendentes listos para adjuntarse en un reporte.',
-        keywords: 'ai, data scientist, excel, python, visualizaciones, cuadros de mandos, big data, estadistica, analitica'
+        
     },
     {
         id: 'consensus_ai_new',
@@ -4444,7 +4444,7 @@ export const tools = [
         url: 'https://consensus.app',
         description: 'Buscador especializado en desglosar solo ciencia empírica legítima.',
         longDescription: 'Rastrea e intercepta respuestas consultando más de 200 millones de publicaciones científicas puras (papers). Prohíbe inventar información garantizando siempre referencias de "peer review" avaladas mundialmente resumidas de una manera compresible.',
-        keywords: 'ai, papers, biologia, investigadores, articulos medicos, ciencia, revistas, unversidad, tesis doctoral'
+        
     },
     {
         id: 'supermaven_new',
@@ -4457,7 +4457,7 @@ export const tools = [
         url: 'https://supermaven.com',
         description: 'Autocompletado de código rápido con millones de tokens de contexto global.',
         longDescription: 'Destrona el método tradicional de desarrollo logrando ingerir toda una arquitectura base de miles de archivos de código en su caché personal con una velocidad de reacción extrema adaptando el estilo particular de programación de cada autor.',
-        keywords: 'ai, ide copilot, autocomplete, contexto extenso, veloz, vscode extension, developer, backend rapido'
+        
     },
     {
         id: 'groq_engine_new',
@@ -4470,7 +4470,7 @@ export const tools = [
         url: 'https://groq.com',
         description: 'Chip LPU que lee y procesa el pensamiento a velocidades extraterrestres.',
         longDescription: 'Groq es un portento fundamentado en hardware de computación acelerada ultra especializada (LPUs). Al ejecutar asistentes de inteligencia, provee ritmos monstruosos de cientos de palabras por segundo sin retardo ninguno. Recibes la respuesta antes de poder pestañear.',
-        keywords: 'ai, extrema velocidad, lpu rapido, instantaneo, ultra rapido, tokenizador, hardware IA'
+        
     },
     {
         id: 'adobe_podcast_new',
@@ -4483,7 +4483,7 @@ export const tools = [
         url: 'https://podcast.adobe.com/enhance',
         description: 'Limpieza con IA para conseguir la claridad de locutor de un estudio profesional.',
         longDescription: 'Sube clips mal grabados telefónicamente en entornos caóticos (con ecos y ruidos de motor). Como por arte de magia, separará con destreza los molestos zumbidos redibujando frecuencias que brindan grabaciones nítidas simulando estar en una cabina insonorizada.',
-        keywords: 'ai, limpieza de audio, voz nitida, sin ruido de fondo, podcasts masterizados, aislamiento de voz'
+        
     },
     {
         id: 'figma_ai_new',
@@ -4496,7 +4496,7 @@ export const tools = [
         url: 'https://www.figma.com/ai',
         description: 'Las infinitas pizarras y mockups de diseño ahora engrasadas con inteligencia.',
         longDescription: 'Acelerador indispensable inyectado genialmente dentro de las librerías Figma de siempre. Ordenador automático de layers, generación de primeros prototipos completos invocados desde descripciones y renombrado semántico agilizan enormemente la interfaz de usuario.',
-        keywords: 'ai, ui/ux automizado, maquetador web, wireframes, figma components, web design'
+        
     },
     {
         id: 'hailuo_ai_new',
@@ -4509,7 +4509,7 @@ export const tools = [
         url: 'https://hailuo.ai/video',
         description: 'Aspirante firme de vídeo cinemático con asombrosas capacidades en fluidos y reflejos.',
         longDescription: 'Este coloso artificial proveniente del mercado oriental entiende mejor la física del cine. Especialmente el reflejo en ojos, humo, texturas de ropa al viento u oleaje están conseguidos con una estética vibrante lograda a través de text to video o image to video.',
-        keywords: 'ai, minimax modelo chino, anime, fotorrealista dinamico cinematic'
+        
     },
     {
         id: 'humata_ai_new',
@@ -4522,7 +4522,7 @@ export const tools = [
         url: 'https://www.humata.ai',
         description: 'Extrae con exactitud el saber encerrado en largos manuales escaneados PDF.',
         longDescription: 'En lugar de reescribir consultas, arrastras manuales de cientos de folios a Humata. Te ahorra memorizar leyendo en milisegundos y al responder siempre mostrará un cuadro remarcado brillante apuntando al trozo literal original validando lo explicado al dedillo.',
-        keywords: 'ai, leer contratos legales, sumario manual del pdf, interrogatorio a apuntes'
+        
     },
     {
         id: 'scribe_ai_new',
@@ -4535,7 +4535,7 @@ export const tools = [
         url: 'https://scribehow.com',
         description: 'Asistente de auto-documentación y guías generadas al vuelo.',
         longDescription: 'Magnífico con integraciones para empresas; grabas el flujo natural de tu trabajo con el navegador y la magia de sus capturas automáticas compuso un prolijo PDF repleto de resaltes visuales y pasos enumerados de manera clarísima. Ideal para entrenar nuevo personal.',
-        keywords: 'ai, documentar codigo guiado, tutorial formativo guiado paso a paso, onboarding, manuales'
+        
     }
 ];
 
