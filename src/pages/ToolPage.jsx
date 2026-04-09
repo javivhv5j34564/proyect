@@ -45,8 +45,12 @@ export default function ToolPage() {
 
     // Rating State
     const [ratingData, setRatingData] = useState(() => {
-        const saved = localStorage.getItem(`ai_rating_${id}`);
-        if (saved) return JSON.parse(saved);
+        try {
+            const saved = localStorage.getItem(`ai_rating_${id}`);
+            if (saved) return JSON.parse(saved);
+        } catch (e) {
+            console.error(e);
+        }
 
         // Start ratings at 0.0 with 0 votes
         return {

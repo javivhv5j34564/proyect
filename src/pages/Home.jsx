@@ -2,7 +2,7 @@ import { useState, useMemo, useEffect, useRef } from 'react';
 import { Search, Sparkles, X, ExternalLink, ChevronRight, Zap, Flame, Clock, ChevronDown, TrendingUp, Lightbulb, Brain, Bookmark, ChevronUp, BookOpen, ArrowRight, ArrowDown, ArrowUp, Menu, Search as SearchIcon, Sun, Moon, Palette, Video, Code, PenTool, Music, Settings, Utensils, Calendar, ShoppingBag, Star, User, MessageSquare, MoveHorizontal } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { tools, categories } from '../data';
+import { tools, categories, blogPosts } from '../data';
 import { guidesData } from '../guidesData';
 import { AdSensePlaceholder } from '../components/AdSensePlaceholder';
 import { useSEO } from '../hooks/useSEO';
@@ -197,8 +197,13 @@ export default function Home({ searchTerm, setSearchTerm }) {
 
   // Persistence State
   const [bookmarks, setBookmarks] = useState(() => {
-    const saved = localStorage.getItem('ai_bookmarks');
-    return saved ? JSON.parse(saved) : [];
+    try {
+      const saved = localStorage.getItem('ai_bookmarks');
+      return saved ? JSON.parse(saved) : [];
+    } catch (e) {
+      console.error(e);
+      return [];
+    }
   });
 
   const [upvotes, setUpvotes] = useState({});
@@ -215,8 +220,13 @@ export default function Home({ searchTerm, setSearchTerm }) {
   }, []);
 
   const [userUpvoted, setUserUpvoted] = useState(() => {
-    const saved = localStorage.getItem('ai_user_upvotes');
-    return saved ? JSON.parse(saved) : [];
+    try {
+      const saved = localStorage.getItem('ai_user_upvotes');
+      return saved ? JSON.parse(saved) : [];
+    } catch (e) {
+      console.error(e);
+      return [];
+    }
   });
 
   useEffect(() => { localStorage.setItem('ai_bookmarks', JSON.stringify(bookmarks)); }, [bookmarks]);

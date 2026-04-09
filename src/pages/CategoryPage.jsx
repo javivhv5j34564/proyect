@@ -24,13 +24,23 @@ export default function CategoryPage() {
 
     // Mock states for upvotes and bookmarks to keep cards functional visually
     const [bookmarks, setBookmarks] = useState(() => {
-        const saved = localStorage.getItem('ai_bookmarks');
-        return saved ? JSON.parse(saved) : [];
+        try {
+            const saved = localStorage.getItem('ai_bookmarks');
+            return saved ? JSON.parse(saved) : [];
+        } catch (e) {
+            console.error(e);
+            return [];
+        }
     });
     
     const [userUpvoted, setUserUpvoted] = useState(() => {
-        const saved = localStorage.getItem('ai_user_upvotes');
-        return saved ? JSON.parse(saved) : [];
+        try {
+            const saved = localStorage.getItem('ai_user_upvotes');
+            return saved ? JSON.parse(saved) : [];
+        } catch (e) {
+            console.error(e);
+            return [];
+        }
     });
 
     const toggleBookmark = (e, id) => {
