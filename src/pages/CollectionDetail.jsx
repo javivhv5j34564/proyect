@@ -5,7 +5,7 @@ import { useSEO } from '../hooks/useSEO';
 import { ArrowLeft, Clock, Layers, Share2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { ToolCard } from '../components/ToolCard';
-import ShareButtons from '../components/ShareButtons';
+import { ShareButtons } from '../components/ShareButtons';
 import NotFound from './NotFound';
 
 export default function CollectionDetail() {
