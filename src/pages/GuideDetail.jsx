@@ -230,7 +230,7 @@ export default function GuideDetail() {
                     {/* E-E-A-T Author Box */}
                     <div className="mt-12 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl rounded-[2.5rem] p-8 md:p-10 flex flex-col md:flex-row gap-8 items-center md:items-start border border-slate-200/80 dark:border-slate-800/80 shadow-md">
                         <div className="relative">
-                            <img src="https://ui-avatars.com/api/?name=Editorial+Team&background=f59e0b&color=fff&size=128" alt="Editorial Team" className="w-24 h-24 rounded-full flex-shrink-0 shadow-lg border-4 border-white dark:border-slate-800" />
+                            <img src="https://ui-avatars.com/api/?name=Editorial+Team&background=f59e0b&color=fff&size=128" alt="Editorial Team" loading="lazy" decoding="async" className="w-24 h-24 rounded-full flex-shrink-0 shadow-lg border-4 border-white dark:border-slate-800" />
                             <div className="absolute -bottom-2 -right-2 bg-green-500 w-6 h-6 rounded-full border-4 border-white dark:border-slate-900"></div>
                         </div>
                         <div>

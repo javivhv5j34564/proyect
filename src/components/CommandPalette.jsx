@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { tools, blogPosts } from '../data';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, FileText, Zap, ChevronRight, X } from 'lucide-react';
+import { semanticSearchTools } from '../utils/semanticSearch';
 
 export default function CommandPalette() {
     const [isOpen, setIsOpen] = useState(false);
@@ -42,11 +43,7 @@ export default function CommandPalette() {
     const searchString = query.toLowerCase().trim();
 
     // Search tools
-    const matchedTools = searchString === '' ? [] : tools.filter(t => 
-        t.name.toLowerCase().includes(searchString) || 
-        t.sector.toLowerCase().includes(searchString) ||
-        t.description.toLowerCase().includes(searchString)
-    ).slice(0, 5);
+    const matchedTools = searchString === '' ? [] : semanticSearchTools(searchString, tools).slice(0, 5);
 
     // Search blog posts
     const matchedBlogs = searchString === '' ? [] : blogPosts.filter(b => 

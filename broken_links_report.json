@@ -1,0 +1,779 @@
+{
+  "metadata": {
+    "scannedAt": "2026-04-10T15:09:26.269Z",
+    "totalScanned": 339,
+    "totalBroken": 110
+  },
+  "brokenSites": [
+    {
+      "id": "canva_estudiantes",
+      "name": "Canva for Education",
+      "url": "https://www.canva.com/education/",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "promeai_design",
+      "name": "PromeAI",
+      "url": "https://www.promeai.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "leonardo_ai",
+      "name": "Leonardo.ai",
+      "url": "https://leonardo.ai",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "midjourney_ai",
+      "name": "Midjourney",
+      "url": "https://midjourney.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "tome_app",
+      "name": "Tome",
+      "url": "https://tome.app",
+      "status": 404,
+      "error": "HTTP 404 Not Found"
+    },
+    {
+      "id": "canva_magic",
+      "name": "Canva Magic Studio",
+      "url": "https://canva.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "gamma_app",
+      "name": "Gamma",
+      "url": "https://gamma.app",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "ideogram_2",
+      "name": "Ideogram 2.0",
+      "url": "https://ideogram.ai",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "perplexity_ai",
+      "name": "Perplexity",
+      "url": "https://perplexity.ai",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "phind_search",
+      "name": "Phind",
+      "url": "https://phind.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "grok_3",
+      "name": "Grok-3",
+      "url": "https://x.ai",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "kat_coder_pro_v1",
+      "name": "KAT-Coder-pro V1",
+      "url": "https://kat-coder.org",
+      "status": 451,
+      "error": "HTTP 451 Unavailable For Legal Reasons"
+    },
+    {
+      "id": "gemini_1_5_flash",
+      "name": "Gemini 1.5 Flash",
+      "url": "https://gemini.google.com",
+      "status": 502,
+      "error": "HTTP 502 Bad Gateway"
+    },
+    {
+      "id": "gemini_2_5_flash",
+      "name": "Gemini 2.5 Flash",
+      "url": "https://gemini.google.com",
+      "status": 502,
+      "error": "HTTP 502 Bad Gateway"
+    },
+    {
+      "id": "leonardo",
+      "name": "Leonardo.ai",
+      "url": "https://leonardo.ai",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity AI",
+      "url": "https://www.perplexity.ai",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "gamma",
+      "name": "Gamma App",
+      "url": "https://gamma.app",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "julius",
+      "name": "Julius AI",
+      "url": "https://julius.ai",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "consensus",
+      "name": "Consensus AI",
+      "url": "https://consensus.app",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "gemini",
+      "name": "Google Gemini",
+      "url": "https://gemini.google.com",
+      "status": 502,
+      "error": "HTTP 502 Bad Gateway"
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "url": "https://www.midjourney.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "llama_3058",
+      "name": "Llama 3 (Meta)",
+      "url": "https://www.llama.com",
+      "status": 400,
+      "error": "HTTP 400 Bad Request"
+    },
+    {
+      "id": "adobe_681",
+      "name": "Adobe Firefly",
+      "url": "https://www.adobe.com",
+      "status": "FAILED",
+      "error": "TIMEOUT"
+    },
+    {
+      "id": "canva_1777",
+      "name": "Canva Magic Studio",
+      "url": "https://www.canva.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "magnific_8492",
+      "name": "Magnific AI",
+      "url": "https://www.magnific.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "looka_8362",
+      "name": "Looka",
+      "url": "https://www.looka.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "relume_1767",
+      "name": "Relume",
+      "url": "https://www.relume.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "sora_8370",
+      "name": "Sora (OpenAI)",
+      "url": "https://www.sora.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "wonder_2097",
+      "name": "Wonder Dynamics",
+      "url": "https://www.wonder.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "tabnine_1076",
+      "name": "Tabnine",
+      "url": "https://www.tabnine.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "motion_722",
+      "name": "Motion",
+      "url": "https://www.motion.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "sciteai_683",
+      "name": "Scite.ai",
+      "url": "https://www.sciteai.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "genei_3478",
+      "name": "Genei",
+      "url": "https://www.genei.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "adobe_9176",
+      "name": "Adobe Podcast",
+      "url": "https://www.adobe.com",
+      "status": "FAILED",
+      "error": "TIMEOUT"
+    },
+    {
+      "id": "mindos_8988",
+      "name": "MindOS",
+      "url": "https://www.mindos.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "topaz_3728",
+      "name": "Topaz Video AI",
+      "url": "https://www.topaz.com",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "nomic_3414",
+      "name": "Nomic Atlas",
+      "url": "https://home.nomic.ai",
+      "status": "FAILED",
+      "error": "TIMEOUT"
+    },
+    {
+      "id": "tome_8028",
+      "name": "Tome",
+      "url": "https://tome.app",
+      "status": 404,
+      "error": "HTTP 404 Not Found"
+    },
+    {
+      "id": "make_1001",
+      "name": "Make (Integromat)",
+      "url": "https://www.make.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "tome_1014",
+      "name": "Tome",
+      "url": "https://tome.app",
+      "status": 404,
+      "error": "HTTP 404 Not Found"
+    },
+    {
+      "id": "ideogram_2009",
+      "name": "Ideogram",
+      "url": "https://ideogram.ai",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "phind_2018",
+      "name": "Phind",
+      "url": "https://www.phind.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "pi_2020",
+      "name": "Pi (Inflection AI)",
+      "url": "https://pi.ai",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "scholarcy_2023",
+      "name": "Scholarcy",
+      "url": "https://www.scholarcy.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "playht_2026",
+      "name": "Play.ht",
+      "url": "https://play.ht",
+      "status": 530,
+      "error": "HTTP 530 <none>"
+    },
+    {
+      "id": "gemini_google",
+      "name": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "status": 502,
+      "error": "HTTP 502 Bad Gateway"
+    },
+    {
+      "id": "ai_tool_generated_1",
+      "name": "AI Tool Pro 1",
+      "url": "https://example.com/ai-tool-1",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_2",
+      "name": "AI Tool Pro 2",
+      "url": "https://example.com/ai-tool-2",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_3",
+      "name": "AI Tool Pro 3",
+      "url": "https://example.com/ai-tool-3",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_4",
+      "name": "AI Tool Pro 4",
+      "url": "https://example.com/ai-tool-4",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_5",
+      "name": "AI Tool Pro 5",
+      "url": "https://example.com/ai-tool-5",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_6",
+      "name": "AI Tool Pro 6",
+      "url": "https://example.com/ai-tool-6",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_7",
+      "name": "AI Tool Pro 7",
+      "url": "https://example.com/ai-tool-7",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_8",
+      "name": "AI Tool Pro 8",
+      "url": "https://example.com/ai-tool-8",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_9",
+      "name": "AI Tool Pro 9",
+      "url": "https://example.com/ai-tool-9",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_10",
+      "name": "AI Tool Pro 10",
+      "url": "https://example.com/ai-tool-10",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_11",
+      "name": "AI Tool Pro 11",
+      "url": "https://example.com/ai-tool-11",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_12",
+      "name": "AI Tool Pro 12",
+      "url": "https://example.com/ai-tool-12",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_13",
+      "name": "AI Tool Pro 13",
+      "url": "https://example.com/ai-tool-13",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_14",
+      "name": "AI Tool Pro 14",
+      "url": "https://example.com/ai-tool-14",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_15",
+      "name": "AI Tool Pro 15",
+      "url": "https://example.com/ai-tool-15",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_16",
+      "name": "AI Tool Pro 16",
+      "url": "https://example.com/ai-tool-16",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_17",
+      "name": "AI Tool Pro 17",
+      "url": "https://example.com/ai-tool-17",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_18",
+      "name": "AI Tool Pro 18",
+      "url": "https://example.com/ai-tool-18",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_19",
+      "name": "AI Tool Pro 19",
+      "url": "https://example.com/ai-tool-19",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_20",
+      "name": "AI Tool Pro 20",
+      "url": "https://example.com/ai-tool-20",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_21",
+      "name": "AI Tool Pro 21",
+      "url": "https://example.com/ai-tool-21",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_22",
+      "name": "AI Tool Pro 22",
+      "url": "https://example.com/ai-tool-22",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_23",
+      "name": "AI Tool Pro 23",
+      "url": "https://example.com/ai-tool-23",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_24",
+      "name": "AI Tool Pro 24",
+      "url": "https://example.com/ai-tool-24",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_25",
+      "name": "AI Tool Pro 25",
+      "url": "https://example.com/ai-tool-25",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_26",
+      "name": "AI Tool Pro 26",
+      "url": "https://example.com/ai-tool-26",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_27",
+      "name": "AI Tool Pro 27",
+      "url": "https://example.com/ai-tool-27",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_28",
+      "name": "AI Tool Pro 28",
+      "url": "https://example.com/ai-tool-28",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_29",
+      "name": "AI Tool Pro 29",
+      "url": "https://example.com/ai-tool-29",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_30",
+      "name": "AI Tool Pro 30",
+      "url": "https://example.com/ai-tool-30",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_31",
+      "name": "AI Tool Pro 31",
+      "url": "https://example.com/ai-tool-31",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_32",
+      "name": "AI Tool Pro 32",
+      "url": "https://example.com/ai-tool-32",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_33",
+      "name": "AI Tool Pro 33",
+      "url": "https://example.com/ai-tool-33",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_34",
+      "name": "AI Tool Pro 34",
+      "url": "https://example.com/ai-tool-34",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_35",
+      "name": "AI Tool Pro 35",
+      "url": "https://example.com/ai-tool-35",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_36",
+      "name": "AI Tool Pro 36",
+      "url": "https://example.com/ai-tool-36",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_37",
+      "name": "AI Tool Pro 37",
+      "url": "https://example.com/ai-tool-37",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_38",
+      "name": "AI Tool Pro 38",
+      "url": "https://example.com/ai-tool-38",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_39",
+      "name": "AI Tool Pro 39",
+      "url": "https://example.com/ai-tool-39",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_40",
+      "name": "AI Tool Pro 40",
+      "url": "https://example.com/ai-tool-40",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_41",
+      "name": "AI Tool Pro 41",
+      "url": "https://example.com/ai-tool-41",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_42",
+      "name": "AI Tool Pro 42",
+      "url": "https://example.com/ai-tool-42",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_43",
+      "name": "AI Tool Pro 43",
+      "url": "https://example.com/ai-tool-43",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_44",
+      "name": "AI Tool Pro 44",
+      "url": "https://example.com/ai-tool-44",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_45",
+      "name": "AI Tool Pro 45",
+      "url": "https://example.com/ai-tool-45",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_46",
+      "name": "AI Tool Pro 46",
+      "url": "https://example.com/ai-tool-46",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_47",
+      "name": "AI Tool Pro 47",
+      "url": "https://example.com/ai-tool-47",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_48",
+      "name": "AI Tool Pro 48",
+      "url": "https://example.com/ai-tool-48",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_49",
+      "name": "AI Tool Pro 49",
+      "url": "https://example.com/ai-tool-49",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "ai_tool_generated_50",
+      "name": "AI Tool Pro 50",
+      "url": "https://example.com/ai-tool-50",
+      "status": "FAILED",
+      "error": "fetch failed"
+    },
+    {
+      "id": "mistral_le_chat",
+      "name": "Mistral Le Chat",
+      "url": "https://chat.mistral.ai/",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "meta_llama_3",
+      "name": "Meta Llama 3",
+      "url": "https://llama.meta.com/",
+      "status": 400,
+      "error": "HTTP 400 Bad Request"
+    },
+    {
+      "id": "pi_inflection",
+      "name": "Pi (by Inflection)",
+      "url": "https://pi.ai/",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "make_com_ai",
+      "name": "Make.com",
+      "url": "https://www.make.com/",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "julius_ai_new",
+      "name": "Julius AI",
+      "url": "https://julius.ai",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "hedra_ai_new",
+      "name": "Hedra AI",
+      "url": "https://www.hedra.com",
+      "status": 429,
+      "error": "HTTP 429 Too Many Requests"
+    },
+    {
+      "id": "mistral_le_chat_new",
+      "name": "Le Chat (Mistral)",
+      "url": "https://chat.mistral.ai",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "freepik_pikaso_new",
+      "name": "Pikaso (Freepik)",
+      "url": "https://www.freepik.com/pikaso",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "devin_ai_new",
+      "name": "Devin",
+      "url": "https://www.cognition.ai/devin",
+      "status": 404,
+      "error": "HTTP 404 Not Found"
+    },
+    {
+      "id": "perplexity_pages_new",
+      "name": "Perplexity Pages",
+      "url": "https://www.perplexity.ai/pages",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "playht_ai_new",
+      "name": "PlayHT",
+      "url": "https://play.ht",
+      "status": 530,
+      "error": "HTTP 530 <none>"
+    },
+    {
+      "id": "poe_ai_new",
+      "name": "Poe",
+      "url": "https://poe.com",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "consensus_ai_new",
+      "name": "Consensus",
+      "url": "https://consensus.app",
+      "status": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "id": "hailuo_ai_new",
+      "name": "Hailuo AI (MiniMax)",
+      "url": "https://hailuo.ai/video",
+      "status": 404,
+      "error": "HTTP 404 Not Found"
+    }
+  ]
+}

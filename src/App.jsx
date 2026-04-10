@@ -25,7 +25,9 @@ import AutomationRisk from './pages/AutomationRisk';
 import PromptsPage from './pages/PromptsPage';
 import SocialMediaGrowth from './pages/SocialMediaGrowth';
 import MatchMaker from './pages/MatchMaker';
-
+import Collections from './pages/Collections';
+import CollectionDetail from './pages/CollectionDetail';
+import AIAssistantWidget from './components/AIAssistantWidget';
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -57,11 +59,14 @@ function App() {
           <Route path="/matchmaker" element={<MatchMaker />} />
           <Route path="/prompts" element={<PromptsPage />} />
           <Route path="/viral" element={<SocialMediaGrowth />} />
+          <Route path="/collections" element={<Collections />} />
+          <Route path="/collections/:slug" element={<CollectionDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <CommandPalette />
       <CookieBanner />
+      <AIAssistantWidget />
       <Footer />
     </div>
   );

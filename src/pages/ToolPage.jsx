@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { tools } from '../data';
 import { useSEO } from '../hooks/useSEO';
-import { Star, ExternalLink, ChevronRight, Share2, Check, Copy, Twitter, Zap, ArrowLeft, Heart, MessageSquare, Sparkles } from 'lucide-react';
+import { Star, ExternalLink, ChevronRight, Share2, Check, Copy, Twitter, Zap, ArrowLeft, Heart, MessageSquare, Sparkles, AlertTriangle, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { db } from '../firebase';
 import { doc, updateDoc, setDoc, arrayUnion, onSnapshot } from 'firebase/firestore';
@@ -63,6 +63,10 @@ export default function ToolPage() {
 
     // Comments State
     const [comments, setComments] = useState([]);
+    
+    // Report Modal State
+    const [isReportModalOpen, setIsReportModalOpen] = useState(false);
+    const [reportStatus, setReportStatus] = useState('idle');
 
     useEffect(() => {
         if (!id) return;
@@ -308,6 +312,12 @@ export default function ToolPage() {
                                 <div className="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-400 italic">
                                     Please note: AI capabilities evolve rapidly. Always check the official website of {tool.name} for the most current features array.
                                 </div>
+                                <button 
+                                    onClick={() => setIsReportModalOpen(true)}
+                                    className="w-full mt-4 flex items-center justify-center gap-2 text-xs font-bold text-slate-500 hover:text-red-500 dark:text-slate-400 dark:hover:text-red-400 transition-colors py-2.5 border border-slate-200 dark:border-slate-800 rounded-xl bg-slate-50 dark:bg-slate-800/50 hover:bg-red-50 dark:hover:bg-red-900/10 hover:border-red-200 dark:hover:border-red-900/30"
+                                >
+                                    <AlertTriangle className="w-4 h-4" /> Report obsolete or broken tool
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -409,6 +419,62 @@ export default function ToolPage() {
                     </motion.div>
                 )}
             </div>
+            {/* Report Modal */}
+            <AnimatePresence>
+                {isReportModalOpen && (
+                    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+                        <motion.div 
+                            initial={{ opacity: 0 }} 
+                            animate={{ opacity: 1 }} 
+                            exit={{ opacity: 0 }} 
+                            className="absolute inset-0 bg-slate-900/40 backdrop-blur-sm"
+                            onClick={() => setIsReportModalOpen(false)}
+                        />
+                        <motion.div 
+                            initial={{ opacity: 0, scale: 0.95, y: 10 }}
+                            animate={{ opacity: 1, scale: 1, y: 0 }}
+                            exit={{ opacity: 0, scale: 0.95, y: 10 }}
+                            className="bg-white dark:bg-slate-900 rounded-[2rem] p-6 md:p-8 shadow-2xl relative z-10 w-full max-w-md border border-slate-200 dark:border-slate-800"
+                        >
+                            {reportStatus === 'success' ? (
+                                <div className="text-center py-6">
+                                    <motion.div 
+                                        initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring" }}
+                                        className="w-16 h-16 bg-green-100 dark:bg-green-900/30 text-green-500 rounded-full flex items-center justify-center mx-auto mb-4"
+                                    >
+                                        <Check className="w-8 h-8" />
+                                    </motion.div>
+                                    <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Report Sent Successfully</h3>
+                                    <p className="text-slate-500 dark:text-slate-400">Thanks for helping the community keep the directory clean and updated!</p>
+                                </div>
+                            ) : (
+                                <>
+                                    <div className="flex justify-between items-center mb-6">
+                                        <h3 className="text-xl font-bold flex items-center gap-2 text-slate-900 dark:text-white"><AlertTriangle className="w-5 h-5 text-red-500" /> Report Tool</h3>
+                                        <button onClick={() => setIsReportModalOpen(false)} className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors"><X className="w-5 h-5"/></button>
+                                    </div>
+                                    <p className="text-slate-600 dark:text-slate-400 text-sm mb-6">Why are you reporting <strong>{tool.name}</strong>?</p>
+                                    <div className="flex flex-col gap-3">
+                                        {['Broken Link / Does not exist', 'It is no longer Free / Extremely expensive', 'Poor quality / Scam', 'It is not an AI tool'].map((reason, i) => (
+                                            <button 
+                                                key={i} 
+                                                onClick={() => {
+                                                    setReportStatus('success');
+                                                    setTimeout(() => { setIsReportModalOpen(false); setReportStatus('idle'); }, 2500);
+                                                }}
+                                                className="text-left w-full px-4 py-3 bg-slate-50 dark:bg-slate-800/50 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-600 dark:hover:text-red-400 border border-slate-200 dark:border-slate-700/50 hover:border-red-200 dark:hover:border-red-900/50 rounded-xl transition-all font-medium text-sm text-slate-700 dark:text-slate-300"
+                                            >
+                                                {reason}
+                                            </button>
+                                        ))}
+                                    </div>
+                                </>
+                            )}
+                        </motion.div>
+                    </div>
+                )}
+            </AnimatePresence>
+
         </div>
     );
 }

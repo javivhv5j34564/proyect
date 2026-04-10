@@ -108,6 +108,7 @@ const categoryIcons = {
 };
 
 import { ToolCard } from '../components/ToolCard';
+import { semanticSearchTools } from '../utils/semanticSearch';
 
 export default function Home({ searchTerm, setSearchTerm }) {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -281,21 +282,13 @@ export default function Home({ searchTerm, setSearchTerm }) {
 
   // Filter & Sort Logic
   const filteredTools = useMemo(() => {
-    return tools.filter(tool => {
-      const searchStr = searchTerm.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-      const nName = tool.name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-      const nDesc = tool.description.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-      const nLong = (tool.longDescription || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-      const nSector = tool.sector.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-      const nKeywords = (tool.keywords || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    let baseTools = tools;
 
-      const matchesSearch = searchStr === '' ||
-        nName.includes(searchStr) ||
-        nDesc.includes(searchStr) ||
-        nLong.includes(searchStr) ||
-        nSector.includes(searchStr) ||
-        nKeywords.includes(searchStr);
+    if (searchTerm.trim() !== '') {
+        baseTools = semanticSearchTools(searchTerm, tools);
+    }
 
+    const filtered = baseTools.filter(tool => {
       const matchesCategory = selectedCategory === 'All' || tool.sector === selectedCategory;
       const matchesFavorites = showFavorites ? bookmarks.includes(tool.id) : true;
 
@@ -306,8 +299,16 @@ export default function Home({ searchTerm, setSearchTerm }) {
         matchesPricing = tool.isFullyFree === false;
       }
 
-      return matchesSearch && matchesCategory && matchesFavorites && matchesPricing;
-    }).sort((a, b) => {
+      return matchesCategory && matchesFavorites && matchesPricing;
+    });
+    
+    // If we are actively searching semantically, maintain the relevance order 
+    // returned by semanticSearchTools UNLESS explicitly overriding with another sort
+    if (searchTerm.trim() !== '' && sortBy === 'popular') {
+        return filtered; // Keep the strict semantic relevance score order
+    }
+
+    return filtered.sort((a, b) => {
       if (sortBy === 'newest') return b.id.localeCompare(a.id);
       if (sortBy === 'name') return a.name.localeCompare(b.name);
       
@@ -471,6 +472,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
                                 src={guide.coverImage} 
                                 alt={guide.title}
                                 loading="lazy"
+                                decoding="async"
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                             />
                             <div className="absolute top-3 left-3 bg-white/90 dark:bg-slate-900/90 text-slate-800 dark:text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider backdrop-blur-sm shadow-sm">
@@ -578,6 +580,7 @@ export default function Home({ searchTerm, setSearchTerm }) {
             src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80"
             alt="AI Brain technology"
             loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
             onError={(e) => {
               e.target.onerror = null;

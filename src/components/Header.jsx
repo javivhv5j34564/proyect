@@ -52,6 +52,8 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                         <img 
                             src="/logo.png" 
                             alt="AI Directory Logo" 
+                            fetchpriority="high"
+                            decoding="async"
                             className="w-8 h-8 md:w-10 md:h-10 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700/80 flex-shrink-0 object-cover"
                         />
                         <div>
@@ -69,6 +71,7 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
 
                 <nav className="hidden md:flex items-center gap-6 font-semibold text-sm">
                     <button onClick={() => scrollToSection('directory-section')} className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors flex items-center gap-1.5"><FolderTree className="w-4 h-4" /> Directory</button>
+                    <Link to="/collections" className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors flex items-center gap-1.5"><Layers className="w-4 h-4"/> Curated Lists</Link>
                     
                     <div className="relative group">
                         <button className="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors flex items-center gap-1.5"><Sparkles className="w-4 h-4" /> Discover ✨</button>
@@ -107,6 +110,7 @@ export default function Header({ searchTerm = '', onSearchChange = () => { } }) 
                             >
                                 <div className="flex flex-col p-4 gap-2">
                                     <button onClick={() => scrollToSection('directory-section')} className="w-full text-center px-4 py-3 font-semibold text-blue-600 dark:text-blue-400 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2"><FolderTree className="w-4 h-4"/> AI Directory</button>
+                                    <Link to="/collections" onClick={() => setIsMobileMenuOpen(false)} className="w-full text-center px-4 py-3 font-semibold text-indigo-600 dark:text-indigo-400 bg-slate-50 dark:bg-slate-950 active:bg-slate-100 dark:bg-slate-800 rounded-xl transition-all border border-slate-100 dark:border-slate-800 flex items-center justify-center gap-2"><Layers className="w-4 h-4"/> Curated Lists</Link>
                                     
                                     <div className="w-full rounded-xl border border-purple-100 dark:border-purple-900/50 bg-purple-50/50 dark:bg-purple-900/10 p-2 space-y-2">
                                         <div className="text-xs font-bold text-purple-600 dark:text-purple-400 text-center uppercase tracking-wider mb-2 pt-2">Premium Tools</div>
