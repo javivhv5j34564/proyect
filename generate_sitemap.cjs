@@ -13,17 +13,18 @@ if (fs.existsSync(guidesPath)) {
 }
 
 // Extraer toolIds y blogIds
-const toolIds = [...dataContent.matchAll(/id:\s*['"]([^'"]*)['"]/g)].map(m => m[1]);
+const toolIdsMatch = [...dataContent.matchAll(/"?id"?:\s*['"]([^'"]*)['"]/g)];
+const toolIds = toolIdsMatch.map(m => m[1]);
 const blogIds = toolIds.filter(id => id.startsWith('blog-'));
 const realToolIds = toolIds.filter(id => !id.startsWith('blog-'));
 
 // Extraer Categories
-const sectorsMatch = [...dataContent.matchAll(/sector:\s*['"]([^'"]*)['"]/g)].map(m => m[1]);
+const sectorsMatch = [...dataContent.matchAll(/"?sector"?:\s*['"]([^'"]*)['"]/g)].map(m => m[1]);
 const uniqueSectors = [...new Set(sectorsMatch)];
 const categorySlugs = uniqueSectors.map(c => c.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-'));
 
 // Extraer Guides
-const guideIds = [...guidesContent.matchAll(/id:\s*['"]([^'"]*)['"]/g)].map(m => m[1]);
+const guideIds = [...guidesContent.matchAll(/"?id"?:\s*['"]([^'"]*)['"]/g)].map(m => m[1]);
 
 const baseUrl = 'https://myiadirectory.com'; // Cambiar por el dominio real si se conoce
 const date = new Date().toISOString().split('T')[0];

@@ -827,18 +827,6 @@ export const tools = [
         "longDescription": "Offers the most human and coherent writing on the market at no cost. Ideal for essays, emails, and any type of professional writing. It stands out for its ability to follow format instructions and its natural tone, often surpassing paid alternatives."
     },
     {
-        "id": "leonardo",
-        "name": "Leonardo.ai",
-        "sector": "Image & Design",
-        "logo": "leonardo",
-        "emoji": "🎨",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium (150 tokens/day)",
-        "url": "https://leonardo.ai",
-        "description": "Spectacular image generation with professional quality. The best freemium.",
-        "longDescription": "Gives 150 free daily tokens. Better than Midjourney if you don't want to pay, allowing for professional art. The platform includes many finetuned models, 3D texture creation, and AI-assisted editing."
-    },
-    {
         "id": "deepseek",
         "name": "DeepSeek R1",
         "sector": "Programming",
@@ -1031,18 +1019,6 @@ export const tools = [
         "longDescription": "An impressive tool for fashion and e-commerce. You can upload a photo of a garment and Vmake will generate realistic models of different sizes and ethnicities wearing it. Also includes Virtual Try-On functions to see how outfits would look on you."
     },
     {
-        "id": "quillbot",
-        "name": "QuillBot",
-        "sector": "Writing & Productivity",
-        "logo": "quillbot",
-        "emoji": "✍️",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium (Basic Plan)",
-        "url": "https://quillbot.com",
-        "description": "The best AI-powered paraphraser and grammar checker.",
-        "longDescription": "Perfect for rewriting texts, improving vocabulary, and avoiding plagiarism. Its free version allows you to paraphrase short paragraphs in different tones (formal, fluent, etc.) immediately with excellent results in Spanish and English."
-    },
-    {
         "id": "consensus",
         "name": "Consensus AI",
         "sector": "Research & Data",
@@ -1053,18 +1029,6 @@ export const tools = [
         "url": "https://consensus.app",
         "description": "AI search engine that only extracts responses from real scientific articles.",
         "longDescription": "If you are doing a thesis or academic work, this tool extracts citations and conclusions directly from peer-reviewed scientific paper databases. Say goodbye to made-up answers and get scientific rigor for free."
-    },
-    {
-        "id": "luma",
-        "name": "Luma Dream Machine",
-        "sector": "Video & Animation",
-        "logo": "luma",
-        "emoji": "🎥",
-        "isFullyFree": false,
-        "freeTierDetails": "30 Gens/Month",
-        "url": "https://lumalabs.ai/dream-machine",
-        "description": "Generate high-quality hyper-realistic video clips from text.",
-        "longDescription": "A revolutionary AI to create videos from scratch or animate static images. With its free plan, you get enough monthly credits to render fluid cinematics or fast assets for your audiovisual projects and social networks."
     },
     {
         "id": "dishgen",
@@ -1089,18 +1053,6 @@ export const tools = [
         "url": "https://www.chatcsv.co",
         "description": "Chat directly with your spreadsheets and data documents.",
         "longDescription": "Turn your tabular CSV files into a smart assistant. Ask questions about your table like \"which month did we sell the most?\" or \"filter inactive users\", and ChatCSV will read the information returning processed data instantly."
-    },
-    {
-        "id": "socratic",
-        "name": "Socratic by Google",
-        "sector": "Research & Data",
-        "logo": "socratic",
-        "emoji": "🦉",
-        "isFullyFree": true,
-        "freeTierDetails": "100% Free",
-        "url": "https://socratic.org",
-        "description": "Solve math, physics, and science problems with just a photo.",
-        "longDescription": "Take a photo of that algebra or chemistry problem you don't understand, and Socratic's AI breaks it down explaining the solution step by step with charts and key concepts. A must-have app for students."
     },
     {
         "id": "trevor",
@@ -1139,18 +1091,6 @@ export const tools = [
         "longDescription": "Gemini stands out for its huge context window and native ability to understand text, code, images, and videos at the same time. Integrated with Google Workspace, it is ideal for summarizing spreadsheets or drafting emails."
     },
     {
-        "id": "midjourney",
-        "name": "Midjourney",
-        "sector": "Image & Design",
-        "logo": "midjourney",
-        "emoji": "⛵",
-        "isFullyFree": false,
-        "freeTierDetails": "Paid Only",
-        "url": "https://www.midjourney.com",
-        "description": "The undisputed king of artistic and photorealistic image generation.",
-        "longDescription": "While it no longer offers a constant free trial, Midjourney v6 is the creative industry standard. Generates everything from ultra-realistic photos to logos and game concept art with unparalleled graphic fidelity."
-    },
-    {
         "id": "stablediffusion",
         "name": "Stable Diffusion",
         "sector": "Image & Design",
@@ -1173,18 +1113,6 @@ export const tools = [
         "url": "https://runwayml.com",
         "description": "The leading platform for creative creation and generative visual effects.",
         "longDescription": "Runway is oriented towards filmmakers and content creators. Its Gen-3 Alpha model produces high-fidelity video and precise camera control. Allows advanced Text-to-Video and Image-to-Video functions."
-    },
-    {
-        "id": "kling",
-        "name": "Kling AI",
-        "sector": "Video & Animation",
-        "logo": "kling",
-        "emoji": "🎞️",
-        "isFullyFree": false,
-        "freeTierDetails": "Daily Credits",
-        "url": "https://klingai.com",
-        "description": "Hyper-realistic video generation and advanced physics simulation.",
-        "longDescription": "The main competitor to Sora (OpenAI) accessible to the public. Kling stands out for its incredible understanding of real-world physics: fluids, reflections, and complex body movements are rendered with amazing precision."
     },
     {
         "id": "mistral_872",
@@ -1257,18 +1185,6 @@ export const tools = [
         "url": "https://www.adobe.com",
         "description": "Professional generative fill and editing.",
         "longDescription": "Adobe Firefly is a family of creative generative AI models integrated into Adobe Creative Cloud, allowing for professional-grade generative fill and content creation."
-    },
-    {
-        "id": "canva_1777",
-        "name": "Canva Magic Studio",
-        "sector": "Image & Design",
-        "logo": "canva",
-        "emoji": "🖼️",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://www.canva.com",
-        "description": "Assisted graphic design for non-designers.",
-        "longDescription": "Canva Magic Studio leverages AI to simplify graphic design tasks, from removing backgrounds to generating entire layouts based on a prompt."
     },
     {
         "id": "kreaai_3219",
@@ -1355,18 +1271,6 @@ export const tools = [
         "longDescription": "Relume helps web designers and developers generate sitemaps and wireframes using AI, accelerating the planning phase of web projects."
     },
     {
-        "id": "heygen_4644",
-        "name": "HeyGen",
-        "sector": "Video & Animation",
-        "logo": "heygen",
-        "emoji": "🎬",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://www.heygen.com",
-        "description": "Speaking avatars and video translation with lip-sync.",
-        "longDescription": "HeyGen produces high-quality AI videos with digital avatars and has advanced video translation capabilities that include perfect lip-sync."
-    },
-    {
         "id": "sora_8370",
         "name": "Sora (OpenAI)",
         "sector": "Video & Animation",
@@ -1389,30 +1293,6 @@ export const tools = [
         "url": "https://pika.art",
         "description": "Creative animations and visual effects.",
         "longDescription": "Pika Labs provides a powerful ideation-to-video platform that allows creators to bring their stories to life through high-quality AI-generated animations."
-    },
-    {
-        "id": "synthesia_2351",
-        "name": "Synthesia",
-        "sector": "Video & Animation",
-        "logo": "synthesia",
-        "emoji": "📽️",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://www.synthesia.com",
-        "description": "Corporate videos with virtual presenters.",
-        "longDescription": "Synthesia is an AI video generation platform that enables users to create professional-looking videos with AI avatars in over 120 languages."
-    },
-    {
-        "id": "invideo_7750",
-        "name": "InVideo AI",
-        "sector": "Video & Animation",
-        "logo": "invideo",
-        "emoji": "🎥",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://invideo.io",
-        "description": "Create videos for YouTube/TikTok from a prompt.",
-        "longDescription": "InVideo AI automates video creation for social media, providing a library of stock media and generating scripts and voice-overs based on user prompts."
     },
     {
         "id": "wonder_2097",
@@ -1451,18 +1331,6 @@ export const tools = [
         "longDescription": "Captions.ai is a comprehensive studio for creators, offering AI-powered subtitling, eye contact correction, and automated video editing specialized for social media."
     },
     {
-        "id": "descript_6948",
-        "name": "Descript",
-        "sector": "Video & Animation",
-        "logo": "descript",
-        "emoji": "📹",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://www.descript.com",
-        "description": "Text-based video editor (transcription).",
-        "longDescription": "Descript is a revolutionary audio and video editor that feels like a document. Edit your media by editing the text transcript, and use AI features like studio sound and green screen."
-    },
-    {
         "id": "github_8281",
         "name": "GitHub Copilot",
         "sector": "Programming",
@@ -1485,18 +1353,6 @@ export const tools = [
         "url": "https://www.replit.com",
         "description": "Build and deploy complete apps just by asking.",
         "longDescription": "Replit Agent is an AI-powered assistant that helps you build, test, and deploy software applications entirely within the browser, handling both frontend and backend."
-    },
-    {
-        "id": "boltnew_6272",
-        "name": "Bolt.new",
-        "sector": "Programming",
-        "logo": "boltnew",
-        "emoji": "⚡",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://www.boltnew.com",
-        "description": "Full-stack web development in the browser.",
-        "longDescription": "Bolt.new is an AI-powered full-stack web development environment that allows you to prompt, build, and deploy web applications instantly."
     },
     {
         "id": "v0dev_372",
@@ -1581,42 +1437,6 @@ export const tools = [
         "url": "https://www.notion.com",
         "description": "Project management and integrated writing assistant.",
         "longDescription": "Notion AI adds generative capabilities to your workspace, helping you summarize documents, brainstorm ideas, and refine your writing within your existing notes."
-    },
-    {
-        "id": "jasper_3064",
-        "name": "Jasper",
-        "sector": "Writing & Productivity",
-        "logo": "jasper",
-        "emoji": "📝",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://www.jasper.ai",
-        "description": "AI for content marketing and blogs.",
-        "longDescription": "Jasper is a comprehensive content platform for marketing teams, enabling the creation of high-quality copy, blog posts, and marketing materials aligned with your brand voice."
-    },
-    {
-        "id": "copyai_3982",
-        "name": "Copy.ai",
-        "sector": "Writing & Productivity",
-        "logo": "copyai",
-        "emoji": "📓",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://www.copy.ai",
-        "description": "High-converting sales copy and ad generation.",
-        "longDescription": "Copy.ai is an AI writing assistant that enables teams to generate high-quality marketing copy, social media posts, and sales emails in seconds."
-    },
-    {
-        "id": "writesonic_6327",
-        "name": "Writesonic",
-        "sector": "Writing & Productivity",
-        "logo": "writesonic",
-        "emoji": "📝",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://www.writesonic.com",
-        "description": "SEO-optimized articles for Google ranking.",
-        "longDescription": "Writesonic is an AI-powered content writing platform that helps businesses generate SEO-friendly blog posts, landing pages, and product descriptions."
     },
     {
         "id": "grammarly_3403",
@@ -1713,18 +1533,6 @@ export const tools = [
         "url": "https://www.reclaimai.com",
         "description": "Schedule optimization for teams.",
         "longDescription": "Reclaim.ai is an intelligent scheduling app that helps teams find time for tasks, habits, and meetings across their busy calendars."
-    },
-    {
-        "id": "elicit_1899",
-        "name": "Elicit",
-        "sector": "Research & Data",
-        "logo": "elicit",
-        "emoji": "🧮",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://www.elicit.com",
-        "description": "Automates academic literature review.",
-        "longDescription": "Elicit uses language models to help researchers discover and synthesize academic papers, providing high-quality summaries and extracting data from studies."
     },
     {
         "id": "sciteai_683",
@@ -2015,18 +1823,6 @@ export const tools = [
         "longDescription": "Humata AI is like ChatGPT for your files, helping you analyze long legal, medical, or technical documents instantly."
     },
     {
-        "id": "tome_8028",
-        "name": "Tome",
-        "sector": "Utilities",
-        "logo": "tome",
-        "emoji": "🛠️",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://tome.app",
-        "description": "Visual narrative and storytelling for business.",
-        "longDescription": "Tome uses AI to create polished presentation decks and interactive narratives from a simple text prompt."
-    },
-    {
         "id": "eightify_4539",
         "name": "Eightify",
         "sector": "Utilities",
@@ -2159,18 +1955,6 @@ export const tools = [
         "longDescription": "The most visual and powerful no-code automation platform. Connect CRMs, email, AI (OpenAI, Anthropic), and databases to automate everything from customer service to billing without writing a single line of code."
     },
     {
-        "id": "zapier_1002",
-        "name": "Zapier Central",
-        "sector": "Automation",
-        "logo": "zapier",
-        "emoji": "⚡",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://zapier.com/central",
-        "description": "AI agents that execute tasks in your daily apps.",
-        "longDescription": "Zapier Central allows you to create custom AI agents. You can chat with your database information and instruct the agent to send emails, update CRM records, or create reports using thousands of integrations."
-    },
-    {
         "id": "chatbase_1003",
         "name": "Chatbase",
         "sector": "Chatbots & Assistants",
@@ -2181,30 +1965,6 @@ export const tools = [
         "url": "https://www.chatbase.co",
         "description": "Build a chatbot for your website trained on your own business data.",
         "longDescription": "A revolutionary tool for customer service. Upload your business PDFs, link your entire website, or your user manual, and Chatbase will create a ChatGPT-style clone that answers customer questions 24/7 based solely on your information."
-    },
-    {
-        "id": "fireflies_1004",
-        "name": "Fireflies.ai",
-        "sector": "Writing & Productivity",
-        "logo": "fireflies",
-        "emoji": "🔥",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://fireflies.ai",
-        "description": "An AI assistant that records, transcribes, and summarizes your B2B meetings.",
-        "longDescription": "Integrates with Google Meet, Zoom, and Teams. It joins your calls, transcribes them in real-time, identifies speakers, and generates summaries with action items, eliminating the need for manual notes."
-    },
-    {
-        "id": "otterai_1005",
-        "name": "Otter.ai",
-        "sector": "Writing & Productivity",
-        "logo": "otter",
-        "emoji": "🦦",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://otter.ai",
-        "description": "Live meeting assistant and AI for sales team collaboration.",
-        "longDescription": "Beyond transcribing corporate meetings with high precision, OtterPilot joins your calls and generates detailed notes. Includes a live bot you can query during the meeting."
     },
     {
         "id": "clay_1006",
@@ -2229,18 +1989,6 @@ export const tools = [
         "url": "https://www.gong.io",
         "description": "Revenue Intelligence for sales teams.",
         "longDescription": "Gong records and analyzes calls and emails. Using AI, it detects trends, common objections, and evaluates if a negotiation is on track, providing a predictive dashboard based on real interactions."
-    },
-    {
-        "id": "beautifulai_1008",
-        "name": "Beautiful.ai",
-        "sector": "Image & Design",
-        "logo": "beautifulai",
-        "emoji": "📊",
-        "isFullyFree": false,
-        "freeTierDetails": "Free Trial",
-        "url": "https://www.beautiful.ai",
-        "description": "Corporate B2B presentation software that self-designs instantly.",
-        "longDescription": "Ideal for B2B. Unlike a blank PowerPoint, this tool applies smart design rules. Just add your content, and the template adjusts instantly into a professional, high-impact format."
     },
     {
         "id": "browseai_1009",
@@ -2301,18 +2049,6 @@ export const tools = [
         "url": "https://www.mutinyhq.com",
         "description": "Improve website conversion by personalizing content for every visitor.",
         "longDescription": "Mutiny detects if a visitor is from a major corporation or a startup in real-time. It then adjusts your landing page headlines to a specific proposal that captivates that client type."
-    },
-    {
-        "id": "tome_1014",
-        "name": "Tome",
-        "sector": "Writing & Productivity",
-        "logo": "tome",
-        "emoji": "📚",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://tome.app",
-        "description": "Sales reports, investment pitch decks, or interactive metrics.",
-        "longDescription": "Tell Tome about your company idea and it will replace traditional slides with interactive, AI-generated modular webs that delight investors."
     },
     {
         "id": "alice_1015",
@@ -2387,18 +2123,6 @@ export const tools = [
         "longDescription": "Retell AI allows you to build conversation-level phone bots with human-like latency and emotion for high-scale support."
     },
     {
-        "id": "elevenlabs_2001",
-        "name": "ElevenLabs",
-        "sector": "Audio & Music",
-        "logo": "elevenlabs",
-        "emoji": "🎙️",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://elevenlabs.io",
-        "description": "The best cloned voice and text-to-speech generator with terrifying realism.",
-        "longDescription": "Indisputable leader in voice synthesis. Clone your own voice or use hundreds of profiles with emotion and natural inflection."
-    },
-    {
         "id": "opusclip_2002",
         "name": "OpusClip",
         "sector": "Video & Animation",
@@ -2423,18 +2147,6 @@ export const tools = [
         "longDescription": "Uses deep learning to capture human context. DeepL Write ensures your business English or German sounds natural and professional."
     },
     {
-        "id": "grammarly_2004",
-        "name": "Grammarly",
-        "sector": "Writing & Productivity",
-        "logo": "grammarly",
-        "emoji": "✅",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://www.grammarly.com",
-        "description": "Omnipresent grammar assistant and tone-based email rewriting.",
-        "longDescription": "The most installed plugin for professionals. Beyond spelling, it helps you adjust tone and improve clarity across all your communications."
-    },
-    {
         "id": "surferseo_2005",
         "name": "Surfer SEO",
         "sector": "Marketing & Sales",
@@ -2445,18 +2157,6 @@ export const tools = [
         "url": "https://surferseo.com",
         "description": "Guides you on the exact words to use to rank on Page 1 of Google.",
         "longDescription": "Surfer SEO analyzes top search results and provides real-time guidance to optimize your content as you write."
-    },
-    {
-        "id": "rytr_2006",
-        "name": "Rytr",
-        "sector": "Writing & Productivity",
-        "logo": "rytr",
-        "emoji": "✍🏼",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://rytr.me",
-        "description": "Fast and affordable AI writing assistant for copywriting.",
-        "longDescription": "Rytr provides an affordable way to generate product descriptions, social media posts, and emails in various tones and formats."
     },
     {
         "id": "photoroom_2007",
@@ -2519,30 +2219,6 @@ export const tools = [
         "longDescription": "You.com combines web results with AI chat, allowing users to switch between models like GPT-4 and Claude 3 for a custom search experience."
     },
     {
-        "id": "elicit_2012",
-        "name": "Elicit",
-        "sector": "Research & Data",
-        "logo": "elicit",
-        "emoji": "🎓",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://elicit.com",
-        "description": "AI research assistant for summarizing and analyzing scientific papers.",
-        "longDescription": "Elicit searches through thousands of academic papers to answer questions and summarize findings into structured tables."
-    },
-    {
-        "id": "speechify_2013",
-        "name": "Speechify",
-        "sector": "Audio & Music",
-        "logo": "speechify",
-        "emoji": "🎧",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://speechify.com",
-        "description": "High-quality screen reader for PDFs, emails, and web content.",
-        "longDescription": "Speechify uses natural-sounding voices (including celebrities) to help you listen to any text on the web or in your documents."
-    },
-    {
         "id": "adobepodcast_2014",
         "name": "Adobe Podcast Enhance",
         "sector": "Audio & Music",
@@ -2589,18 +2265,6 @@ export const tools = [
         "url": "https://codeium.com",
         "description": "Open-source alternative to GitHub Copilot; AI extension for modern IDEs.",
         "longDescription": "Codeium provides fast and reliable code completion for dozens of languages, helping developers reduce boilerplate and bugs."
-    },
-    {
-        "id": "phind_2018",
-        "name": "Phind",
-        "sector": "Programming",
-        "logo": "phind",
-        "emoji": "🐛",
-        "isFullyFree": false,
-        "freeTierDetails": "Unlimited Search",
-        "url": "https://www.phind.com",
-        "description": "An AI search engine for developers that finds and digests technical documentation.",
-        "longDescription": "Phind answers technical questions by searching the web and compiling solutions with relevant code snippets and documentation."
     },
     {
         "id": "superhuman_2019",
@@ -2661,18 +2325,6 @@ export const tools = [
         "url": "https://www.scholarcy.com",
         "description": "AI research library that summarizes long papers and extracts references.",
         "longDescription": "Scholarcy transforms massive PDF documents into structured summaries and flashcards for faster academic research."
-    },
-    {
-        "id": "murf_2024",
-        "name": "Murf.ai",
-        "sector": "Audio & Music",
-        "logo": "murf",
-        "emoji": "📣",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://murf.ai",
-        "description": "Versatile collection of natural AI voices for e-learning and marketing.",
-        "longDescription": "Murf.ai provides studio-quality AI voices for narrations, presentations, and voiceovers in multiple languages and tones."
     },
     {
         "id": "webflow_2025",
@@ -2747,18 +2399,6 @@ export const tools = [
         "longDescription": "Tell your assistant (Xena - in Slack or Mails) \"Hey, meet with client so-and-so on Tuesday or Wednesday.\" The AI will send emails to the client as if it were you looking for availability, politely negotiating for exact hours in all time zones of the world, closing the invitation directly in the agendas of both individuals."
     },
     {
-        "id": "chatgpt_openai",
-        "name": "ChatGPT",
-        "sector": "Chatbots & Assistants",
-        "logo": "openai",
-        "emoji": "💬",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://chat.openai.com/",
-        "description": "The most famous conversational AI in the world, created by OpenAI, capable of solving incredibly complex logic, coding, and writing tasks.",
-        "longDescription": "ChatGPT is the AI that started the generative revolution. In its free version (GPT-3.5 or limited GPT-4o), it functions as a super assistant capable of summarizing pdfs, translating languages naturally, formatting emails, and brainstorming. The premium version includes data analysis, image generation (DALL-E 3), and code execution."
-    },
-    {
         "id": "claude_anthropic",
         "name": "Claude",
         "sector": "Chatbots & Assistants",
@@ -2771,42 +2411,6 @@ export const tools = [
         "longDescription": "Claude 3 (Opus, Sonnet, Haiku) excels at nuance and safety limits. The Sonnet version is widely considered the best AI for writing non-robotic, \"human-like\" text, and has a massive context window capable of reading whole books or huge codebases in seconds without losing the thread."
     },
     {
-        "id": "gemini_google",
-        "name": "Google Gemini",
-        "sector": "Chatbots & Assistants",
-        "logo": "google",
-        "emoji": "✨",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://gemini.google.com/",
-        "description": "Google's multimodally native AI, natively integrated into the Google ecosystem (Docs, Drive, Gmail).",
-        "longDescription": "Gemini (formerly Bard) has a massive advantage: infinite integration with Google services. It can summarize your emails from Gmail, read your Google Drive documents, or analyze your current location via Maps. Extremely fast and totally multimodal (understands images, video, and audio inherently)."
-    },
-    {
-        "id": "suno_ai",
-        "name": "Suno AI",
-        "sector": "Audio & Music",
-        "logo": "suno",
-        "emoji": "🎵",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://suno.com/",
-        "description": "The ChatGPT of music. Type a prompt and get radio-quality, full-length songs with vocals and instruments in seconds.",
-        "longDescription": "Suno AI changed the music industry forever. You can input lyrics (or let it write them) and choose a genre like \"synthwave\" or \"operatic metal\". It will instantly generate a full 2-minute stunningly realistic track. Perfect for creators needing royalty-free background music or instant jingles."
-    },
-    {
-        "id": "luma_dream_machine",
-        "name": "Luma Dream Machine",
-        "sector": "Video & Animation",
-        "logo": "luma",
-        "emoji": "🎥",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://lumalabs.ai/dream-machine",
-        "description": "Extremely fast, highly realistic text-to-video AI generation available to the public.",
-        "longDescription": "While OpenAI Sora remains closed, Luma released Dream Machine to the public. It generates breathtaking 5-second video clips from images or text prompts with incredible physical physics and cinematic quality. The easiest way to start making AI short films today."
-    },
-    {
         "id": "v0_dev_vercel",
         "name": "v0 by Vercel",
         "sector": "Programming",
@@ -2817,606 +2421,6 @@ export const tools = [
         "url": "https://v0.dev/",
         "description": "Generate complete, beautiful, and functional UI components just by describing them in plain English.",
         "longDescription": "Built by Vercel (the creators of Next.js), v0 allows you to say \"I need a pricing table with 3 tiers and a neon aesthetic\" and it instantly codes a stunning, fully-responsive React/Tailwind component right in your browser, ready to copy-paste into your app."
-    },
-    {
-        "id": "ai_tool_generated_1",
-        "name": "AI Tool Pro 1",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-1",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 1).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 1 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_2",
-        "name": "AI Tool Pro 2",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-2",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 2).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 2 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_3",
-        "name": "AI Tool Pro 3",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": true,
-        "freeTierDetails": "Totally Free",
-        "url": "https://example.com/ai-tool-3",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 3).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 3 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_4",
-        "name": "AI Tool Pro 4",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-4",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 4).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 4 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_5",
-        "name": "AI Tool Pro 5",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-5",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 5).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 5 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_6",
-        "name": "AI Tool Pro 6",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": true,
-        "freeTierDetails": "Totally Free",
-        "url": "https://example.com/ai-tool-6",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 6).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 6 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_7",
-        "name": "AI Tool Pro 7",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-7",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 7).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 7 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_8",
-        "name": "AI Tool Pro 8",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-8",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 8).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 8 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_9",
-        "name": "AI Tool Pro 9",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": true,
-        "freeTierDetails": "Totally Free",
-        "url": "https://example.com/ai-tool-9",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 9).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 9 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_10",
-        "name": "AI Tool Pro 10",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-10",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 10).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 10 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_11",
-        "name": "AI Tool Pro 11",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-11",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 11).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 11 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_12",
-        "name": "AI Tool Pro 12",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": true,
-        "freeTierDetails": "Totally Free",
-        "url": "https://example.com/ai-tool-12",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 12).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 12 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_13",
-        "name": "AI Tool Pro 13",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-13",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 13).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 13 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_14",
-        "name": "AI Tool Pro 14",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-14",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 14).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 14 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_15",
-        "name": "AI Tool Pro 15",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": true,
-        "freeTierDetails": "Totally Free",
-        "url": "https://example.com/ai-tool-15",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 15).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 15 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_16",
-        "name": "AI Tool Pro 16",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-16",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 16).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 16 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_17",
-        "name": "AI Tool Pro 17",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-17",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 17).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 17 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_18",
-        "name": "AI Tool Pro 18",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": true,
-        "freeTierDetails": "Totally Free",
-        "url": "https://example.com/ai-tool-18",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 18).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 18 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_19",
-        "name": "AI Tool Pro 19",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-19",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 19).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 19 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_20",
-        "name": "AI Tool Pro 20",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-20",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 20).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 20 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_21",
-        "name": "AI Tool Pro 21",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": true,
-        "freeTierDetails": "Totally Free",
-        "url": "https://example.com/ai-tool-21",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 21).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 21 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_22",
-        "name": "AI Tool Pro 22",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-22",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 22).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 22 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_23",
-        "name": "AI Tool Pro 23",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-23",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 23).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 23 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_24",
-        "name": "AI Tool Pro 24",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": true,
-        "freeTierDetails": "Totally Free",
-        "url": "https://example.com/ai-tool-24",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 24).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 24 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_25",
-        "name": "AI Tool Pro 25",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-25",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 25).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 25 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_26",
-        "name": "AI Tool Pro 26",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-26",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 26).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 26 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_27",
-        "name": "AI Tool Pro 27",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": true,
-        "freeTierDetails": "Totally Free",
-        "url": "https://example.com/ai-tool-27",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 27).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 27 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_28",
-        "name": "AI Tool Pro 28",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-28",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 28).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 28 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_29",
-        "name": "AI Tool Pro 29",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-29",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 29).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 29 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_30",
-        "name": "AI Tool Pro 30",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": true,
-        "freeTierDetails": "Totally Free",
-        "url": "https://example.com/ai-tool-30",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 30).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 30 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_31",
-        "name": "AI Tool Pro 31",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-31",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 31).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 31 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_32",
-        "name": "AI Tool Pro 32",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-32",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 32).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 32 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_33",
-        "name": "AI Tool Pro 33",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": true,
-        "freeTierDetails": "Totally Free",
-        "url": "https://example.com/ai-tool-33",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 33).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 33 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_34",
-        "name": "AI Tool Pro 34",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-34",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 34).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 34 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_35",
-        "name": "AI Tool Pro 35",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-35",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 35).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 35 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_36",
-        "name": "AI Tool Pro 36",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": true,
-        "freeTierDetails": "Totally Free",
-        "url": "https://example.com/ai-tool-36",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 36).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 36 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_37",
-        "name": "AI Tool Pro 37",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-37",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 37).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 37 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_38",
-        "name": "AI Tool Pro 38",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-38",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 38).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 38 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_39",
-        "name": "AI Tool Pro 39",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": true,
-        "freeTierDetails": "Totally Free",
-        "url": "https://example.com/ai-tool-39",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 39).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 39 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_40",
-        "name": "AI Tool Pro 40",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-40",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 40).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 40 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_41",
-        "name": "AI Tool Pro 41",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-41",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 41).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 41 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_42",
-        "name": "AI Tool Pro 42",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": true,
-        "freeTierDetails": "Totally Free",
-        "url": "https://example.com/ai-tool-42",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 42).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 42 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_43",
-        "name": "AI Tool Pro 43",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-43",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 43).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 43 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_44",
-        "name": "AI Tool Pro 44",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-44",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 44).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 44 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_45",
-        "name": "AI Tool Pro 45",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": true,
-        "freeTierDetails": "Totally Free",
-        "url": "https://example.com/ai-tool-45",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 45).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 45 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_46",
-        "name": "AI Tool Pro 46",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-46",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 46).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 46 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_47",
-        "name": "AI Tool Pro 47",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-47",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 47).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 47 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_48",
-        "name": "AI Tool Pro 48",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": true,
-        "freeTierDetails": "Totally Free",
-        "url": "https://example.com/ai-tool-48",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 48).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 48 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_49",
-        "name": "AI Tool Pro 49",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-49",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 49).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 49 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
-    },
-    {
-        "id": "ai_tool_generated_50",
-        "name": "AI Tool Pro 50",
-        "sector": "Productivity",
-        "logo": "default_logo",
-        "emoji": "🚀",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://example.com/ai-tool-50",
-        "description": "An advanced artificial intelligence tool to optimize your daily tasks and improve your productivity (AI 50).",
-        "longDescription": "This AI-powered platform allows you to automate tedious and complex workflows. With advanced processing capabilities and a user-centric design, Tool 50 integrates seamlessly into your digital ecosystem, saving hours of manual work every week. Its performance is remarkable in massive data processing."
     },
     {
         "id": "sora_openai",
@@ -3455,30 +2459,6 @@ export const tools = [
         "longDescription": "Haiper allows creators to effortlessly generate stunning video content from text or images. Known for its accessibility and strong community, it provides tools for restyling videos, animating images, and full text-to-video generation."
     },
     {
-        "id": "d_id_studio",
-        "name": "D-ID",
-        "sector": "Video & Animation",
-        "logo": "did",
-        "emoji": "🗣️",
-        "isFullyFree": false,
-        "freeTierDetails": "Free Trial",
-        "url": "https://www.d-id.com/",
-        "description": "Generates speaking avatars and videos from still photos.",
-        "longDescription": "D-ID uses deep learning facial animation technology to turn static images into talking avatars. It is widely used for marketing, corporate training, and interactive digital humans, perfectly syncing audio with natural lip movements."
-    },
-    {
-        "id": "kaiber_ai",
-        "name": "Kaiber",
-        "sector": "Video & Animation",
-        "logo": "kaiber",
-        "emoji": "🎸",
-        "isFullyFree": false,
-        "freeTierDetails": "Free Trial",
-        "url": "https://kaiber.ai/",
-        "description": "AI creative lab specialized in audio-reactive video animation.",
-        "longDescription": "Kaiber is a favorite among musicians and artists for creating music videos. The AI can analyze the beat and rhythm of an uploaded audio track and generate highly stylized, morphing animations that react dynamically to the music."
-    },
-    {
         "id": "stable_video",
         "name": "Stable Video",
         "sector": "Video & Animation",
@@ -3489,18 +2469,6 @@ export const tools = [
         "url": "https://www.stablevideo.com/",
         "description": "Open-weight video generation by Stability AI.",
         "longDescription": "Based on the Stable Diffusion architecture, Stable Video Diffusion allows users to animate still images or create short clips from text with excellent consistency. It provides a more open and customizable approach to generative video."
-    },
-    {
-        "id": "microsoft_copilot",
-        "name": "Microsoft Copilot",
-        "sector": "Chatbots & Assistants",
-        "logo": "microsoft",
-        "emoji": "💼",
-        "isFullyFree": true,
-        "freeTierDetails": "Free (Pro available)",
-        "url": "https://copilot.microsoft.com/",
-        "description": "Your everyday AI companion powered by GPT-4 and web search.",
-        "longDescription": "Integrated deeply into the Microsoft ecosystem (Windows, Office), Copilot serves as an incredibly capable assistant. It combines the reasoning of OpenAI’s latest models with live web access, making it excellent for research, drafting documents, and generating images via Designer."
     },
     {
         "id": "mistral_le_chat",
@@ -3539,54 +2507,6 @@ export const tools = [
         "longDescription": "Unlike task-oriented bots, Pi (Personal Intelligence) is designed to be a supportive companion. It asks questions, remembers past conversations, and provides a compassionate, highly conversational voice interface that feels remarkably human-like."
     },
     {
-        "id": "cursor_ai_editor",
-        "name": "Cursor",
-        "sector": "Programming",
-        "logo": "cursor",
-        "emoji": "💻",
-        "isFullyFree": false,
-        "freeTierDetails": "Free Trial / Freemium",
-        "url": "https://cursor.com/",
-        "description": "The AI-first code editor built for pair programming with GPT-4 and Claude.",
-        "longDescription": "Cursor is a fork of VS Code that integrates state-of-the-art AI directly into your development workflow. You can chat with your codebase, press Cmd+K to generate or refactor code inline, and let the AI hunt down bugs spanning multiple files. It is currently the most popular AI-native IDE."
-    },
-    {
-        "id": "github_copilot",
-        "name": "GitHub Copilot",
-        "sector": "Programming",
-        "logo": "github",
-        "emoji": "👨‍💻",
-        "isFullyFree": false,
-        "freeTierDetails": "Paid Subscription (Free for Students)",
-        "url": "https://github.com/features/copilot",
-        "description": "The world’s most widely adopted AI pair programmer by Microsoft and OpenAI.",
-        "longDescription": "GitHub Copilot integrates directly into editors like VS Code and Visual Studio. It suggests entire functions, writes unit tests, and autocompletes lines of code in real-time as you type, drastically speeding up software development by reducing boilerplate work."
-    },
-    {
-        "id": "suno_ai_music",
-        "name": "Suno AI",
-        "sector": "Audio & Music",
-        "logo": "suno",
-        "emoji": "🎵",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://suno.com/",
-        "description": "Generate full, radio-quality songs with vocals and instrumentation from text.",
-        "longDescription": "Suno AI allows anyone to create complete, two-minute songs simply by describing the genre, tempo, and lyrical topic. The AI generates shockingly high-fidelity music, complete with incredibly human-sounding vocals across multiple languages and musical styles."
-    },
-    {
-        "id": "elevenlabs_ai",
-        "name": "ElevenLabs",
-        "sector": "Audio & Music",
-        "logo": "elevenlabs",
-        "emoji": "🎙️",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://elevenlabs.io/",
-        "description": "The most realistic AI text-to-speech and voice cloning software available.",
-        "longDescription": "ElevenLabs revolutionized digital audio with its ultra-realistic voice models. It perfectly captures human intonation, breathing, and emotion. It is widely used by YouTubers, audiobook narrators, and developers for creating voicebots or cloning their own voice for content creation."
-    },
-    {
         "id": "make_com_ai",
         "name": "Make.com",
         "sector": "Automation",
@@ -3623,30 +2543,6 @@ export const tools = [
         "longDescription": "Claude 3.5 Sonnet is widely considered the best model for complex reasoning and creative writing. It boasts a massive context window (capable of reading entire books at once) and features \"Artifacts\", a dedicated UI panel that renders code, SVGs, and documents right beside your chat."
     },
     {
-        "id": "github_copilot_new",
-        "name": "GitHub Copilot",
-        "sector": "Programación",
-        "logo": "github",
-        "emoji": "🐙",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://github.com/features/copilot",
-        "description": "Tu autocompletador de código y programador experto integrado.",
-        "longDescription": "GitHub Copilot utiliza modelos adelantados para sugerir código y funciones completas en tiempo real directamente en tu editor. Ha sido entrenado con miles de millones de líneas de código y acelera el proceso de desarrollo gestionando el código repetitivo por ti."
-    },
-    {
-        "id": "krea_ai_new",
-        "name": "Krea AI",
-        "sector": "Imagen y Diseño",
-        "logo": "krea",
-        "emoji": "🪄",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://krea.ai",
-        "description": "Generador de imágenes y editor en tiempo real extremadamente veloz.",
-        "longDescription": "Krea AI revoluciona la generación visual ofreciendo un lienzo en tiempo real. Trata un boceto con formas extremadamente básicas y lo renderiza de manera instantánea como una foto fotorealista. Incluye opción para mejorar la definición."
-    },
-    {
         "id": "udio_music_new",
         "name": "Udio",
         "sector": "Audio y Música",
@@ -3657,42 +2553,6 @@ export const tools = [
         "url": "https://udio.com",
         "description": "Crea pistas completas y canciones con un text-to-music de máxima calidad.",
         "longDescription": "Genera canciones con calidad de estudio. Crea voces limpias, instrumentales increíbles y arreglos avanzados. Si quieres hacer una banda sonora para un juego o lanzar la siguiente canción del verano, Udio lo consigue fácil."
-    },
-    {
-        "id": "magnific_ai_new",
-        "name": "Magnific AI",
-        "sector": "Imagen y Diseño",
-        "logo": "magnific",
-        "emoji": "✨",
-        "isFullyFree": false,
-        "freeTierDetails": "De Pago",
-        "url": "https://magnific.ai",
-        "description": "El mejor expansor y optimizador de texturas para alcanzar el 8k.",
-        "longDescription": "Carga una imagen en baja calidad y añade increíbles detalles extra (upscaling). Ideal para arquitectos que tienen un render a medio hacer o para fotógrafos que quieren texturas alucinantes."
-    },
-    {
-        "id": "julius_ai_new",
-        "name": "Julius AI",
-        "sector": "Investigación y Datos",
-        "logo": "julius",
-        "emoji": "📈",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://julius.ai",
-        "description": "Un analista de datos inteligente para hojas de cálculo.",
-        "longDescription": "Te permite subir un CSV o Excel y obtener conclusiones, estadísticas y gráficos increíbles al instante, conversando con él. Resulta útil para la ciencia de datos sin tener que escribir en Python."
-    },
-    {
-        "id": "chatpdf_new",
-        "name": "ChatPDF",
-        "sector": "Investigación y Datos",
-        "logo": "chatpdf",
-        "emoji": "📄",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://www.chatpdf.com",
-        "description": "Sube un PDF e interactúa, pregúntale y obtén resúmenes.",
-        "longDescription": "Ahorra tiempo a estudiantes, abogados o investigadores. Permite entender documentos extensos porque indica hasta la página precisa donde encontró la respuesta al hacerle las consultas."
     },
     {
         "id": "meshy_ai_new",
@@ -3755,18 +2615,6 @@ export const tools = [
         "longDescription": "Perfecto para evitar bloqueos por políticas restrictivas manteniendo alta capacidad de respuesta matemática o código para competir con el modelo GPT4 o superior."
     },
     {
-        "id": "claude_3_7_sonnet_new",
-        "name": "Claude 3.7 Sonnet",
-        "sector": "Chatbots y Asistentes",
-        "logo": "claude",
-        "emoji": "🧠",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://claude.ai",
-        "description": "Un modelo muy lógico y especializado estructurando UI/Código.",
-        "longDescription": "Brillante estructurando programas complejos a los que además da un vistazo en vivo mediante su sistema de \"artefactos\" por lo que ves la web desplegada sin sacarlo de su chat. Programación al nivel premium."
-    },
-    {
         "id": "freepik_pikaso_new",
         "name": "Pikaso (Freepik)",
         "sector": "Imagen y Diseño",
@@ -3777,18 +2625,6 @@ export const tools = [
         "url": "https://www.freepik.com/pikaso",
         "description": "Crea bocetos dibujados instantáneamente mientras configuras su resultado.",
         "longDescription": "Dibujando rayas verás los renders definitivos gracias a su potencia visual integrada a fin de conseguir composiciones atractivas de cara a generar iconos y recursos gráficos en segundos."
-    },
-    {
-        "id": "civitai_new",
-        "name": "Civitai",
-        "sector": "Imagen y Diseño",
-        "logo": "civitai",
-        "emoji": "🖼️",
-        "isFullyFree": true,
-        "freeTierDetails": "Gratis con créditos",
-        "url": "https://civitai.com",
-        "description": "Mega-repositorio de Stable Diffusion con generador de imágenes.",
-        "longDescription": "Puedes importar infinidad de modelos entrenados. Entornos desde anime y personajes hiper-específicos, renderizando todas las combinaciones online y visualizando arte subida de tono o comercial sin límites estéticos."
     },
     {
         "id": "suno_bark_new",
@@ -3813,18 +2649,6 @@ export const tools = [
         "url": "https://www.cognition.ai/devin",
         "description": "El primer gran ingeniero de redes neuronales y software de inteligencia autónoma.",
         "longDescription": "Actúa de manera autónoma como un verdadero desarrollador capaz de planificar a lo largo del tiempo, usar comandos para corregir errores propios, testear módulos que autodesarrolla e integrarlos sin la necesidad del código línea por línea."
-    },
-    {
-        "id": "lovable_dev_new",
-        "name": "Lovable",
-        "sector": "Programación",
-        "logo": "lovable",
-        "emoji": "❤️",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://lovable.dev",
-        "description": "Construidor visual para desarrollar aplicaciones frontend completas sin programar.",
-        "longDescription": "Basado en GPT-Engineer, permite introducir una orden tipo \"quiero un clon de Pinterest oscuro\" para desplegar componentes React o Tailwind que no solo se visualizan al momento sino que pueden enviarse directamente a nuestro propio Github."
     },
     {
         "id": "perplexity_pages_new",
@@ -3863,18 +2687,6 @@ export const tools = [
         "longDescription": "Diseñado de la mano de RAG, se adapta al grueso volumen de información interna o documentos privados evitando alucinaciones para crear informes coherentes con el conocimiento explícito reservado del negocio interno seguro."
     },
     {
-        "id": "blackbox_ai_new",
-        "name": "Blackbox AI",
-        "sector": "Programación",
-        "logo": "blackbox",
-        "emoji": "⬛",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://www.blackbox.ai",
-        "description": "Buscador y copiloto para obtener fragmentos de código exactos.",
-        "longDescription": "Resuelve problemas muy concretos debido a su capacidad inmensa escaneando miles de líneas de bibliotecas Open-Source en línea en tiempo real y conectándose de manera sencilla como en un IDE directo desde el propio navegador web."
-    },
-    {
         "id": "capcut_ai_new",
         "name": "CapCut Video AI",
         "sector": "Video y Animación",
@@ -3897,18 +2709,6 @@ export const tools = [
         "url": "https://www.logoai.com",
         "description": "La solución corporativa integral para el diseño instantáneo.",
         "longDescription": "Se acabó el buscar plantillas por horas; le provees nombre de tu proyecto sumando algunas preferencias abstractas e invoca vectores listos acompañados de tarjetas, papelería, ropa, así como guías formales manuales para redes sociales enteras."
-    },
-    {
-        "id": "soundraw_new",
-        "name": "Soundraw",
-        "sector": "Audio y Música",
-        "logo": "soundraw",
-        "emoji": "🎹",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://soundraw.io",
-        "description": "Música de ambiente personalizable despojada de derechos de autor.",
-        "longDescription": "Para los videobloggers o montadores es vital; Soundraw genera tonadas según la duración del clip o la longitud deseada a pesar de alterar de súbito tempo para amoldar transiciones al gusto y proteger el material en streaming sin miedos al strike."
     },
     {
         "id": "aiva_music_new",
@@ -4077,18 +2877,6 @@ export const tools = [
         "url": "https://www.humata.ai",
         "description": "Extrae con exactitud el saber encerrado en largos manuales escaneados PDF.",
         "longDescription": "En lugar de reescribir consultas, arrastras manuales de cientos de folios a Humata. Te ahorra memorizar leyendo en milisegundos y al responder siempre mostrará un cuadro remarcado brillante apuntando al trozo literal original validando lo explicado al dedillo."
-    },
-    {
-        "id": "scribe_ai_new",
-        "name": "Scribe",
-        "sector": "Productividad y Organización",
-        "logo": "scribe",
-        "emoji": "📝",
-        "isFullyFree": false,
-        "freeTierDetails": "Freemium",
-        "url": "https://scribehow.com",
-        "description": "Asistente de auto-documentación y guías generadas al vuelo.",
-        "longDescription": "Magnífico con integraciones para empresas; grabas el flujo natural de tu trabajo con el navegador y la magia de sus capturas automáticas compuso un prolijo PDF repleto de resaltes visuales y pasos enumerados de manera clarísima. Ideal para entrenar nuevo personal."
     }
 ];
 
